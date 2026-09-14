@@ -1,0 +1,474 @@
+[
+  {
+    "id": "word_document_agent",
+    "name": "智慧商業企劃書與合約自動化 Agent (Word Document Agent)",
+    "category": "商業文書自動化",
+    "target_software": "Microsoft Word / Markdown",
+    "icon": "bi-file-earmark-word-fill",
+    "badge_color": "#2563eb",
+    "description": "解析非結構化口語需求、市場調研草稿或混亂逐字稿，自主拆解為企劃書黃金五結構，自動套用標題階層樣式、生成目錄、編排三線表並執行 APA 引用驗證。",
+    "role_definition": "你是一位精通微軟 Word 物件導向樣式架構與企業級商業企劃規範的資深企劃顧問 Agent。你具備自主意圖解析、結構樹規劃與文件排版防呆校驗能力。",
+    "trigger": "總經理口頭指派：「請把我們新品牌『低卡健康餐盒快煮店』的初步想法，整理成一份符合創投規格的完整正式企劃書，要有目錄、規範表格跟競爭分析。」",
+    "tools_available": [
+      {
+        "name": "parse_unstructured_notes",
+        "desc": "剖析非結構化口語與零碎筆記，抽取核心要素 (問題/解法/目標受眾/財務)"
+      },
+      {
+        "name": "apply_word_styles_hierarchy",
+        "desc": "建立標題 1 (18pt)、標題 2 (14pt)、標題 3 (12pt) 階層與多層次編號 (1., 1.1)"
+      },
+      {
+        "name": "build_toc_and_sections",
+        "desc": "插入分節符號 (Section Break)，設定獨立封面、前言羅馬數字與正文阿拉伯數字自動目錄"
+      },
+      {
+        "name": "format_three_line_table",
+        "desc": "將數據轉換為學術與專業三線表 (去除垂直線，保留頂底粗線與欄位細線)"
+      },
+      {
+        "name": "validate_apa_and_cross_refs",
+        "desc": "自動編排『表 1-1』『圖 1-1』標號並建立正文交叉參照，校驗 APA 7th 引註格式"
+      }
+    ],
+    "guardrails": [
+      "封面頁嚴禁出現任何頁碼或頁首頁尾資訊。",
+      "目錄必須完全依賴 Word 內建 Heading 欄位動態產生，嚴禁手打空格點狀線偽造目錄。",
+      "表格必須符合商用三線表規章，嚴禁出現網格狀垂直豎線。"
+    ],
+    "simulated_trace": [
+      {
+        "step": 1,
+        "type": "thought",
+        "content": "【目標意圖分析】：收到口頭企劃需求。第一步需將非結構化對話拆解為標準企劃書黃金五結構（執行摘要 ➔ 市場痛點 ➔ 商業模式與解法 ➔ 落地執行排程 ➔ 財務預算）。"
+      },
+      {
+        "step": 2,
+        "type": "action",
+        "tool": "parse_unstructured_notes",
+        "input": {
+          "raw_text": "低卡健康餐盒快煮店、鎖定校園師生外食痛點、少油低鹽、預估首年回本..."
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "type": "observation",
+        "result": "抽取完成：核心價值為 15 分鐘健康取餐、預算 120 萬元、預估回收期 14 個月。已擬定一級章節 5 項、二級小節 12 項。"
+      },
+      {
+        "step": 4,
+        "type": "thought",
+        "content": "【結構樣式對應】：為避免人工手動排版混亂，立即調用 Word 樣式引擎，將大綱綁定『標題 1』至『標題 3』，並套用多層次編號清單。"
+      },
+      {
+        "step": 5,
+        "type": "action",
+        "tool": "apply_word_styles_hierarchy",
+        "input": {
+          "heading1": "微軟正黑體 18pt 粗體",
+          "heading2": "14pt 粗體",
+          "list_format": "多層次編號 1., 1.1, 1.1.1"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "type": "action",
+        "tool": "build_toc_and_sections",
+        "input": {
+          "section_break": "下一頁分節符",
+          "cover_page_num": "無",
+          "body_page_num": "起始頁 1"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "type": "guardrail",
+        "content": "【安全邊界與排版稽核】：檢查分節符是否正確隔開封面與前言？正文頁碼是否獨立由 1 開始？檢驗通過！"
+      },
+      {
+        "step": 8,
+        "type": "action",
+        "tool": "format_three_line_table",
+        "input": {
+          "data": "競品價格與營養素對比表",
+          "caption": "表 2-1：校園周邊餐飲競品分析三線表"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 9,
+        "type": "human_in_the_loop",
+        "content": "【人機協同審核點】：企劃初稿架構與三線表格已自動組裝完畢。請專案經理確認『財務預算 120 萬元』是否需要增列行銷推廣費？確認無誤請點擊核可。"
+      },
+      {
+        "step": 10,
+        "type": "final_output",
+        "content": "【自主執行完畢】：已成功生成標準化企劃書《低卡健康餐盒校園快煮店商業企劃書_v1.0.docx》。具備規範封面、自動更新目錄、標題樣式階層樹與標準三線分析表。"
+      }
+    ]
+  },
+  {
+    "id": "excel_data_agent",
+    "name": "智慧數據清洗與多維分析 Agent (Excel Data Analysis Agent)",
+    "category": "商業數據分析與 BI",
+    "target_software": "Microsoft Excel",
+    "icon": "bi-file-earmark-excel-fill",
+    "badge_color": "#16a34a",
+    "description": "自主診斷企業髒資料（隱形空格、偽數字、非標準日期），自動套用清洗函數，將自然語言提問轉譯為 XLOOKUP / SUMIFS 嵌套公式，構建多維樞紐分析與切片器連動儀表板。",
+    "role_definition": "你是一位專精微軟 Excel 數據架構與商業智慧分析的 AI 數據工程師 Agent。精熟陣列公式、動態查表、樞紐四象限與高階視覺化 Dashboard 設計。",
+    "trigger": "營運總監上傳 1,000 筆連鎖門市銷售流水帳，要求：「把裡面的髒資料清乾淨，幫我算各區飲品毛利跟白金會員貢獻度，並做一個可以按地區點選即時變換的儀表板。」",
+    "tools_available": [
+      {
+        "name": "detect_and_clean_data",
+        "desc": "診斷儲存格資料型態，自動執行 TRIM(清除前後空格)、CLEAN(清除不可見字元)、修正文字型態日期為標準序列號"
+      },
+      {
+        "name": "synthesize_xlookup_sumifs",
+        "desc": "自然語言轉譯公式：自動產生 XLOOKUP 跨表串接單價成本，建立 SUMIFS / COUNTIFS 多條件決策匯總"
+      },
+      {
+        "name": "build_pivot_matrix",
+        "desc": "配置列（門市分區）、欄（商品大類）、值（毛利率與營收）、篩選（季度）四象限樞紐分析"
+      },
+      {
+        "name": "create_dashboard_slicers",
+        "desc": "建立組合直條圖與趨勢折線圖，插入 Slicer 切片器並打通報表連線 (Report Connections)"
+      },
+      {
+        "name": "extract_business_insights",
+        "desc": "以管理顧問視角，從多維分析結果中自動提煉 3 大營運異常與 3 項開源節流具體建議"
+      }
+    ],
+    "guardrails": [
+      "所有查表公式嚴禁使用淘汰之 VLOOKUP，全面採用現代防呆之 XLOOKUP(IFERROR 包覆)。",
+      "提成率或基準儲存格必須強制使用絕對位址鎖定 ($A$1)，嚴禁公式下拉時參照位移。",
+      "儀表板圖表墨水比 (Data-Ink Ratio) 必須精簡，嚴禁出現 3D 傾斜立體圓餅圖。"
+    ],
+    "simulated_trace": [
+      {
+        "step": 1,
+        "type": "thought",
+        "content": "【資料診斷與髒資料掃描】：載入 1,000 筆銷售資料，發現第 C 欄電話夾雜空格與破折號，第 E 欄金額為文字型態導致 SUM 運算為 0，第 G 欄日期格式混亂。"
+      },
+      {
+        "step": 2,
+        "type": "action",
+        "tool": "detect_and_clean_data",
+        "input": {
+          "columns": [
+            "C",
+            "E",
+            "G"
+          ],
+          "methods": [
+            "TRIM",
+            "VALUE",
+            "DATEVALUE",
+            "SUBSTITUTE"
+          ]
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "type": "observation",
+        "result": "資料清洗完成：修復 142 筆隱形空格、86 筆文字型態數字轉換為標準數值、排除 4 筆完全重複交易流水號。"
+      },
+      {
+        "step": 4,
+        "type": "thought",
+        "content": "【跨表補齊與多條件匯總】：需自《產品主目錄》跨表帶入成本以計算毛利。調用 XLOOKUP 雙向反向查找，若找不到預設顯示『未建檔』。接著使用 SUMIFS 計算北區飲品銷售總額。"
+      },
+      {
+        "step": 5,
+        "type": "action",
+        "tool": "synthesize_xlookup_sumifs",
+        "input": {
+          "lookup_formula": "=XLOOKUP(B2, 產品主檔!$A$2:$A$200, 產品主檔!$C$2:$C$200, \"未建檔\")",
+          "sumifs_formula": "=SUMIFS($F$2:$F$1000, $C$2:$C$1000, \"北區\", $D$2:$D$1000, \"飲品類\")"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "type": "action",
+        "tool": "build_pivot_matrix",
+        "input": {
+          "rows": "地區",
+          "columns": "品類",
+          "values": [
+            "銷售額加總",
+            "毛利率平均值"
+          ],
+          "calc_field": "毛利率=(銷售額-成本)/銷售額"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "type": "action",
+        "tool": "create_dashboard_slicers",
+        "input": {
+          "slicers": [
+            "門市地區",
+            "會員等級"
+          ],
+          "connect_charts": [
+            "分區業績圖",
+            "月度毛利趨勢圖",
+            "暢銷排行圖"
+          ]
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "type": "guardrail",
+        "content": "【邏輯與防呆核驗】：測試切片器切換為『南區』，驗證 3 張圖表是否同步連動更新？數值加總是否與明細表一致？驗證 100% 正確！"
+      },
+      {
+        "step": 9,
+        "type": "action",
+        "tool": "extract_business_insights",
+        "input": {
+          "pivot_data": "北區飲品毛利 32%、中區 28%、南區大幅下滑至 14%"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 10,
+        "type": "final_output",
+        "content": "【自主執行完畢】：已生成《連鎖門市年度營運決策儀表板.xlsx》。完成資料清洗，建置動態連線切片器。AI 提煉洞察警示：『南區因原物料物流耗損過高導致毛利腰斬至 14%，建議啟動在地集中採購。』"
+      }
+    ]
+  },
+  {
+    "id": "ppt_presentation_agent",
+    "name": "高說服力商業提案簡報 Agent (PowerPoint Presentation Agent)",
+    "category": "商業簡報與說服力",
+    "target_software": "Microsoft PowerPoint",
+    "icon": "bi-file-earmark-slides-fill",
+    "badge_color": "#ea580c",
+    "description": "將冗長營運報告與繁複數據，依循金字塔原理轉化為 SCQA 敘事架構的 10 頁商業提案骨幹；套用 CRAP 設計原則去除文字牆，動態串接 Excel 圖表並生成 90 秒演講講者稿。",
+    "role_definition": "你是一位頂級管理顧問商業簡報與演講溝通專家 Agent。專精麥肯錫 SCQA 敘事框架、CRAP 視覺原則、圖解化邏輯與數據故事化 (Data Storytelling)。",
+    "trigger": "副總經理要求：「明天要向董事會報告年度營運檢討與改善對策，請將這篇 15 頁的 Word 報告精煉成 8-10 頁具備說服力的簡報，不要滿滿文字，標題要有觀點，並幫我寫好講稿。」",
+    "tools_available": [
+      {
+        "name": "extract_scqa_framework",
+        "desc": "提煉商業情境 (Situation)、衝擊衝突 (Complication)、核心問題 (Question) 與具體策略解答 (Answer)"
+      },
+      {
+        "name": "generate_10_slide_skeleton",
+        "desc": "生成 10 頁黃金提案骨幹，每頁標題嚴格要求為『觀點結論句』而非抽象標籤名詞"
+      },
+      {
+        "name": "apply_crap_and_diagrams",
+        "desc": "套用對比、重複、對齊、相近原則，將條列文字轉換為水平流程圖、2x2 矩陣圖或金字塔圖解"
+      },
+      {
+        "name": "link_dynamic_excel_charts",
+        "desc": "以 OLE 連結物件形式嵌入 Excel 圖表，套用『聚光燈法則』突顯關鍵異常數據"
+      },
+      {
+        "name": "compose_speaker_script",
+        "desc": "為每張投影片量身打造 60~90 秒主管匯報口頭逐字稿，包含破冰數據、原因剖析與行動呼籲"
+      }
+    ],
+    "guardrails": [
+      "投影片標題嚴格禁止使用名詞標籤（如『第三季營收』），必須強制改為結論句（如『Q3 營收逆勢成長 24%，受惠新品策略』）。",
+      "單頁投影片正文文字嚴格限制在 30 字以內，杜絕文字牆。",
+      "動畫與轉場僅允許使用『平滑轉化 (Morph)』，嚴禁使用旋轉、飛入等花俏無意義動畫。"
+    ],
+    "simulated_trace": [
+      {
+        "step": 1,
+        "type": "thought",
+        "content": "【商業敘事重構】：分析 15 頁營運報告，核心痛點在於下半年獲利流失。立即套用麥肯錫 SCQA 結構：S(營收穩定增長) ➔ C(但供應鏈成本暴增導致毛利腰斬) ➔ Q(如何於下季度止血？) ➔ A(推動智慧採購與品類精簡三部曲)。"
+      },
+      {
+        "step": 2,
+        "type": "action",
+        "tool": "extract_scqa_framework",
+        "input": {
+          "source_doc": "年度營運檢討報告.docx"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "type": "thought",
+        "content": "【10 頁簡報骨幹規劃】：展開 10 頁投影片大綱，嚴格落實『結論先行 (BLUF)』，將所有標題改寫為有力之觀點結論句。"
+      },
+      {
+        "step": 4,
+        "type": "action",
+        "tool": "generate_10_slide_skeleton",
+        "input": {
+          "slide_01": "執行摘要：年度營收雖達標，惟獲利空間受制於三項供應鏈隱性成本",
+          "slide_02": "市場現況：整體餐飲外食規模成長 8%，健康機能餐盒滲透率達新高",
+          "slide_03": "獲利危機：原物料採購分散致使毛利較去年同期下滑 14.2 個百分點",
+          "slide_04": "核心診斷：低效門市與慢銷品項積壓近 300 萬呆滯庫存",
+          "slide_05": "策略解方：全面啟動『智慧採購、品類精簡、動態定價』轉型三部曲"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "type": "action",
+        "tool": "apply_crap_and_diagrams",
+        "input": {
+          "target_slide": "slide_05",
+          "source_text": "第一步集中採購、第二步品類淘汰、第三步會員精準定價",
+          "diagram_type": "3階段水平里程碑箭頭圖解"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "type": "action",
+        "tool": "link_dynamic_excel_charts",
+        "input": {
+          "chart_source": "Excel_Dashboard.xlsx",
+          "chart_name": "各區毛利對比圖",
+          "spotlight": "南區標示鮮紅警戒色，其餘灰階"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "type": "guardrail",
+        "content": "【視覺與排版檢核】：檢查母片色票（深藍 #1E3A8A、琥珀金 #D97706）、字體統一度（微軟正黑體粗體）、文字行數（均在 3 行以內）。檢驗通過！"
+      },
+      {
+        "step": 8,
+        "type": "action",
+        "tool": "compose_speaker_script",
+        "input": {
+          "slide": "slide_03",
+          "time_budget": "75 秒",
+          "tone": "嚴謹、自信且具備解決方案導向之高階主管口吻"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 9,
+        "type": "human_in_the_loop",
+        "content": "【人機協同審核點】：10 頁簡報骨幹、CRAP 商務圖解與第 3 頁數據聚光燈演講稿已產出。請確認講稿中預估的『改善後年省 450 萬』數據是否需要微調？"
+      },
+      {
+        "step": 10,
+        "type": "final_output",
+        "content": "【自主執行完畢】：已生成《年度營運改善董事會提案簡報.pptx》。包含金字塔架構、高質感商務三階段圖解、動態連結 Excel 圖表與每頁 75 秒完整演講講者備忘錄。"
+      }
+    ]
+  },
+  {
+    "id": "multi_agent_pipeline",
+    "name": "跨軟體企業營運全流程自動化代理集群 (Multi-Agent Pipeline)",
+    "category": "企業級端到端跨軟體協作",
+    "target_software": "Word + Excel + PowerPoint + Email",
+    "icon": "bi-diagram-3-fill",
+    "badge_color": "#7c3aed",
+    "description": "展示 Agentic AI 協同工作流極致：每週一自動觸發 Supervisor Agent 協調 Excel Agent（清洗數據）、Word Agent（產出正式報告書）與 PPT Agent（產出董事會簡報），經主管審查後一鍵核發。",
+    "role_definition": "你是一位指揮多個專職 Agent 協同作戰的企業數位流程架構總監 (Agentic Orchestrator)。負責任務拆解、工作指派、跨軟體資料傳遞與安全門檻控管。",
+    "trigger": "每週一上午 07:00 伺服器排程自動觸發：讀取全國 50 家門市上週即時營業數據，一條龍產出《週營運數據模型.xlsx》、《營運週報.docx》與《主管晨會簡報.pptx》。",
+    "tools_available": [
+      {
+        "name": "orchestrate_subagents",
+        "desc": "派遣並同步協調 Excel Agent、Word Agent 與 PPT Agent 之工作佇列"
+      },
+      {
+        "name": "transfer_cross_app_data",
+        "desc": "將 Excel 分析出的關鍵指標 (KPI) 與異常清單無損轉為 Markdown 交付 Word 與 PPT"
+      },
+      {
+        "name": "enforce_audit_guardrails",
+        "desc": "比對跨軟體數據一致性（如 PPT 簡報中的金額必須與 Excel 公式加總完全吻合）"
+      },
+      {
+        "name": "human_approval_gate",
+        "desc": "發送 LINE / Teams / Email 審批卡片給營運長，待其點擊確認後方可分發"
+      }
+    ],
+    "guardrails": [
+      "跨軟體數據一致性必須達 100%，若 PPT 數值與 Excel 存在 1 元差異即自動駁回重算。",
+      "未通過營運主管電子簽章前，嚴禁將文件自動群發至全公司。"
+    ],
+    "simulated_trace": [
+      {
+        "step": 1,
+        "type": "thought",
+        "content": "【週一晨間排程啟動】：Supervisor Agent 偵測到 50 家門市原始交易資料庫已就緒。啟動多代理協同管線（Multi-Agent Pipeline）。"
+      },
+      {
+        "step": 2,
+        "type": "action",
+        "tool": "orchestrate_subagents",
+        "input": {
+          "target_agent": "Excel Data Agent",
+          "task": "清洗 50,000 筆交易、計算各門市達成率、更新動態儀表板"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "type": "observation",
+        "result": "Excel Agent 回報：清洗完成，上週總營收 1,842 萬元 (達成率 103.5%)；惟新竹遠百店連續 3 週未達標 (78.2%)。"
+      },
+      {
+        "step": 4,
+        "type": "action",
+        "tool": "transfer_cross_app_data",
+        "input": {
+          "from": "Excel Agent",
+          "to": "Word Document Agent",
+          "payload": "營收 KPI 摘要、新竹店異常數據、三線營收匯總表"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "type": "action",
+        "tool": "orchestrate_subagents",
+        "input": {
+          "target_agent": "Word Document Agent",
+          "task": "套用標準公司週報樣式，生成 4 頁正式長報告，含自動目錄與異常門市三線表"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "type": "action",
+        "tool": "orchestrate_subagents",
+        "input": {
+          "target_agent": "PPT Presentation Agent",
+          "task": "依據 SCQA 架構生成 6 頁高階晨會簡報，動態嵌入 Excel 儀表板圖表與 60 秒講稿"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "type": "guardrail",
+        "content": "【跨軟體一致性檢驗 (Cross-App Consistency Guardrail)】：驗證 Word 報告中的『1,842 萬元』是否與 PPT 第一頁標題、Excel 樞紐總額完全一致？檢查無誤，一致性 100%！"
+      },
+      {
+        "step": 8,
+        "type": "human_in_the_loop",
+        "content": "【Human-in-the-Loop 人機決策審核】：管線已完成 Word、Excel、PPT 三合一套件。已發送預覽卡片至營運長手機，等待主管核可簽核。"
+      },
+      {
+        "step": 9,
+        "type": "observation",
+        "result": "營運長已於 07:45 點擊『審核通過，同意發布』。"
+      },
+      {
+        "step": 10,
+        "type": "final_output",
+        "content": "【跨軟體自主協同圓滿完成】：三合一套件已自動歸檔至雲端專案目錄（ISO 8601 版控），並自動同步至高階晨會投影主機，全流程無人值守耗時僅 4 分 12 秒。"
+      }
+    ]
+  }
+]

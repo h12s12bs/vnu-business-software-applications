@@ -1,0 +1,23 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*$py.class
+env/
+venv/
+
+# Raw Teaching Prep & Textbook materials (proprietary / large)
+01_每週教學簡報_PPT/
+02_示範檔案與練習資料庫/
+00_課程大綱與教學指引/
+_教材生成自動化腳本備份/
+Powerpoint_授課版/
+Powerpoint_上傳版/
+習題解答/
+_※請先讀我※教學資源與智慧財產權宣導_台灣國際圖書業交流協會/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

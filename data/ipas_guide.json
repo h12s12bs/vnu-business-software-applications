@@ -1,0 +1,143 @@
+{
+  "cert_info": {
+    "title": "經濟部產業人才能力鑑定 (iPAS)「AI 應用規劃師」專業認證",
+    "issuing_body": "中華民國經濟部 (MOEA) / 工業技術研究院 (ITRI)",
+    "target_audience": "大專院校商管、工管、資管各系所學生，以及欲提升人機協同效率之商務主管與企劃人員",
+    "passing_score": "各科滿分 100 分，均達 70 分 (含) 以上為合格判定",
+    "exam_format": "電腦線上測驗 (CBT)，單選題與情境整合題",
+    "benefits": [
+      "教育部推薦採計專業證照，列入大專校院重點公信力認證清冊",
+      "獲超過千家企業優先面試聘用，起薪與加薪幅度顯著高於傳統行政人員",
+      "本課程鼓勵考證加分：報考加 5 分，通過取得證照者學期總成績加 10 分，鼓勵同學多元增能！"
+    ]
+  },
+  "subjects": [
+    {
+      "id": "subject_1",
+      "code": "IPAS-AI-01",
+      "name": "生成式 AI 與 Agentic AI 核心技術 (Core Technologies of Generative & Agentic AI)",
+      "weight": "50%",
+      "description": "評量考生對大語言模型底層運作、提示詞工程、檢索增強生成 (RAG)、智慧代理人 (Agent) 架構、工具調用 (Tool Calling) 及 AI 評估治理之技術掌握度。",
+      "key_topics": [
+        {
+          "topic": "1. 大語言模型 (LLM) 基礎運作原理",
+          "concepts": [
+            "Transformer 架構：自注意力機制 (Self-Attention) 與多頭注意力 (Multi-Head Attention)",
+            "詞元化 (Tokenization)：字詞轉 Token、Token 計費與 Context Window 上下文視窗極限",
+            "向量化與向量空間 (Embeddings)：高維度語意嵌入與餘弦相似度 (Cosine Similarity)",
+            "模型推論超參數：溫度值 (Temperature) 控制隨機性、Top-p (Nucleus Sampling) 截斷核採樣"
+          ]
+        },
+        {
+          "topic": "2. 提示工程 (Prompt Engineering) 與進階推理",
+          "concepts": [
+            "基礎提示法：Zero-shot (零樣本推論)、Few-shot (少樣本範例引導)",
+            "思維鏈架構：CoT (Chain-of-Thought) 分步推理、ToT (Tree-of-Thoughts) 樹狀評估",
+            "商管提示 CLEAR 原則：Context(背景)、Limits(邊界)、Expectation(期望)、Action(行動)、Role(角色)",
+            "系統提示詞 (System Prompt) 角色定義與輸出格式強制規範 (JSON/Markdown)"
+          ]
+        },
+        {
+          "topic": "3. 檢索增強生成 (RAG) 企業知識庫系統",
+          "concepts": [
+            "RAG 核心三部曲：檢索 (Retrieval) ➔ 增強 (Augmentation) ➔ 生成 (Generation)",
+            "非結構化文件前處理：語意切塊 (Chunking)、重疊率 (Chunk Overlap) 設計",
+            "向量資料庫 (Vector Database) 原理與混合檢索 (Hybrid Search: 關鍵字 BM25 + 向量)",
+            "重排序 (Reranking) 與檢索精準度評估 (Recall vs. Precision)"
+          ]
+        },
+        {
+          "topic": "4. Agentic AI 智慧代理人架構與 ReAct 引擎",
+          "concepts": [
+            "Generative AI (被動回答) vs. Agentic AI (主動決策、目標導向自主規劃)",
+            "ReAct 框架：Reasoning (思考 Thought) ➔ Acting (行動 Action) ➔ Observation (觀察反思)",
+            "工具調用 (Tool Calling / Function Calling)：API 參數結構化抽取與呼叫",
+            "記憶體架構 (Memory)：短期會話記憶與長期向量記憶 (Long-term Episodic Memory)",
+            "多代理人協作 (Multi-Agent Collaboration)：角色分工、Supervisor 調度與任務交接"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subject_2",
+      "code": "IPAS-AI-02",
+      "name": "AI 商業流程規劃與應用實務 (AI Business Process Planning & Practical Applications)",
+      "weight": "50%",
+      "description": "評量考生在企業實務環境中，運用 AI 升級傳統商業軟體 (Word/Excel/PPT)、診斷流程瓶頸、評估專案 ROI、規劃資安防護與遵循 AI 法律倫理的能力。",
+      "key_topics": [
+        {
+          "topic": "1. 商業文書、長報告與合同自動化 (Word 篇)",
+          "concepts": [
+            "內容與樣式分離原則：以 Markdown 作為中介結構化語言高速流轉",
+            "企業標準長報告規範：標題 1/2/3 物件樣式繼承、多層次清單關聯、目錄自動擷取",
+            "分節符號 (Section Break) 實務：封面無頁碼、前言羅馬數字、正文獨立阿拉伯數字頁碼",
+            "商務三線表格標準與圖表動態交叉參照 (Cross-Reference)",
+            "合併列印 (Mail Merge) 跨軟體協同與 If...Then...Else 條件動態套印"
+          ]
+        },
+        {
+          "topic": "2. 商業數據分析、動態查表與視覺化 (Excel 篇)",
+          "concepts": [
+            "儲存格四大型態與髒資料清洗：TRIM(去除空格)、CLEAN(控制字元)、文字轉標準日期序列",
+            "絕對位址鎖定 ($A$1) 在商用提成與比率運算中的防呆重要性",
+            "現代查表之王 XLOOKUP 六大參數剖析、反向向左查表與 IFERROR 防呆包覆",
+            "SUMIFS / COUNTIFS 多條件決策匯總語法與大於小於連接字元 (\">\"&數值)",
+            "樞紐分析表 (Pivot Table) 四象限多維分析、日期群組化與值顯示百分比",
+            "動態決策儀表板 (Dashboard) 設計、切片器 (Slicer) 報表連線與圖表減法墨水比"
+          ]
+        },
+        {
+          "topic": "3. 商業簡報說服力、CRAP 原則與數據故事化 (PPT 篇)",
+          "concepts": [
+            "金字塔原理 SCQA 架構：Situation(情境) ➔ Complication(衝突) ➔ Question(問題) ➔ Answer(解答)",
+            "結論先行原則 (BLUF)：投影片標題強制為『觀點結論句』而非『抽象名詞標籤』",
+            "設計四大原則 CRAP：對比 (Contrast)、重複 (Repetition)、對齊 (Alignment)、相近 (Proximity)",
+            "純文字牆轉商務圖解四部曲：提煉關鍵字 ➔ 判斷關係 ➔ 挑選圖解 ➔ 視覺精簡",
+            "數據故事化 (Data Storytelling)：聚光燈法則、Excel 圖表動態連結、90 秒主管演講講稿",
+            "平滑轉化 (Morph) 動態演示美學與 Python-pptx 批次自動化簡報"
+          ]
+        },
+        {
+          "topic": "4. 企業流程優化、專案 ROI 評估與 AI 治理法規",
+          "concepts": [
+            "商業流程再造 (BPR) 與自動化潛力矩陣 (頻率高低 vs. 複雜度高低)",
+            "AI 專案投資報酬率 (ROI) 試算：工時節省金額 ➔ 系統與 Token 成本 ➔ 淨現值 NPV",
+            "資安與機密保護：資料遮罩 (Data Masking)、企業端資料不落地政策、防範 Prompt Injection",
+            "智慧財產權與版權歸屬：AI 生成物著作權判例、合理使用 (Fair Use) 與侵權防範",
+            "負責任 AI (Responsible AI) 治理：可解釋性、消除偏見歧視、人機共融 (Human-in-the-Loop)"
+          ]
+        }
+      ]
+    }
+  ],
+  "high_frequency_cheatsheet": [
+    {
+      "point": "【CLEAR 提示原則】",
+      "detail": "Context(背景)、Limits(限制)、Expectation(產出)、Action(行動)、Role(角色)，少一個維度品質大幅下降。"
+    },
+    {
+      "point": "【ReAct 架構三步驟】",
+      "detail": "Thought(思考推理) ➔ Action(調用工具 Tool) ➔ Observation(觀察反思)，是 Agentic AI 的核心動力。"
+    },
+    {
+      "point": "【XLOOKUP vs VLOOKUP】",
+      "detail": "XLOOKUP 預設精確比對、支援反向向左查、支援一次回傳多欄陣列、中間插欄公式絕不崩潰。"
+    },
+    {
+      "point": "【Word 分節符號】",
+      "detail": "換頁符號 (Page Break) 僅跳頁；必須使用『下一頁分節符號 (Section Break)』才能獨立設定不同頁碼格式與頁面方向。"
+    },
+    {
+      "point": "【金字塔標題法則】",
+      "detail": "嚴禁寫『第三季營業額』(名詞)；必須寫『Q3 營業額受惠新品爆增 25%，創歷史新高』(觀點結論句)。"
+    },
+    {
+      "point": "【RAG 切塊重疊率】",
+      "detail": "Chunk Overlap (通常設為 10~20%) 是為了防止句子或段落剛好在邊界被硬生生切斷，遺失上下文語意。"
+    },
+    {
+      "point": "【Human-in-the-Loop】",
+      "detail": "在財務撥款、法務簽核、對外正式發布等高風險環節，Agentic AI 必須設立審核門檻交由人類專家決策。"
+    }
+  ]
+}

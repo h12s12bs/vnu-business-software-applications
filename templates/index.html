@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>萬能科技大學 - 商業軟體應用 ✕ Agentic AI ✕ iPAS AI 應用規劃師 互動教學平台</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-brand">
+      <span class="brand-badge">萬能科大 11501</span>
+      <div>
+        <span class="brand-title">商業軟體應用</span>
+        <span class="brand-subtitle">✕ Agentic AI ✕ iPAS 考證</span>
+      </div>
+    </div>
+
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <button class="nav-tab-btn active" data-tab="orientation">📌 第一週導論</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-tab-btn" data-tab="curriculum">📅 18週進度地圖</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-tab-btn" data-tab="agents">🤖 Agentic AI 實戰沙盒</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-tab-btn" data-tab="ipas">🎯 iPAS 證照專區</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-tab-btn" data-tab="achievements">🏆 學習歷程與成就</button>
+      </li>
+      <li class="nav-item">
+        <button class="nav-tab-btn btn-presenter" data-tab="presenter">🖥️ 全螢幕授課簡報</button>
+      </li>
+    </ul>
+
+    <div class="nav-actions">
+      <div class="status-badge">
+        <div class="status-dot"></div>
+        <span id="networkStatusText">系統就緒</span>
+      </div>
+      <button class="btn-sm" onclick="updateStudentProfile()" style="background:rgba(255,255,255,0.15); color:#fff; border:none;" title="點擊切換學號姓名">
+        👤 <span id="studentDisplay">學生</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Viewport Content -->
+  <main class="main-content">
+
+    <!-- ============================================================= -->
+    <!-- SECTION 1: 第一週導論、個人介紹、教學方式與評分標準 (Orientation) -->
+    <!-- ============================================================= -->
+    <section id="sec-orientation" class="content-section active">
+      <div class="hero-banner">
+        <h1 class="hero-title">萬能科技大學《商業軟體應用》課程導論與規範</h1>
+        <p class="hero-subtitle">
+          以實用操作為核心，學習 <strong>辦公常用軟體 (Word / Excel / PowerPoint)</strong> 與 <strong>生成式 AI 輔助實作</strong>，按部就班提升職場文書、數據處理與簡報能力，並鼓勵考取經濟部 iPAS「AI 應用規劃師」證照加分！
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">🏫 進企管四系 1 甲</span>
+          <span class="hero-tag">📍 (J501) 企業經營模擬室</span>
+          <span class="hero-tag">⏰ 每週一 20:10 ~ 21:40</span>
+          <span class="hero-tag">🎯 鼓勵考取 iPAS 證照加分</span>
+        </div>
+      </div>
+
+      <!-- Instructor Profile & Teaching Methodology Grid -->
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">👨‍🏫 授課教師個人介紹 (Instructor Profile)</span>
+            <span class="card-badge">萬能科大 企管系</span>
+          </div>
+          <div id="instructorProfileBox">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">🎓 OBE 成果導向 4 階段教學進度進行方式</span>
+            <span class="card-badge">4 階段教學法</span>
+          </div>
+          <div id="obeStagesBox">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Grading Policy & Rubrics -->
+      <div class="card" style="margin-bottom: 28px;">
+        <div class="card-header">
+          <span class="card-title">📊 學期評分標準與規準 (Grading Criteria & Rubrics)</span>
+          <span class="card-badge">公平透明</span>
+        </div>
+        <div id="gradingPolicyBox">
+          <!-- Rendered by app.js -->
+        </div>
+        <div style="margin-top: 24px;">
+          <h4 style="font-size:16px; font-weight:800; color:var(--primary-navy); margin-bottom:8px;">
+            📋 期末專案成果評量規準詳細矩陣 (Rubric Matrix, 佔總成績 35%)
+          </h4>
+          <div id="rubricsTableBox">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SECTION 2: 18 週教學地圖與簡報連動 (Curriculum) -->
+    <!-- ============================================================= -->
+    <section id="sec-curriculum" class="content-section">
+      <div class="hero-banner" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 70%);">
+        <h2 class="hero-title">全學期 18 週全方位教學地圖與上機實作指引</h2>
+        <p class="hero-subtitle">
+          每週包含真實商業痛點 (Hook)、核心觀念 (Concept)、實機 SOP (Practice)、反思評量 (Wrap-up)、CLEAR 提示詞卡片與 iPAS 考點對標。點擊右上角按鈕即可一鍵播放 61 頁全螢幕授課簡報！
+        </p>
+        <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:14px;">
+          <button class="btn-sm module-filter-btn active" onclick="filterCurriculumModule('all', this)">全部 18 週</button>
+          <button class="btn-sm module-filter-btn" onclick="filterCurriculumModule('模組一', this)">模組一：AI 協作基礎 (1-2週)</button>
+          <button class="btn-sm module-filter-btn" onclick="filterCurriculumModule('模組二', this)">模組二：Word 商業文書 (3-6週)</button>
+          <button class="btn-sm module-filter-btn" onclick="filterCurriculumModule('模組三', this)">模組三：Excel 數據分析 (7-12週)</button>
+          <button class="btn-sm module-filter-btn" onclick="filterCurriculumModule('模組四', this)">模組四：PPT 提案簡報 (13-16週)</button>
+          <button class="btn-sm module-filter-btn" onclick="filterCurriculumModule('模組五', this)">模組五：綜合企業工作坊 (17-18週)</button>
+        </div>
+      </div>
+
+      <div id="weeklyCardsList">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SECTION 3: Agentic AI 商業實戰沙盒 (AI Studio) -->
+    <!-- ============================================================= -->
+    <section id="sec-agents" class="content-section">
+      <div class="hero-banner" style="background: linear-gradient(135deg, #0b1120 0%, #1e3a8a 60%, #065f46 100%);">
+        <h2 class="hero-title">🤖 Agentic AI 商業軟體應用實驗室 (Agentic AI Studio)</h2>
+        <p class="hero-subtitle">
+          親身體驗代理型 AI (Agentic AI) 在 Word 文書、Excel 數據分析、PowerPoint 簡報與跨軟體一條龍的工作流！觀察 Agent 如何自主拆解目標、呼叫外部 Tool Calling、執行 ReAct (Thought ➔ Action ➔ Observation) 推理與安全守衛。
+        </p>
+      </div>
+
+      <!-- Agent Template Selector -->
+      <h3 style="font-size:18px; font-weight:800; color:var(--primary-navy); margin-bottom:14px;">
+        請選擇要探索的 Agentic AI 商業實務範本：
+      </h3>
+      <div id="agentSelectorBox" class="agent-selector-grid">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Active Agent Details -->
+      <div id="activeAgentDetails">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- ReAct Terminal Simulator -->
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="term-btn term-close"></span>
+            <span class="term-btn term-min"></span>
+            <span class="term-btn term-max"></span>
+          </div>
+          <span class="terminal-title">Agentic AI ReAct Reasoning & Execution Terminal v2.4</span>
+          <span style="font-size:11px; color:#22c55e;">● RUNNING LOCAL</span>
+        </div>
+        <div class="terminal-body" id="reactTerminalBody">
+          <div style="color:#64748b; font-style:italic;">
+            請點擊上方「🚀 啟動 Agent 自主執行與推理」按鈕，即時觀看思考推理日誌 (Thought ➔ Action ➔ Observation ➔ Output)。
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Scenario Tester -->
+      <div class="card" style="margin-top:24px;">
+        <h4 style="font-size:16px; font-weight:800; color:var(--primary-navy); margin-bottom:8px;">
+          ✍️ 自訂商業流程任務模擬 (Custom Workflow Simulation)
+        </h4>
+        <p style="font-size:13.5px; color:#64748b; margin-bottom:12px;">
+          身為 AI 應用規劃師，您可以輸入任何商業辦公痛點，觀察系統如何自動為您規劃 Agentic 跨軟體協同流程。
+        </p>
+        <div style="display:flex; gap:12px;">
+          <input type="text" id="customScenarioInput" placeholder="例如：連鎖飲品店第三季銷售數據下滑，需要清洗資料、找出虧損品項，並產出給董事會的 8 頁改進提案簡報與演講講稿" style="flex:1; padding:12px 16px; border-radius:8px; border:1.5px solid var(--border-color); font-size:14px; outline:none;">
+          <button class="btn-sm btn-primary" style="padding:12px 24px; font-size:15px; font-weight:700;" onclick="runCustomScenarioSim()">
+            執行規劃模擬
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SECTION 4: iPAS AI 應用規劃師 證照專區與自我評量 (iPAS Zone) -->
+    <!-- ============================================================= -->
+    <section id="sec-ipas" class="content-section">
+      <div id="ipasIntroArea">
+        <div class="hero-banner" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #b45309 100%);">
+          <h2 class="hero-title">🎯 經濟部 iPAS「AI 應用規劃師」證照專區與自我評量</h2>
+          <p class="hero-subtitle">
+            結合課堂所學之商業軟體與 AI 實務觀念，提供經濟部 iPAS「AI 應用規劃師」證照考科介紹與自我評量題庫，支援隨堂練習、單元自主複習、期中 50 題自我檢測與期末 100 題綜合自我評量。鼓勵同學多元考證加分，提升職場就業競爭力！
+          </p>
+        </div>
+
+        <!-- 4 Exam Modes Selector -->
+        <h3 style="font-size:18px; font-weight:800; color:var(--primary-navy); margin-bottom:14px;">
+          請選擇測驗與自我評量模式：
+        </h3>
+        <div class="quiz-mode-selector">
+          <div class="quiz-mode-card" onclick="startExamMode('weekly_5')">
+            <div class="quiz-mode-icon">⚡</div>
+            <div class="quiz-mode-title">每週隨堂 5 題快測</div>
+            <div class="quiz-mode-desc">快速驗收特定週次的 5 題核心觀念，限時 10 分鐘</div>
+          </div>
+          <div class="quiz-mode-card" onclick="startExamMode('chapter')">
+            <div class="quiz-mode-icon">📚</div>
+            <div class="quiz-mode-title">單元模組自主練習</div>
+            <div class="quiz-mode-desc">自選 Word、Excel、PPT 或 Agentic AI 專題鞏固觀念</div>
+          </div>
+          <div class="quiz-mode-card" onclick="startExamMode('midterm_50')">
+            <div class="quiz-mode-icon">⏱️</div>
+            <div class="quiz-mode-title">期中 50 題自我檢測</div>
+            <div class="quiz-mode-desc">涵蓋前半段 1~9 週重點觀念，限時 60 分鐘，自我驗收</div>
+          </div>
+          <div class="quiz-mode-card" onclick="startExamMode('final_100')">
+            <div class="quiz-mode-icon">🏆</div>
+            <div class="quiz-mode-title">期末 100 題綜合自我評量</div>
+            <div class="quiz-mode-desc">涵蓋全學期 18 週重點觀念，限時 100 分鐘，自我總驗收</div>
+          </div>
+        </div>
+
+        <!-- Guide & Cheatsheet Content -->
+        <div id="ipasGuideContent">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <!-- Exam Active Testing Screen -->
+      <div id="ipasExamArea" style="display:none;">
+        <div class="exam-layout">
+          <div id="activeQuestionContainer">
+            <!-- Active Question Card rendered by app.js -->
+          </div>
+          <div class="exam-sidebar">
+            <div style="font-size:12px; font-weight:700; color:var(--text-muted); margin-bottom:6px;">剩餘作答時間</div>
+            <div class="timer-box" id="examTimerDisplay">00:00</div>
+            <div style="font-size:14px; font-weight:800; color:var(--primary-navy); margin-bottom:8px;" id="examTitleDisplay">
+              自我評量進行中
+            </div>
+            <div style="font-size:12px; color:#64748b; margin-bottom:10px;">題號導航盤：</div>
+            <div class="q-nav-grid" id="examNavGrid">
+              <!-- Number buttons -->
+            </div>
+            <button class="btn-block btn-sm btn-amber" onclick="submitCurrentExam()" style="margin-top:10px;">
+              ✅ 完成送出交卷
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam Result Report Screen -->
+      <div id="ipasResultArea" style="display:none;">
+        <!-- Rendered by app.js -->
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SECTION 5: 學習歷程、榮譽勳章與錯題本 (Achievements) -->
+    <!-- ============================================================= -->
+    <section id="sec-achievements" class="content-section">
+      <div class="hero-banner" style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 60%, #4338ca 100%);">
+        <h2 class="hero-title">🏆 學習歷程、榮譽勳章與個人錯題筆記本</h2>
+        <p class="hero-subtitle">
+          持續累積商管軟體與 Agentic AI 專業能力，解鎖專屬成就勳章，並利用錯題筆記本一鍵重練，保證考取 iPAS 認證！
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom:24px;">
+        <div class="card-header">
+          <span class="card-title">🎖️ 8 大商管 AI 榮譽成就勳章</span>
+          <span class="card-badge">學習徽章</span>
+        </div>
+        <div id="badgesGrid" class="grid-4">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">📖 個人專屬錯題筆記本 (Mistake Notebook)</span>
+          <span class="card-badge">智慧複習</span>
+        </div>
+        <div id="mistakeNotebookBox">
+          <!-- Rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================= -->
+  <!-- FULLSCREEN SLIDE PRESENTER OVERLAY (整合 18 週 1,098 頁投影片) -->
+  <!-- ============================================================= -->
+  <div id="slidesPresenterOverlay" class="presenter-container">
+    <div class="presenter-header">
+      <div style="display:flex; align-items:center; gap:12px;">
+        <span style="background:var(--accent-amber); font-weight:900; padding:4px 8px; border-radius:4px; font-size:13px;">萬能科大 11501</span>
+        <select id="presenterWeekSelect" onchange="onPresenterWeekChange()" style="background:#1e293b; color:#fff; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:14px; font-weight:600; cursor:pointer;">
+          <!-- Options populated by app.js -->
+        </select>
+        <span class="status-badge" id="presenterCounter">1 / 61</span>
+      </div>
+
+      <div style="display:flex; align-items:center; gap:8px;">
+        <button class="btn-sm" onclick="prevPresenterSlide()" title="上一頁 (←)">◀ 上一頁</button>
+        <button class="btn-sm btn-primary" onclick="nextPresenterSlide()" title="下一頁 (Space/→)">下一頁 ▶</button>
+        <button class="btn-sm" onclick="togglePresenterSpeakerNotes()" title="演講者備忘稿 (N)">📝 講稿 (N)</button>
+        <button class="btn-sm" onclick="togglePresenterFullscreen()" title="全螢幕切換 (F)">⛶ 全螢幕 (F)</button>
+        <button class="btn-sm btn-amber" onclick="closeSlidePresenter()" title="返回平台 (Esc)">✖ 結束放映</button>
+      </div>
+    </div>
+
+    <div class="presenter-stage">
+      <div id="slideStageCanvas" class="slide-canvas">
+        <!-- Active Slide Content dynamically rendered by app.js -->
+      </div>
+    </div>
+
+    <!-- Bottom Speaker Notes Drawer -->
+    <div id="presenterNotesDrawer" style="display:none; background:#0f172a; color:#cbd5e1; border-top:2px solid var(--accent-amber); padding:16px 28px; max-height:160px; overflow-y:auto; font-size:15px; line-height:1.6;">
+      <strong style="color:var(--accent-gold); display:block; margin-bottom:4px;">🎙️ 演講者授課備忘稿 (Speaker Note)：</strong>
+      <div id="speakerNotesText">本頁尚無演講者備忘稿。</div>
+    </div>
+  </div>
+
+  <!-- Platform Footer -->
+  <footer class="platform-footer">
+    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">
+      <div>
+        <strong>萬能科技大學 企業管理系</strong> ｜ 商業軟體應用 (H0910004) 11501學期  
+        <br>
+        授課教師：<a href="mailto:jimchiu@mail.vnu.edu.tw">邱俊維 博士 (Dr. Chun-Wei Chiu)</a> ｜ 研究室：育英樓 J801-1
+      </div>
+      <div>
+        鼓勵考證加分：經濟部 iPAS「AI 應用規劃師」專業能力鑑定 ｜ CERPS「ERP 規劃師」
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/slides_data.js"></script>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
