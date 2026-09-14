@@ -1445,47 +1445,124 @@ function renderPresenterSlide() {
   if (slide.type === 'title') {
     bodyContent = `
       <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:48px 36px;">
-        <span class="badge-pill" style="font-size:20px; font-weight:800; padding:6px 18px; margin-bottom:20px; background:#d97706; color:#ffffff;">${slide.badge}</span>
+        <span class="badge-pill" style="font-size:20px; font-weight:800; padding:6px 18px; margin-bottom:20px; background:#d97706; color:#ffffff;">${slide.badge || '課程單元'}</span>
         <h1 style="font-size:${heroTitleSize}px; font-weight:900; color:#1e3a8a; margin-bottom:24px; line-height:1.25; letter-spacing:-0.5px;">${slide.title}</h1>
-        <div style="font-size:${subSize}px; color:#334155; max-width:1150px; white-space:pre-line; line-height:1.6; font-weight:600;">${slide.subtitle}</div>
+        <div style="font-size:${subSize}px; color:#334155; max-width:1150px; white-space:pre-line; line-height:1.6; font-weight:600;">${slide.subtitle || ''}</div>
       </div>
     `;
-  } else if (slide.type === 'step') {
+  } else if (slide.type === 'prompt') {
     bodyContent = `
       <div style="display:flex; flex-direction:column; height:100%;">
         <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
           <div>
-            <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge}</span>
+            <span class="badge-pill" style="background:#0284c7; font-size:16px; font-weight:700;">${slide.badge || '實戰 Prompt 模板'}</span>
             <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
-            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle}</div>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || '請點擊複製按鈕，貼入免費版 AI 對話視窗'}</div>
           </div>
-          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
         </div>
         <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 2fr 1fr; gap:24px; align-items:stretch; overflow-y:auto;">
-          <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid #1e3a8a; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-            <h3 style="color:#1e3a8a; font-size:${cardTitleSize}px; font-weight:900; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-              <span>📋</span> 動作 SOP 標準步驟
-            </h3>
-            <div style="font-size:${baseSize}px; color:#0f172a; line-height:1.7; font-weight:500;">${slide.step_desc}</div>
+          <div style="background:#0f172a; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid #334155; padding-bottom:10px;">
+              <div style="display:flex; gap:6px; align-items:center;">
+                <span style="width:12px; height:12px; border-radius:50%; background:#ef4444; display:inline-block;"></span>
+                <span style="width:12px; height:12px; border-radius:50%; background:#f59e0b; display:inline-block;"></span>
+                <span style="width:12px; height:12px; border-radius:50%; background:#10b981; display:inline-block;"></span>
+                <span style="color:#94a3b8; font-size:14px; font-weight:700; margin-left:10px;">PROMPT TEMPLATE</span>
+              </div>
+              <button class="btn-sm" onclick="copyPresenterPromptText()" style="background:#0284c7; color:#fff; border:none; padding:6px 16px; font-size:14px; font-weight:700; border-radius:6px; cursor:pointer;">
+                <i class="fas fa-copy"></i> 一鍵複製提示詞
+              </button>
+            </div>
+            ${slide.prompt_role ? `
+              <div style="margin-bottom:12px;">
+                <span style="background:#1e293b; color:#38bdf8; border:1px solid #0284c7; font-size:14px; font-weight:700; padding:4px 10px; border-radius:6px;">
+                  🎭 設定專家角色：${slide.prompt_role}
+                </span>
+              </div>
+            ` : ''}
+            <pre id="activePresenterPrompt" style="flex:1; color:#f8fafc; font-family:Consolas, Monaco, 'Courier New', monospace; font-size:${baseSize - 4}px; line-height:1.7; white-space:pre-wrap; margin:0; overflow-y:auto;">${slide.prompt_text || slide.prompt || ''}</pre>
           </div>
-          <div style="background:#fffbeb; border:2px solid #fde68a; border-top:8px solid #d97706; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
-            <h3 style="color:#d97706; font-size:${cardTitleSize}px; font-weight:900; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
-              <span>💡</span> 關鍵眉角與秘訣
-            </h3>
-            <div style="font-size:${baseSize - 2}px; color:#334155; line-height:1.65; font-weight:500;">${slide.step_tip}</div>
+          <div style="display:flex; flex-direction:column; gap:16px;">
+            <div style="background:#f0fdf4; border:2px solid #86efac; border-top:6px solid #16a34a; border-radius:12px; padding:20px; flex:1;">
+              <h3 style="color:#166534; font-size:${cardTitleSize}px; font-weight:800; margin-bottom:10px;">
+                💡 CLEAR 提問架構解析
+              </h3>
+              <div style="font-size:${baseSize - 4}px; color:#14532d; line-height:1.7;">
+                <div style="margin-bottom:8px;">• <strong>C (背景)</strong>：交代專案情境與目標受眾</div>
+                <div style="margin-bottom:8px;">• <strong>L (限制)</strong>：限定格式、條列排版與字數</div>
+                <div style="margin-bottom:8px;">• <strong>E (期望)</strong>：指名需要案由、表格與負責人</div>
+                <div style="margin-bottom:8px;">• <strong>A (行動)</strong>：使用明確專業動詞【整理/編排】</div>
+                <div>• <strong>R (角色)</strong>：設定辦公室資深特助或專業顧問</div>
+              </div>
+            </div>
+            <div style="background:#eff6ff; border:2px solid #bfdbfe; border-top:6px solid #2563eb; border-radius:12px; padding:18px;">
+              <div style="font-size:14px; font-weight:700; color:#1e40af; margin-bottom:6px;">
+                📌 課堂提問操作技巧
+              </div>
+              <div style="font-size:${baseSize - 6}px; color:#1e3a8a; line-height:1.5;">
+                點擊上方【一鍵複製提示詞】後，切換至免費版 Antigravity 或 Google Gemini，直接按 Ctrl+V 貼上即可開始生成！
+              </div>
+            </div>
           </div>
         </div>
       </div>
     `;
-  } else {
-    // General Cards Layout
-    const cardsHtml = (slide.cards || []).map(c => `
-      <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid ${c.theme === 'amber' ? '#d97706' : c.theme === 'emerald' ? '#059669' : '#1e3a8a'}; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+  } else if (slide.type === 'sop' || slide.type === 'step') {
+    bodyContent = `
+      <div style="display:flex; flex-direction:column; height:100%;">
+        <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
+          <div>
+            <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge || '操作 SOP'}</span>
+            <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
+          </div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
+        </div>
+        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: ${slide.diagram_html ? '1.2fr 1fr' : '2fr 1fr'}; gap:24px; align-items:stretch; overflow-y:auto;">
+          <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid #1e3a8a; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04); display:flex; flex-direction:column;">
+            <div style="display:flex; align-items:center; gap:12px; margin-bottom:16px;">
+              <span style="width:42px; height:42px; border-radius:50%; background:#1e3a8a; color:#fff; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:20px;">
+                ${slide.step_num || 'SOP'}
+              </span>
+              <h3 style="color:#1e3a8a; font-size:${cardTitleSize}px; font-weight:900; margin:0;">
+                ${slide.step_title || slide.title}
+              </h3>
+            </div>
+            <div style="font-size:${baseSize}px; color:#0f172a; line-height:1.75; font-weight:500; flex:1;">
+              ${slide.step_desc || ''}
+            </div>
+            ${slide.step_tip ? `
+              <div style="margin-top:16px; background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #d97706; padding:12px 16px; border-radius:6px; font-size:${baseSize - 4}px; color:#92400e; line-height:1.6;">
+                <strong>💡 操作指引：</strong> ${slide.step_tip}
+              </div>
+            ` : ''}
+          </div>
+          ${slide.diagram_html ? `
+            <div style="background:#f8fafc; border:2px solid #cbd5e1; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:center; align-items:center; overflow:hidden;">
+              ${slide.diagram_html}
+            </div>
+          ` : `
+            <div style="background:#fffbeb; border:2px solid #fde68a; border-top:8px solid #d97706; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+              <h3 style="color:#d97706; font-size:${cardTitleSize}px; font-weight:900; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+                <span>💡</span> 關鍵提醒與操作要點
+              </h3>
+              <div style="font-size:${baseSize - 2}px; color:#334155; line-height:1.7; font-weight:500;">
+                ${slide.step_tip || '依照步驟指示在 Cloud Shell 終端機或 VS Code 編輯器中實施，如有疑問請隨時向老師提問。'}
+              </div>
+            </div>
+          `}
+        </div>
+      </div>
+    `;
+  } else if (slide.type === 'comparison') {
+    const cardsHtml = (slide.cards || []).map((c, i) => `
+      <div style="background:#ffffff; border:2px solid ${c.theme === 'emerald' ? '#86efac' : '#cbd5e1'}; border-top:8px solid ${c.theme === 'emerald' ? '#059669' : '#e11d48'}; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
         <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
           <span style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a;">${c.title}</span>
-          <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:#e2e8f0; color:#334155;">${c.tag || '重點'}</span>
+          <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:${c.theme === 'emerald' ? '#d1fae5' : '#fee2e2'}; color:${c.theme === 'emerald' ? '#065f46' : '#991b1b'};">${c.tag || '對照'}</span>
         </div>
-        <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.65; flex:1; font-weight:500;">${c.content || c.desc || ''}</div>
+        <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.7; flex:1; font-weight:500; white-space:pre-line;">${c.content || c.desc || ''}</div>
       </div>
     `).join('');
 
@@ -1493,17 +1570,131 @@ function renderPresenterSlide() {
       <div style="display:flex; flex-direction:column; height:100%;">
         <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
           <div>
-            <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge}</span>
+            <span class="badge-pill" style="background:#059669; font-size:16px; font-weight:700;">${slide.badge || '模式對比'}</span>
             <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
-            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle}</div>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
           </div>
-          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
+        </div>
+        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap:24px; align-items:stretch; overflow-y:auto;">
+          ${cardsHtml}
+        </div>
+      </div>
+    `;
+  } else if (slide.type === 'debug') {
+    const cardsHtml = (slide.cards || []).map(c => `
+      <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid ${c.theme === 'rose' ? '#e11d48' : c.theme === 'amber' ? '#d97706' : '#2563eb'}; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+          <span style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a;">${c.title}</span>
+          <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:#e2e8f0; color:#334155;">${c.tag || '說明'}</span>
+        </div>
+        <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.7; flex:1; font-weight:500;">${c.content || c.desc || ''}</div>
+      </div>
+    `).join('');
+
+    bodyContent = `
+      <div style="display:flex; flex-direction:column; height:100%;">
+        <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
+          <div>
+            <span class="badge-pill" style="background:#dc2626; font-size:16px; font-weight:700;">${slide.badge || '常見問題排解'}</span>
+            <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
+          </div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
         </div>
         <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:24px; align-items:stretch; overflow-y:auto;">
           ${cardsHtml}
         </div>
       </div>
     `;
+  } else if (slide.type === 'drill') {
+    const cardsHtml = (slide.cards || []).map(c => `
+      <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid #0284c7; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+          <span style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a;">${c.title}</span>
+          <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:#e0f2fe; color:#0369a1;">${c.tag || '實作'}</span>
+        </div>
+        <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.7; flex:1; font-weight:500;">${c.content || c.desc || ''}</div>
+      </div>
+    `).join('');
+
+    bodyContent = `
+      <div style="display:flex; flex-direction:column; height:100%;">
+        <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
+          <div>
+            <span class="badge-pill" style="background:#0284c7; font-size:16px; font-weight:700;">${slide.badge || '隨堂實作演練'}</span>
+            <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
+          </div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
+        </div>
+        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:24px; align-items:stretch; overflow-y:auto;">
+          ${cardsHtml}
+        </div>
+      </div>
+    `;
+  } else {
+    // General Cards Layout with optional Diagram HTML support
+    const cards = slide.cards || [];
+    let cardsHtml = '';
+    if (cards.length > 0) {
+      cardsHtml = cards.map(c => `
+        <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid ${c.theme === 'amber' ? '#d97706' : c.theme === 'emerald' ? '#059669' : '#1e3a8a'}; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <span style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a;">${c.title}</span>
+            <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:#e2e8f0; color:#334155;">${c.tag || '重點'}</span>
+          </div>
+          <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.7; flex:1; font-weight:500;">${c.content || c.desc || ''}</div>
+        </div>
+      `).join('');
+    } else {
+      // Fallback if cards is empty
+      cardsHtml = `
+        <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid #1e3a8a; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+          <div style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a; margin-bottom:12px;">核心要點說明</div>
+          <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.7; font-weight:500;">${slide.subtitle || '請依循教師現場說明進行學習與操作。'}</div>
+        </div>
+      `;
+    }
+
+    if (slide.diagram_html) {
+      bodyContent = `
+        <div style="display:flex; flex-direction:column; height:100%;">
+          <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
+            <div>
+              <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge || '核心觀念'}</span>
+              <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+              <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
+            </div>
+            <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
+          </div>
+          <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 1.2fr 1fr; gap:24px; align-items:stretch; overflow-y:auto;">
+            <div style="background:#f8fafc; border:2px solid #cbd5e1; border-radius:12px; padding:20px; display:flex; flex-direction:column; justify-content:center; align-items:center; overflow:hidden;">
+              ${slide.diagram_html}
+            </div>
+            <div style="display:flex; flex-direction:column; gap:16px;">
+              ${cardsHtml}
+            </div>
+          </div>
+        </div>
+      `;
+    } else {
+      bodyContent = `
+        <div style="display:flex; flex-direction:column; height:100%;">
+          <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
+            <div>
+              <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge || '核心觀念'}</span>
+              <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+              <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle || ''}</div>
+            </div>
+            <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
+          </div>
+          <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:24px; align-items:stretch; overflow-y:auto;">
+            ${cardsHtml}
+          </div>
+        </div>
+      `;
+    }
   }
 
   stage.innerHTML = bodyContent;
@@ -1514,6 +1705,15 @@ function renderPresenterSlide() {
     notesText.textContent = slide.speaker_note || "本頁尚無演講者備忘稿。";
   }
 }
+
+function copyPresenterPromptText() {
+  const el = document.getElementById('activePresenterPrompt');
+  if (el) {
+    copyTextToClipboard(el.innerText, "提示詞已成功複製到剪貼簿！可直接貼給 AI 使用。");
+  }
+}
+window.copyPresenterPromptText = copyPresenterPromptText;
+
 
 function changePresenterFontSize(delta) {
   state.presenter.fontSizeOffset = (state.presenter.fontSizeOffset || 0) + delta;

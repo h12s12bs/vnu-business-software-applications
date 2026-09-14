@@ -1,6 +1,6 @@
 {
-  "title": "萬能科技大學 商業軟體應用 ── Vibe Coding ✕ Agentic AI 智慧辦公操作指南",
-  "subtitle": "進修部企管系專屬！零程式負擔、雲端永續防還原，用自然語言意圖驅動 Word、Excel、PPT 與財報分析",
+  "title": "萬能科技大學 商業軟體應用 ── Vibe Coding ✕ 雲端智慧辦公操作手冊",
+  "subtitle": "進修部企管系專屬！以 Google Cloud Shell 建立永續雲端環境，用自然語言意圖輔助常用辦公軟體實務",
   "course_info": {
     "course": "商業軟體應用 (Business Software Applications)",
     "semester": "115 學年度第 1 學期 (11501)",
@@ -13,163 +13,147 @@
     {
       "id": "sec-01",
       "num": "一",
-      "title": "電腦教室還原卡防禦架構：為什麼全面採用 Google Cloud 雲端永續環境？",
-      "icon": "fas fa-shield-alt",
+      "title": "電腦教室環境特性與 Google 雲端永續方案",
+      "icon": "fas fa-cloud",
       "content": [
         {
-          "heading": "1. 電腦教室痛點：重開機自動還原（Deep Freeze / 還原卡機制）",
-          "text": "J501 電腦教室為維護系統乾淨與資安，配備硬體還原卡。每當下課或重新開機，本機 C 槽與桌面安裝的 Python、VS Code、未存檔的 Word/Excel 都會瞬間被徹底清空！下週上課又得重裝，造成學習挫折。"
+          "heading": "1. 電腦教室環境保護機制說明",
+          "text": "J501 電腦教室配備硬體還原保護功能，以維持每班同學上課環境乾淨。每次關機重開機後，本機 C 槽與桌面上新增的檔案與安裝軟體都會恢復初始狀態。"
         },
         {
-          "heading": "2. 終極解方：Google Cloud Shell 5GB 永續雲端工作站",
-          "text": "每位同學只要擁有 Google 帳號，即可免費開通 Google Cloud Shell (shell.cloud.google.com)。內建 5GB 永久雲端個人硬碟 ($HOME)，預裝 Python、pip、Git 與 Linux 工具，更直接提供完整的線上網頁版 VS Code (Cloud Shell Editor)。不管教室電腦怎麼重開機，雲端環境永遠保存！"
+          "heading": "2. 免安裝雲端解方：Google Cloud Shell 5GB 永續空間",
+          "text": "每位同學透過個人 Google 帳號即可免費啟用 Google Cloud Shell (shell.cloud.google.com)。內建 5GB 個人專屬硬碟 ($HOME)，預裝 Python、Git，並提供線上網頁版 VS Code 編輯器。下課關機或換電腦，檔案皆安全保存在雲端。"
         },
         {
-          "heading": "3. 四合一雲端協同生態圈：下課無縫切換、資料永不遺失",
-          "text": "① Google Cloud Shell：雲端終端機與 VS Code 程式開發\n② Google Colab：線上即時執行 Python 資料處理並雙向存取 Google 雲端硬碟\n③ GitHub / GitHub Pages：雲端作業庫版本控制與網頁全球發布\n④ 本課程教學平台：Google 登入結合 Firebase 雲端資料庫，上傳即存檔、隨時可調閱。"
+          "heading": "3. 雲端學習環境協同體系",
+          "text": "① Google Cloud Shell：雲端終端機與網頁版 VS Code 檔案編輯\n② Google Drive ＆ Colab：線上資料試算與儲存\n③ GitHub：個人專案作業雲端版本保管\n④ 課程互動平台：Google 登入結合 Firebase，做題與作業即時備份。"
         }
       ]
     },
     {
       "id": "sec-02",
       "num": "二",
-      "title": "第 01 週必做清單：帳號開通與環境設定 SOP",
+      "title": "第 01 週環境建置與帳號開通 SOP",
       "icon": "fas fa-tasks",
       "content": [
         {
-          "heading": "步驟 1：啟用 Google 學校或個人帳號並登入課程平台",
-          "text": "使用 Chrome 瀏覽器登入你的 Google 帳號，點擊本教學平台右上角「Google 登入」，完成學號與姓名綁定，日後上課所有隨堂練習與作業自動上傳至雲端 Firebase。"
+          "heading": "步驟 1：登入 Google 帳號並連結課程平台",
+          "text": "開啟 Chrome 瀏覽器登入個人 Google 帳號，點擊本教學平台右上角「Google 登入」，完成學號與姓名登記，課堂練習成績自動同步至雲端。"
         },
         {
-          "heading": "步驟 2：一鍵開通 Google Cloud Shell 雲端主機",
-          "text": "網址輸入 shell.cloud.google.com，點擊「繼續」。稍待 20 秒即開通一台專屬你的 Linux 虛擬機，內含 5GB 永久儲存空間與 Web 版 VS Code 編輯器，完全免在教室電腦安裝任何軟體！"
+          "heading": "步驟 2：一鍵開通 Google Cloud Shell 雲端工作站",
+          "text": "輸入 shell.cloud.google.com 點擊繼續，系統將在 20 秒內配置一台專屬 Linux 虛擬工作站，包含 5GB 永久空間與網頁版 VS Code 編輯器。"
         },
         {
-          "heading": "步驟 3：註冊 GitHub 帳號並熟悉雲端儲存庫",
-          "text": "前往 github.com 註冊免費帳號（建議帳號包含學號或英文字母），日後繳交 HTML 一頁式報表或程式專案時，直接託管於 GitHub Pages 產生公開檢視網址。"
+          "heading": "步驟 3：註冊 GitHub 帳號",
+          "text": "前往 github.com 註冊免費個人帳號，未來可將產出的報表網頁託管於 GitHub Pages 產生專屬檢視網址。"
         },
         {
-          "heading": "步驟 4：認識與配置 Antigravity / Gemini 免費 AI 工具",
-          "text": "掌握 Google AI Studio (aistudio.google.com) 免費 API Key 申請，或在瀏覽器直接使用 Gemini / Antigravity 免費版作為日常商業文書助理。"
+          "heading": "步驟 4：建立個人作業目錄與測試工具",
+          "text": "在 Cloud Shell 終端機輸入 mkdir -p ~/vnu_business_software/week01，確認工作目錄就緒。"
         }
       ]
     },
     {
       "id": "sec-03",
       "num": "三",
-      "title": "什麼是 Vibe Coding？企管系同學以自然語言指揮 AI 辦公",
-      "icon": "fas fa-brain",
+      "title": "什麼是 Vibe Coding？企管系同學的商業優勢",
+      "icon": "fas fa-lightbulb",
       "content": [
         {
-          "heading": "1. Vibe Coding（氛圍與意圖驅動編程）核心哲學",
-          "text": "由前特斯拉 AI 總監、OpenAI 創始成員 Andrej Karpathy 於 2025 年提出。其核心在於：商管與進修部同學不用痛苦背誦艱深語法，你的核心價值是『商業意圖指揮官』！只要清楚描述業務情境、數據需求與版面規格，繁瑣的代碼與格式排版交給 AI 實現。"
+          "heading": "1. Vibe Coding（意圖導向協作）理念",
+          "text": "由 Andrej Karpathy 於 2025 年提出。其精神在於商管同學無需花費大量時間記憶繁雜代碼，你的核心是「商業專案經理」！以清晰自然語言表達業務情境、欄位規格與格式要求，程式碼與排版由 AI 協助起草。"
         },
         {
-          "heading": "2. 企管系同學不可取代的商業核心優勢",
-          "text": "① 商業洞察力：看出財報中的毛利率下滑與營收警訊\n② 流程標準化思維：把混亂的公文與數據整理為三線表與標準報表\n③ 品質驗收眼光：一眼辨識 AI 是精準分析還是『胡言亂語 (幻覺)』。"
+          "heading": "2. 企管系同學的核心優勢",
+          "text": "① 商業情境敏感度：能指出真實工作流程問題\n② 規範化整理思維：能將零碎資訊轉化為標準三線表格與層次清單\n③ 品質驗收眼光：能仔細核算 AI 產出數據與公文格式是否符合規範。"
         }
       ]
     },
     {
       "id": "sec-04",
       "num": "四",
-      "title": "Agentic AI 辦公自動化架構：從線上 Word 與公開財報 CSV 到 10 頁商務 PPT",
-      "icon": "fas fa-network-wired",
-      "content": [
+      "title": "商務提問黃金法則：CLEAR 提示詞框架",
+      "icon": "fas fa-magic",
+      "table_headers": [
+        "要素",
+        "英文含義",
+        "實戰說明",
+        "課堂實務示範 (會議紀錄整理)"
+      ],
+      "clear_framework": [
         {
-          "heading": "1. 什麼是 Agentic AI（智能體協同工作流程）？",
-          "text": "傳統單次問答 AI 只能給零碎文字；Agentic AI 具備「感知 ➔ 思考 ➔ 調用工具 ➔ 反思 ➔ 產出交付物」(ReAct 循環)。它能自主串聯 Word、Excel 與 PowerPoint，完成整套端到端專案！"
+          "letter": "C",
+          "name": "Context（背景）",
+          "desc": "交代商業背景與專案情境",
+          "example": "我們是企業管理部門，剛結束每週門市營運例行會議。"
         },
         {
-          "heading": "2. 本課程旗艦實務管線：Word + Excel ➔ 10 頁執行長 PPT",
-          "text": "① 輸入端：下載公開資訊觀測站 (MOPS) 上市公司財報 CSV 與線上企劃文件草案。\n② Excel Agent：自動清洗空白與格式，以公式計算毛利率、營業利益率、YoY 與 EPS。\n③ Word Agent：依循大標題、次標題、規範三線表輸出結構化經營分析備忘錄。\n④ PPT Agent：萃取關鍵洞察，自動建構 10 頁符合高階主管閱覽的高對比商務簡報！"
+          "letter": "L",
+          "name": "Limits（限制）",
+          "desc": "給予字數、格式、表格與排除條件",
+          "example": "繁體中文；整理為 Markdown 表格；不可自行捏造未提及的事項。"
+        },
+        {
+          "letter": "E",
+          "name": "Expectation（期望）",
+          "desc": "具體指出最終希望交付的產出項目",
+          "example": "包含：1. 會議核心摘要；2. 待辦工作追蹤表（案由、決議、負責人、完成期限）。"
+        },
+        {
+          "letter": "A",
+          "name": "Action（行動）",
+          "desc": "使用明確且具指向性的專業動詞",
+          "example": "請為我【整理並條列】以下逐字稿對話，轉為正式公文會議紀錄。"
+        },
+        {
+          "letter": "R",
+          "name": "Role（角色）",
+          "desc": "指定 AI 扮演的專業專家身分",
+          "example": "假設你是具備 10 年經驗的總經理室資深行政特助。"
         }
       ]
     },
     {
       "id": "sec-05",
       "num": "五",
-      "title": "商務提問黃金法則：CLEAR 提示詞框架實戰範例",
-      "icon": "fas fa-magic",
-      "table_headers": [
-        "要素",
-        "英文含義",
-        "實戰說明",
-        "商軟實戰示範 (財報轉 PPT)"
-      ],
-      "clear_framework": [
-        {
-          "letter": "C",
-          "name": "Context（背景）",
-          "desc": "交代商業背景、公司規模與目標對象",
-          "example": "我們是企業總管理處特助，正在為董事長準備『2024-2025 連鎖零售業經營績效與轉型規劃』簡報。"
-        },
-        {
-          "letter": "L",
-          "name": "Limits（限制）",
-          "desc": "給予格式、頁數、風格、字體大小與排除事項",
-          "example": "投影片嚴格限制為 10 頁；使用 16:9 寬螢幕；文字字體為微軟正黑體且標題至少 36pt、內文至少 24pt；杜絕無意義套話。"
-        },
-        {
-          "letter": "E",
-          "name": "Expectation（期望）",
-          "desc": "具體指定每一頁的結構與產出細節",
-          "example": "產出包含：每頁標題、3 大條列核心結論、對應之數據表格或圖表建議，以及每頁 100 字演講者備忘稿 (Speaker Notes)。"
-        },
-        {
-          "letter": "A",
-          "name": "Action（行動）",
-          "desc": "使用明確且具指向性的專業動詞",
-          "example": "請解析附帶之 MOPS 損益表 CSV 數據，計算毛利率與 YoY，並整合線上 Word 策略草案，【撰寫並生成】完整簡報大綱與講稿。"
-        },
-        {
-          "letter": "R",
-          "name": "Role（角色）",
-          "desc": "指定 AI 扮演的專業專家身分",
-          "example": "你是一位具備 15 年上市公司財務長 (CFO) 與麥肯錫商業策略顧問經驗的 Agentic AI 辦公專家。"
-        }
+      "title": "GitHub 雲端儲存與靜態發布指引",
+      "icon": "fab fa-github",
+      "steps": [
+        "1. 登入 GitHub 點擊右上角 [+] ➔ [New repository]，命名儲存庫（如 vnu-business-report），設為 Public。",
+        "2. 點擊 [Add file] ➔ [Upload files]，將網頁檔案命名為 index.html（必須全小寫）並拖曳上傳。",
+        "3. 進入儲存庫 [Settings] ➔ 左側欄點選 [Pages] ➔ Branch 選擇 main，目錄選擇 / (root)，點擊 [Save]。",
+        "4. 稍候約 1 分鐘，重新整理即可產生專屬公開網址：https://<你的帳號>.github.io/<專案名>/。"
       ]
     },
     {
       "id": "sec-06",
       "num": "六",
-      "title": "GitHub Pages 30 秒免費全球上線指引（作品集雲端履歷）",
-      "icon": "fab fa-github",
-      "steps": [
-        "1. 登入 GitHub 點擊右上角 [+] ➔ [New repository]，設定名稱（如 vnu-office-report），設為 Public。",
-        "2. 點擊 [Add file] ➔ [Upload files]，將產出的報表網頁命名為 index.html（必須全小寫）並拖曳上傳。",
-        "3. 進入儲存庫 [Settings] ➔ 左側欄點選 [Pages] ➔ Branch 選擇 main，目錄選擇 / (root)，點擊 [Save]。",
-        "4. 稍候 30~60 秒，重新整理即產生專屬公開網址：https://<帳號>.github.io/<專案名>/，即可在任何手機或電腦打開！"
-      ]
+      "title": "課堂 5 分鐘示範：雜亂口語紀錄轉為正式會議紀錄",
+      "icon": "fas fa-desktop",
+      "demo_prompt": "【角色】：假設你是總經理室資深特助。\n【背景】：部門剛結束門市營運會議，現場討論對話較為零碎雜亂。\n【任務】：請將以下口語對話整理成正式的商業會議紀錄：\n1. 會議核心摘要（3 點條列說明）。\n2. 待辦工作追蹤表（包含欄位：項次、決議事項、主辦人員、協辦人員、預計完成日期）。\n3. 提醒主管後續追蹤之注意事項（2 點）。\n【限制】：使用繁體中文，格式工整清爽，未在對話中提及的日期請標示「待確認」。\n【原始對話紀錄】：\n店長阿明說下週一前要向總部回報冷氣故障報修，小美說排班表週三會交給我看，大華提到中秋禮盒DM印好了但還沒分送到各門市，預計週五前要由工讀生完成配送，另外大家都覺得目前每週會議時間太長，建議下次改為30分鐘。"
     },
     {
       "id": "sec-07",
       "num": "七",
-      "title": "教師 5 分鐘 Live Demo 示範劇本：從公開財報 CSV 到 10 頁執行長 PPT",
-      "icon": "fas fa-desktop",
-      "demo_prompt": "你是一位資深商業策略顧問與財務長特助。請根據以下連鎖超商零售業近三年財報數據（2022-2024 營收、毛利、營業利益、EPS）以及線上轉型草案，為董事會規劃一份【10 頁高階決策簡報架構與講稿】：\n1. 投影片 10 頁固定結構：\n   - Slide 1: 封面（標題、副標題、報告人與日期）\n   - Slide 2: 執行摘要（三大核心營運亮點與風險預警）\n   - Slide 3: 營收與獲利三年趨勢解析（含 YoY 成長率）\n   - Slide 4: 成本結構與營業毛利率深潛分析\n   - Slide 5: 門市營運坪效與鮮食數位會員貢獻\n   - Slide 6: 智慧物流與冷鏈自動化轉型效益\n   - Slide 7: 競爭同業對標（市佔率與 ROE 杜邦分析）\n   - Slide 8: 2025-2026 三大策略行動主軸\n   - Slide 9: 資本支出預算 (CAPEX) 與財務回收期試算\n   - Slide 10: 結論與董事會決策建議案\n2. 格式規範：每頁需列出「投影片大標題」、「3 大視覺化要點」、「建議圖表類型（如瀑布圖/長條圖）」及「80~100 字演講者口語備忘錄 (Speaker Notes)」。"
-    },
-    {
-      "id": "sec-08",
-      "num": "八",
-      "title": "電腦教室常見問題與避坑指南 (FAQ)",
+      "title": "常見操作問題排解手冊 (FAQ)",
       "icon": "fas fa-question-circle",
       "faqs": [
         {
-          "q": "Q1：下課後忘記存檔，重開機電腦被還原卡清空怎麼辦？",
-          "a": "請立刻建立防禦習慣：所有工作都在 Google Cloud Shell ($HOME 永續儲存) 或 Google Drive 進行，重要作業隨手 Git Push 到 GitHub，下課前將檔案上傳至本平台作業區，就算電腦重灌十次也不會不見！"
+          "q": "Q1：下課忘了存檔，重開機後檔案在電腦桌面找不到了？",
+          "a": "此為電腦教室保護機制之正常現象。請同學將作業存放在 Google Cloud Shell 的家目錄 (~/vnu_business_software) 或個人 Google 雲端硬碟，下課前於課程平台完成繳交，檔案即會安全保存在雲端。"
         },
         {
-          "q": "Q2：Google Cloud Shell 需要收費或綁定信用卡嗎？",
-          "a": "完全不需要！Google 提供每位 Google 帳號每週 50 小時免費 Cloud Shell 使用額度，自帶 5GB 永續硬碟空間，對於課堂 1.5 小時實作綽綽有餘且 100% 免費。"
+          "q": "Q2：Google Cloud Shell 終端機顯示「連線逾時 (Session Timeout)」？",
+          "a": "若超過 20 分鐘未操作終端機會暫時休眠。點擊畫面中央藍色「重新連線」按鈕，約 15 秒後即可恢復，家目錄所有檔案皆完整保存。"
         },
         {
-          "q": "Q3：AI 計算出的毛利率與成長率會不會有計算錯誤？",
-          "a": "大型語言模型本質是機率語言預測，不是精密計算機！這正是本課程要教 Excel 的原因：文字洞察交給 AI 起草，但數字核算必須用 Excel 公式 (如 =(B2-B1)/B1) 嚴格驗算，確保零差錯。"
+          "q": "Q3：AI 產出的文字內容有時候不完全符合要求？",
+          "a": "請運用自然語言微調原則，直接回覆一句補充說明即可，例如：「請將表格精簡為 3 個欄位，並將語氣調整得更正式一些。」"
         },
         {
-          "q": "Q4：家裡電腦沒有安裝 Office 365 怎麼做作業？",
-          "a": "只要使用萬能學校提供的校園 Office 365 教育版帳號，或使用 Google 文件/試算表/簡報，搭配 Google Cloud Shell，在任何家用電腦、平板甚至手機瀏覽器中都能 100% 完成作業！"
+          "q": "Q4：在家裡用個人筆電或平板也能繼續操作嗎？",
+          "a": "可以！只要在個人設備開啟瀏覽器連線至 shell.cloud.google.com 與本課程平台，以相同 Google 帳號登入，即可完全接續課堂進度。"
         }
       ]
     }

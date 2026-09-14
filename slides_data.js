@@ -5,9 +5,9 @@ window.COURSE_SLIDES_DATA = {
     {
       "week": 1,
       "module": "模組一：AI 辦公先導觀念與協作基礎",
-      "title": "第 01 週：課程導引、帳號與雲端環境建置 ＆ 電腦教室還原卡防禦指南",
-      "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ 線上財報到簡報 Agentic AI 示範",
-      "software": "Google Cloud Shell (免安裝雲端 VS Code) / Google Colab / 免費版 Antigravity",
+      "title": "第 01 週：課程導引、帳號與 Google 雲端環境建置指南",
+      "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ CLEAR 提問實務",
+      "software": "Google Cloud Shell (網頁版 VS Code) / 免費版 Antigravity / Google 雲端工具",
       "slideCount": 61
     },
     {
@@ -151,1646 +151,1624 @@ window.COURSE_SLIDES_DATA = {
     "1": [
       {
         "num": 1,
-        "sec": "單元破冰與商業情境",
+        "sec": "課程導引與破冰",
         "badge": "課程首頁",
-        "title": "第 01 週：課程導引、帳號與雲端環境建置 ＆ 電腦教室還原卡防禦指南",
-        "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ 線上財報到簡報 Agentic AI 示範\n【模組：AI 辦公先導觀念與協作基礎 ｜ 核心工具：Google Cloud Shell / Google Colab / 免費版 Antigravity】",
+        "title": "第 01 週：課程導引、帳號與 Google 雲端環境建置指南",
+        "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ CLEAR 提問實務\n【模組一：AI 辦公先導觀念與協作基礎 ｜ 核心工具：Google Cloud Shell / 網頁版 VS Code】",
         "type": "title",
-        "speaker_note": "各位進修部企管四系 1 甲的同學晚安！歡迎來到 11501 商業軟體應用。今天第一週，我們要徹底解決電腦教室重開機檔案不見的痛點，建立免安裝的 Google Cloud 雲端永續環境，並體驗如何用 AI 自然語言將公開財報與商業文件自動轉成 10 頁商務簡報！"
+        "speaker_note": "各位進修部企管四系 1 甲的同學晚安！歡迎來到 11501 商業軟體應用。今天第一週，我們要協助大家順利建置免安裝的 Google 雲端工作環境，讓大家下課關機後檔案安全保存，不用每週在電腦教室重複安裝軟體！"
       },
       {
         "num": 2,
-        "sec": "單元破冰與商業情境",
+        "sec": "課程導引與破冰",
         "badge": "學習地圖",
         "title": "第 01 週在 18 週課程架構中的核心定位",
-        "subtitle": "清晰理解本週知識點與前置、後續單元的關鍵承接關係",
+        "subtitle": "清晰理解本週知識點與後續 Office 模組的承接關係",
         "type": "cards",
         "cards": [
           {
-            "title": "環境先備基礎",
-            "content": "Google 帳號啟用、Chrome 瀏覽器操作、中英輸入法與基本雲端檔案存取觀念。",
-            "tag": "基礎先備",
-            "theme": "slate"
-          },
-          {
-            "title": "本週核心聚焦",
-            "content": "防禦電腦教室還原卡！開通 Google Cloud Shell 5GB 永續空間，掌握 Vibe Coding 自然語言指揮心法與線上財報轉 PPT 示範。",
-            "tag": "本週重點",
+            "title": "環境先備條件",
+            "content": "個人 Google 帳號、Chrome 瀏覽器操作與基本中英輸入。",
+            "tag": "先備條件",
             "theme": "navy"
           },
           {
-            "title": "後續技能延伸",
-            "content": "為第 02-06 週 Word 企劃書排版、第 07-12 週 Excel 財報分析、第 13-17 週 PPT 簡報設計提供堅定不移的雲端基地。",
-            "tag": "未來串接",
+            "title": "本週核心目標",
+            "content": "完成 Google Cloud Shell 5GB 雲端工作站開通、GitHub 註冊與課程平台綁定。",
+            "tag": "本週目標",
             "theme": "emerald"
+          },
+          {
+            "title": "後續單元串接",
+            "content": "為第 02-06 週 Word 企劃書、第 07-12 週 Excel 試算表與第 13-17 週 PPT 簡報建立雲端存檔基地。",
+            "tag": "未來延伸",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "第一週最重要的就是『把雲端基地打穩』。只要在第一週把 Google Cloud Shell 與 GitHub 設定好，後面 17 週上課絕對不會再為了找不到檔案而手忙腳亂。"
+        "speaker_note": "第一週是打好地基的關鍵。只要今晚把雲端環境建好，後面整學期的上課作業都會非常順暢。"
       },
       {
         "num": 3,
-        "sec": "單元破冰與商業情境",
-        "badge": "學習成效",
-        "title": "本週學習成效檢核指標 (OBE Outcomes)",
-        "subtitle": "具體量化之學習成效檢核，確保每位同學課堂掌握度達標",
+        "sec": "課程導引與破冰",
+        "badge": "成效指標",
+        "title": "本週學習成效檢核指標 (Learning Outcomes)",
+        "subtitle": "具體明確的課堂學習成果檢視",
         "type": "cards",
         "cards": [
           {
-            "title": "環境部署達標",
-            "content": "100% 每位同學均能成功開通 Google Cloud Shell 5GB 雲端主機，並能開啟網頁版 VS Code 編輯器。",
-            "tag": "技能指標 1",
+            "title": "1. 雲端環境建置達標",
+            "content": "每位同學皆能連線至 shell.cloud.google.com 並成功展開網頁版 VS Code 編輯器。",
+            "tag": "環境指標",
             "theme": "navy"
           },
           {
-            "title": "帳號登入整合",
-            "content": "完成 Google 帳號綁定、課程平台 Firebase 登入，並註冊 GitHub 帳號具備雲端託管能力。",
-            "tag": "技能指標 2",
+            "title": "2. 帳號整合登入完成",
+            "content": "完成 Google 帳號綁定、課程平台登入，並完成 GitHub 個人帳號啟用。",
+            "tag": "帳號指標",
             "theme": "emerald"
           },
           {
-            "title": "AI 指揮概念熟稔",
-            "content": "能以 CLEAR 提問框架撰寫提示詞，理解從公開財報 CSV 到 10 頁商務 PPT 的 Agentic AI 流程。",
-            "tag": "技能指標 3",
+            "title": "3. 掌握 CLEAR 提問要領",
+            "content": "理解背景、限制、期望、行動與角色五要素，完成第一次向 AI 提問練習。",
+            "tag": "觀念指標",
             "theme": "amber"
           }
         ],
-        "speaker_note": "我們這門課是實務導向。下課前只要完成這三項檢核指標，你的第一週平時成績就拿到滿分！"
+        "speaker_note": "下課前只要完成這三項檢核，今天的第一週平時分數就順利拿到滿分。"
       },
       {
         "num": 4,
-        "sec": "單元破冰與商業情境",
-        "badge": "前置準備",
-        "title": "課堂實機操作前置準備與教材盤點",
-        "subtitle": "上課前 5 分鐘自我檢查清單，確保電腦教室設備就緒",
+        "sec": "課程導引與破冰",
+        "badge": "課前準備",
+        "title": "課堂實機操作前置準備清單",
+        "subtitle": "上課前 3 分鐘快速確認設備與帳號狀態",
         "type": "cards",
         "cards": [
           {
-            "title": "硬體與網路檢查",
-            "content": "確認 J501 電腦已開機、螢幕解析度正常，Chrome 瀏覽器能順暢連上校外網路。",
-            "tag": "硬體檢視",
-            "theme": "slate"
+            "title": "硬體與網路確認",
+            "content": "確認電腦螢幕顯示清晰，Chrome 瀏覽器連線正常。",
+            "tag": "設備確認",
+            "theme": "navy"
           },
           {
             "title": "個人帳號準備",
-            "content": "備妥個人或學校 Google 帳號與密碼，手機放在身邊以備雙重身分驗證 (2FA)。",
-            "tag": "帳號檢視",
-            "theme": "navy"
+            "content": "備妥個人或學校 Google 帳號密碼，手機放在身旁以備雙重驗證。",
+            "tag": "帳號確認",
+            "theme": "emerald"
           },
           {
-            "title": "教學平台就緒",
-            "content": "在瀏覽器開啟本教學平台網址，並加入我的最愛，隨時調閱講義、提示詞與示範檔案。",
-            "tag": "教材檢視",
-            "theme": "emerald"
+            "title": "開啟教學平台",
+            "content": "在瀏覽器分頁開啟本課程教學平台，隨時查閱操作講義與提示詞。",
+            "tag": "講義確認",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "請大家先打開瀏覽器，確認能順利連上 Google 與我們的課程平台。"
+        "speaker_note": "請大家先打開瀏覽器，準備好 Google 帳號與我們的課程平台。"
       },
       {
         "num": 5,
-        "sec": "單元破冰與商業情境",
-        "badge": "職場與課堂痛點",
-        "title": "真實課堂慘劇：電腦教室重開機，心血全部人間蒸發！",
-        "subtitle": "J501 電腦教室還原卡機制剖析，為什麼本機安裝軟體註定是惡夢？",
+        "sec": "電腦教室環境說明",
+        "badge": "環境特性",
+        "title": "電腦教室環境特性：系統還原保護機制說明",
+        "subtitle": "為什麼每次上課電腦重開機後，桌面新增的檔案會消失？",
         "type": "cards",
+        "diagram_html": "\n<div style=\"width:100%; max-width:540px; background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06);\">\n  <div style=\"font-weight:800; font-size:16px; color:#1e3a8a; margin-bottom:12px; text-align:center;\">\n    🖥️ 電腦教室還原機制 vs. 雲端永續架構\n  </div>\n  <div style=\"display:grid; grid-template-columns:1fr 1fr; gap:12px;\">\n    <div style=\"background:#fef2f2; border:1.5px solid #f87171; border-radius:8px; padding:12px; text-align:center;\">\n      <div style=\"font-size:24px;\">❌</div>\n      <div style=\"font-weight:800; color:#991b1b; font-size:14px; margin:4px 0;\">本機桌面 / C 槽</div>\n      <div style=\"font-size:12px; color:#b91c1c; line-height:1.5;\">\n        下課關機或重開機<br>\n        <strong>還原卡自動重置</strong><br>\n        個人檔案與軟體清空\n      </div>\n    </div>\n    <div style=\"background:#f0fdf4; border:1.5px solid #4ade80; border-radius:8px; padding:12px; text-align:center;\">\n      <div style=\"font-size:24px;\">☁️</div>\n      <div style=\"font-weight:800; color:#166534; font-size:14px; margin:4px 0;\">Google Cloud Shell</div>\n      <div style=\"font-size:12px; color:#15803d; line-height:1.5;\">\n        <strong>5GB 永久空間 $HOME</strong><br>\n        免在本機安裝軟體<br>\n        下課換電腦資料永遠在\n      </div>\n    </div>\n  </div>\n  <div style=\"margin-top:12px; background:#eff6ff; border-radius:6px; padding:8px 12px; font-size:12px; color:#1e40af; text-align:center;\">\n    💡 結論：本學期所有作業一律儲存在雲端，確保安全無虞！\n  </div>\n</div>\n",
         "cards": [
           {
-            "title": "上週的痛苦回憶",
-            "content": "在教室花了 40 分鐘下載安裝 Python、VS Code、打好了半篇報告，下課開心地關機離開。",
-            "tag": "投入時間",
-            "theme": "slate"
-          },
-          {
-            "title": "重開機後的絕望",
-            "content": "下週上課坐同一台電腦，一開機發現：桌面空空如也，C 槽軟體全沒了，辛辛苦苦存的檔案徹底消失！",
-            "tag": "還原災難",
-            "theme": "rose"
-          },
-          {
-            "title": "根本病灶原因",
-            "content": "學校電腦教室配備『硬體還原卡 (Deep Freeze)』，每次關機或重開機，本機磁碟會強制還原到出廠預設值！",
-            "tag": "技術根因",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "相信很多同學都有這種慘痛經驗：好不容易在電腦教室裝好軟體、做完作業，下週來一開機什麼都沒了！這就是學校還原卡的保護機制。"
-      },
-      {
-        "num": 6,
-        "sec": "單元破冰與商業情境",
-        "badge": "痛點深掘",
-        "title": "傳統本機作業在還原卡環境下的三大致命死穴",
-        "subtitle": "為什麼不能再把檔案存在桌面或 C 槽？",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "死穴 1：重複裝軟體浪費時間",
-            "content": "每週上課 90 分鐘，如果前 30 分鐘都在重複下載安裝環境，根本沒有時間學真正有價值的商業應用。",
-            "tag": "時間浪費",
-            "theme": "rose"
-          },
-          {
-            "title": "死穴 2：跨電腦無法延續",
-            "content": "下週如果換了不同座位或改在筆電上操作，上週存在上一台電腦硬碟的檔案完全拿不到。",
-            "tag": "設備綁定",
-            "theme": "amber"
-          },
-          {
-            "title": "死穴 3：USB 隨身碟中毒與遺失",
-            "content": "插隨身碟容易感染學校教室的捷徑病毒，或是報告做到一半拔掉隨身碟導致檔案損毀。",
-            "tag": "資安風險",
-            "theme": "slate"
-          }
-        ],
-        "speaker_note": "傳統靠隨身碟或存在本機，既浪費時間又充滿風險。因此我們本學期全面升級為『雲端永續工作流』！"
-      },
-      {
-        "num": 7,
-        "sec": "單元破冰與商業情境",
-        "badge": "革命性解方",
-        "title": "終極解方：Google Cloud Shell 5GB 永續雲端工作站",
-        "subtitle": "免在教室電腦安裝任何軟體！雲端自帶 Linux 虛擬機與 Web 版 VS Code",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "1. 永久 5GB 家目錄 ($HOME)",
-            "content": "儲存在 $HOME 目錄下的所有程式碼、Word/Excel 檔案與設定檔，不管教室重開機幾次，永遠都在！",
-            "tag": "永久保存",
-            "theme": "emerald"
-          },
-          {
-            "title": "2. 免安裝、預裝完整工具",
-            "content": "開箱即用！內建 Python 3、pip、git、Node.js，完全不需要自己從網路下載安裝包。",
-            "tag": "零安裝負擔",
+            "title": "學校還原保護機制",
+            "content": "電腦教室為了確保每班同學上課環境乾淨且免於病毒影響，設有硬體還原功能。每次電腦關機重開後，C 槽會恢復預設值。",
+            "tag": "機制說明",
             "theme": "navy"
           },
           {
-            "title": "3. 內建雲端 VS Code (Editor)",
-            "content": "點擊一個按鈕，直接在瀏覽器展開完整的 VS Code 繁體中文編輯器，具備完整的檔案總管與代碼高亮！",
-            "tag": "高階編輯器",
-            "theme": "indigo"
+            "title": "儲存在桌面的風險",
+            "content": "若同學將作業或下載的安裝檔存放在桌面或本機 C 槽，下週上課重開機後將無法找回。",
+            "tag": "存檔提醒",
+            "theme": "rose"
           }
         ],
-        "speaker_note": "請大家看大螢幕，這就是老師為大家準備的秘密武器：Google Cloud Shell！任何人只要有 Google 帳號，就可以免費使用 5GB 的雲端電腦，教室重開機一萬次你的檔案都穩如泰山！"
+        "speaker_note": "很多同學以前可能遇過電腦重開機後檔案不見的情況，這不是電腦壞掉，而是學校電腦教室的系統保護設定。"
       },
       {
-        "num": 8,
-        "sec": "單元破冰與商業情境",
-        "badge": "核心提問",
-        "title": "課堂核心思維提問 (The Big Question)",
-        "subtitle": "在 AI 與雲端時代，商管學生最重要的數位競爭力到底是什麼？",
+        "num": 6,
+        "sec": "電腦教室環境說明",
+        "badge": "傳統挑戰",
+        "title": "傳統本機安裝模式在電腦教室的三大常見困擾",
+        "subtitle": "為什麼不建議在電腦教室本機重複下載安裝軟體？",
         "type": "cards",
         "cards": [
           {
-            "title": "不是比誰會安裝複雜軟體",
-            "content": "現代企業不需要員工耗費整天手動裝環境，雲端化讓每個人 10 秒鐘就能擁有頂級算力與環境。",
-            "tag": "思維轉向",
-            "theme": "slate"
+            "title": "困擾 1：每週重複安裝耗費時間",
+            "content": "每週上課若要重新下載安裝 Python 或編輯器，會壓縮到寶貴的實作練習時間。",
+            "tag": "時間成本",
+            "theme": "rose"
           },
           {
-            "title": "不是比誰會背繁瑣語法",
-            "content": "AI 可以幫你寫 Python、公式與 VBA，背誦代碼不再是高分關鍵。",
-            "tag": "技能降維",
+            "title": "困擾 2：更換座位無法接續進度",
+            "content": "若下週換到不同電腦座位，存在上一台電腦本機硬碟的檔案無法直接取用。",
+            "tag": "設備限制",
             "theme": "amber"
           },
           {
-            "title": "而是『以自然語言指揮 AI 產出商業價值』",
-            "content": "看懂財報問題、定義企劃痛點、精準下達 CLEAR 指令，並驗收 AI 產出的 Word、Excel、PPT 品質！",
-            "tag": "核心價值",
-            "theme": "emerald"
+            "title": "困擾 3：隨身碟攜帶不便與損壞",
+            "content": "仰賴隨身碟容易發生忘記攜帶、中毒或未安全拔除導致檔案損毀的情況。",
+            "tag": "存儲風險",
+            "theme": "slate"
           }
         ],
-        "speaker_note": "我們企管系同學不是要當苦工工程師，而是要當『商業指揮官』！指揮 AI 幫你處理繁重的文書與數據，你負責決策與驗收。"
+        "speaker_note": "為了解決這些困擾，我們這門課全面導入 Google 雲端方案，讓大家無論坐在哪台電腦，檔案都在雲端。"
+      },
+      {
+        "num": 7,
+        "sec": "電腦教室環境說明",
+        "badge": "雲端優勢",
+        "title": "解決方案：Google Cloud Shell 5GB 永續雲端工作站",
+        "subtitle": "免在教室電腦安裝軟體！由 Google 免費提供 Linux 虛擬主機與網頁版 VS Code",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "1. 5GB 永久個人磁碟 ($HOME)",
+            "content": "家目錄下的所有作業與資料夾，不論教室電腦重開機多少次，檔案永遠完整保存！",
+            "tag": "永久儲存",
+            "theme": "emerald"
+          },
+          {
+            "title": "2. 開箱即用、免安裝工具",
+            "content": "Google 已預裝好 Python 3、Git、pip 等常用環境，完全免除本機下載安裝困擾。",
+            "tag": "免安裝",
+            "theme": "navy"
+          },
+          {
+            "title": "3. 內建網頁版 VS Code 編輯器",
+            "content": "點擊一個按鈕，即可在瀏覽器展開完整的 VS Code 檔案樹與編輯畫面，直覺好用。",
+            "tag": "專業介面",
+            "theme": "indigo"
+          }
+        ],
+        "speaker_note": "大家只要連上 Google Cloud Shell，就擁有專屬自己的雲端小電腦，走到哪裡帶到哪裡。"
+      },
+      {
+        "num": 8,
+        "sec": "電腦教室環境說明",
+        "badge": "學習思維",
+        "title": "現代商管學生的數位學習新思維",
+        "subtitle": "告別繁瑣的本機環境設定，聚焦於商業應用與實務產出",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "從「手動安裝」到「雲端就緒」",
+            "content": "現代企業全面走向雲端，學會運用雲端環境是數位轉型的第一步。",
+            "tag": "工具轉型",
+            "theme": "navy"
+          },
+          {
+            "title": "從「背誦語法」到「清晰指揮」",
+            "content": "商管同學的優勢在於商業邏輯，軟體與代碼可交由 AI 工具輔助生成。",
+            "tag": "角色定位",
+            "theme": "emerald"
+          },
+          {
+            "title": "從「零碎存檔」到「版本管理」",
+            "content": "善用雲端目錄與 GitHub，讓自己的學習歷程具備結構性與累積性。",
+            "tag": "資產累積",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "我們企管系同學不是要當程式苦工，而是要當善用工具的專案經理！"
       },
       {
         "num": 9,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "雲端架構",
-        "title": "進入核心技術：萬能企管 4 合 1 雲端永續生態圈",
-        "subtitle": "徹底擺脫電腦教室還原卡束縛的現代商管學習架構",
+        "sec": "Google 雲端工作站導覽",
+        "badge": "架構全覽",
+        "title": "Google Cloud Shell 3 合 1 介面導覽與運作原理",
+        "subtitle": "網頁瀏覽器分頁中即可同時擁有編輯器、檔案總管與終端機",
+        "type": "cards",
+        "diagram_html": "\n<div style=\"width:100%; max-width:540px; background:#0f172a; border-radius:10px; padding:14px; color:#f8fafc; font-family:Consolas, Monaco, monospace; box-shadow:0 4px 12px rgba(0,0,0,0.2);\">\n  <div style=\"display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #334155; padding-bottom:8px; margin-bottom:10px;\">\n    <div style=\"display:flex; gap:6px;\">\n      <span style=\"width:10px; height:10px; border-radius:50%; background:#ef4444; display:inline-block;\"></span>\n      <span style=\"width:10px; height:10px; border-radius:50%; background:#f59e0b; display:inline-block;\"></span>\n      <span style=\"width:10px; height:10px; border-radius:50%; background:#10b981; display:inline-block;\"></span>\n    </div>\n    <span style=\"font-size:12px; color:#94a3b8;\">Google Cloud Shell 介面導覽</span>\n    <span style=\"font-size:10px; background:#0284c7; color:#fff; padding:2px 6px; border-radius:4px;\">Web VS Code</span>\n  </div>\n  <div style=\"display:grid; grid-template-columns:1fr 2fr; gap:8px; height:120px; margin-bottom:10px;\">\n    <div style=\"background:#1e293b; border:1px solid #475569; border-radius:6px; padding:8px; font-size:11px; color:#94a3b8;\">\n      <div style=\"color:#38bdf8; font-weight:700; margin-bottom:4px;\">📁 檔案總管</div>\n      <div>▾ vnu_software</div>\n      <div style=\"margin-left:8px;\">▸ week01</div>\n      <div style=\"margin-left:16px; color:#a7f3d0;\">📄 notes.md</div>\n    </div>\n    <div style=\"background:#1e293b; border:1px solid #475569; border-radius:6px; padding:8px; font-size:11px; color:#e2e8f0;\">\n      <div style=\"color:#f59e0b; font-weight:700; margin-bottom:4px;\">📝 VS Code 編輯區</div>\n      <div style=\"color:#38bdf8;\"># 第一週作業</div>\n      <div>- 學號：進企管四系1甲</div>\n      <div>- 姓名：王小明</div>\n    </div>\n  </div>\n  <div style=\"background:#020617; border:1px solid #334155; border-radius:6px; padding:8px 10px; font-size:11px; color:#38bdf8;\">\n    <div style=\"color:#64748b; margin-bottom:2px;\">💻 雲端終端機 (Linux Terminal)：</div>\n    <div>user@cloudshell:~$ <span style=\"color:#f8fafc;\">cd ~/vnu_business_software/week01 && pwd</span></div>\n    <div style=\"color:#10b981;\">/home/user/vnu_business_software/week01</div>\n  </div>\n</div>\n",
+        "cards": [
+          {
+            "title": "上方：VS Code 編輯區",
+            "content": "提供語法高亮、行號標示與多分頁檢視，支援 Markdown 與文字編輯。",
+            "tag": "編輯區",
+            "theme": "navy"
+          },
+          {
+            "title": "左側：檔案總管側邊欄",
+            "content": "以樹狀結構呈現個人資料夾，可自由新增檔案或右鍵下載到本機。",
+            "tag": "檔案樹",
+            "theme": "emerald"
+          },
+          {
+            "title": "下方：Linux 終端機視窗",
+            "content": "輸入基本指令（如 pwd、mkdir）執行環境驗證與管理作業。",
+            "tag": "終端機",
+            "theme": "slate"
+          }
+        ],
+        "speaker_note": "請大家看大螢幕這張介面導覽圖，Cloud Shell 整合了編輯區、檔案樹與指令視窗，非常便利。"
+      },
+      {
+        "num": 10,
+        "sec": "Google 雲端工作站導覽",
+        "badge": "持久磁碟原理",
+        "title": "家目錄 ($HOME) 永續保存機制剖析",
+        "subtitle": "為什麼關閉瀏覽器後，存放在家目錄的檔案依然安全？",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "獨立雲端持久磁碟 (Persistent Disk)",
+            "content": "Google 為每個帳號配置獨立於運算主機外的儲存磁碟，專門掛載於 /home/使用者帳號 目錄。",
+            "tag": "磁碟分離",
+            "theme": "navy"
+          },
+          {
+            "title": "主機休眠但檔案不流失",
+            "content": "下課關閉瀏覽器後主機會暫時休眠，下次登入時會自動重新掛載同一塊硬碟，資料完整無缺。",
+            "tag": "自動掛載",
+            "theme": "emerald"
+          },
+          {
+            "title": "每週 50 小時免費額度",
+            "content": "Google 提供充裕的免費額度，完全不需要綁定信用卡即可在課堂與自學時自由使用。",
+            "tag": "免費資源",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "只要記得把檔案放在自己的家目錄裡，Google 伺服器就會妥善為大家保存。"
+      },
+      {
+        "num": 11,
+        "sec": "Google 雲端工作站導覽",
+        "badge": "協同體系",
+        "title": "本課程 4 合 1 雲端學習環境架構",
+        "subtitle": "建構課堂、住家與行動裝置無縫切換的學習工作流",
         "type": "cards",
         "cards": [
           {
             "title": "1. Google Cloud Shell",
-            "content": "雲端終端機 ＋ 網頁版 VS Code，負責雲端程式執行與永久檔案保存 ($HOME 5GB)。",
-            "tag": "開發中心",
+            "content": "負責雲端日常練習、建立資料夾與網頁版 VS Code 編輯。",
+            "tag": "開發環境",
             "theme": "navy"
           },
           {
             "title": "2. Google Colab ＆ 雲端硬碟",
-            "content": "線上 Jupyter 筆記本，一鍵掛載 Google Drive，執行 pandas 資料清洗與圖表繪製。",
-            "tag": "數據中心",
+            "content": "線上執行試算與數據整理，雙向同步個人 Google Drive。",
+            "tag": "資料處理",
             "theme": "emerald"
           },
           {
-            "title": "3. GitHub ＆ GitHub Pages",
-            "content": "個人雲端作業倉庫，靜態報表網頁 30 秒免費全球部署，打造個人數位作品集。",
-            "tag": "履歷中心",
+            "title": "3. GitHub 雲端倉庫",
+            "content": "作業成果版本保管，一鍵發布 GitHub Pages 產生個人公開網址。",
+            "tag": "成果託管",
             "theme": "indigo"
+          },
+          {
+            "title": "4. 課程互動平台",
+            "content": "Google 登入結合 Firebase，隨堂快測成績與作業即時歸檔。",
+            "tag": "課程基地",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "這套 4 合 1 生態圈，讓大家不管是坐在 J501 電腦前、家裡的筆電、甚至是平板或手機，都能無縫繼續上一堂課的進度。"
-      },
-      {
-        "num": 10,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "底層原理",
-        "title": "Google Cloud Shell 底層運作邏輯剖析",
-        "subtitle": "為什麼它能在瀏覽器中運行、且關閉網頁後檔案依然完整？",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "容器化虛擬主機 (Debian Linux)",
-            "content": "Google 在雲端為每個使用者啟動一個輕量容器，分配專屬的運算 CPU 與記憶體。",
-            "tag": "運算層",
-            "theme": "slate"
-          },
-          {
-            "title": "獨立掛載持久磁碟 (Persistent Disk)",
-            "content": "使用者的家目錄 (/home/使用者帳號) 是掛載在 Google 永續雲端硬碟上，與虛擬主機本體獨立分離。",
-            "tag": "存儲層",
-            "theme": "emerald"
-          },
-          {
-            "title": "Web-based VS Code 介面",
-            "content": "基於 Eclipse Theia / OpenVSCode，完全相容 VS Code 快捷鍵、色彩主題與中文介面。",
-            "tag": "呈現層",
-            "theme": "navy"
-          }
-        ],
-        "speaker_note": "只要把檔案放在你的家目錄裡，即使下課關閉瀏覽器，主機進入休眠，硬碟中的檔案永遠被 Google 安全保存。"
-      },
-      {
-        "num": 11,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "Vibe Coding 理念",
-        "title": "什麼是 Vibe Coding？Andrej Karpathy 的氛圍編程哲學",
-        "subtitle": "2025 年引爆全球的開發典範轉移：意圖即代碼，自然語言即編譯器",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "傳統 Coding（代碼編程）",
-            "content": "必須痛苦背誦語法、查字典、手動 debug 括號分號，商管學生門檻極高，常常卡在環境報錯。",
-            "tag": "過去模式",
-            "theme": "rose"
-          },
-          {
-            "title": "Vibe Coding（意圖編程）",
-            "content": "只要用生動的大白話描述商業情境、痛點與規格，AI Agent 瞬間生成精美 HTML 或處理腳本。",
-            "tag": "現在模式",
-            "theme": "emerald"
-          },
-          {
-            "title": "企管學生的新定位",
-            "content": "你不必當敲鍵盤的碼農，你是指揮 AI 團隊的『產品經理 (PM)』與『商業專案總監』！",
-            "tag": "角色定位",
-            "theme": "navy"
-          }
-        ],
-        "speaker_note": "Vibe Coding 讓非資工背景的企管系同學迎來黃金時代！你只要會說人話、會講清楚商業需求，AI 就能幫你把系統做出來。"
+        "speaker_note": "這四個工具相輔相成，讓大家隨時隨地都能接續進度。"
       },
       {
         "num": 12,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "智能體協同",
-        "title": "Agentic AI 核心機制：ReAct 推理循環 (感知 ➔ 思考 ➔ 行動)",
-        "subtitle": "單次問答聊天機器人 vs. 能自主跨軟體作業的 Agentic AI",
+        "sec": "帳號開通與環境設定",
+        "badge": "開通流程",
+        "title": "第 01 週帳號開通與環境設定總覽流程",
+        "subtitle": "4 步驟跟著做，今晚建立完整個人數位工作站",
         "type": "cards",
+        "diagram_html": "\n<div style=\"width:100%; max-width:540px; background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06);\">\n  <div style=\"font-weight:800; font-size:16px; color:#1e3a8a; margin-bottom:14px; text-align:center;\">\n    🚀 4 步驟帳號開通與環境設定流程\n  </div>\n  <div style=\"display:flex; flex-direction:column; gap:8px;\">\n    <div style=\"display:flex; align-items:center; gap:10px; background:#f8fafc; border-left:4px solid #0284c7; padding:8px 12px; border-radius:6px;\">\n      <span style=\"background:#0284c7; color:#fff; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px;\">1</span>\n      <div>\n        <strong style=\"font-size:13px; color:#0f172a;\">啟用個人 Google 帳號</strong>\n        <div style=\"font-size:11px; color:#64748b;\">使用 Chrome 瀏覽器登入，作為雲端身分識別</div>\n      </div>\n    </div>\n    <div style=\"display:flex; align-items:center; gap:10px; background:#f8fafc; border-left:4px solid #10b981; padding:8px 12px; border-radius:6px;\">\n      <span style=\"background:#10b981; color:#fff; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px;\">2</span>\n      <div>\n        <strong style=\"font-size:13px; color:#0f172a;\">開通 Google Cloud Shell</strong>\n        <div style=\"font-size:11px; color:#64748b;\">連線 shell.cloud.google.com，取得 5GB 永續磁碟</div>\n      </div>\n    </div>\n    <div style=\"display:flex; align-items:center; gap:10px; background:#f8fafc; border-left:4px solid #8b5cf6; padding:8px 12px; border-radius:6px;\">\n      <span style=\"background:#8b5cf6; color:#fff; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px;\">3</span>\n      <div>\n        <strong style=\"font-size:13px; color:#0f172a;\">註冊 GitHub 免費帳號</strong>\n        <div style=\"font-size:11px; color:#64748b;\">前往 github.com 註冊，供專案作業雲端版本保管</div>\n      </div>\n    </div>\n    <div style=\"display:flex; align-items:center; gap:10px; background:#f8fafc; border-left:4px solid #f59e0b; padding:8px 12px; border-radius:6px;\">\n      <span style=\"background:#f59e0b; color:#fff; width:24px; height:24px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px;\">4</span>\n      <div>\n        <strong style=\"font-size:13px; color:#0f172a;\">登入課程教學平台</strong>\n        <div style=\"font-size:11px; color:#64748b;\">點選平台右上角「Google 登入」，綁定學號與姓名</div>\n      </div>\n    </div>\n  </div>\n</div>\n",
         "cards": [
           {
-            "title": "1. 感知 (Perceive)",
-            "content": "讀取輸入的非結構化資料，例如：公開資訊觀測站的財報 CSV 與總經理口頭指派的 Word 草案。",
-            "tag": "輸入感知",
+            "title": "依序完成 4 項設置",
+            "content": "Google 帳號 ➔ Cloud Shell 開通 ➔ GitHub 帳號註冊 ➔ 課程平台 Google 登入綁定。",
+            "tag": "步驟指引",
             "theme": "navy"
           },
           {
-            "title": "2. 思考與規劃 (Think & Plan)",
-            "content": "自主拆解任務步驟：先清洗數據 ➔ 計算毛利率與 YoY ➔ 規劃 10 頁簡報大綱 ➔ 擬定演講稿。",
-            "tag": "心智規劃",
-            "theme": "indigo"
-          },
-          {
-            "title": "3. 行動與工具調用 (Act & Tool)",
-            "content": "調用 Excel 計算公式、套用 Word 標題樣式、生成 16:9 高對比投影片結構，並執行防呆校核。",
-            "tag": "工具執行",
+            "title": "現場個別輔導",
+            "content": "操作過程中若遇簡訊驗證或連線疑問，請隨時舉手，老師與助教將至座位旁協助。",
+            "tag": "貼心支援",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這不是一般只會聊天的 ChatGPT，而是能幫你動手做 Excel、寫 Word、做 PPT 的多功能智慧助理。"
+        "speaker_note": "接下來我們進入實作環節，請大家跟著大螢幕上的流程一步步完成。"
       },
       {
         "num": 13,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "端到端示範",
-        "title": "本課程旗艦示範：從公開財報與線上 Word 到 10 頁商務 PPT",
-        "subtitle": "真實企業級案例：連鎖超商零售巨頭（統一超 2912）三年經營績效彙報",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "輸入端：兩大線上真實檔案",
-            "content": "① MOPS 近三年財報 CSV（營收、成本、毛利、營業利益、EPS）\n② 總部未排版商業企劃草案（痛點、智慧門市、冷鏈物流、5000萬預算）。",
-            "tag": "輸入源",
-            "theme": "slate"
-          },
-          {
-            "title": "處理端：AI 跨軟體協同清洗精算",
-            "content": "Excel Agent 自動清洗空白，計算毛利率 (35.2%)、營收 YoY (+8.86%)；Word Agent 整理規範三線表。",
-            "tag": "協同處理",
-            "theme": "navy"
-          },
-          {
-            "title": "輸出端：10 頁高階主管決策 PPT",
-            "content": "一鍵生成包含封面、執行摘要、獲利趨勢、痛點對策、財務 ROI 與董事會建議案之完整簡報與講稿！",
-            "tag": "最終交付",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "我們今天就會展示這個真實案例。從公開資訊觀測站抓下來的財報，直接透過 AI 變成董事會上可以直接講的 10 頁 PPT。"
-      },
-      {
-        "num": 14,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "資訊安全",
-        "title": "雲端 AI 辦公資料安全與個人隱私保護三大原則",
-        "subtitle": "企管系學生必備的商業資訊道德與資安防護意識",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "原則 1：去識別化 (De-identification)",
-            "content": "在將商業資料貼給 AI 前，必須將真實客戶姓名、電話、身分證字號與內部未公開機密進行代號替換。",
-            "tag": "隱私防護",
-            "theme": "rose"
-          },
-          {
-            "title": "原則 2：善用公開觀測站合法資料",
-            "content": "練習時優先使用公開資訊觀測站 (MOPS) 等政府公開資料，合法合規且具備公信力。",
-            "tag": "合法數據",
-            "theme": "emerald"
-          },
-          {
-            "title": "原則 3：定期變更雲端密碼與 2FA",
-            "content": "Google 與 GitHub 帳號開啟手機兩步驟驗證，避免電腦教室忘記登出導致帳號被盜用。",
-            "tag": "帳號資安",
-            "theme": "navy"
-          }
-        ],
-        "speaker_note": "在電腦教室操作，下課前一定要記得登出 Google 帳號，或是關閉無痕視窗，保護個人隱私。"
-      },
-      {
-        "num": 15,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "字體與閱讀",
-        "title": "高階商務簡報排版準則：大字體 (28pt+) 與視覺減法",
-        "subtitle": "為什麼我們平台的簡報模式堅持採用 28px/pt 大字體？",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "教室後排清晰可見",
-            "content": "一般投影幕文字若小於 20pt，坐在電腦教室第 4 排以後的同學根本看不清楚，造成閱讀疲勞。",
-            "tag": "投影能見度",
-            "theme": "navy"
-          },
-          {
-            "title": "董事會決策標準 (10/20/30 法則)",
-            "content": "國際簡報大師 Guy Kawasaki 提出：簡報投影片文字不得小於 30pt，強制講者精簡字數、突出重點！",
-            "tag": "國際標準",
-            "theme": "emerald"
-          },
-          {
-            "title": "拒絕密密麻麻的『簡報閱讀災難』",
-            "content": "簡報不是 Word 書籍！大字體能迫使你放棄長篇大論，聚焦於關鍵數據、圖表與商業結論。",
-            "tag": "商務減法",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "我們平台的投影片模式，底層字體直接調大到 28px，標題更達 40-50px，即使坐在最後一排也能看得很舒服。"
-      },
-      {
-        "num": 16,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "深度對比矩陣",
-        "title": "傳統本機裝機流程 vs. Google Cloud 雲端永續工作流全對照",
-        "subtitle": "全維度量化比較：耗時、穩定度、跨裝置能力與心智負擔",
-        "type": "comparison",
-        "cards": [
-          {
-            "title": "傳統本機教室作業模式",
-            "content": "① 每週重灌軟體耗時 30 分鐘\n② 重開機檔案徹底被還原卡清空\n③ 換電腦必須重新拷貝隨身碟\n④ 遇到 Python 環境報錯容易卡關放棄",
-            "tag": "傳統痛點",
-            "theme": "rose"
-          },
-          {
-            "title": "Google Cloud 雲端永續生態",
-            "content": "① 打開網址 10 秒直接進入 VS Code\n② $HOME 5GB 永久保留，絕不遺失\n③ 家用筆電、手機平板無縫同步\n④ 預裝環境 0 報錯，專注商業應用",
-            "tag": "現代解法",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "從這張對照表大家可以發現，改用 Google Cloud Shell 後，大家一整個學期至少可以省下 10 小時重複裝軟體的冤枉時間！"
-      },
-      {
-        "num": 17,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "商業價值",
-        "title": "量化商業價值：掌握雲端與 Agentic AI 的職涯躍升",
-        "subtitle": "進修部企管同學在職場上的實質薪資與升遷優勢",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "會議紀錄與企劃起草速度提升 5 倍",
-            "content": "原本需要加夜班熬夜整理的 20 頁企劃草案，利用 AI 結構化起草，15 分鐘即可完成框架與三線表。",
-            "tag": "效率升級",
-            "theme": "emerald"
-          },
-          {
-            "title": "財報分析與數據視覺化秒級產出",
-            "content": "直接讓 AI 串接財務 CSV，自動算出毛利率、營業利益率與 YoY，避免人工手動計算的公式錯誤。",
-            "tag": "精確提升",
-            "theme": "navy"
-          },
-          {
-            "title": "具備高階簡報整合能力 (Executive Readiness)",
-            "content": "能將繁雜的數據迅速提煉成 10 頁董事會等級的清晰簡報，成為主管眼中不可多得的得力助手。",
-            "tag": "升遷優勢",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "我們很多進修部同學白天都有工作，學會這套技能，白天上班立刻就能派上用場，準時下班不是夢！"
-      },
-      {
-        "num": 18,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "名詞速查",
-        "title": "第 01 週高頻商務與技術關鍵名詞速查",
-        "subtitle": "5 個核心名詞，建立專業溝通共識",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "1. Google Cloud Shell",
-            "content": "Google 提供的免費雲端 Linux 虛擬機，自帶 5GB 永續硬碟與 Web 版 VS Code。",
-            "tag": "核心工具",
-            "theme": "navy"
-          },
-          {
-            "title": "2. Deep Freeze (還原卡)",
-            "content": "學校電腦重開機後清空 C 槽保護系統的機制，本課程以雲端存儲完美規避。",
-            "tag": "教室機制",
-            "theme": "rose"
-          },
-          {
-            "title": "3. Vibe Coding",
-            "content": "用大白話自然語言意圖描述需求，由 AI 生成程式碼與樣式的全新工作模式。",
-            "tag": "開發典範",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "這幾個名詞大家記在心裡，後續上課我們都會反覆使用。"
-      },
-      {
-        "num": 19,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "架構圖解",
-        "title": "第 01 週雲端永續防還原全景架構圖",
-        "subtitle": "清晰掌握個人本機與各個雲端節點之間的資料流動關係",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "【本機端】：瀏覽器輕裝上陣",
-            "content": "J501 教室電腦僅作為顯示器！不依賴本機 C 槽，所有操作全在 Chrome 分頁進行。",
-            "tag": "前線終端",
-            "theme": "slate"
-          },
-          {
-            "title": "【運算與存儲端】：Google 雲端中心",
-            "content": "Cloud Shell 保管程式環境與底稿 ($HOME)；Colab 與 Google Drive 保管大量數據與試算表。",
-            "tag": "雲端引擎",
-            "theme": "navy"
-          },
-          {
-            "title": "【成果展示端】：GitHub ＆ 課程平台",
-            "content": "作業發布至 GitHub Pages 形成網址，評分與練習數據同步至課程 Firebase 資料庫。",
-            "tag": "產出發布",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "這就是為什麼本機即使重開機一百次，你的一磚一瓦都不會受到任何影響。"
-      },
-      {
-        "num": 20,
-        "sec": "核心軟體觀念深度剖析",
-        "badge": "觀念收斂",
-        "title": "觀念模組收斂：上機前的心態三不原則",
-        "subtitle": "建立正確的 AI 人機協作與雲端操作心態",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "1. 不在桌面存重要檔案",
-            "content": "凡是在本機桌面或 C 槽的檔案，下課關機一定消失！所有作業一律儲存在 Cloud Shell 或 Google Drive。",
-            "tag": "存檔心態",
-            "theme": "rose"
-          },
-          {
-            "title": "2. 不盲目相信 AI 計算的數字",
-            "content": "AI 是語言大師但不是精確計算機，涉及營業利潤與毛利率計算，務必用 Excel 公式二次驗算。",
-            "tag": "查核心態",
-            "theme": "amber"
-          },
-          {
-            "title": "3. 不怕犯錯，勇敢下指令",
-            "content": "Vibe Coding 的精神就是隨時迭代！提示詞不滿意就直接跟 AI 說『幫我改成條列式、字體加大』。",
-            "tag": "協作心態",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "記住這三不原則，接下來我們就進入提示詞工程，學習如何向 AI 正確下達商業指令！"
-      },
-      {
-        "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "提示詞工程",
-        "title": "提示詞工程：如何向免費版 Antigravity / Gemini 精準下達商務指令？",
-        "subtitle": "告別無效問答！學會專業顧問級的商業結構化提問",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "常見無效提問方式",
-            "content": "『幫我做一份統一超的財報簡報』➔ 結果產出千篇一律的無聊空話，沒有數據、沒有架構、不能用。",
-            "tag": "失敗示範",
-            "theme": "rose"
-          },
-          {
-            "title": "高階顧問提問法",
-            "content": "交代角色背景、限定 10 頁 16:9 規格、給予真實 CSV 數據、指定微軟正黑體大字體、要求講稿備忘錄。",
-            "tag": "成功心法",
-            "theme": "emerald"
-          },
-          {
-            "title": "產出的巨大差距",
-            "content": "從『毫無價值的泛泛之談』躍升為『董事會可直接投影匯報的高水準專案報告』！",
-            "tag": "成效對比",
-            "theme": "navy"
-          }
-        ],
-        "speaker_note": "問對問題，AI 就是你的神隊友；問錯問題，AI 只能給你講廢話。這就是我們要學 CLEAR 法則的原因。"
-      },
-      {
-        "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "提問心法",
-        "title": "商管學生的免費 AI 辦公護城河：CLEAR 提問五大支柱",
-        "subtitle": "用最容易記住的 5 個英文縮寫，構建滴水不漏的商業提示詞",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "C - Context（背景）",
-            "content": "交代公司背景、產業別、受眾對象與目前面臨的商業課題。",
-            "tag": "環境背景",
-            "theme": "slate"
-          },
-          {
-            "title": "L - Limits（限制）",
-            "content": "指定頁數（如 10 頁）、語言（繁體中文）、字級（28pt+）、排版規格與嚴禁捏造數據。",
-            "tag": "邊界約束",
-            "theme": "rose"
-          },
-          {
-            "title": "E - Expectation（期望）",
-            "content": "具體列出每頁要包含的核心結論、圖表類型建議與演講者備忘錄 (Speaker Notes)。",
-            "tag": "產出規範",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "大家先記住前三個字母：C、L、E。背景講清楚，限制畫好紅線，產出期望訂明白。"
-      },
-      {
-        "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "CLEAR 法則下半部",
-        "title": "CLEAR 提示詞框架的行動與角色 (Action & Role)",
-        "subtitle": "激發大型語言模型最強專業深度的關鍵雙核心",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "A - Action（具體行動）",
-            "content": "使用強烈指向動詞：【剖析損益數據】、【計算毛利率與 YoY】、【規劃 10 頁簡報並撰寫講稿】。",
-            "tag": "動詞指向",
-            "theme": "emerald"
-          },
-          {
-            "title": "R - Role（專家角色）",
-            "content": "設定專業身分：『上市公司財務分析師兼麥肯錫策略顧問』，強制 AI 調動高端商管語彙庫。",
-            "tag": "角色定位",
-            "theme": "navy"
-          },
-          {
-            "title": "五要素合成效果",
-            "content": "C + L + E + A + R 組合出的指令，AI 生成的結構完整度高達 95% 以上！",
-            "tag": "黃金組合",
-            "theme": "indigo"
-          }
-        ],
-        "speaker_note": "A 代表明確的行動動詞，R 代表設定它的專家角色。這五個要素合在一起，AI 就不會亂回答。"
-      },
-      {
-        "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰拆解",
-        "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
-        "subtitle": "針對連鎖超商財報分析案例的實務設定示範",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "【角色設定範例】",
-            "content": "『你是一位具備 15 年經驗的零售業財務長特助與高階策略顧問。』",
-            "tag": "Role 示範",
-            "theme": "navy"
-          },
-          {
-            "title": "【商業背景範例】",
-            "content": "『我們公司為全台擁有逾 7,000 家門市的連鎖超商，剛完成 2024 年結算，目前正在籌備下週一董事會年度經營彙報。』",
-            "tag": "Context 示範",
-            "theme": "slate"
-          },
-          {
-            "title": "設定帶來的效益",
-            "content": "AI 會自動避免使用學生口語，改用『同店銷售成長 (SSSG)』、『毛利率優化』等董事會標準語彙。",
-            "tag": "商管語調",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "大家看，當你賦予它財務長特助的角色，它寫出來的文字馬上就具備主管階層的格局。"
-      },
-      {
-        "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰拆解",
-        "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
-        "subtitle": "確保產出嚴格遵守 10 頁規格、大字體與真實數據",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "【行動要求範例】",
-            "content": "『請先解析附帶的三年損益表 CSV，計算各年毛利率、營業利益率與 YoY，接著將轉型企劃草案整合成 10 頁簡報。』",
-            "tag": "Action 示範",
-            "theme": "emerald"
-          },
-          {
-            "title": "【嚴格限制範例】",
-            "content": "『1. 嚴格限制 10 頁，不得增減；2. 所有百分比必須根據原始 CSV 計算，嚴禁捏造；3. 字級標題至少 36pt、內文 24pt。』",
-            "tag": "Limits 示範",
-            "theme": "rose"
-          },
-          {
-            "title": "邊界設定的價值",
-            "content": "防止 AI 滔滔不絕寫出 30 頁長篇廢話，讓成果精準收斂在 10 頁精華之中。",
-            "tag": "精準收斂",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "一定要加上限制！告訴它只要 10 頁、不要廢話、數字要準確，這樣生成的結果才會是我們要的。"
-      },
-      {
-        "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "完整模板",
-        "title": "本週實戰完整提示詞模板 (可直接複製修改)",
-        "subtitle": "財報 CSV ＋ 線上 Word 草案 ➔ 10 頁高階 PPT 旗艦提示詞",
-        "type": "prompt",
-        "prompt_text": "【角色】：假設你是兼具麥肯錫商業策略總監與上市公司財務長 (CFO) 視角的 Agentic AI 智慧辦公專家。\n【背景】：我們團隊正在為連鎖零售企業（如統一超 2912）籌備年度董事會經營績效與智慧轉型策略簡報。\n【輸入資料】：\n1. 財務數據：2022-2024 損益表（營收、成本、毛利、營業利益、EPS）\n2. 轉型草案：智慧門市導入、AI 鮮食預測訂貨、冷鏈物流升級、資本支出 5,000 萬元\n【限制】：\n- 投影片嚴格限制為 10 頁，16:9 寬螢幕規格\n- 標題字級 36pt 以上、內文 24pt 以上（符合商務大字原則）\n- 所有財務比率（毛利率、營收 YoY）必須基於數據精算，嚴禁捏造虛假數字\n【任務】：\n請為我們生成 10 頁高階主管決策 PPT 大綱與完整講稿：\n每頁包含：1. 投影片標題；2. 三大核心視覺化結論；3. 建議圖表類型；4. 80~100 字演講者口語備忘錄 (Speaker Notes)。",
-        "prompt_role": "上市公司財務長特助兼麥肯錫策略顧問。",
-        "speaker_note": "大螢幕上的這段提示詞大家可以直接在我們的教學平台上點擊複製。這是一套價值上萬元的專業商務提示詞模板！"
-      },
-      {
-        "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "結果評估",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會一眼辨識 AI 生成內容是『神作』還是『地雷』",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "AI 的卓越強項",
-            "content": "邏輯框架完整、文字通順專業、能迅速把零散的想法歸納出三大層次與行動方案。",
-            "tag": "強大優勢",
-            "theme": "emerald"
-          },
-          {
-            "title": "AI 的潛在盲點",
-            "content": "可能把加減乘除算錯（例如 YoY 正負號弄反）、可能引用過時的法規資訊、或過度樂觀預測營收。",
-            "tag": "潛在缺陷",
-            "theme": "rose"
-          },
-          {
-            "title": "人類的價值體現",
-            "content": "企管學生的價值正是進行『最後一哩路的品質驗收與財務核對』！",
-            "tag": "人類把關",
-            "theme": "navy"
-          }
-        ],
-        "speaker_note": "永遠記住：AI 負責起草，人類負責把關！不能看都不看就直接交給主管。"
-      },
-      {
-        "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "防呆流程",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "交件或匯報前 3 分鐘必備的品質驗收 SOP",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "第 1 步：數字核對 (Numbers Check)",
-            "content": "抽查簡報上的毛利率、YoY 與 EPS，比對原始 Excel 試算表，確認百分比無誤。",
-            "tag": "數值查核",
-            "theme": "navy"
-          },
-          {
-            "title": "第 2 步：邏輯因果檢視 (Logic Flow)",
-            "content": "確認前因後果：痛點（報廢 1.2 億）➔ 解法（AI 預測）➔ 效益（省 3,600 萬），邏輯是否閉環。",
-            "tag": "邏輯查核",
-            "theme": "emerald"
-          },
-          {
-            "title": "第 3 步：字級版面排查 (Layout Check)",
-            "content": "確認投影片文字是否維持 28pt 以上大字體，有無文字重疊或跑版。",
-            "tag": "視覺查核",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "只要落實這三步查核，你的簡報送到老闆桌上就是 100 分！"
-      },
-      {
-        "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "避坑指南",
-        "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
-        "subtitle": "看見這三種徵兆，代表 AI 正在胡言亂語！",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "警訊 1：憑空冒出不存在的年份與代號",
-            "content": "明明原始資料只有 2022-2024，AI 卻自己掰出 2025 年的確實財報營收數字。",
-            "tag": "憑空捏造",
-            "theme": "rose"
-          },
-          {
-            "title": "警訊 2：過度完美的湊整數字",
-            "content": "營業毛利剛好是 1,000 億整數、成長率剛好是 20.00%，通常代表 AI 在瞎猜。",
-            "tag": "非真實特徵",
-            "theme": "amber"
-          },
-          {
-            "title": "警訊 3：引述無來源的法規或文號",
-            "content": "宣稱『根據經濟部 114 年第 999 號令』，查無實據的法規條文。",
-            "tag": "虛構出處",
-            "theme": "slate"
-          }
-        ],
-        "speaker_note": "大家在看 AI 給的答案時，只要看到這三種狀況，一定要警覺，要求它根據提供的原始資料重新整理。"
-      },
-      {
-        "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "迭代優化",
-        "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
-        "subtitle": "當第一次產出不如預期時，如何用一句話精準修正？",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "情境 A：文字太多、字體太小",
-            "content": "追問修正：『請把每頁文字精簡 50%，改成 3 大條列式，並將標題放大為 36pt 大字視覺風格。』",
-            "tag": "版面優化",
-            "theme": "navy"
-          },
-          {
-            "title": "情境 B：缺乏具體數據支撐",
-            "content": "追問修正：『請將 Slide 3 與 Slide 4 補充 2022 到 2024 年的具體營收數字與 YoY 成長率。』",
-            "tag": "數據強化",
-            "theme": "emerald"
-          },
-          {
-            "title": "情境 C：講稿太生硬不像真人說話",
-            "content": "追問修正：『請將演講備忘錄改寫為專業、穩重、適合在董事會口頭報告的口語化講稿。』",
-            "tag": "語調調優",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "不用重新重頭打一整段，只要針對不滿意的地方，發送第二輪指令微調即可。"
-      },
-      {
-        "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "多元場景",
-        "title": "本週提示詞模版在多元商務場景中的延伸應用",
-        "subtitle": "舉一反三：從零售業拓展至餐飲、製造、電商與校務專案",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "場景 1：餐飲連鎖展店評估",
-            "content": "載入各分店損益表 CSV ➔ 計算坪效與翻桌率 ➔ 產出 10 頁加盟大會簡報。",
-            "tag": "餐飲服務",
-            "theme": "navy"
-          },
-          {
-            "title": "場景 2：製造業設備汰換 ROI 評估",
-            "content": "載入老舊機台維修費用與電費 ➔ 試算採購新自動化設備之回收期 ➔ 生成主管呈核簡報。",
-            "tag": "製造營運",
-            "theme": "slate"
-          },
-          {
-            "title": "場景 3：電商雙 11 大促覆盤分析",
-            "content": "載入廣告投放金額與各品類 GMV ➔ 計算 ROAS 廣告投資報酬率 ➔ 輸出複盤檢討 PPT。",
-            "tag": "數位行銷",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "學會這套模板，未來你在任何產業做商業分析，都能快速套用。"
-      },
-      {
-        "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "心法收斂",
-        "title": "提示詞模組核心心法收斂：清晰大於華麗",
-        "subtitle": "商務溝通的第一法則：讓 AI 聽懂，讓主管看懂",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "結構清晰 (Structure)",
-            "content": "大標題、次標題、條列點明確，拒絕一大坨擠在一起的文字牆。",
-            "tag": "結構優先",
-            "theme": "navy"
-          },
-          {
-            "title": "數據說話 (Data-driven)",
-            "content": "每一個主張都有數據支撐，例如『營收成長』必須附帶『+8.86%』的確切數字。",
-            "tag": "實事求是",
-            "theme": "emerald"
-          },
-          {
-            "title": "行動導向 (Actionable)",
-            "content": "最後一頁永遠是具體的決策建議（核准預算、成立小組），推動事情發生。",
-            "tag": "驅動決策",
-            "theme": "amber"
-          }
-        ],
-        "speaker_note": "我們學提示詞不是在學吟詩作對，而是在學如何用最短時間把商業邏輯表達清楚。"
-      },
-      {
-        "num": 33,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "實機操作總覽",
-        "title": "實機操作 SOP：依循標準作業程序，建立雲端環境與體驗 AI 示範",
-        "subtitle": "跟著老師 4 大步驟，今晚搞定環境、下課瀟灑離開！",
-        "type": "cards",
-        "cards": [
-          {
-            "title": "步驟 1：開通 Google Cloud Shell",
-            "content": "瀏覽器連線 shell.cloud.google.com，啟動 5GB 永續雲端主機。",
-            "tag": "SOP 01",
-            "theme": "navy"
-          },
-          {
-            "title": "步驟 2：展開網頁版 VS Code 編輯器",
-            "content": "點擊『開啟編輯器』按鈕，進入全功能雲端開發介面並建立工作夾。",
-            "tag": "SOP 02",
-            "theme": "indigo"
-          },
-          {
-            "title": "步驟 3：註冊 GitHub 與登入課程平台",
-            "content": "綁定 Google 帳號與 Firebase，確保隨堂快測與練習即時雲端備份。",
-            "tag": "SOP 03",
-            "theme": "emerald"
-          }
-        ],
-        "speaker_note": "現在請大家跟上老師的節奏，切換到你的電腦畫面，我們一步一步做。"
-      },
-      {
-        "num": 34,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "步驟 01：雲端環境啟動",
-        "title": "步驟 1：啟動 Google Cloud Shell 雲端主機",
-        "subtitle": "網址輸入 shell.cloud.google.com，取得專屬 5GB 永久磁碟",
+        "sec": "帳號開通與環境設定",
+        "badge": "帳號 1 & 2",
+        "title": "步驟一與步驟二：Google 帳號登入與 Cloud Shell 開通",
+        "subtitle": "取得個人專屬 5GB 雲端空間的操作步驟",
         "type": "sop",
         "step_num": "01",
         "step_title": "連線 shell.cloud.google.com 並點擊繼續",
-        "step_desc": "在 Chrome 瀏覽器分頁開啟 shell.cloud.google.com。若首次使用，請點擊藍色【繼續】按鈕，系統會在 20 秒內為你佈署好專屬 Linux 虛擬主機。",
-        "step_tip": "完全免費！不需要填寫信用卡，使用學校或個人 Google 帳號均可開通。",
-        "speaker_note": "請大家在網址列輸入 shell.cloud.google.com，按下 Enter。看到藍色按鈕就按繼續。"
+        "step_desc": "1. 在 Chrome 網址列輸入 shell.cloud.google.com。\n2. 登入 Google 帳號後，畫面跳出啟用說明，點擊藍色【繼續 (Continue)】。\n3. 稍待 20 秒，終端機出現類似 user@cloudshell:~$ 提示符號即代表開通完成！",
+        "step_tip": "完全免費！系統不需填寫信用卡。建議使用學校帳號或常用個人 Gmail 帳號。",
+        "speaker_note": "請大家在網址列打上 shell.cloud.google.com，按 Enter 開始開通。"
       },
       {
-        "num": 35,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "步驟 01 細節",
-        "title": "步驟 1 技術細節剖析：終端機畫面與 $HOME 家目錄",
-        "subtitle": "確認你的專屬雲端永久硬碟已經就緒",
+        "num": 14,
+        "sec": "帳號開通與環境設定",
+        "badge": "帳號 3",
+        "title": "步驟三：註冊 GitHub 免費帳號",
+        "subtitle": "全球最大的程式碼與專案託管平台",
+        "type": "sop",
+        "step_num": "02",
+        "step_title": "前往 github.com 建立個人帳號",
+        "step_desc": "1. 瀏覽器開啟 github.com，點選右上角【Sign up】。\n2. 輸入常用信箱、設定密碼與使用者名稱（建議包含英文字母或學號）。\n3. 完成簡單拼圖驗證，至信箱收取 8 位數驗證碼輸入即完成啟用！",
+        "step_tip": "註冊完成後請記下使用者名稱與密碼，日後發布作業網頁時皆會使用。",
+        "speaker_note": "GitHub 是目前全球通用的專案平台，註冊一個帳號日後在求職時也能當作數位作品集。"
+      },
+      {
+        "num": 15,
+        "sec": "帳號開通與環境設定",
+        "badge": "帳號 4",
+        "title": "步驟四：登入本課程平台並綁定個人學籍",
+        "subtitle": "啟用 Firebase 雲端資料庫雙向同步功能",
+        "type": "sop",
+        "step_num": "03",
+        "step_title": "點擊本平台右上角【Google 登入】",
+        "step_desc": "1. 在本教學平台頂部導覽列右側，點擊白底【Google 登入】按鈕。\n2. 選取剛才登入之 Google 帳號授權連線。\n3. 在跳出的個人身分彈窗中，輸入學號（如：11200001）與姓名並儲存。\n4. 右上角顯示個人姓名與學號，即代表雲端成績登記系統已正式連線！",
+        "step_tip": "完成綁定後，隨堂測驗成績與作業上傳將自動歸檔於教師成績冊，下課免交紙本。",
+        "speaker_note": "請大家務必在我們平台上點擊登入，這樣待會做快測成績才會自動記錄下來。"
+      },
+      {
+        "num": 16,
+        "sec": "Vibe Coding 理念與思維",
+        "badge": "協作理念",
+        "title": "什麼是 Vibe Coding？企管系學生的跨領域協作優勢",
+        "subtitle": "Andrej Karpathy 於 2025 年提出的人機協作新範式",
+        "type": "cards",
+        "diagram_html": "\n<div style=\"width:100%; max-width:540px; background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06);\">\n  <div style=\"font-weight:800; font-size:16px; color:#1e3a8a; margin-bottom:12px; text-align:center;\">\n    🔄 Vibe Coding 人機協作 3 步驟循環\n  </div>\n  <div style=\"display:flex; justify-content:space-around; align-items:center; margin-bottom:10px;\">\n    <div style=\"text-align:center; padding:8px 12px; background:#f0f9ff; border-radius:8px; border:1px solid #bae6fd;\">\n      <div style=\"font-size:20px;\">🗣️</div>\n      <div style=\"font-weight:800; font-size:13px; color:#0369a1;\">1. 描述意圖</div>\n      <div style=\"font-size:11px; color:#64748b;\">自然語言講清需求</div>\n    </div>\n    <div style=\"font-size:16px; color:#94a3b8;\">➔</div>\n    <div style=\"text-align:center; padding:8px 12px; background:#f0fdf4; border-radius:8px; border:1px solid #bbf7d0;\">\n      <div style=\"font-size:20px;\">🤖</div>\n      <div style=\"font-weight:800; font-size:13px; color:#15803d;\">2. AI 快速起草</div>\n      <div style=\"font-size:11px; color:#64748b;\">生成結構與初稿</div>\n    </div>\n    <div style=\"font-size:16px; color:#94a3b8;\">➔</div>\n    <div style=\"text-align:center; padding:8px 12px; background:#fefce8; border-radius:8px; border:1px solid #fef08a;\">\n      <div style=\"font-size:20px;\">🧐</div>\n      <div style=\"font-weight:800; font-size:13px; color:#a16207;\">3. 驗收與微調</div>\n      <div style=\"font-size:11px; color:#64748b;\">人工核對確認品質</div>\n    </div>\n  </div>\n  <div style=\"font-size:12px; color:#475569; text-align:center; line-height:1.5;\">\n    學生是「專案經理」，以自然語言反覆微調，達到理想成效！\n  </div>\n</div>\n",
+        "cards": [
+          {
+            "title": "自然語言即指令",
+            "content": "商管同學不再需要死背繁瑣語法，用清楚口語交代情境與欄位規格，AI 協助生成初稿。",
+            "tag": "意圖導向",
+            "theme": "navy"
+          },
+          {
+            "title": "專案經理視角",
+            "content": "同學的角色是『商業規格定義者』與『成果驗收者』，重點在於看懂需求並把關品質。",
+            "tag": "核心定位",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "Vibe Coding 的精神就是用大白話溝通。你把需求講明白，AI 來幫你動手寫草稿。"
+      },
+      {
+        "num": 17,
+        "sec": "Vibe Coding 理念與思維",
+        "badge": "核心能力",
+        "title": "企管系在職專班同學的三大核心價值",
+        "subtitle": "在 AI 時代最受企業重視的商管專業能力",
         "type": "cards",
         "cards": [
           {
-            "title": "黑色指令視窗 (Terminal)",
-            "content": "看到類似 user@cloudshell:~$ 即表示雲端主機已啟動完畢，可輸入 Linux 指令。",
-            "tag": "終端介面",
+            "title": "1. 定義真實業務問題的能力",
+            "content": "能深入體察部門日常作業的瓶頸（如會議紀錄耗時、報表欄位混亂），提出明確改善目標。",
+            "tag": "問題診斷",
+            "theme": "navy"
+          },
+          {
+            "title": "2. 結構化規格表達能力",
+            "content": "能將零散對話整理成清晰的欄位、表格與項目清單，讓協作夥伴與 AI 都能準確理解。",
+            "tag": "結構歸納",
+            "theme": "emerald"
+          },
+          {
+            "title": "3. 成果查核與驗收把關能力",
+            "content": "具備辨識內容合理性與數字正確性的專業眼光，落實人機協作的最後一哩路檢驗。",
+            "tag": "品質把關",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "這些商業敏感度與把關眼光，正是 AI 無法取代的人類獨特價值。"
+      },
+      {
+        "num": 18,
+        "sec": "Vibe Coding 理念與思維",
+        "badge": "提問原則",
+        "title": "向 AI 提問的常見盲點與改善原則",
+        "subtitle": "如何避免問出籠統回答，讓 AI 給出立即可用的成果？",
+        "type": "comparison",
+        "cards": [
+          {
+            "title": "籠統模糊的提問（不推薦）",
+            "content": "「幫我整理一下昨天的會議對話。」\n\n• 缺點：AI 不知道你是什麼角色、需要什麼欄位、用什麼格式，只能給出泛泛摘要，實用性低。",
+            "tag": "常見盲點",
+            "theme": "rose"
+          },
+          {
+            "title": "結構明確的提問（CLEAR 推薦）",
+            "content": "「我是行政特助，請依附帶對話整理成正式會議紀錄，包含摘要與待辦追蹤表（欄位：項次、案由、負責人、完成期限）。」\n\n• 優點：格式工整、欄位完整，可直接呈送主管！",
+            "tag": "實用提問",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "提問越清楚，AI 給的產出就越專業。這就是為什麼我們要學 CLEAR 提問框架。"
+      },
+      {
+        "num": 19,
+        "sec": "CLEAR 提示詞框架實務",
+        "badge": "CLEAR 五要素",
+        "title": "CLEAR 提示詞框架深度剖析 (C-L-E-A-R)",
+        "subtitle": "商管職場最容易掌握的提問五大模組",
+        "type": "cards",
+        "diagram_html": "\n<div style=\"width:100%; max-width:540px; background:#ffffff; border:1px solid #cbd5e1; border-radius:10px; padding:16px; box-shadow:0 2px 8px rgba(0,0,0,0.06);\">\n  <div style=\"font-weight:800; font-size:16px; color:#1e3a8a; margin-bottom:12px; text-align:center;\">\n    🧱 CLEAR 商務提問 5 大積木架構\n  </div>\n  <div style=\"display:flex; flex-direction:column; gap:6px;\">\n    <div style=\"background:#f0f9ff; border:1px solid #bae6fd; border-left:4px solid #0284c7; padding:6px 10px; border-radius:4px; display:flex; justify-content:space-between; align-items:center;\">\n      <span style=\"font-weight:900; color:#0284c7; font-size:14px;\">C - Context（背景）</span>\n      <span style=\"font-size:11px; color:#0369a1;\">交代商業情境與受眾</span>\n    </div>\n    <div style=\"background:#fef2f2; border:1px solid #fecaca; border-left:4px solid #ef4444; padding:6px 10px; border-radius:4px; display:flex; justify-content:space-between; align-items:center;\">\n      <span style=\"font-weight:900; color:#dc2626; font-size:14px;\">L - Limits（限制）</span>\n      <span style=\"font-size:11px; color:#b91c1c;\">限定字數、格式與排版</span>\n    </div>\n    <div style=\"background:#fefce8; border:1px solid #fef08a; border-left:4px solid #eab308; padding:6px 10px; border-radius:4px; display:flex; justify-content:space-between; align-items:center;\">\n      <span style=\"font-weight:900; color:#ca8a04; font-size:14px;\">E - Expectation（期望）</span>\n      <span style=\"font-size:11px; color:#a16207;\">具體指明產出欄位與結構</span>\n    </div>\n    <div style=\"background:#f0fdf4; border:1px solid #bbf7d0; border-left:4px solid #22c55e; padding:6px 10px; border-radius:4px; display:flex; justify-content:space-between; align-items:center;\">\n      <span style=\"font-weight:900; color:#16a34a; font-size:14px;\">A - Action（行動）</span>\n      <span style=\"font-size:11px; color:#15803d;\">使用明確動詞【整理/編排】</span>\n    </div>\n    <div style=\"background:#faf5ff; border:1px solid #e9d5ff; border-left:4px solid #a855f7; padding:6px 10px; border-radius:4px; display:flex; justify-content:space-between; align-items:center;\">\n      <span style=\"font-weight:900; color:#9333ea; font-size:14px;\">R - Role（角色）</span>\n      <span style=\"font-size:11px; color:#7e22ce;\">設定專業專家身分</span>\n    </div>\n  </div>\n</div>\n",
+        "cards": [
+          {
+            "title": "C ＋ L：背景與邊界",
+            "content": "清楚說明公司與部門情境 (C)，並訂出排除條件、語言與字數限制 (L)。",
+            "tag": "情境設定",
+            "theme": "navy"
+          },
+          {
+            "title": "E ＋ A：期望與動作",
+            "content": "明確指出要交付的產出項目 (E)，搭配具體專業動詞如【整理/分析】(A)。",
+            "tag": "產出指引",
+            "theme": "emerald"
+          },
+          {
+            "title": "R：專業角色",
+            "content": "設定資深特助或商管顧問身分 (R)，引導 AI 調動正式商務公文語彙庫。",
+            "tag": "專家語調",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "記住 C-L-E-A-R 這五個字母，以後每次向 AI 提問就照著這五個積木來堆疊。"
+      },
+      {
+        "num": 20,
+        "sec": "CLEAR 提示詞框架實務",
+        "badge": "逐項拆解",
+        "title": "CLEAR 各要素具體套用與實務叮嚀",
+        "subtitle": "針對常用辦公文書的實務撰寫指引",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "Context 背景交代",
+            "content": "例如：「我們是連鎖餐飲門市管理處，正在整理每週主管會報。」",
+            "tag": "C 範例",
+            "theme": "navy"
+          },
+          {
+            "title": "Limits 限制條件",
+            "content": "例如：「繁體中文、表格呈现、未在對話提及的日期標註『待確認』。」",
+            "tag": "L 範例",
+            "theme": "rose"
+          },
+          {
+            "title": "Expectation 產出期望",
+            "content": "例如：「包含核心決議條列 3 點，以及包含案由、負責人的追蹤表格。」",
+            "tag": "E 範例",
+            "theme": "amber"
+          },
+          {
+            "title": "Action ＋ Role",
+            "content": "例如：「請為我【整理編排】，假設你是具備 10 年經驗的總經理特助。」",
+            "tag": "A & R 範例",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "把這五點組合起來，一段專業的商務指令就完成了。"
+      },
+      {
+        "num": 21,
+        "sec": "第一週提問實戰演練",
+        "badge": "任務情境",
+        "title": "本週實作任務：雜亂會議對話整理為結構化追蹤表",
+        "subtitle": "職場高頻真實需求：如何 3 分鐘完成正式會議紀錄？",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "日常工作真實情境",
+            "content": "主管開完會丟下一段雜亂語音或逐字稿，要求助理在下班前整理出清楚的追蹤表。",
+            "tag": "情境說明",
+            "theme": "navy"
+          },
+          {
+            "title": "手動整理的耗時點",
+            "content": "逐字閱讀、手動抓重點、手動畫表格排版，常需耗費 30 至 40 分鐘。",
+            "tag": "痛點解析",
+            "theme": "amber"
+          },
+          {
+            "title": "AI 輔助的作業成效",
+            "content": "運用 CLEAR 提示詞，30 秒內自動歸納摘要、提取決議與負責人清單！",
+            "tag": "效率升級",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "我們第一週就先來挑戰這個每個人工作都一定會用到的實務任務：會議紀錄整理。"
+      },
+      {
+        "num": 22,
+        "sec": "第一週提問實戰演練",
+        "badge": "原始資料",
+        "title": "課堂演練用原始對話稿 (Raw Conversation Notes)",
+        "subtitle": "零散口語紀錄示範文字，請於練習時複製使用",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "對話逐字稿內容",
+            "content": "「店長阿明說下週一前要向總部回報冷氣故障報修，小美說排班表週三會交給我看，大華提到中秋禮盒 DM 印好了但還沒分送到各門市，預計週五前要由工讀生完成配送，另外大家都覺得目前每週會議時間太長，建議下次改為 30 分鐘以內。」",
+            "tag": "原始口語",
             "theme": "slate"
           },
           {
-            "title": "輸入指令驗證：pwd",
-            "content": "在終端機輸入 pwd 並按 Enter，會顯示 /home/你的帳號，這就是 5GB 永續空間所在。",
+            "title": "整理目標方向",
+            "content": "將上述口語文字中的「人名」、「待辦任務」、「截止期限」精準抓出，並排成工整表格。",
+            "tag": "目標要求",
+            "theme": "navy"
+          }
+        ],
+        "speaker_note": "這段對話看起來很生活化，但包含了四個重要事項，待會看 AI 怎麼幫我們分類整理。"
+      },
+      {
+        "num": 23,
+        "sec": "第一週提問實戰演練",
+        "badge": "角色與邊界",
+        "title": "設定 AI 角色與防呆條件",
+        "subtitle": "確保產出風格正式且不虛構未提及的資訊",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "設定角色：總經理室行政特助",
+            "content": "以公文規格口吻產出，措辭客觀、層次分明。",
+            "tag": "角色規範",
+            "theme": "navy"
+          },
+          {
+            "title": "防呆條件：不捏造事實",
+            "content": "指示 AI 只能依據提供文字整理，未提及的期限一律標示「待確認」，杜絕自由發揮。",
+            "tag": "安全邊界",
+            "theme": "rose"
+          },
+          {
+            "title": "指定格式：Markdown 表格",
+            "content": "表格包含：項次、決議事項、主辦人、預計完成日期，一目了然。",
+            "tag": "格式規範",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "一定要記得加上『未提及的標示待確認』，這樣 AI 就不會自己編造日期。"
+      },
+      {
+        "num": 24,
+        "sec": "第一週提問實戰演練",
+        "badge": "提問步驟",
+        "title": "向 AI 提問的完整實機操作步驟",
+        "subtitle": "4 個動作快速完成課堂練習",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "步驟 1：開啟 AI 工具視窗",
+            "content": "在瀏覽器分頁開啟免費版 Antigravity 或 Google Gemini (gemini.google.com)。",
+            "tag": "開啟工具",
+            "theme": "navy"
+          },
+          {
+            "title": "步驟 2：複製完整提示詞",
+            "content": "至下一頁簡報點選【一鍵複製提示詞】按鈕。",
+            "tag": "複製指令",
+            "theme": "emerald"
+          },
+          {
+            "title": "步驟 3：貼上並按下發送",
+            "content": "在 AI 對話輸入框中按 Ctrl+V 貼上並發送，觀察生成結果。",
+            "tag": "執行生成",
+            "theme": "indigo"
+          },
+          {
+            "title": "步驟 4：人工核對與微調",
+            "content": "對照原始對話，檢查 4 個待辦事項是否皆有列入表格。",
+            "tag": "人工驗收",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "操作非常簡單直覺，接下來我們看完整的提示詞模板。"
+      },
+      {
+        "num": 25,
+        "sec": "第一週提問實戰演練",
+        "badge": "提示詞準備",
+        "title": "本週實戰提示詞模板準備就緒",
+        "subtitle": "下一頁即為完整提示詞，大字體呈現、可直接點擊複製",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "符合 CLEAR 完整規範",
+            "content": "包含明確背景、限制條件、期望表格結構、專業行動指令與角色設定。",
+            "tag": "規範完備",
+            "theme": "navy"
+          },
+          {
+            "title": "一鍵複製按鈕支援",
+            "content": "點擊簡報右上角藍色按鈕即可自動複製至剪貼簿。",
+            "tag": "便利用餐",
+            "theme": "emerald"
+          },
+          {
+            "title": "支援課堂後自由修改",
+            "content": "括號內文字日後在工作上可自由替換成自己的業務內容。",
+            "tag": "職場即用",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "請大家看下一頁，我們準備了完整的提示詞。"
+      },
+      {
+        "num": 26,
+        "sec": "第一週提問實戰演練",
+        "badge": "實戰 Prompt 模板",
+        "title": "本週實戰完整提示詞模板 (可直接點擊複製修改)",
+        "subtitle": "會議紀錄整理專用 ｜ 依循 CLEAR 提問框架 ｜ 適用任何 AI 工具",
+        "type": "prompt",
+        "prompt_role": "總經理室資深行政特助 (Executive Assistant)",
+        "prompt_text": "【角色】：假設你是總經理室資深行政特助。\n【背景】：部門剛結束每週門市營運會議，現場討論對話較為零散雜亂。\n【任務】：請將以下口語對話整理成正式的商業會議紀錄：\n1. 【會議核心摘要】：以 3 點條列呈現重要決策方向。\n2. 【待辦追蹤表格】：使用 Markdown 表格，欄位需包含「項次」、「決議事項」、「主辦人員」、「協辦人員」、「預計完成日期」。\n3. 【後續注意事項】：列出 2 點提醒主管追蹤之重點事項。\n【限制】：\n- 請使用繁體中文，格式工整清爽，語調專業沈穩。\n- 嚴格依據所附資料整理，未在對話中明確提及的日期請一律填寫「待確認」，不可自行捏造！\n【原始對話紀錄】：\n店長阿明說下週一前要向總部回報冷氣故障報修，小美說排班表週三會交給我看，大華提到中秋禮盒DM印好了但還沒分送到各門市，預計週五前要由工讀生完成配送，另外大家都覺得目前每週會議時間太長，建議下次改為30分鐘以內。",
+        "speaker_note": "大家看螢幕上的大字體提示詞，右上角點擊一鍵複製，貼給 AI 即可得到整齊專業的會議紀錄！",
+        "prompt": "【角色】：假設你是總經理室資深行政特助。\n【背景】：部門剛結束每週門市營運會議，現場討論對話較為零散雜亂。\n【任務】：請將以下口語對話整理成正式的商業會議紀錄：\n1. 【會議核心摘要】：以 3 點條列呈現重要決策方向。\n2. 【待辦追蹤表格】：使用 Markdown 表格，欄位需包含「項次」、「決議事項」、「主辦人員」、「協辦人員」、「預計完成日期」。\n3. 【後續注意事項】：列出 2 點提醒主管追蹤之重點事項。\n【限制】：\n- 請使用繁體中文，格式工整清爽，語調專業沈穩。\n- 嚴格依據所附資料整理，未在對話中明確提及的日期請一律填寫「待確認」，不可自行捏造！\n【原始對話紀錄】：\n店長阿明說下週一前要向總部回報冷氣故障報修，小美說排班表週三會交給我看，大華提到中秋禮盒DM印好了但還沒分送到各門市，預計週五前要由工讀生完成配送，另外大家都覺得目前每週會議時間太長，建議下次改為30分鐘以內。",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是總經理室資深行政特助。\n【背景】：部門剛結束每週門市營運會議，現場討論對話較為零散雜亂。\n【任務】：請將以下口語對話整理成正式的商業會議紀錄：\n1. 【會議核心摘要】：以 3 點條列呈現重要決策方向。\n2. 【待辦追蹤表格】：使用 Markdown 表格，欄位需包含「項次」、「決議事項」、「主辦人員」、「協辦人員」、「預計完成日期」。\n3. 【後續注意事項】：列出 2 點提醒主管...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
+      },
+      {
+        "num": 27,
+        "sec": "成果驗收與微調",
+        "badge": "產出成果",
+        "title": "檢視 AI 生成結果：結構化會議紀錄示範",
+        "subtitle": "觀察 AI 如何將零散口語轉化為專業表格",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "會議核心摘要",
+            "content": "1. 門市硬體修繕進度追蹤；2. 人力排班與行銷物料配送安排；3. 決議優化會議流程，縮短為 30 分鐘。",
+            "tag": "條列摘要",
+            "theme": "navy"
+          },
+          {
+            "title": "待辦追蹤表格",
+            "content": "項目 1：冷氣報修（阿明 / 下週一）\n項目 2：排班表交付（小美 / 週三）\n項目 3：中秋 DM 配送（大華 / 週五前）",
+            "tag": "結構表格",
+            "theme": "emerald"
+          },
+          {
+            "title": "未提及事項防呆",
+            "content": "協辦人員皆如實標註為「無 / 待確認」，未憑空編造虛假人名，符合專業規範。",
+            "tag": "防呆核對",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "原本雜亂的一段話，現在變成表格與重點條列，拿去向主管報告就非常體面。"
+      },
+      {
+        "num": 28,
+        "sec": "成果驗收與微調",
+        "badge": "查核指引",
+        "title": "人工驗收三步法 (Human Verification Protocol)",
+        "subtitle": "把成果交出前，花費 1 分鐘快速檢驗的要點",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "1. 人名與任務對應核對",
+            "content": "確認阿明、小美、大華的任務分配是否正確無顛倒。",
+            "tag": "指派核對",
+            "theme": "navy"
+          },
+          {
+            "title": "2. 時間期限是否如實記錄",
+            "content": "確認週一、週三、週五的時間節點與原始文字吻合。",
+            "tag": "時間核對",
+            "theme": "emerald"
+          },
+          {
+            "title": "3. 檢查有無不實資訊",
+            "content": "確認 AI 沒有多加了原始對話中沒有的虛構任務。",
+            "tag": "真實性核對",
+            "theme": "rose"
+          }
+        ],
+        "speaker_note": "永遠記得：AI 是好幫手，但最終簽章確認的永遠是我們自己。"
+      },
+      {
+        "num": 29,
+        "sec": "成果驗收與微調",
+        "badge": "辨識警訊",
+        "title": "大型語言模型常見盲點與識別技巧",
+        "subtitle": "辨識 AI 是否出現過度推論的三種跡象",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "跡象 1：自行補齊未提到的細節",
+            "content": "例如對話中沒講預算金額，AI 卻自己寫出「預算 5 萬元」。",
+            "tag": "過度推論",
+            "theme": "rose"
+          },
+          {
+            "title": "跡象 2：角色身分張冠李戴",
+            "content": "把小美的排班工作誤寫成阿明負責。",
+            "tag": "對象混淆",
+            "theme": "amber"
+          },
+          {
+            "title": "跡象 3：格式未依限制呈現",
+            "content": "要求表格呈現卻給出大篇散文文字。",
+            "tag": "格式未符",
+            "theme": "slate"
+          }
+        ],
+        "speaker_note": "遇到這些情況不用慌張，只要給一句簡單微調指令即可修正。"
+      },
+      {
+        "num": 30,
+        "sec": "成果驗收與微調",
+        "badge": "疊代微調",
+        "title": "第二輪疊代指令技巧 (Iterative Refinement)",
+        "subtitle": "用自然語言一句話進行微調，實踐 Vibe Coding 敏捷精神",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "微調範例 A：想要更簡潔",
+            "content": "「請把摘要精簡為 2 點，每點不超過 20 個字。」",
+            "tag": "精簡字數",
+            "theme": "navy"
+          },
+          {
+            "title": "微調範例 B：調整表格欄位",
+            "content": "「請在表格中加上一欄『優先順序 (高/中/低)』。」",
+            "tag": "增加欄位",
+            "theme": "emerald"
+          },
+          {
+            "title": "微調範例 C：調整公文語調",
+            "content": "「請將語氣調整得更沈穩專業，適合呈送給董事長核閱。」",
+            "tag": "語調調整",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "就像在跟實習生對話一樣，告訴它哪裡要加強，它就會立刻幫你改好。"
+      },
+      {
+        "num": 31,
+        "sec": "成果驗收與微調",
+        "badge": "職場延伸",
+        "title": "本週提問技巧在不同商務場合的應用",
+        "subtitle": "一招學會，日常辦公各領域皆能派上用場",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "情境 1：客戶電話諮詢重點整理",
+            "content": "將電話對話摘要成包含客戶需求、預算與跟進時間的紀錄。",
+            "tag": "業務溝通",
+            "theme": "navy"
+          },
+          {
+            "title": "情境 2：專案進度週報撰寫",
+            "content": "將同仁回報的零碎進度整理成本週完成事項與下週預定工作。",
+            "tag": "專案管理",
+            "theme": "emerald"
+          },
+          {
+            "title": "情境 3：供應商報價條件對比",
+            "content": "將多家廠商的 Email 條件整理成清晰的三線對比表。",
+            "tag": "採購評估",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "學會整理非結構化資訊，是現代商管人員非常吃香的核心工作能力。"
+      },
+      {
+        "num": 32,
+        "sec": "成果驗收與微調",
+        "badge": "心法收斂",
+        "title": "提問實務核心觀念收斂：清楚勝於華麗",
+        "subtitle": "三句實用提問心法，伴你輕鬆上手 AI 辦公",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "講清身分與情境",
+            "content": "讓 AI 有明確的方向感，避免給出不著邊際的空泛答案。",
+            "tag": "方向明確",
+            "theme": "navy"
+          },
+          {
+            "title": "指定清晰的格式",
+            "content": "需要表格就說表格，需要條列就說條列，省去後續排版時間。",
+            "tag": "格式規範",
+            "theme": "emerald"
+          },
+          {
+            "title": "保持核對好習慣",
+            "content": "重要事項花 30 秒肉眼檢查確認，確保專業品質零瑕疵。",
+            "tag": "專業負責",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "掌握這三點，AI 就是你最得力的辦公小助理。"
+      },
+      {
+        "num": 33,
+        "sec": "實機操作步驟詳解",
+        "badge": "實機 SOP 導覽",
+        "title": "實機操作 SOP：啟動雲端環境與建立目錄",
+        "subtitle": "依循標準步驟，在 Google Cloud Shell 建立專屬資料夾",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "SOP 01：連線 Cloud Shell",
+            "content": "在 Chrome 輸入 shell.cloud.google.com 啟動個人雲端主機。",
+            "tag": "步驟 1",
+            "theme": "navy"
+          },
+          {
+            "title": "SOP 02：建立本學期資料夾",
+            "content": "輸入 mkdir -p ~/vnu_business_software/week01 建立目錄。",
+            "tag": "步驟 2",
+            "theme": "emerald"
+          },
+          {
+            "title": "SOP 03：開啟網頁版 VS Code",
+            "content": "點擊右上角【開啟編輯器】，展開檔案樹進行編輯與存檔。",
+            "tag": "步驟 3",
+            "theme": "indigo"
+          }
+        ],
+        "speaker_note": "現在請大家跟著步驟在自己的電腦畫面上依序操作。"
+      },
+      {
+        "num": 34,
+        "sec": "實機操作步驟詳解",
+        "badge": "步驟 01",
+        "title": "步驟 1：在終端機輸入指令建立專屬資料夾",
+        "subtitle": "養成有條理的商務檔案管理習慣",
+        "type": "sop",
+        "step_num": "01",
+        "step_title": "輸入指令：mkdir -p ~/vnu_business_software/week01",
+        "step_desc": "在黑色終端機游標處，輸入以下指令並按 Enter：\nmkdir -p ~/vnu_business_software/week01\n接著輸入 cd ~/vnu_business_software/week01 切換進入該目錄。",
+        "step_tip": "符號 ~ 代表家目錄（$HOME），在此目錄下的檔案受 Google 永續保存。",
+        "speaker_note": "大家在終端機敲入這行指令，按 Enter，資料夾就建好了。"
+      },
+      {
+        "num": 35,
+        "sec": "實機操作步驟詳解",
+        "badge": "步驟 01 細節",
+        "title": "步驟 1 技術細節：驗證目前工作路徑",
+        "subtitle": "確認你的終端機停留在正確的資料夾位置",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "輸入驗證指令：pwd",
+            "content": "在終端機輸入 pwd 並按 Enter，畫面顯示完整路徑。",
             "tag": "驗證指令",
             "theme": "navy"
           },
           {
-            "title": "預裝工具驗證：python3 --version",
-            "content": "輸入 python3 --version，會看到 Python 3.10+ 已由 Google 預先裝好，完全不用自己裝！",
-            "tag": "預裝環境",
+            "title": "預期顯示結果",
+            "content": "/home/你的帳號/vnu_business_software/week01",
+            "tag": "預期路徑",
             "theme": "emerald"
+          },
+          {
+            "title": "檢查 Python 版本",
+            "content": "輸入 python3 --version，看到 Python 3.10+ 即代表環境完全就緒！",
+            "tag": "版本確認",
+            "theme": "slate"
           }
         ],
-        "speaker_note": "大家看到綠色的游標閃爍，輸入 pwd，這就是你的永久硬碟。下課電腦重開機，這裡的東西都不會少。"
+        "speaker_note": "看到路徑正確顯示，就表示第一步完全成功。"
       },
       {
         "num": 36,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "里程碑驗證 1",
+        "sec": "實機操作步驟詳解",
+        "badge": "里程碑確認 1",
         "title": "里程碑驗證：步驟 1 成果確認清單",
-        "subtitle": "舉手前請先自主確認以下三項指標是否亮綠燈",
+        "subtitle": "請自我確認以下三點是否皆已達成",
         "type": "cards",
         "cards": [
           {
-            "title": "指標 1：Cloud Shell 終端機連線正常",
-            "content": "螢幕下方黑色終端機可正常輸入文字，無紅字連線逾時報錯。",
-            "tag": "連線檢核",
+            "title": "指標 1：終端機連線綠燈",
+            "content": "能正常輸入指令無報錯，游標可自由移動。",
+            "tag": "連線檢視",
             "theme": "navy"
           },
           {
-            "title": "指標 2：Python 與 Git 正常響應",
-            "content": "輸入 git --version 與 python3 --version 均能顯示版本號碼。",
-            "tag": "工具檢核",
+            "title": "指標 2：week01 資料夾建立成功",
+            "content": "輸入 pwd 正確顯示位於 week01 目錄。",
+            "tag": "目錄檢視",
             "theme": "emerald"
           },
           {
-            "title": "指標 3：配額充足提示",
-            "content": "右上角顯示每週 50 小時免費額度，完全不需付費。",
-            "tag": "配額檢核",
+            "title": "指標 3：Python 工具響應正常",
+            "content": "成功查詢到系統預載的 Python 版本。",
+            "tag": "工具檢視",
             "theme": "amber"
           }
         ],
-        "speaker_note": "步驟 1 順利完成的同學請給老師一個微笑，我們接著看步驟 2。"
+        "speaker_note": "第一步完成的同學請繼續看步驟 2。"
       },
       {
         "num": 37,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "步驟 02：VS Code 啟動",
-        "title": "步驟 2：開啟雲端網頁版 VS Code 編輯器",
-        "subtitle": "點擊右上角【開啟編輯器 (Open Editor)】圖示",
+        "sec": "實機操作步驟詳解",
+        "badge": "步驟 02",
+        "title": "步驟 2：展開網頁版 VS Code 編輯器",
+        "subtitle": "點擊右上角【開啟編輯器 (Open Editor)】按鈕",
         "type": "sop",
         "step_num": "02",
-        "step_title": "展開 Cloud Shell Editor (VS Code Web)",
-        "step_desc": "在 Cloud Shell 視窗右上角工具列，點擊一隻筆與視窗圖案的【開啟編輯器 (Open Editor)】按鈕。瀏覽器上方會立即展開完整的 VS Code 檔案樹與編輯畫面。",
-        "step_tip": "可以在左側檔案總管點右鍵【New Folder】，建立本學期專屬資料夾『vnu_business_software』！",
-        "speaker_note": "大家看大螢幕右上角，點這個筆的圖示，它會把終端機變成跟 VS Code 一模一樣的視覺介面。"
+        "step_title": "展開 Cloud Shell Editor 視窗",
+        "step_desc": "在 Cloud Shell 視窗右上角工具列，點擊一隻筆與視窗形狀的圖示【開啟編輯器】。約 10 秒後，上方會展開完整的 VS Code 檔案樹與編輯畫面。",
+        "step_tip": "可以在左側檔案總管找到剛建好的 vnu_business_software 資料夾。",
+        "speaker_note": "點這個筆的圖案，網頁版 VS Code 就會展開在畫面上方。"
       },
       {
         "num": 38,
-        "sec": "實機操作 SOP 逐步詳解",
+        "sec": "實機操作步驟詳解",
         "badge": "步驟 02 細節",
-        "title": "步驟 2 技術細節剖析：在雲端建立個人專屬作業目錄",
-        "subtitle": "建立有條不紊的商務檔案架構好習慣",
+        "title": "步驟 2 技術細節：在 VS Code 中建立第一個筆記檔案",
+        "subtitle": "練習新增檔案與儲存文字",
         "type": "cards",
         "cards": [
           {
-            "title": "建立主資料夾",
-            "content": "在終端機輸入：mkdir -p ~/vnu_business_software/week01 並按 Enter。",
-            "tag": "目錄指令",
+            "title": "右鍵新增檔案",
+            "content": "在 week01 資料夾點右鍵 ➔ 選取【New File】➔ 命名為 notes.md。",
+            "tag": "新增檔案",
             "theme": "navy"
           },
           {
-            "title": "進入該目錄",
-            "content": "輸入：cd ~/vnu_business_software/week01，此處就是本週所有練習的家。",
-            "tag": "切換路徑",
+            "title": "輸入練習內容",
+            "content": "在編輯區打上：# 第一週課程筆記，並寫下自己的學號與姓名。",
+            "tag": "輸入文字",
             "theme": "emerald"
           },
           {
-            "title": "檔案總管即時連動",
-            "content": "上方 VS Code 檔案樹會立刻同步出現該資料夾，可自由建立文字檔或上傳檔案。",
-            "tag": "可視化連動",
-            "theme": "indigo"
+            "title": "自動即時存檔",
+            "content": "VS Code 預設具備自動存檔功能，亦可按 Ctrl+S 手動存檔。",
+            "tag": "存檔機制",
+            "theme": "slate"
           }
         ],
-        "speaker_note": "建好 week01 資料夾後，以後每週我們就在裡面建 week02、week03，整齊又清楚。"
+        "speaker_note": "大家在左邊點右鍵新增 notes.md，寫上自己的名字，體驗一下雲端存檔。"
       },
       {
         "num": 39,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "里程碑驗證 2",
+        "sec": "實機操作步驟詳解",
+        "badge": "里程碑確認 2",
         "title": "里程碑驗證：步驟 2 成果確認清單",
-        "subtitle": "確認你的雲端編輯器與專案目錄已建立成功",
+        "subtitle": "確認編輯器畫面與檔案樹正常顯示",
         "type": "cards",
         "cards": [
           {
-            "title": "指標 1：VS Code 編輯器視窗正常顯示",
-            "content": "畫面分為上方檔案編輯區與下方終端機，左側有檔案總管側邊欄。",
-            "tag": "介面檢核",
+            "title": "指標 1：VS Code 編輯器正常載入",
+            "content": "能看見左側檔案樹與上方多分頁標籤。",
+            "tag": "介面檢視",
             "theme": "navy"
           },
           {
-            "title": "指標 2：目錄路徑正確無誤",
-            "content": "終端機輸入 pwd 顯示位於 /home/.../vnu_business_software/week01。",
-            "tag": "路徑檢核",
+            "title": "指標 2：notes.md 檔案成功建立",
+            "content": "檔案樹中能看見 notes.md 且能正常打字。",
+            "tag": "檔案檢視",
             "theme": "emerald"
           },
           {
-            "title": "指標 3：繁體中文介面可選",
-            "content": "可自由在擴充套件搜尋 Chinese (Traditional) 安裝繁中語言包。",
-            "tag": "語言檢核",
+            "title": "指標 3：終端機與編輯器可切換",
+            "content": "點擊切換編輯器/終端機按鈕可自由切換畫面。",
+            "tag": "操作檢視",
             "theme": "amber"
           }
         ],
-        "speaker_note": "太棒了！現在大家已經擁有跟專業軟體工程師一模一樣的高規格雲端開發環境了！"
+        "speaker_note": "順利看見編輯器的同學，你的雲端環境已經完全建立完成了！"
       },
       {
         "num": 40,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "步驟 03：帳號整合",
-        "title": "步驟 3：註冊 GitHub 帳號並登入課程雲端平台",
-        "subtitle": "完成 Google 登入與作業成果 Firebase 雲端同步綁定",
+        "sec": "實機操作步驟詳解",
+        "badge": "步驟 03",
+        "title": "步驟 3：登入課程教學平台完成學籍綁定",
+        "subtitle": "確保平時快測與作業即時存檔至雲端 Firebase",
         "type": "sop",
         "step_num": "03",
-        "step_title": "連結個人身分與雲端資料庫",
-        "step_desc": "1. 打開 github.com，註冊一組免費帳號（已有帳號直接登入）；2. 打開本課程教學平台，點擊右上角【Google 登入】按鈕，完成身分授權並填入學號與姓名。",
-        "step_tip": "完成 Google 登入後，你在平台上的所有做題紀錄、個人筆記與作業上傳，都會即時寫入 Firebase 雲端！",
-        "speaker_note": "請大家點擊教學平台右上角的大按鈕，用你的 Google 帳號登入，系統會自動幫你建立雲端學籍。"
+        "step_title": "完成平台 Google 帳號授權登入",
+        "step_desc": "1. 切換至本課程教學平台分頁。\n2. 點擊右上角【Google 登入】並完成授權。\n3. 在彈窗確認學號與姓名正確無誤。\n4. 右上角狀態燈顯示綠色「已連線」即完成登入！",
+        "step_tip": "登入後，你在平台上的所有做題紀錄與作業繳交皆會即時寫入雲端伺服器。",
+        "speaker_note": "請大家點選平台右上角登入，這樣待會做測驗成績才會被系統記錄。"
       },
       {
         "num": 41,
-        "sec": "實機操作 SOP 逐步詳解",
+        "sec": "實機操作步驟詳解",
         "badge": "步驟 03 細節",
-        "title": "步驟 3 技術細節剖析：Firebase 雲端即時資料庫架構",
-        "subtitle": "為什麼在教室做完的作業，回家開手機就能看到？",
+        "title": "步驟 3 技術細節：Firebase 雲端同步機制說明",
+        "subtitle": "為什麼在教室做的練習，回家用手機也能看到？",
         "type": "cards",
         "cards": [
           {
-            "title": "雲端 Firestore 即時監聽",
-            "content": "每當你在平台上完成 5 題小快測或送出作業，資料立即加密同步至 Google Firebase 伺服器。",
-            "tag": "即時同步",
+            "title": "即時雲端資料庫儲存",
+            "content": "送出測驗或筆記時，資料加密傳送至 Google Firebase 資料庫，即時備份。",
+            "tag": "雲端同步",
             "theme": "navy"
           },
           {
-            "title": "學號姓名自動綁定",
-            "content": "教師後台即時收到每位同學的上繳紀錄，免除傳統收發隨身碟或繳紙本的繁瑣。",
+            "title": "學號自動綁定成績冊",
+            "content": "教師後台即時彙整全班學習進度，免除紙本登記與批改延遲。",
             "tag": "自動歸檔",
             "theme": "emerald"
           },
           {
-            "title": "手機電腦全適應",
-            "content": "下班在公車上用手機打開本平台，也能隨時複習投影片與檢視批改進度。",
+            "title": "全裝置自適應瀏覽",
+            "content": "平台支援手機與平板瀏覽，隨時隨地皆可調閱教材與複習題庫。",
             "tag": "跨平台",
             "theme": "indigo"
           }
         ],
-        "speaker_note": "這就是為什麼老師強調不用怕教室電腦還原，因為你的成果早就已經飛到 Google 雲端上了。"
+        "speaker_note": "有了雲端同步，大家平時的點滴努力都會被完整記錄下來。"
       },
       {
         "num": 42,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "里程碑驗證 3",
+        "sec": "實機操作步驟詳解",
+        "badge": "里程碑確認 3",
         "title": "里程碑驗證：步驟 3 成果確認清單",
-        "subtitle": "確認平台右上角已顯示你的姓名與學號",
+        "subtitle": "確認平台右上角已顯示個人身分卡片",
         "type": "cards",
         "cards": [
           {
-            "title": "指標 1：登入按鈕變為個人卡片",
-            "content": "平台右上角清楚顯示【已登入：姓名 (學號)】，狀態顯示為已連線。",
-            "tag": "身分檢核",
-            "theme": "emerald"
-          },
-          {
-            "title": "指標 2：GitHub 帳號驗證信完成點擊",
-            "content": "到信箱收驗證信確認 GitHub 帳號已啟用完畢，具備建立 Repository 權限。",
-            "tag": "Git 檢核",
+            "title": "指標 1：登入按鈕切換為身分資訊",
+            "content": "右上角清楚顯示【學號 ｜ 姓名】，無「未登入」提示。",
+            "tag": "身分檢視",
             "theme": "navy"
           },
           {
-            "title": "指標 3：作業上傳區解鎖",
-            "content": "平台底部或作業區顯示上傳按鈕已可用，無『請先登入』之提示。",
-            "tag": "權限檢核",
+            "title": "指標 2：連線狀態燈亮綠燈",
+            "content": "狀態顯示「已連線」，系統運作正常。",
+            "tag": "連線檢視",
+            "theme": "emerald"
+          },
+          {
+            "title": "指標 3：解鎖快測與作業上傳權限",
+            "content": "可點擊各單元快測按鈕進入作答頁面。",
+            "tag": "權限檢視",
             "theme": "amber"
           }
         ],
-        "speaker_note": "看到自己名字出現在右上角的同學，恭喜你，你的雲端學習檔案庫已經正式激活！"
+        "speaker_note": "右上角看到自己名字的同學，表示學籍綁定順利完成！"
       },
       {
         "num": 43,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "步驟 04：AI 實戰體驗",
-        "title": "步驟 4：體驗 Agentic AI 線上財報到 10 頁 PPT 生成",
-        "subtitle": "載入示範資料，執行第一輪商業提示詞與驗證",
+        "sec": "實機操作步驟詳解",
+        "badge": "步驟 04",
+        "title": "步驟 4：執行會議紀錄整理提示詞實測",
+        "subtitle": "體驗 AI 30 秒產出結構化公文追蹤表",
         "type": "sop",
         "step_num": "04",
-        "step_title": "複製 CLEAR 提示詞，觀察 AI 生成 10 頁商務架構",
-        "step_desc": "在教學平台【Vibe Coding 與線上示範資源】專區，點擊複製『統一超三年財報與轉型企劃提問模板』，貼入免費版 Antigravity / Gemini 對話視窗，觀察 AI 如何在 30 秒內自動輸出 10 頁結構化投影片大綱與演講者講稿！",
-        "step_tip": "仔細看產出的 Slide 3 與 Slide 4，檢查毛利率 35.2% 與營收成長率是否精確吻合原始數據！",
-        "speaker_note": "現在請大家到平台上的新分頁，複製這段提示詞貼給 AI，看看它怎麼神速幫我們把財報轉成簡報！"
+        "step_title": "複製提示詞並貼給 AI 觀察產出",
+        "step_desc": "1. 複製剛才 Slide 26 的 CLEAR 會議紀錄整理提示詞。\n2. 貼入免費版 Antigravity 或 Google Gemini 對話框。\n3. 按下 Enter，觀察 AI 如何產出摘要與 4 欄追蹤表。\n4. 將生成結果複製貼入剛才建立的 notes.md 檔案中存檔！",
+        "step_tip": "嘗試觀察表格欄位是否工整，若想調整欄位可直接回覆中文請 AI 修改。",
+        "speaker_note": "把產出的表格貼到 notes.md 裡面，這就是大家今天完成的第一份雲端作業。"
       },
       {
         "num": 44,
-        "sec": "實機操作 SOP 逐步詳解",
+        "sec": "實機操作步驟詳解",
         "badge": "步驟 04 細節",
-        "title": "步驟 4 技術細節剖析：Agentic AI 產出的 10 頁黃金藍圖",
-        "subtitle": "高階主管一眼看懂的麥肯錫等級簡報架構",
+        "title": "步驟 4 技術細節：Markdown 表格格式說明",
+        "subtitle": "商務文書標準純文字排版格式介紹",
         "type": "cards",
         "cards": [
           {
-            "title": "頁 1-3：破題與營運亮點",
-            "content": "封面 ➔ 30 秒執行摘要 (三大亮點) ➔ 近三年營收破 3,450 億成長走勢 (YoY +8.86%)。",
-            "tag": "現況總結",
+            "title": "直線管道符號 (|) 分隔欄位",
+            "content": "例如 | 項次 | 決議事項 | 負責人 | 期限 |，排版清爽俐落。",
+            "tag": "欄位格式",
             "theme": "navy"
           },
           {
-            "title": "頁 4-7：深度診斷與解法",
-            "content": "成本結構與毛利深潛 ➔ 鮮食報廢 1.2 億痛點 ➔ AI 智慧補貨解法 ➔ 同業對標優勢。",
-            "tag": "診斷與對策",
-            "theme": "indigo"
+            "title": "虛線分隔標題列 (---)",
+            "content": "區隔標題與資料列，各軟體皆能直接複製轉入 Word 或 Excel。",
+            "tag": "標題分隔",
+            "theme": "emerald"
           },
           {
-            "title": "頁 8-10：落地期程與財務評估",
-            "content": "三年推動甘特圖 ➔ 5,000 萬資本支出與 1.4 年回收期 (ROI) ➔ 董事會決策建議案。",
-            "tag": "財務與決策",
-            "theme": "emerald"
+            "title": "與 Office 完美相容",
+            "content": "在網頁上複製 Markdown 表格，直接貼入 Excel 即可自動分欄，省時省力！",
+            "tag": "跨軟體相容",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "大家看這 10 頁的邏輯，非常緊湊。從現況、痛點、解法到財務預算，這就是企管系同學該有的專業水準。"
+        "speaker_note": "Markdown 表格可以直接貼到 Excel 裡面，完全不會跑版，非常實用。"
       },
       {
         "num": 45,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "SOP 全景圖",
-        "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從零環境到完成 AI 商業簡報起草的標準作業流",
+        "sec": "實機操作步驟詳解",
+        "badge": "SOP 總覽",
+        "title": "第 01 週完整操作 SOP 總覽",
+        "subtitle": "4 步驟回顧：環境、目錄、登入與實作體驗",
         "type": "cards",
         "cards": [
           {
             "title": "01. 開通 Cloud Shell",
-            "content": "shell.cloud.google.com ➔ 取得永久 5GB 硬碟，擺脫教室還原卡。",
-            "tag": "雲端就緒",
+            "content": "shell.cloud.google.com 取得 5GB 永續空間。",
+            "tag": "SOP 1",
             "theme": "navy"
           },
           {
-            "title": "02. 展開 VS Code Web",
-            "content": "點擊開啟編輯器 ➔ 建立 ~/vnu_business_software/week01 目錄。",
-            "tag": "編輯就緒",
-            "theme": "indigo"
+            "title": "02. 建立專屬目錄",
+            "content": "mkdir -p ~/vnu_business_software/week01 建立專案夾。",
+            "tag": "SOP 2",
+            "theme": "emerald"
           },
           {
             "title": "03. 登入課程平台",
-            "content": "Google 授權 ➔ Firebase 雲端同步學號，作業即時入庫。",
-            "tag": "帳號就緒",
-            "theme": "emerald"
+            "content": "完成 Google 授權與學號綁定，雲端即時同步。",
+            "tag": "SOP 3",
+            "theme": "indigo"
+          },
+          {
+            "title": "04. 實務提問練習",
+            "content": "使用 CLEAR 框架完成會議紀錄整理並存入 notes.md。",
+            "tag": "SOP 4",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "把這四步記在腦海裡。下週開始，大家一進教室就是打開這兩個網址，立刻無痛進入學習狀態。"
+        "speaker_note": "把這四步走完，大家第一週的學習任務就圓滿達成。"
       },
       {
         "num": 46,
-        "sec": "實機操作 SOP 逐步詳解",
-        "badge": "自評規範",
-        "title": "實機操作規範自評表 (Rubric Check)",
-        "subtitle": "課堂平時成績 100 分自評標準",
+        "sec": "實機操作步驟詳解",
+        "badge": "自評指標",
+        "title": "第一週課堂實作成果自評表",
+        "subtitle": "檢視自己的完成度，確保平時成績順利取得滿分",
         "type": "cards",
         "cards": [
           {
-            "title": "環境完整度 (40%)",
-            "content": "能獨立在 Cloud Shell 輸入指令並切換至 week01 目錄，終端機運作正常。",
-            "tag": "環境評分",
+            "title": "雲端主機與目錄就緒 (40%)",
+            "content": "Cloud Shell 正常運作，week01 目錄建立完成。",
+            "tag": "環境權重",
             "theme": "navy"
           },
           {
-            "title": "平台登入與帳號 (30%)",
-            "content": "平台右上角正確顯示個人姓名與學號，GitHub 帳號註冊完畢。",
-            "tag": "帳號評分",
+            "title": "平台登入與帳號註冊 (30%)",
+            "content": "平台右上角正確顯示個人學號姓名，GitHub 註冊完成。",
+            "tag": "帳號權重",
             "theme": "emerald"
           },
           {
-            "title": "AI 提問與防呆心得 (30%)",
-            "content": "成功複製財報提示詞進行生成，並找出 1 處數據與原始 CSV 比對之驗證紀錄。",
-            "tag": "應用評分",
+            "title": "提問實作與 notes.md (30%)",
+            "content": "成功將 AI 產出的會議紀錄存入 notes.md 並完成快測。",
+            "tag": "實作權重",
             "theme": "amber"
           }
         ],
-        "speaker_note": "只要做到這三條，今天 100 分直接入袋。"
+        "speaker_note": "大家可以對照這張表自我檢查，有任何一項未完成請隨時找老師。"
       },
       {
         "num": 47,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "除錯手冊",
-        "title": "除錯手冊：遇見連線中斷與檔案跑位時的急救指引",
-        "subtitle": "三大常見新手坑，30 秒快速排解指南",
+        "sec": "常見疑難排解手冊",
+        "badge": "排解導覽",
+        "title": "常見操作疑問與快速排解指引",
+        "subtitle": "遇到連線或存檔疑問時的 30 秒應對指南",
         "type": "cards",
         "cards": [
           {
-            "title": "坑 1：不小心把檔案存到 C 槽桌面",
-            "content": "下課關機檔案全部消失！急救對策：隨手備份至 Google Drive 或 Git Push。",
-            "tag": "存檔地雷",
+            "title": "疑問 1：檔案誤存本機桌面",
+            "content": "下課關機電腦還原無法找回？因應：養成隨手存入 Cloud Shell 的習慣。",
+            "tag": "存檔提醒",
             "theme": "rose"
           },
           {
-            "title": "坑 2：Cloud Shell 提示逾時中斷連線",
-            "content": "超過 20 分鐘沒操作會暫時休眠！急救對策：點擊『重新連線』，檔案分毫不差。",
-            "tag": "連線休眠",
+            "title": "疑問 2：Cloud Shell 終端機連線休眠",
+            "content": "閒置超過 20 分鐘顯示連線中斷？因應：點擊「重新連線」即可喚醒。",
+            "tag": "連線提醒",
             "theme": "amber"
           },
           {
-            "title": "坑 3：AI 把毛利率算錯 (算成負數或百分比怪異)",
-            "content": "大模型將算式顛倒！急救對策：輸入明確公式要求重新計算：Gross_Margin = 毛利 / 營收。",
-            "tag": "計算糾偏",
-            "theme": "indigo"
+            "title": "疑問 3：AI 回答內容格式不符",
+            "content": "給出長篇文章而非表格？因應：補充一句話要求「改以表格呈现」。",
+            "tag": "提問微調",
+            "theme": "navy"
           }
         ],
-        "speaker_note": "操作電腦難免會遇到卡關，遇到問題不要慌，先看這三條常見錯誤。"
+        "speaker_note": "操作電腦難免會遇到小狀況，先看這三個常見問題，通常 30 秒就能解決。"
       },
       {
         "num": 48,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：檔案存錯位置（誤存本機桌面，重開機被還原卡吃掉）",
-        "subtitle": "典型症狀：下週上課一開機，在桌面怎麼找都找不到上週存的檔案。",
+        "sec": "常見疑難排解手冊",
+        "badge": "排解情況 1",
+        "title": "情況 1：避免將檔案儲存在電腦教室本機桌面",
+        "subtitle": "現象說明：下週上課開機後，桌面找不到上週儲存的檔案",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
-            "content": "【桌面狀態】：原本存好的 week01_report.docx 與 code.py 徹底失蹤，垃圾桶也是空的！",
-            "tag": "硬碟被還原",
+            "title": "螢幕狀態說明",
+            "content": "在電腦教室桌面找不到上週儲存的報告檔案，垃圾桶也是空的。",
+            "tag": "現象描述",
             "theme": "rose"
           },
           {
-            "title": "🔍 深層根本原因 (Root Cause)",
-            "content": "檔案被存放在本機 C:\\Users\\Administrator\\Desktop，受到電腦教室硬體還原卡強制清空。",
-            "tag": "位置錯誤",
+            "title": "原因解析",
+            "content": "電腦教室硬體保護卡在關機重開後，會將本機 C 槽自動恢復成初始設定。",
+            "tag": "原因說明",
             "theme": "amber"
           }
         ],
-        "speaker_note": "這個錯誤每學期都有同學犯！請大家千千萬萬不要把檔案丟在電腦教室的桌面上。"
+        "speaker_note": "再次提醒大家，不要把檔案留在教室電腦的桌面上。"
       },
       {
         "num": 49,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "急救 SOP 01",
-        "title": "錯誤 01 根治急救步驟 (Step-by-Step Fix)",
-        "subtitle": "建立『雲端第一』的肌肉記憶操作慣性",
+        "sec": "常見疑難排解手冊",
+        "badge": "處置步驟 1",
+        "title": "情況 1 建議做法：落實雲端儲存工作習慣",
+        "subtitle": "建立「雲端優先」的日常操作習慣",
         "type": "cards",
         "cards": [
           {
-            "title": "第一步：永遠在 Cloud Shell 終端機操作",
-            "content": "檔案永遠建在 /home/你的帳號 目錄內，這裡受 Google 雲端保護，絕不受教室還原卡影響。",
-            "tag": "存檔路徑",
+            "title": "習慣 1：一律在 Cloud Shell 家目錄作業",
+            "content": "檔案存放在 /home/帳號 目錄，享受 Google 永續保護。",
+            "tag": "第一習慣",
             "theme": "navy"
           },
           {
-            "title": "第二步：下課前 3 分鐘上傳課程平台",
-            "content": "在平台點擊【作業成果展示】上傳檔案或網址，雲端 Firebase 永久為你存檔備份。",
-            "tag": "平台備份",
+            "title": "習慣 2：重要檔案備份 Google 雲端硬碟",
+            "content": "完成的重要 Word、Excel 可隨手拖曳備份至個人 Google Drive。",
+            "tag": "第二習慣",
             "theme": "emerald"
           },
           {
-            "title": "第三步：重要代碼 Git Push 到 GitHub",
-            "content": "指令輸入 git add . && git commit -m 'week01' && git push，全世界的伺服器都幫你保管。",
-            "tag": "版本控制",
-            "theme": "indigo"
-          }
-        ],
-        "speaker_note": "照這三步做，你的檔案永遠不會丟失。"
-      },
-      {
-        "num": 50,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：Cloud Shell 終端機逾時閒置斷線 (Session Timeout)",
-        "subtitle": "典型症狀：去上了個洗手間回來，終端機畫面反灰並跳出連線已終止訊息。",
-        "type": "debug",
-        "cards": [
-          {
-            "title": "💥 現場災難表象",
-            "content": "【畫面狀態】：顯示『連線已中斷 (Connection Terminated)』，無法繼續輸入指令。",
-            "tag": "連線逾時",
-            "theme": "rose"
-          },
-          {
-            "title": "🔍 深層根本原因 (Root Cause)",
-            "content": "Google 為了節省免費伺服器資源，若使用者連續 20 分鐘無任何鍵盤輸入，會自動讓虛擬機進入休眠。",
-            "tag": "自動休眠機制",
+            "title": "習慣 3：下課前登入本平台完成作業上傳",
+            "content": "上傳至平台作業區，雲端資料庫永久留存。",
+            "tag": "第三習慣",
             "theme": "amber"
           }
         ],
-        "speaker_note": "看到連線中斷千萬不要以為檔案不見了！這只是 Google 幫你省電的休眠機制。"
+        "speaker_note": "落實這三個好習慣，檔案就絕對不會丟失。"
+      },
+      {
+        "num": 50,
+        "sec": "常見疑難排解手冊",
+        "badge": "排解情況 2",
+        "title": "情況 2：Cloud Shell 提示連線已休眠 (Session Timeout)",
+        "subtitle": "現象說明：暫時離開座位，回來後終端機跳出連線已終止訊息",
+        "type": "debug",
+        "cards": [
+          {
+            "title": "螢幕狀態說明",
+            "content": "終端機畫面反灰，出現「連線已逾時」或「連線中斷」通知視窗。",
+            "tag": "現象描述",
+            "theme": "rose"
+          },
+          {
+            "title": "原因解析",
+            "content": "Google 為節約伺服器資源，若超過 20 分鐘無鍵盤輸入會暫時進入省電休眠。",
+            "tag": "原因說明",
+            "theme": "amber"
+          }
+        ],
+        "speaker_note": "看到連線逾時不用緊張，這只是 Google 的省電休眠機制。"
       },
       {
         "num": 51,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "急救 SOP 02",
-        "title": "錯誤 02 根治急救步驟 (Step-by-Step Fix)",
-        "subtitle": "一鍵重新連線，檔案原封不動安全還在！",
+        "sec": "常見疑難排解手冊",
+        "badge": "處置步驟 2",
+        "title": "情況 2 處置步驟：一鍵重新連線即可喚醒",
+        "subtitle": "檔案分毫不差，約 15 秒重新連上",
         "type": "cards",
         "cards": [
           {
-            "title": "第一步：點擊畫面中央的【重新連線 (Reconnect)】",
-            "content": "不用關閉瀏覽器，直接點擊對話框中的藍色『重新連線』按鈕。",
-            "tag": "一鍵重連",
+            "title": "步驟 1：點擊藍色「重新連線」按鈕",
+            "content": "直接點擊彈窗中的 Reconnect 按鈕，無需關閉瀏覽器。",
+            "tag": "點擊重連",
             "theme": "navy"
           },
           {
-            "title": "第二步：等待 15 秒重新喚醒虛擬機",
-            "content": "系統會自動重新掛載你的 $HOME 永續硬碟，所有原本建立的資料夾分毫不差。",
+            "title": "步驟 2：等待系統重新掛載磁碟",
+            "content": "約 15 秒系統自動喚醒虛擬機，重新掛載 $HOME 家目錄。",
             "tag": "磁碟掛載",
             "theme": "emerald"
           },
           {
-            "title": "第三步：回到原本工作目錄",
-            "content": "輸入 cd ~/vnu_business_software/week01，立刻無縫接軌繼續實作。",
-            "tag": "回歸工作",
-            "theme": "indigo"
+            "title": "步驟 3：切回工作目錄",
+            "content": "輸入 cd ~/vnu_business_software/week01 繼續操作。",
+            "tag": "繼續進度",
+            "theme": "slate"
           }
         ],
-        "speaker_note": "按一下重新連線，等 15 秒，你的環境就完好如初。"
+        "speaker_note": "點一下重新連線，等十幾秒，一切都完好如初。"
       },
       {
         "num": 52,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：AI 算出的財務比率出現『正負號相反或誇張偏差』",
-        "subtitle": "典型症狀：明明 2024 年營收增加，AI 卻寫 YoY 成長率為 -15.4%。",
+        "sec": "常見疑難排解手冊",
+        "badge": "排解情況 3",
+        "title": "情況 3：AI 生成內容遺漏了部分對話重點",
+        "subtitle": "現象說明：原始文字提及的事項，未出現在生成的表格中",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
-            "content": "【投影片狀態】：文字寫著『2024 營收突破 3,451 億』，底下小字卻寫『營收衰退 15%』，前後矛盾！",
-            "tag": "數值矛盾",
+            "title": "螢幕狀態說明",
+            "content": "AI 生成了 3 個事項，但漏掉了大華負責的中秋禮盒配送任務。",
+            "tag": "現象描述",
             "theme": "rose"
           },
           {
-            "title": "🔍 深層根本原因 (Root Cause)",
-            "content": "語言模型在進行 (當期 - 前期) / 前期 計算時，將變數順序帶反，且沒有調用專門的計算工具。",
-            "tag": "模型盲區",
+            "title": "原因解析",
+            "content": "語言模型在抓取長句時可能產生權重疏忽，未將全部子句獨立列入表格。",
+            "tag": "原因說明",
             "theme": "amber"
           }
         ],
-        "speaker_note": "這就是典型的人工智慧幻覺！如果不核算就拿去給董事會看，後果不堪設想。"
+        "speaker_note": "有時候文字較長，AI 可能會漏掉一兩項，這時該怎麼辦呢？"
       },
       {
         "num": 53,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "急救 SOP 03",
-        "title": "錯誤 03 根治急救步驟 (Step-by-Step Fix)",
-        "subtitle": "用 Excel 公式與約束指令強制 AI 糾偏",
+        "sec": "常見疑難排解手冊",
+        "badge": "處置步驟 3",
+        "title": "情況 3 處置步驟：一句補充指令進行修正",
+        "subtitle": "運用敏捷溝通，要求 AI 補齊遺漏欄位",
         "type": "cards",
         "cards": [
           {
-            "title": "第一步：在 Excel 進行驗證計算",
-            "content": "在試算表輸入公式 =(345120-317042)/317042，得到正確解答為 +8.86%。",
-            "tag": "公式真理",
+            "title": "步驟 1：指出遺漏要點",
+            "content": "發送文字：「表格漏掉了大華負責的中秋禮盒配送，請補入。」",
+            "tag": "指明補充",
             "theme": "navy"
           },
           {
-            "title": "第二步：下達糾偏指令",
-            "content": "發送提示詞：『你剛才的 YoY 計算有誤。請嚴格採用公式 (2024 - 2023) / 2023，正確數值應為 +8.86%，請更正 Slide 3。』",
-            "tag": "精準糾偏",
+            "title": "步驟 2：要求重新產出完整表格",
+            "content": "補充：「請更新為包含 4 個待辦事項的完整表格。」",
+            "tag": "完整更新",
             "theme": "emerald"
           },
           {
-            "title": "第三步：AI 立即更新並同步講稿",
-            "content": "AI 會立即道歉並將正確的百分比與口語備忘錄全面同步更正。",
-            "tag": "全域連動",
-            "theme": "indigo"
+            "title": "步驟 3：AI 立即完成補正",
+            "content": "AI 會即刻道歉並送出更新後的完整 4 欄表格！",
+            "tag": "快速更新",
+            "theme": "slate"
           }
         ],
-        "speaker_note": "我們學 Excel 的價值就在這裡！用真正的數學公式當做錨點，AI 就會乖乖修正。"
+        "speaker_note": "只要提醒它一下，它就會馬上把完整的表格重新做出來。"
       },
       {
         "num": 54,
-        "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "口訣速查",
-        "title": "職場除錯 30 秒速查心法口訣",
-        "subtitle": "四句口訣，伴你整個學期遠離電腦教室災難",
+        "sec": "常見疑難排解手冊",
+        "badge": "重點口訣",
+        "title": "課堂實作安心操作四字訣",
+        "subtitle": "四句溫馨口訣，伴你整個學期安心學習",
         "type": "cards",
         "cards": [
           {
-            "title": "『桌面存檔必定空』",
-            "content": "電腦教室重開機，桌面 C 槽全部被還原卡清空，千萬別心存僥倖！",
+            "title": "「存進雲端最安心」",
+            "content": "檔案放在 Cloud Shell 家目錄，下課重開機永不遺失。",
             "tag": "口訣 1",
-            "theme": "rose"
-          },
-          {
-            "title": "『雲端 Shell 裡最放鬆』",
-            "content": "Google Cloud Shell $HOME 5GB 永續保存，走到哪裡帶到哪裡。",
-            "tag": "口訣 2",
             "theme": "emerald"
           },
           {
-            "title": "『公式核算見真章，大字簡報得滿分』",
-            "content": "數字用 Excel 驗算無遺漏，簡報字體維持 28pt 以上清爽專業！",
-            "tag": "口訣 3 & 4",
+            "title": "「登入平台記進度」",
+            "content": "Google 登入課程平台，隨堂測驗成果即時歸檔。",
+            "tag": "口訣 2",
             "theme": "navy"
+          },
+          {
+            "title": "「CLEAR 提問有條理」",
+            "content": "交代背景與格式限制，產出專業公文與表格。",
+            "tag": "口訣 3",
+            "theme": "amber"
+          },
+          {
+            "title": "「細心核對好品質」",
+            "content": "人工花費 1 分鐘核對把關，交件成果最體面！",
+            "tag": "口訣 4",
+            "theme": "indigo"
           }
         ],
-        "speaker_note": "這四句口訣背起來，以後上課不管是做 Word、Excel 還是 PPT，都能高枕無憂。"
+        "speaker_note": "把這四句話記在心中，上課就會很有成就感。"
       },
       {
         "num": 55,
-        "sec": "課堂演練、總結與任務",
-        "badge": "隨堂即堂實戰",
-        "title": "課堂即堂實戰演練 (Hands-on Drill)",
-        "subtitle": "時限 25 分鐘 ｜ 個人獨立完成 ｜ 驗收第 01 週雲端環境與 AI 體驗",
+        "sec": "隨堂演練與總結",
+        "badge": "隨堂實作",
+        "title": "課堂即堂實作演練 (Hands-on Drill)",
+        "subtitle": "時限 20 分鐘 ｜ 個人獨立操作 ｜ 驗收第 01 週環境與提問",
         "type": "drill",
         "cards": [
           {
-            "title": "📝 演練任務 1：開通 Cloud Shell",
-            "content": "連上 shell.cloud.google.com，建立 ~/vnu_business_software/week01 資料夾，確認 pwd 路徑。",
+            "title": "任務 1：開通 Cloud Shell",
+            "content": "連上 shell.cloud.google.com，建立 week01 目錄並以 pwd 確認。",
             "tag": "環境任務",
             "theme": "navy"
           },
           {
-            "title": "🎯 演練任務 2：平台登入與驗證",
-            "content": "以 Google 帳號登入課程教學平台，完成學號與姓名設定，確認右上角正常顯示。",
+            "title": "任務 2：平台登入綁定",
+            "content": "於教學平台右上角完成 Google 登入，確認學號姓名顯示正確。",
             "tag": "身分任務",
             "theme": "emerald"
           },
           {
-            "title": "⏱️ 演練任務 3：完成財報 AI 生成",
-            "content": "複製平台提供的 CLEAR 提示詞模板貼給 AI，產出 10 頁大綱並完成 5 題課堂小快測。",
-            "tag": "快測任務",
+            "title": "任務 3：完成會議紀錄練習",
+            "content": "複製 CLEAR 提示詞練習 AI 整理，將產出存入 notes.md 並完成 5 題快測。",
+            "tag": "練習任務",
             "theme": "amber"
           }
         ],
-        "speaker_note": "現在開始計時 25 分鐘！請大家照著步驟完成，老師會在教室走動指導。"
+        "speaker_note": "現在開始計時 20 分鐘！請大家照著步驟完成，老師會在教室走動指導。"
       },
       {
         "num": 56,
-        "sec": "課堂演練、總結與任務",
-        "badge": "評量重點",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
-        "subtitle": "注意這些細節，輕鬆拿滿 100 分",
+        "sec": "隨堂演練與總結",
+        "badge": "評分提醒",
+        "title": "隨堂演練重要注意事項提醒",
+        "subtitle": "留意以下要點，輕鬆取得滿分平時成績",
         "type": "cards",
         "cards": [
           {
-            "title": "地雷 1：忘記在平台上點擊 Google 登入",
-            "content": "沒登入直接做題，雲端 Firebase 無法記錄你的學號，視同未到課。",
-            "tag": "致命扣分",
+            "title": "務必先登入平台再做測驗",
+            "content": "未登入作答時分數無法記錄至你的個人學籍，請先確認右上角顯示姓名。",
+            "tag": "登入提醒",
             "theme": "rose"
           },
           {
-            "title": "地雷 2：把檔案建在系統暫存目錄",
-            "content": "沒有建在 ~/vnu_business_software 內，導致下次上課找不到路徑。",
-            "tag": "路徑疏忽",
+            "title": "目錄請建立於家目錄下",
+            "content": "請確保路徑位於 ~/vnu_business_software 內，避免存入暫存資料夾。",
+            "tag": "路徑提醒",
             "theme": "amber"
           },
           {
-            "title": "滿分關鍵：完成 5 題課堂小快測",
-            "content": "做完演練後點擊【隨堂快測】，5 題全部答對即取得本週滿分平時成績！",
-            "tag": "加分亮點",
+            "title": "完成 5 題隨堂小快測",
+            "content": "點擊平台【隨堂快測】按鈕完成 5 題測驗，即完成本週平時成績登記！",
+            "tag": "成績登記",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "提醒大家，一定要記得登入平台再做測驗，分數才會即時傳到老師的成績冊裡。"
+        "speaker_note": "提醒大家，一定要記得登入平台再做測驗，分數才會即時記錄在系統裡。"
       },
       {
         "num": 57,
-        "sec": "課堂演練、總結與任務",
-        "badge": "成果抽點",
-        "title": "現場成果抽樣點評要點提示",
-        "subtitle": "老師將隨機抽點 3 位同學的大螢幕畫面展示",
+        "sec": "隨堂演練與總結",
+        "badge": "成果觀摩",
+        "title": "現場成果抽樣交流重點提示",
+        "subtitle": "邀請 2~3 位同學在大螢幕分享個人雲端工作站",
         "type": "cards",
         "cards": [
           {
-            "title": "抽點 1：Cloud Shell 終端機與 VS Code 畫面",
-            "content": "檢視同學是否能順暢展示 week01 資料夾與文字編輯介面。",
+            "title": "交流 1：Cloud Shell 終端機與 VS Code",
+            "content": "展示個人的 week01 目錄與 notes.md 筆記檔案。",
             "tag": "環境展示",
             "theme": "navy"
           },
           {
-            "title": "抽點 2：AI 產出的 10 頁簡報大綱",
-            "content": "檢視同學產出的簡報是否有 28pt+ 大字體風格與演講者口語講稿。",
-            "tag": "內容展示",
+            "title": "交流 2：AI 產出的會議追蹤表格",
+            "content": "展示 AI 生成的 Markdown 表格與個人微調心得。",
+            "tag": "成果展示",
             "theme": "emerald"
           },
           {
-            "title": "抽點 3：教學平台做題成績",
-            "content": "大螢幕即時投影 Firebase 成績排行榜，表揚第一週全對達標同學！",
-            "tag": "榮譽展示",
+            "title": "交流 3：平台快測完成情況",
+            "content": "展示平台右上角身分卡片與測驗完成狀態。",
+            "tag": "進度展示",
             "theme": "indigo"
           }
         ],
-        "speaker_note": "待會做完的同學，老師會邀請幾位在大螢幕上跟大家分享你的雲端環境！"
+        "speaker_note": "待會做完的同學，老師會邀請幾位在大螢幕上跟全班分享你的成果！"
       },
       {
         "num": 58,
-        "sec": "課堂演練、總結與任務",
+        "sec": "隨堂演練與總結",
         "badge": "一分鐘總結",
-        "title": "本週 90 分鐘精華內容一分鐘閃電總結",
-        "subtitle": "用最清晰的三句話，帶走第一週的全部智慧精髓",
+        "title": "本週 90 分鐘精華內容一分鐘回顧",
+        "subtitle": "三句話帶走今天的第一週精華",
         "type": "cards",
         "cards": [
           {
-            "title": "1. 雲端永續防還原",
-            "content": "Google Cloud Shell 免安裝、免裝軟體，自帶 5GB 永久磁碟，教室重開機再也不用怕！",
+            "title": "1. 雲端永續環境",
+            "content": "Google Cloud Shell 免安裝軟體，5GB 永久磁碟下課關機安全保存。",
             "tag": "環境總結",
             "theme": "navy"
           },
           {
-            "title": "2. Vibe Coding 指揮官",
-            "content": "企管系同學用 CLEAR 提問框架指揮 AI，以自然語言快速起草專業商務成果。",
+            "title": "2. Vibe Coding 概念",
+            "content": "企管同學是專案經理，以清晰自然語言引導 AI 協助起草公文。",
             "tag": "思維總結",
             "theme": "emerald"
           },
           {
-            "title": "3. 跨軟體串聯示範",
-            "content": "真實財報 CSV ＋ 線上 Word 草案 ➔ AI 數據清洗 ➔ 10 頁高階商務決策 PPT！",
-            "tag": "應用總結",
+            "title": "3. CLEAR 提問實踐",
+            "content": "交代背景、限制、期望、行動與角色，輕鬆整理結構化表格！",
+            "tag": "實務總結",
             "theme": "amber"
           }
         ],
-        "speaker_note": "回顧一下今天：我們解決了電腦教室的還原痛點，建立了個人的雲端主機，也看到了 AI 如何把財報轉成簡報。"
+        "speaker_note": "回顧今天：我們建好了個人雲端工作站，學會了 CLEAR 提示詞，也完成了第一次練習。"
       },
       {
         "num": 59,
-        "sec": "課堂演練、總結與任務",
-        "badge": "課後任務",
-        "title": "第 01 週課後作業規範與繳交提醒",
-        "subtitle": "課後 30 分鐘複習，下週一上課前截止",
+        "sec": "隨堂演練與總結",
+        "badge": "課後叮嚀",
+        "title": "第 01 週課後複習與溫馨提醒",
+        "subtitle": "課後 15 分鐘自主確認，輕鬆迎接下週課程",
         "type": "cards",
         "cards": [
           {
-            "title": "1. 確認 Cloud Shell 隨時可連線",
-            "content": "回到家裡用個人電腦或手機瀏覽器開啟 shell.cloud.google.com，驗證雲端目錄正常。",
-            "tag": "自主驗證",
+            "title": "1. 在家測試 Cloud Shell 連線",
+            "content": "回家用個人電腦連線 shell.cloud.google.com，驗證資料夾與檔案依然存在。",
+            "tag": "連線確認",
             "theme": "navy"
           },
           {
-            "title": "2. 平台 5 題小快測完成度 100%",
-            "content": "若課堂中未取得滿分，課後可無限次重新作答直到完全精熟。",
+            "title": "2. 完成平台 5 題小快測",
+            "content": "若課堂未達滿分，課後可無限次複習重測，直到觀念精熟。",
             "tag": "平時成績",
             "theme": "emerald"
           },
           {
-            "title": "3. 預覽第 02 週純文字結構排版",
-            "content": "瀏覽教學平台第 02 週講義，了解 Markdown 與資料夾結構化分類好習慣。",
-            "tag": "下週預習",
+            "title": "3. 預覽第 02 週課程",
+            "content": "下週將學習商業資料夾規範化分類與 Markdown 純文字排版思維。",
+            "tag": "下週預覽",
             "theme": "slate"
           }
         ],
-        "speaker_note": "回家後只要確認在家裡的電腦也能連上 Cloud Shell，第一週就大功告成了。"
+        "speaker_note": "回家後只要確認在自己的電腦也能打開 Cloud Shell，第一週就圓滿達標了。"
       },
       {
         "num": 60,
-        "sec": "課堂演練、總結與任務",
-        "badge": "致謝與預告",
-        "title": "謝謝大家！下週課程精彩預告與自由 Q&A",
-        "subtitle": "第 02 週：商業檔案結構化與純文字排版思維",
+        "sec": "隨堂演練與總結",
+        "badge": "離場與諮詢",
+        "title": "謝謝大家！下課離場指引與教師聯繫管道",
+        "subtitle": "第 02 週預告：商業檔案結構化與純文字排版思維",
         "type": "cards",
         "cards": [
           {
-            "title": "下週預告：告別檔案混亂！",
-            "content": "很多上班族存檔編成『最新版_真的最終版_又改了.docx』，下週教你標準商業結構化命名與 Markdown 排版。",
-            "tag": "下週焦點",
-            "theme": "navy"
-          },
-          {
-            "title": "下課前必做檢查",
-            "content": "① 點擊瀏覽器右上角登出 Google 帳號保護隱私；② 關閉電腦主機；③ 椅子靠上。",
-            "tag": "離場規範",
+            "title": "下課前個人資料安全檢查",
+            "content": "① 點擊瀏覽器右上角登出 Google 帳號；② 關閉電腦螢幕；③ 椅子推入靠齊桌面。",
+            "tag": "離場提醒",
             "theme": "amber"
           },
           {
-            "title": "教師諮詢與聯繫",
-            "content": "育英樓 J801-1 研究室 ｜ 每週一 15:00-16:00、週四 14:00-16:00 ｜ 信箱：jimchiu@mail.vnu.edu.tw",
-            "tag": "Office Hours",
+            "title": "教師研究室諮詢時間 (Office Hours)",
+            "content": "育英樓 J801-1 研究室 ｜ 每週一 15:00~16:00、週四 14:00~16:00 (敬請事先預約)。",
+            "tag": "諮詢地點",
             "theme": "emerald"
+          },
+          {
+            "title": "聯絡信箱",
+            "content": "邱俊維 老師 ｜ jimchiu@mail.vnu.edu.tw ｜ 歡迎隨時來信討論課堂問題！",
+            "tag": "Email",
+            "theme": "navy"
           }
         ],
-        "speaker_note": "祝大家這週工作與學習順利，有問題歡迎留在教室或透過 Email 討論，我們下週一見！"
+        "speaker_note": "祝大家這週工作順利，有問題歡迎隨時透過 Email 聯繫，我們下週一見！"
       },
       {
         "num": 61,
-        "sec": "課堂演練、總結與任務",
-        "badge": "考證加分激勵",
+        "sec": "隨堂演練與總結",
+        "badge": "考證加分說明",
         "title": "🎯 鼓勵考取經濟部 iPAS「AI 應用規劃師」專業認證加分說明",
-        "subtitle": "自主報考提升職場競爭力，平時總成績大加分！",
+        "subtitle": "自主報考提升職場競爭力，平時總成績加分獎勵！",
         "type": "cards",
         "cards": [
           {
-            "title": "證照價值：國家級專業認證",
-            "content": "由經濟部策劃推動，企業認同度高，是目前台灣商管與數位轉型領域含金量極高的 AI 實務證照。",
+            "title": "國家級專業認證",
+            "content": "由經濟部規劃推動之專業證照，受企業界廣泛認可，為商管人才加值。",
             "tag": "公信力",
             "theme": "navy"
           },
           {
-            "title": "本學期專屬加分獎勵",
-            "content": "① 凡報名參加檢定者：平時成績直接加 5 分！\n② 順利通過檢定取得證照者：學期總成績直接加 10 分！",
-            "tag": "加分辦法",
+            "title": "本課程專屬加分獎勵",
+            "content": "① 報考檢定者：平時成績直接加 5 分！\n② 順利通過檢定取得證照者：學期總成績直接加 10 分！",
+            "tag": "加分機制",
             "theme": "emerald"
           },
           {
-            "title": "平台題庫全力支援",
-            "content": "本課程教學平台特別收錄【iPAS 核心題庫研讀專區】，課餘時間隨時在手機上刷題練習！",
+            "title": "教學平台題庫全力支援",
+            "content": "本平台特別建置【iPAS 證照專區】，隨時可在手機上刷題練習，循序漸進迎戰檢定！",
             "tag": "學習資源",
             "theme": "amber"
           }
         ],
-        "speaker_note": "最後老師鼓勵大家，有機會一定要報考 iPAS AI 應用規劃師。我們平台有題庫，報考就能加分，通過更能直接加 10 分！"
+        "speaker_note": "最後老師鼓勵大家，有機會一定要報考 iPAS，我們平台有題庫支援大家，考過還能加總成績 10 分！"
       }
     ],
     "2": [
@@ -1894,12 +1872,12 @@ window.COURSE_SLIDES_DATA = {
         "num": 5,
         "sec": "單元破冰與商業情境",
         "badge": "職場痛點情境劇",
-        "title": "真實職場慘劇：寄錯舊版合約遭索賠百萬之檔案災難",
+        "title": "真實職場慘劇：寄錯舊版合約遭索賠百萬之檔案嚴重異常",
         "subtitle": "為什麼傳統的辦公方式正在嚴重消耗企業競爭力？",
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "某外商業務助理將檔案命名為『合約_最新_真的最終版_又改了.docx』，忙亂中把未經法務審核的折扣舊檔寄給大客戶。",
             "tag": "真實案例",
             "theme": "rose"
@@ -1923,7 +1901,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -1952,7 +1930,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -1970,7 +1948,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -2074,7 +2052,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "⚠️ 忽略原理的後果",
-            "content": "使用『最新版』等相對名詞，明天就會變成『舊版』，引發版控災難。",
+            "content": "使用『最新版』等相對名詞，明天就會變成『舊版』，引發版控嚴重異常。",
             "tag": "風險警示",
             "theme": "rose"
           }
@@ -2357,7 +2335,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -2460,7 +2438,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【商業檔案結構化與 Markdown 跨格式協作思維】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【商業檔案結構化與 Markdown 跨格式協作思維】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【商業檔案結構化與 Markdown 跨格式協作思維】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -2473,7 +2466,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -2912,7 +2905,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -2940,7 +2933,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -2975,7 +2968,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -2987,7 +2980,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -2997,13 +2990,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -3049,13 +3042,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -3101,13 +3094,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -3212,7 +3205,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -3269,7 +3262,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【商業檔案結構化與 M】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -3448,7 +3441,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "某創業團隊花了 2 個月構思的企劃書，因封面用了 5 種字體、邊界窄到字印不出來、沒有前言摘要，第一頁就被丟棄。",
             "tag": "真實案例",
             "theme": "rose"
@@ -3472,7 +3465,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -3501,7 +3494,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -3519,7 +3512,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -3698,7 +3691,7 @@ window.COURSE_SLIDES_DATA = {
         "cards": [
           {
             "title": "🔬 底層技術機制",
-            "content": "在 350 字內涵蓋：市場痛點數據、差異化護城河、損益平衡點 (BEP) 與首年營收推估。",
+            "content": "在 350 字內涵蓋：市場痛點數據、差異化核心競爭力、損益平衡點 (BEP) 與首年營收推估。",
             "tag": "技術細節",
             "theme": "navy"
           },
@@ -3906,7 +3899,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -4009,7 +4002,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商業企劃書標準結構與 AI 輔助起草】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商業企劃書標準結構與 AI 輔助起草】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商業企劃書標準結構與 AI 輔助起草】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -4022,7 +4030,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -4461,7 +4469,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -4489,7 +4497,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -4524,7 +4532,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -4536,7 +4544,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -4546,13 +4554,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -4598,13 +4606,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -4650,13 +4658,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -4761,7 +4769,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -4818,7 +4826,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Word 商業企劃書】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -4997,7 +5005,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Word 長文件排版精通】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -5021,7 +5029,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -5050,7 +5058,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -5068,7 +5076,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -5282,7 +5290,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -5455,7 +5463,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -5558,7 +5566,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 長文件排版精通：樣式、多層次清單與目錄一鍵生成】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 長文件排版精通：樣式、多層次清單與目錄一鍵生成】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 長文件排版精通：樣式、多層次清單與目錄一鍵生成】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -5571,7 +5594,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -6010,7 +6033,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -6038,7 +6061,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -6073,7 +6096,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -6085,7 +6108,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -6095,13 +6118,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -6147,13 +6170,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -6199,13 +6222,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -6310,7 +6333,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -6367,7 +6390,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Word 長文件排版】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -6546,7 +6569,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Word 商務表格視覺化】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -6570,7 +6593,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -6599,7 +6622,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -6617,7 +6640,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -6831,7 +6854,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -7004,7 +7027,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -7107,7 +7130,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商務表格視覺化、圖表標號與 APA 文獻引用管理】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商務表格視覺化、圖表標號與 APA 文獻引用管理】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 商務表格視覺化、圖表標號與 APA 文獻引用管理】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -7120,7 +7158,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -7559,7 +7597,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -7587,7 +7625,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -7622,7 +7660,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -7634,7 +7672,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -7644,13 +7682,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -7696,13 +7734,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -7748,13 +7786,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -7859,7 +7897,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -7916,7 +7954,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Word 商務表格視】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -8095,7 +8133,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Word 行政高效自動化】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -8119,7 +8157,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -8148,7 +8186,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -8166,7 +8204,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -8380,7 +8418,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -8553,7 +8591,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -8656,7 +8694,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 行政高效自動化：合併列印與大量套印】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 行政高效自動化：合併列印與大量套印】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Word 行政高效自動化：合併列印與大量套印】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -8669,7 +8722,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -9108,7 +9161,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -9136,7 +9189,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -9171,7 +9224,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -9183,7 +9236,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -9193,13 +9246,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -9245,13 +9298,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -9297,13 +9350,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -9408,7 +9461,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -9465,7 +9518,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Word 行政高效自】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -9644,7 +9697,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Excel 商業數據處理】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -9668,7 +9721,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -9697,7 +9750,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -9715,7 +9768,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -9929,7 +9982,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -10102,7 +10155,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -10205,7 +10258,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業數據處理基礎與 AI 輔助資料清洗】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業數據處理基礎與 AI 輔助資料清洗】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業數據處理基礎與 AI 輔助資料清洗】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -10218,7 +10286,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -10657,7 +10725,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -10685,7 +10753,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -10720,7 +10788,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -10732,7 +10800,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -10742,13 +10810,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -10794,13 +10862,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -10846,13 +10914,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -10957,7 +11025,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -11014,7 +11082,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Excel 商業數據】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -11193,7 +11261,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Excel 商業核心統計】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -11217,7 +11285,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -11246,7 +11314,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -11264,7 +11332,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -11478,7 +11546,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -11651,7 +11719,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -11754,7 +11822,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業核心統計運算與多條件決策函數】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業核心統計運算與多條件決策函數】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業核心統計運算與多條件決策函數】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -11767,7 +11850,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -12206,7 +12289,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -12234,7 +12317,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -12269,7 +12352,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -12281,7 +12364,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -12291,13 +12374,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -12343,13 +12426,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -12395,13 +12478,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -12506,7 +12589,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -12563,7 +12646,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Excel 商業核心】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -12742,7 +12825,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【期中專案上機實作評量：商】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -12766,7 +12849,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -12795,7 +12878,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -12813,7 +12896,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -13027,7 +13110,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -13200,7 +13283,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -13303,7 +13386,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期中專案上機實作評量：商業報告與營運數據整合】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期中專案上機實作評量：商業報告與營運數據整合】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期中專案上機實作評量：商業報告與營運數據整合】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -13316,7 +13414,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -13755,7 +13853,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -13783,7 +13881,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -13818,7 +13916,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -13830,7 +13928,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -13840,13 +13938,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -13892,13 +13990,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -13944,13 +14042,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -14055,7 +14153,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -14112,7 +14210,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【期中專案上機實作評量】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -14291,7 +14389,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Excel 現代查表函數】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -14315,7 +14413,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -14344,7 +14442,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -14362,7 +14460,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -14576,7 +14674,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -14749,7 +14847,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -14852,7 +14950,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 現代查表函數之王：XLOOKUP 跨表比對與防錯設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 現代查表函數之王：XLOOKUP 跨表比對與防錯設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 現代查表函數之王：XLOOKUP 跨表比對與防錯設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -14865,7 +14978,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -15304,7 +15417,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -15332,7 +15445,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -15367,7 +15480,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -15379,7 +15492,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -15389,13 +15502,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -15441,13 +15554,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -15493,13 +15606,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -15604,7 +15717,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -15661,7 +15774,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Excel 現代查表】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -15840,7 +15953,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Excel 樞紐分析表多】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -15864,7 +15977,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -15893,7 +16006,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -15911,7 +16024,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -16125,7 +16238,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -16298,7 +16411,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -16401,7 +16514,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 樞紐分析表多維分析與商業洞察解讀】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 樞紐分析表多維分析與商業洞察解讀】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 樞紐分析表多維分析與商業洞察解讀】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -16414,7 +16542,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -16853,7 +16981,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -16881,7 +17009,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -16916,7 +17044,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -16928,7 +17056,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -16938,13 +17066,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -16990,13 +17118,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -17042,13 +17170,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -17153,7 +17281,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -17210,7 +17338,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Excel 樞紐分析】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -17389,7 +17517,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【Excel 商業動態視覺】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -17413,7 +17541,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -17442,7 +17570,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -17460,7 +17588,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -17674,7 +17802,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -17847,7 +17975,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -17950,7 +18078,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業動態視覺化儀表板 (Dashboard) 設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業動態視覺化儀表板 (Dashboard) 設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【Excel 商業動態視覺化儀表板 (Dashboard) 設計】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -17963,7 +18106,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -18402,7 +18545,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -18430,7 +18573,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -18465,7 +18608,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -18477,7 +18620,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -18487,13 +18630,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -18539,13 +18682,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -18591,13 +18734,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -18702,7 +18845,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -18759,7 +18902,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【Excel 商業動態】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -18938,7 +19081,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【PowerPoint 商】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -18962,7 +19105,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -18991,7 +19134,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -19009,7 +19152,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -19223,7 +19366,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -19396,7 +19539,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -19499,7 +19642,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 商業簡報金字塔原理與 AI 大綱結構化】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 商業簡報金字塔原理與 AI 大綱結構化】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 商業簡報金字塔原理與 AI 大綱結構化】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -19512,7 +19670,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -19951,7 +20109,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -19979,7 +20137,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -20014,7 +20172,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -20026,7 +20184,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -20036,13 +20194,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -20088,13 +20246,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -20140,13 +20298,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -20251,7 +20409,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -20308,7 +20466,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【PowerPoint】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -20487,7 +20645,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【PowerPoint 母】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -20511,7 +20669,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -20540,7 +20698,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -20558,7 +20716,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -20772,7 +20930,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -20945,7 +21103,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -21048,7 +21206,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 母片美學、CRAP 原則與圖解化轉換】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 母片美學、CRAP 原則與圖解化轉換】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 母片美學、CRAP 原則與圖解化轉換】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -21061,7 +21234,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -21500,7 +21673,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -21528,7 +21701,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -21563,7 +21736,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -21575,7 +21748,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -21585,13 +21758,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -21637,13 +21810,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -21689,13 +21862,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -21800,7 +21973,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -21857,7 +22030,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【PowerPoint】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -22036,7 +22209,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【PowerPoint 數】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -22060,7 +22233,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -22089,7 +22262,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -22107,7 +22280,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -22321,7 +22494,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -22494,7 +22667,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -22597,7 +22770,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 數據故事化：Excel 圖表動態整合與演講講稿】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 數據故事化：Excel 圖表動態整合與演講講稿】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 數據故事化：Excel 圖表動態整合與演講講稿】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -22610,7 +22798,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -23049,7 +23237,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -23077,7 +23265,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -23112,7 +23300,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -23124,7 +23312,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -23134,13 +23322,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -23186,13 +23374,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -23238,13 +23426,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -23349,7 +23537,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -23406,7 +23594,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【PowerPoint】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -23585,7 +23773,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【PowerPoint 簡】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -23609,7 +23797,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -23638,7 +23826,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -23656,7 +23844,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -23870,7 +24058,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -24043,7 +24231,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -24146,7 +24334,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 簡報動態演示技巧與 AI 批次自動化簡報工作流】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 簡報動態演示技巧與 AI 批次自動化簡報工作流】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【PowerPoint 簡報動態演示技巧與 AI 批次自動化簡報工作流】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -24159,7 +24362,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -24598,7 +24801,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -24626,7 +24829,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -24661,7 +24864,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -24673,7 +24876,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -24683,13 +24886,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -24735,13 +24938,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -24787,13 +24990,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -24898,7 +25101,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -24955,7 +25158,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【PowerPoint】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -25134,7 +25337,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【綜合企業實戰工作坊：連鎖】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -25158,7 +25361,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -25187,7 +25390,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -25205,7 +25408,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -25419,7 +25622,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -25592,7 +25795,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -25695,7 +25898,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【綜合企業實戰工作坊：連鎖品牌年度營運全流程檢討一條龍】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【綜合企業實戰工作坊：連鎖品牌年度營運全流程檢討一條龍】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【綜合企業實戰工作坊：連鎖品牌年度營運全流程檢討一條龍】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -25708,7 +25926,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -26147,7 +26365,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -26175,7 +26393,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -26210,7 +26428,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -26222,7 +26440,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -26232,13 +26450,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -26284,13 +26502,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -26336,13 +26554,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -26447,7 +26665,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -26504,7 +26722,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【綜合企業實戰工作坊：】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"
@@ -26683,7 +26901,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "🚨 災難發生現場",
+            "title": "🚨 嚴重異常發生現場",
             "content": "團隊在執行【期末專案成果發表會與全方】專案時，因缺乏標準化方法，導致主管大發雷霆與客戶質疑。",
             "tag": "真實案例",
             "theme": "rose"
@@ -26707,7 +26925,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 6,
         "sec": "單元破冰與商業情境",
         "badge": "傳統瓶頸剖析",
-        "title": "傳統純手動辦公作業的三大致命瓶頸",
+        "title": "傳統純手動辦公作業的三大重要瓶頸",
         "subtitle": "單靠勞力密集與滑鼠手動操作，為何注定無法應對現代商業節奏？",
         "type": "cards",
         "cards": [
@@ -26736,7 +26954,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 7,
         "sec": "單元破冰與商業情境",
         "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
+        "title": "免費版 Antigravity 如何成為職場創新突破關鍵？",
         "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
         "type": "cards",
         "cards": [
@@ -26754,7 +26972,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
+            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』完整流程，杜絕模型幻覺，確保報表零瑕疵。",
             "tag": "品質把關",
             "theme": "emerald"
           }
@@ -26968,7 +27186,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🏢 商業應用場景",
-            "content": "形成個人長遠專業護城河，成為團隊中不可或缺的核心戰力。",
+            "content": "形成個人長遠專業核心競爭力，成為團隊中不可或缺的核心戰力。",
             "tag": "商管實務",
             "theme": "amber"
           },
@@ -27141,7 +27359,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 22,
         "sec": "免費版 Antigravity 提示詞工程",
         "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
+        "title": "商管學生的免費 AI 辦公核心競爭力",
         "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
         "type": "cards",
         "cards": [
@@ -27244,7 +27462,22 @@ window.COURSE_SLIDES_DATA = {
         "type": "prompt",
         "prompt_text": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期末專案成果發表會與全方位商業軟體應用驗收】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
         "prompt_role": "頂級管理顧問公司資深專案總監 (Engagement Manager)。",
-        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。"
+        "speaker_note": "大家現在看螢幕上的這段提示詞，字體非常大。請大家將括號內的變數替換成你們自己的專案主題。",
+        "prompt": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期末專案成果發表會與全方位商業軟體應用驗收】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行本任務時最容易犯的三項低級錯誤與具體防範措施。\n【限制】：繁體中文，專業商管公文語調，字數 400 字內。\n【原始專案資料】：[此處貼上本週作業相關之業務資料或文字稿]",
+        "cards": [
+          {
+            "title": "提示詞範本內容",
+            "tag": "複製即用",
+            "content": "【角色】：假設你是頂級管理顧問公司資深專案總監。\n【背景】：我們團隊正在執行【期末專案成果發表會與全方位商業軟體應用驗收】專案，受眾為企業高階決策層。\n【任務】：請為我們產出標準商業專案交付內容：\n1. 【核心策略方針】：條列 3 項具備數據支撐之精準改善對策。\n2. 【結構化執行表格】：使用 Markdown 表格，明確規範項目、執行標準、預期效益與檢核指標。\n3. 【防呆與風控建議】：指出執行...",
+            "theme": "navy"
+          },
+          {
+            "title": "使用說明",
+            "tag": "操作提示",
+            "content": "請在簡報演講模式中點擊「一鍵複製提示詞」，直接貼入 AI 視窗執行即可！",
+            "theme": "emerald"
+          }
+        ]
       },
       {
         "num": 27,
@@ -27257,7 +27490,7 @@ window.COURSE_SLIDES_DATA = {
           {
             "title": "🌟 AI 表現亮眼之處",
             "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
+            "tag": "高效支援輔助",
             "theme": "emerald"
           },
           {
@@ -27696,7 +27929,7 @@ window.COURSE_SLIDES_DATA = {
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "全流程總結",
         "title": "完整四步操作 SOP 總覽全景圖",
-        "subtitle": "從原始資料載入到高階商務成果輸出的閉環作業流",
+        "subtitle": "從原始資料載入到高階商務成果輸出的完整流程作業流",
         "type": "cards",
         "cards": [
           {
@@ -27724,7 +27957,7 @@ window.COURSE_SLIDES_DATA = {
             "theme": "emerald"
           }
         ],
-        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步閉環。"
+        "speaker_note": "把這四步印在腦海裡，下週做期中考或期末專案時，直接套用這套四步完整流程。"
       },
       {
         "num": 46,
@@ -27759,7 +27992,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 47,
         "sec": "常見錯誤代碼與避坑除錯",
         "badge": "模組五導引",
-        "title": "除錯手冊：遇見報錯代碼與排版災難時的急救指引",
+        "title": "除錯手冊：遇見報錯代碼與排版嚴重異常時的急救指引",
         "subtitle": "真正的高手不是不犯錯，而是能在 30 秒內精準找到根因並修復",
         "type": "cards",
         "cards": [
@@ -27771,7 +28004,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "本模組核心目的",
-            "content": "帶領同學直擊 3 大最常見致命錯誤，傳授教科書上沒寫的職場排查秘笈。",
+            "content": "帶領同學直擊 3 大最常見重要錯誤，傳授教科書上沒寫的職場排查秘笈。",
             "tag": "急救箱",
             "theme": "navy"
           }
@@ -27781,13 +28014,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 48,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 01",
-        "title": "錯誤 01：常見致命錯誤 1：參數未鎖定或格式不匹配",
+        "badge": "重要錯誤 01",
+        "title": "錯誤 01：常見重要錯誤 1：參數未鎖定或格式不匹配",
         "subtitle": "典型症狀：操作完成後，畫面出現怪異數值、格式錯位或無法正常連動。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【畫面狀態】：顯示錯誤代碼、目錄空白或圖形擠成一團...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -27833,13 +28066,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 50,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 02",
-        "title": "錯誤 02：常見致命錯誤 2：文字隱形空白與假格式陷阱",
+        "badge": "重要錯誤 02",
+        "title": "錯誤 02：常見重要錯誤 2：文字隱形空白與假格式陷阱",
         "subtitle": "典型症狀：肉眼看起來完全正常的文字或數字，軟體卻判定為無效或無法比對。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【排查現象】：查表找不到、加總結果為 0、目錄無法自動抓取...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -27885,13 +28118,13 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 52,
         "sec": "常見錯誤代碼與避坑除錯",
-        "badge": "致命錯誤 03",
-        "title": "錯誤 03：常見致命錯誤 3：版本覆蓋與未刷新功能變數",
+        "badge": "重要錯誤 03",
+        "title": "錯誤 03：常見重要錯誤 3：版本覆蓋與未刷新功能變數",
         "subtitle": "典型症狀：交給主管或助教的檔案，目錄頁碼仍然停留在舊版本，造成嚴重扣分。",
         "type": "debug",
         "cards": [
           {
-            "title": "💥 現場災難表象",
+            "title": "💥 現場嚴重異常表象",
             "content": "【閱卷反饋】：正文明明在第 15 頁，目錄卻依然寫著第 8 頁...",
             "tag": "螢幕錯誤顯示",
             "theme": "rose"
@@ -27996,7 +28229,7 @@ window.COURSE_SLIDES_DATA = {
         "num": 56,
         "sec": "課堂演練、總結與任務",
         "badge": "驗收評分規準",
-        "title": "隨堂演練評量重點與扣分地雷提醒",
+        "title": "隨堂演練評量重點與扣分常見誤區提醒",
         "subtitle": "助教與教師巡迴審查時的精準檢驗指標",
         "type": "cards",
         "cards": [
@@ -28053,7 +28286,7 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "重點 1：底層邏輯",
+            "title": "重點 1：核心原理",
             "content": "底層核心：深入理解【期末專案成果發表會與】的運作架構，徹底告別盲目摸索。",
             "tag": "原理精華",
             "theme": "navy"

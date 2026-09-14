@@ -156,15 +156,15 @@
     {
       "week": 1,
       "module": "模組一：AI 辦公先導觀念與協作基礎",
-      "title": "第 01 週：課程導引、帳號與雲端環境建置 ＆ 電腦教室還原卡防禦指南",
-      "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ 線上財報到簡報 Agentic AI 示範",
-      "software": "Google Cloud Shell (免安裝雲端 VS Code) / Google Colab / 免費版 Antigravity",
-      "hook": "電腦教室重開機軟體與檔案全不見？學會 Google Cloud 雲端永續環境，下課永不遺失檔案！不用在教室重複裝軟體！",
-      "concept": "電腦教室還原卡痛點與雲端防禦架構（Google Cloud Shell 5GB 永續磁碟、Google Colab 雲端硬碟雙向同步、GitHub 雲端版控）；學生必備帳號開通 SOP；什麼是 Vibe Coding 氛圍編程（自然語言指揮官思維）；Agentic AI 跨軟體協同（從線上 Word 企劃草案與 MOPS 財報 CSV 到自動生成 10 頁董事會 PPT）；CLEAR 商務提問五步驟。",
-      "practice": "1. 一鍵開通 Google Cloud Shell 雲端終端機與網頁版 VS Code，建立個人的第一個雲端目錄；2. 註冊 GitHub 帳號並登入課程雲端平台；3. 體驗教師 Live Demo：觀察 AI 如何載入公開財報數據與 Word 企劃書，快速完成數據清洗並生成 10 頁執行長 PPT 大綱與講稿。",
-      "wrapup": "完成個人雲端開發環境開通驗證、第一張向 AI 提問的商業角色設定卡，進行 5 題課堂小快測。",
-      "prompt_example": "【角色】：企業財務長特助兼商業策略分析師\n【背景】：正在為連鎖零售企業董事會準備經營績效彙報\n【輸入】：統一超 (2912) 近三年營收與損益 CSV 數據及智慧零售轉型企劃草案\n【限制】：投影片 10 頁；文字清晰大字體；每頁需列出核心結論與演講者口語備忘稿\n【行動】：請計算營業毛利率與營收 YoY 成長率，並規劃一份 10 頁高階主管彙報簡報大綱與完整講稿。",
-      "ipas_mapping": "科目一：AI 基本觀念、雲端協作環境建置、提示詞工程規範與企業資料安全維護。"
+      "title": "第 01 週：課程導引、帳號與 Google 雲端環境建置指南",
+      "subtitle": "Google Cloud Shell 免安裝 5GB 永續環境 ｜ 帳號開通 ｜ Vibe Coding 入門 ｜ CLEAR 提問實務",
+      "software": "Google Cloud Shell (網頁版 VS Code) / 免費版 Antigravity / Google 雲端工具",
+      "hook": "電腦教室重開機檔案不見了？學會運用 Google Cloud 雲端環境，免在教室重複安裝軟體，下課檔案安全保存！",
+      "concept": "電腦教室還原保護機制說明；Google Cloud Shell 5GB 永續空間與網頁版 VS Code 架構；帳號開通指引 (Google、Cloud Shell、GitHub、課程平台)；Vibe Coding 理念（以自然語言輔助辦公文書）；CLEAR 商務提問五要素（背景、限制、期望、行動、角色）。",
+      "practice": "1. 啟用 Google Cloud Shell 雲端主機，開啟網頁版 VS Code；2. 建立專屬工作目錄 ~/vnu_business_software/week01；3. 登入課程教學平台；4. 運用 CLEAR 提問模板向 AI 練習將雜亂會議逐字稿整理為正式結構化表格。",
+      "wrapup": "完成個人雲端工作環境驗證，建立第一張向 AI 提問的商業角色設定卡，進行 5 題課堂隨堂小快測。",
+      "prompt_example": "【角色】：總經理室資深行政特助\n【背景】：部門剛結束營運會議，現場對話較為零散\n【限制】：繁體中文；不可捏造未提及的事項；格式工整清爽\n【行動】：請將以下口語對話整理成正式會議紀錄\n【期望】：包含會議摘要與待辦工作追蹤表（案由、決議、負責人、完成期限）\n【內容】：店長阿明說下週一要報修冷氣，小美說週三交排班表，大華預計週五前配送中秋禮盒。",
+      "ipas_mapping": "科目一：AI 基本觀念、雲端協作環境建置、提示詞提問規範與辦公資料保護原則。"
     },
     {
       "week": 2,
