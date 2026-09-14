@@ -41,6 +41,8 @@ const state = {
   agentTemplates: [],
   ipasGuide: null,
   questions: [],
+  vibeGuide: null,
+  onlineResources: null,
   currentTab: 'orientation',
   currentWeekFilter: 'all',
   selectedAgentId: 'word_document_agent',
@@ -90,21 +92,27 @@ async function loadPlatformData() {
     state.agentTemplates = window.OFFLINE_DATA.agentTemplates;
     state.ipasGuide = window.OFFLINE_DATA.ipasGuide;
     state.questions = window.OFFLINE_DATA.questions;
+    state.vibeGuide = window.OFFLINE_DATA.vibeGuide;
+    state.onlineResources = window.OFFLINE_DATA.onlineResources;
     console.log("Loaded offline embedded dataset.");
     return;
   }
 
   try {
-    const [currRes, agentRes, ipasRes, qRes] = await Promise.all([
+    const [currRes, agentRes, ipasRes, qRes, vibeRes, demoRes] = await Promise.all([
       fetch('/api/curriculum').then(r => r.json()),
       fetch('/api/agent_templates').then(r => r.json()),
       fetch('/api/ipas_guide').then(r => r.json()),
-      fetch('/api/questions?count=300&shuffle=false').then(r => r.json())
+      fetch('/api/questions?count=300&shuffle=false').then(r => r.json()),
+      fetch('/api/vibe_guide').then(r => r.json()).catch(() => null),
+      fetch('/api/online_resources').then(r => r.json()).catch(() => null)
     ]);
     state.curriculum = currRes;
     state.agentTemplates = agentRes;
     state.ipasGuide = ipasRes;
     state.questions = qRes.questions || [];
+    state.vibeGuide = vibeRes;
+    state.onlineResources = demoRes;
     console.log("Loaded online dataset from Flask API.");
   } catch (err) {
     console.warn("Fetch from server failed, falling back to window objects:", err);
@@ -184,6 +192,8 @@ function switchTab(tabId) {
     renderStudentWorks(currentWorksFilter);
   } else if (tabId === 'teacher') {
     renderTeacherGradeDashboard();
+  } else if (tabId === 'vibe') {
+    renderVibeCodingSection();
   }
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
@@ -191,6 +201,7 @@ function switchTab(tabId) {
 // Render All Sections
 function renderAllSections() {
   renderOrientationSection();
+  renderVibeCodingSection();
   renderCurriculumSection();
   renderAgentStudioSection();
   renderIpasGuideSection();
@@ -320,6 +331,291 @@ function renderOrientationSection() {
     `;
   }
 }
+
+// -------------------------------------------------------------
+// SECTION: Vibe Coding 與線上示範資源 (Vibe Coding & Demo Datasets)
+// -------------------------------------------------------------
+function renderVibeCodingSection() {
+  renderOnlineResourcesBox();
+  renderVibeGuideBox();
+}
+
+function renderOnlineResourcesBox() {
+  const container = document.getElementById('onlineDemoResourcesBox');
+  if (!container) return;
+
+  const data = state.onlineResources;
+  if (!data || !data.resources) {
+    container.innerHTML = `
+      <div class="card">
+        <div style="color:#64748b; font-size:14px; text-align:center; padding:20px;">
+          載入示範檔案中...
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = `
+    <div class="card" style="border-top: 4px solid #0284c7; margin-bottom:24px;">
+      <div class="card-header">
+        <span class="card-title">📂 課堂線上示範檔案與真實資料庫 (Live Business Datasets)</span>
+        <span class="card-badge" style="background:#e0f2fe; color:#0369a1;">三大實用範例</span>
+      </div>
+      <p style="font-size:14px; color:#475569; line-height:1.6; margin-bottom:20px;">
+        ${data.description}
+      </p>
+
+      <div style="display:flex; flex-direction:column; gap:20px;">
+        ${data.resources.map((res, idx) => `
+          <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:18px;">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+              <div>
+                <span style="font-size:12px; font-weight:800; background:#0284c7; color:#fff; padding:3px 8px; border-radius:4px; margin-right:8px;">
+                  範例 ${idx + 1} ｜ ${res.category}
+                </span>
+                <strong style="font-size:16px; color:#0f172a;">${res.name}</strong>
+                <div style="font-size:12px; color:#64748b; margin-top:4px;">
+                  <i class="fas fa-database"></i> 來源：${res.source} ｜ 檔案：<code>${res.filename}</code>
+                </div>
+              </div>
+              <div style="display:flex; gap:8px;">
+                ${res.raw_preview ? `
+                  <button class="btn-sm btn-primary" onclick="copyOnlineResourceText('${res.id}')">
+                    <i class="fas fa-copy"></i> 複製原始內容
+                  </button>
+                ` : ''}
+              </div>
+            </div>
+
+            <p style="font-size:13px; color:#334155; line-height:1.6; margin-bottom:12px;">
+              ${res.description}
+            </p>
+
+            ${res.raw_preview ? `
+              <div style="position:relative; margin-bottom:14px;">
+                <div style="font-size:11px; font-weight:700; color:#475569; margin-bottom:4px; text-transform:uppercase;">
+                  資料預覽 (Preview)：
+                </div>
+                <textarea id="raw_${res.id}" readonly style="width:100%; height:110px; font-family:Consolas, Monaco, monospace; font-size:12px; line-height:1.5; background:#0f172a; color:#f8fafc; border-radius:6px; padding:10px; border:1px solid #334155; resize:vertical;">${res.raw_preview}</textarea>
+              </div>
+            ` : ''}
+
+            ${res.slides_outline ? `
+              <div style="margin-bottom:14px;">
+                <div style="font-size:12px; font-weight:700; color:#475569; margin-bottom:8px;">
+                  📋 10 頁投影片架構藍圖 (Slide Blueprint)：
+                </div>
+                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
+                  ${res.slides_outline.map(s => `
+                    <div style="background:#ffffff; border:1px solid #e2e8f0; border-left:3px solid #0284c7; border-radius:6px; padding:10px 12px;">
+                      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                        <strong style="font-size:13px; color:#0f172a;">Slide ${s.slide}：${s.title}</strong>
+                        <span style="font-size:10px; background:#f1f5f9; color:#475569; padding:2px 6px; border-radius:4px;">頁面 ${s.slide}</span>
+                      </div>
+                      <div style="font-size:12px; color:#64748b;">${s.focus}</div>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            ` : ''}
+
+            <div style="background:#eff6ff; border:1px dashed #60a5fa; border-radius:8px; padding:12px 14px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
+                <span style="font-size:12px; font-weight:800; color:#1d4ed8;">
+                  💡 AI Agent 指揮提示詞建議 (Prompt Suggestion)
+                </span>
+                <button class="btn-sm" onclick="copyOnlineResourcePrompt('${res.id}')" style="background:#2563eb; color:#fff; border:none; padding:3px 10px; font-size:11px; border-radius:4px; cursor:pointer;">
+                  <i class="fas fa-clone"></i> 複製提示詞
+                </button>
+              </div>
+              <div id="prompt_${res.id}" style="font-size:13px; color:#1e3a8a; line-height:1.5;">${res.ai_prompt_suggestion}</div>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  `;
+}
+
+function renderVibeGuideBox() {
+  const container = document.getElementById('vibeGuideContentBox');
+  if (!container) return;
+
+  const data = state.vibeGuide;
+  if (!data || !data.sections) {
+    container.innerHTML = `
+      <div class="card">
+        <div style="color:#64748b; font-size:14px; text-align:center; padding:20px;">
+          載入 Vibe Coding 操作指南中...
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  container.innerHTML = `
+    <div style="display:flex; flex-direction:column; gap:24px;">
+      ${data.sections.map(sec => `
+        <div class="card" id="${sec.id}" style="border-top:4px solid #4f46e5;">
+          <div class="card-header">
+            <span class="card-title">
+              <i class="${sec.icon}" style="color:#4f46e5; margin-right:8px;"></i>
+              ${sec.num}、${sec.title}
+            </span>
+            <span class="card-badge" style="background:#e0e7ff; color:#3730a3;">操作指南</span>
+          </div>
+
+          ${sec.content ? `
+            <div style="display:flex; flex-direction:column; gap:14px; margin-top:8px;">
+              ${sec.content.map(c => `
+                <div style="background:#f8fafc; border-left:3px solid #6366f1; border-radius:6px; padding:12px 16px;">
+                  <strong style="font-size:15px; color:#1e1b4b; display:block; margin-bottom:6px;">${c.heading}</strong>
+                  <p style="font-size:14px; color:#334155; line-height:1.65; margin:0; white-space:pre-line;">${c.text}</p>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          ${sec.clear_framework ? `
+            <div style="overflow-x:auto; margin-top:14px;">
+              <table class="rubric-table">
+                <thead>
+                  <tr>
+                    ${sec.table_headers.map(th => `<th>${th}</th>`).join('')}
+                  </tr>
+                </thead>
+                <tbody>
+                  ${sec.clear_framework.map(cf => `
+                    <tr>
+                      <td style="font-weight:900; font-size:18px; color:#4f46e5; text-align:center;">${cf.letter}</td>
+                      <td><strong>${cf.name}</strong></td>
+                      <td style="color:#475569;">${cf.desc}</td>
+                      <td style="background:#f0fdf4; color:#166534; font-size:13px;">${cf.example}</td>
+                    </tr>
+                  `).join('')}
+                </tbody>
+              </table>
+            </div>
+          ` : ''}
+
+          ${sec.steps ? `
+            <div style="display:flex; flex-direction:column; gap:10px; margin-top:14px;">
+              ${sec.steps.map(step => `
+                <div style="background:#f1f5f9; border-left:4px solid #8b5cf6; padding:12px 16px; border-radius:6px; font-size:14px; color:#1e293b; line-height:1.6;">
+                  ${step}
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+
+          ${sec.demo_prompt ? `
+            <div style="margin-top:14px; background:#0f172a; border-radius:8px; padding:16px; position:relative;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <span style="color:#38bdf8; font-size:12px; font-weight:800;">
+                  <i class="fas fa-terminal"></i> 教師示範提示詞 (Live Demo Prompt)
+                </span>
+                <button class="btn-sm" onclick="copyVibeDemoPrompt()" style="background:#38bdf8; color:#0f172a; font-weight:700; border:none; padding:4px 12px; border-radius:4px; cursor:pointer;">
+                  <i class="fas fa-copy"></i> 一鍵複製提示詞
+                </button>
+              </div>
+              <pre id="vibeDemoPromptText" style="color:#f8fafc; font-family:Consolas, Monaco, monospace; font-size:13px; line-height:1.6; white-space:pre-wrap; margin:0;">${sec.demo_prompt}</pre>
+            </div>
+          ` : ''}
+
+          ${sec.faqs ? `
+            <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(320px, 1fr)); gap:14px; margin-top:14px;">
+              ${sec.faqs.map(faq => `
+                <div style="background:#ffffff; border:1px solid #e2e8f0; border-radius:8px; padding:14px; box-shadow:0 1px 3px rgba(0,0,0,0.05);">
+                  <div style="font-weight:800; font-size:14px; color:#b91c1c; margin-bottom:6px;">
+                    ${faq.q}
+                  </div>
+                  <div style="font-size:13px; color:#334155; line-height:1.6;">
+                    ${faq.a}
+                  </div>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
+
+// Clipboard Helper Functions for Online Resources
+function copyOnlineResourceText(resId) {
+  const el = document.getElementById(`raw_${resId}`);
+  if (el) {
+    copyTextToClipboard(el.value, "原始檔案內容已成功複製到剪貼簿！");
+  }
+}
+
+function copyOnlineResourcePrompt(resId) {
+  const el = document.getElementById(`prompt_${resId}`);
+  if (el) {
+    copyTextToClipboard(el.innerText, "AI 提示詞已複製！可直接貼給免費版 Antigravity 或 Gemini。");
+  }
+}
+
+function copyVibeDemoPrompt() {
+  const el = document.getElementById('vibeDemoPromptText');
+  if (el) {
+    copyTextToClipboard(el.innerText, "教師示範提示詞已成功複製到剪貼簿！");
+  }
+}
+
+function copyTextToClipboard(text, successMsg) {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(text).then(() => {
+      showToast(successMsg || "複製成功！");
+    }).catch(() => {
+      fallbackCopyText(text, successMsg);
+    });
+  } else {
+    fallbackCopyText(text, successMsg);
+  }
+}
+
+function fallbackCopyText(text, successMsg) {
+  const textArea = document.createElement("textarea");
+  textArea.value = text;
+  textArea.style.position = "fixed";
+  textArea.style.opacity = "0";
+  document.body.appendChild(textArea);
+  textArea.focus();
+  textArea.select();
+  try {
+    document.execCommand('copy');
+    showToast(successMsg || "複製成功！");
+  } catch (err) {
+    alert("複製失敗，請手動選取文字複製。");
+  }
+  document.body.removeChild(textArea);
+}
+
+function showToast(msg) {
+  let toast = document.getElementById('customToastBox');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'customToastBox';
+    toast.style.cssText = 'position:fixed; bottom:28px; right:28px; background:#0f172a; color:#f8fafc; padding:12px 20px; border-radius:8px; font-size:14px; font-weight:700; z-index:9999; box-shadow:0 10px 25px rgba(0,0,0,0.3); border-left:4px solid #10b981; transition:all 0.3s ease; opacity:0; transform:translateY(20px); pointer-events:none;';
+    document.body.appendChild(toast);
+  }
+  toast.innerHTML = `<i class="fas fa-check-circle" style="color:#10b981; margin-right:8px;"></i>${msg}`;
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateY(0)';
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateY(20px)';
+  }, 2500);
+}
+
+// Bind to window for inline onclick handlers
+window.copyOnlineResourceText = copyOnlineResourceText;
+window.copyOnlineResourcePrompt = copyOnlineResourcePrompt;
+window.copyVibeDemoPrompt = copyVibeDemoPrompt;
+window.copyTextToClipboard = copyTextToClipboard;
 
 // -------------------------------------------------------------
 // SECTION 2: 18 週教學地圖與簡報連動 (Curriculum)
@@ -1139,13 +1435,19 @@ function renderPresenterSlide() {
   const stage = document.getElementById('slideStageCanvas');
   if (!stage) return;
 
+  const baseSize = 28 + (state.presenter.fontSizeOffset || 0);
+  const subSize = baseSize + 2;        // 30px
+  const cardTitleSize = baseSize + 4;  // 32px
+  const titleSize = baseSize + 12;     // 40px
+  const heroTitleSize = baseSize + 22; // 50px
+
   let bodyContent = '';
   if (slide.type === 'title') {
     bodyContent = `
-      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:40px;">
-        <span class="badge-pill" style="font-size:16px; margin-bottom:16px; background:#d97706;">${slide.badge}</span>
-        <h1 style="font-size:42px; font-weight:900; color:#1e3a8a; margin-bottom:16px; line-height:1.25;">${slide.title}</h1>
-        <div style="font-size:22px; color:#475569; max-width:1000px; white-space:pre-line;">${slide.subtitle}</div>
+      <div style="flex:1; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; padding:48px 36px;">
+        <span class="badge-pill" style="font-size:20px; font-weight:800; padding:6px 18px; margin-bottom:20px; background:#d97706; color:#ffffff;">${slide.badge}</span>
+        <h1 style="font-size:${heroTitleSize}px; font-weight:900; color:#1e3a8a; margin-bottom:24px; line-height:1.25; letter-spacing:-0.5px;">${slide.title}</h1>
+        <div style="font-size:${subSize}px; color:#334155; max-width:1150px; white-space:pre-line; line-height:1.6; font-weight:600;">${slide.subtitle}</div>
       </div>
     `;
   } else if (slide.type === 'step') {
@@ -1153,20 +1455,24 @@ function renderPresenterSlide() {
       <div style="display:flex; flex-direction:column; height:100%;">
         <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
           <div>
-            <span class="badge-pill" style="background:#1e3a8a;">${slide.badge}</span>
-            <h2 style="font-size:28px; font-weight:800; color:#1e3a8a; margin-top:4px;">${slide.title}</h2>
-            <div style="font-size:16px; color:#64748b;">${slide.subtitle}</div>
+            <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge}</span>
+            <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle}</div>
           </div>
-          <div style="font-size:13px; font-weight:700; color:#94a3b8;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
         </div>
-        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 2fr 1fr; gap:20px; align-items:stretch;">
-          <div style="background:#f8fafc; border:2px solid #e2e8f0; border-top:6px solid #1e3a8a; border-radius:12px; padding:20px;">
-            <h4 style="color:#1e3a8a; font-weight:800; margin-bottom:10px;">動作 SOP 步驟</h4>
-            <div style="font-size:18px; color:#1e293b; line-height:1.7;">${slide.step_desc}</div>
+        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 2fr 1fr; gap:24px; align-items:stretch; overflow-y:auto;">
+          <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid #1e3a8a; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+            <h3 style="color:#1e3a8a; font-size:${cardTitleSize}px; font-weight:900; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+              <span>📋</span> 動作 SOP 標準步驟
+            </h3>
+            <div style="font-size:${baseSize}px; color:#0f172a; line-height:1.7; font-weight:500;">${slide.step_desc}</div>
           </div>
-          <div style="background:#f8fafc; border:2px solid #e2e8f0; border-top:6px solid #d97706; border-radius:12px; padding:20px;">
-            <h4 style="color:#d97706; font-weight:800; margin-bottom:10px;">💡 關鍵眉角與秘訣</h4>
-            <div style="font-size:16px; color:#475569; line-height:1.6;">${slide.step_tip}</div>
+          <div style="background:#fffbeb; border:2px solid #fde68a; border-top:8px solid #d97706; border-radius:12px; padding:24px; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+            <h3 style="color:#d97706; font-size:${cardTitleSize}px; font-weight:900; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+              <span>💡</span> 關鍵眉角與秘訣
+            </h3>
+            <div style="font-size:${baseSize - 2}px; color:#334155; line-height:1.65; font-weight:500;">${slide.step_tip}</div>
           </div>
         </div>
       </div>
@@ -1174,12 +1480,12 @@ function renderPresenterSlide() {
   } else {
     // General Cards Layout
     const cardsHtml = (slide.cards || []).map(c => `
-      <div style="background:#f8fafc; border:2px solid #e2e8f0; border-top:6px solid ${c.theme === 'amber' ? '#d97706' : c.theme === 'emerald' ? '#059669' : '#1e3a8a'}; border-radius:12px; padding:20px; display:flex; flex-direction:column;">
-        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
-          <span style="font-size:18px; font-weight:800; color:#1e293b;">${c.title}</span>
-          <span style="font-size:12px; font-weight:700; padding:2px 8px; border-radius:10px; background:#e2e8f0;">${c.tag || '重點'}</span>
+      <div style="background:#ffffff; border:2px solid #cbd5e1; border-top:8px solid ${c.theme === 'amber' ? '#d97706' : c.theme === 'emerald' ? '#059669' : '#1e3a8a'}; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 4px 12px rgba(0,0,0,0.04);">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+          <span style="font-size:${cardTitleSize}px; font-weight:900; color:#0f172a;">${c.title}</span>
+          <span style="font-size:16px; font-weight:800; padding:4px 12px; border-radius:12px; background:#e2e8f0; color:#334155;">${c.tag || '重點'}</span>
         </div>
-        <div style="font-size:16px; color:#334155; line-height:1.6; flex:1;">${c.content}</div>
+        <div style="font-size:${baseSize}px; color:#1e293b; line-height:1.65; flex:1; font-weight:500;">${c.content || c.desc || ''}</div>
       </div>
     `).join('');
 
@@ -1187,13 +1493,13 @@ function renderPresenterSlide() {
       <div style="display:flex; flex-direction:column; height:100%;">
         <div style="padding:16px 36px; border-bottom:2px solid #e2e8f0; display:flex; justify-content:space-between; align-items:flex-end; background:#f8fafc;">
           <div>
-            <span class="badge-pill" style="background:#1e3a8a;">${slide.badge}</span>
-            <h2 style="font-size:28px; font-weight:800; color:#1e3a8a; margin-top:4px;">${slide.title}</h2>
-            <div style="font-size:16px; color:#64748b;">${slide.subtitle}</div>
+            <span class="badge-pill" style="background:#1e3a8a; font-size:16px; font-weight:700;">${slide.badge}</span>
+            <h2 style="font-size:${titleSize}px; font-weight:800; color:#1e3a8a; margin-top:6px; margin-bottom:4px;">${slide.title}</h2>
+            <div style="font-size:${baseSize - 4}px; color:#475569; font-weight:600;">${slide.subtitle}</div>
           </div>
-          <div style="font-size:13px; font-weight:700; color:#94a3b8;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
+          <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec} ｜ 頁碼 ${slide.num}</div>
         </div>
-        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:20px; align-items:stretch;">
+        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap:24px; align-items:stretch; overflow-y:auto;">
           ${cardsHtml}
         </div>
       </div>
@@ -1206,6 +1512,28 @@ function renderPresenterSlide() {
   const notesText = document.getElementById('speakerNotesText');
   if (notesText) {
     notesText.textContent = slide.speaker_note || "本頁尚無演講者備忘稿。";
+  }
+}
+
+function changePresenterFontSize(delta) {
+  state.presenter.fontSizeOffset = (state.presenter.fontSizeOffset || 0) + delta;
+  if (state.presenter.fontSizeOffset < -6) state.presenter.fontSizeOffset = -6;
+  if (state.presenter.fontSizeOffset > 14) state.presenter.fontSizeOffset = 14;
+  updateFontSizeLabel();
+  renderPresenterSlide();
+}
+
+function resetPresenterFontSize() {
+  state.presenter.fontSizeOffset = 0;
+  updateFontSizeLabel();
+  renderPresenterSlide();
+}
+
+function updateFontSizeLabel() {
+  const lbl = document.getElementById('presenterFontSizeLabel');
+  if (lbl) {
+    const sz = 28 + (state.presenter.fontSizeOffset || 0);
+    lbl.textContent = `${sz}px`;
   }
 }
 
@@ -2153,4 +2481,6 @@ window.teacherSaveTableGrade = teacherSaveTableGrade;
 window.teacherDeleteWork = teacherDeleteWork;
 window.exportGradesToCSV = exportGradesToCSV;
 window.renderTeacherGradeDashboard = renderTeacherGradeDashboard;
+window.changePresenterFontSize = changePresenterFontSize;
+window.resetPresenterFontSize = resetPresenterFontSize;
 

@@ -1034,7 +1034,9 @@ main.main-content {
 
 .slide-canvas {
   width: 100%;
-  max-width: 1500px;
+  max-width: 1560px;
+  min-height: 680px;
+  max-height: 90vh;
   aspect-ratio: 16 / 9;
   background: #ffffff;
   border-radius: 14px;

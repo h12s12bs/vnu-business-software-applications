@@ -29,6 +29,9 @@
         <button class="nav-tab-btn active" data-tab="orientation">📌 第一週導論</button>
       </li>
       <li class="nav-item">
+        <button class="nav-tab-btn" data-tab="vibe">🚀 Vibe Coding 與線上示範資源</button>
+      </li>
+      <li class="nav-item">
         <button class="nav-tab-btn" data-tab="curriculum">📅 18週進度地圖</button>
       </li>
       <li class="nav-item">
@@ -141,6 +144,76 @@
             <!-- Rendered by app.js -->
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ============================================================= -->
+    <!-- SECTION: Vibe Coding ✕ Agentic AI 智慧辦公與線上示範資源 -->
+    <!-- ============================================================= -->
+    <section id="sec-vibe" class="content-section">
+      <div class="hero-banner" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);">
+        <h1 class="hero-title">🚀 Vibe Coding ✕ Agentic AI 智慧辦公操作手冊</h1>
+        <p class="hero-subtitle">
+          進修部企管系專屬！以 <strong>Google Cloud Shell 5GB 永續環境</strong> 終結電腦教室還原卡痛點，用自然語言意圖指揮 AI 處理 <strong>Word 企劃書、Excel 財報計算與 10 頁執行長 PPT</strong>！
+        </p>
+        <div class="hero-tags">
+          <span class="hero-tag">🛡️ 電腦教室還原卡防禦架構</span>
+          <span class="hero-tag">☁️ Google Cloud Shell 免安裝</span>
+          <span class="hero-tag">💡 CLEAR 商業提問框架</span>
+          <span class="hero-tag">📊 MOPS 財報 ➔ 10 頁 PPT</span>
+        </div>
+      </div>
+
+      <!-- Quick Action Cards: Cloud Environment & Deep Freeze Defense -->
+      <div class="grid-3" style="margin-bottom: 24px;">
+        <div class="card" style="border-left: 4px solid #3b82f6;">
+          <div class="card-header">
+            <span class="card-title"><i class="fas fa-terminal" style="color:#3b82f6; margin-right:8px;"></i>Google Cloud Shell</span>
+            <span class="card-badge" style="background:#dbeafe; color:#1d4ed8;">5GB 永久硬碟</span>
+          </div>
+          <p style="font-size:14px; color:#475569; line-height:1.6; margin-bottom:12px;">
+            免在教室電腦安裝軟體！內建 Linux 終端機與 Web 版 VS Code，關機或重開機資料永久保存。
+          </p>
+          <a href="https://shell.cloud.google.com" target="_blank" class="btn-primary" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; padding:6px 14px; text-decoration:none;">
+            <i class="fas fa-external-link-alt"></i> 開啟 Cloud Shell
+          </a>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #10b981;">
+          <div class="card-header">
+            <span class="card-title"><i class="fas fa-file-code" style="color:#10b981; margin-right:8px;"></i>Google Colab</span>
+            <span class="card-badge" style="background:#d1fae5; color:#065f46;">Google Drive 雙向連動</span>
+          </div>
+          <p style="font-size:14px; color:#475569; line-height:1.6; margin-bottom:12px;">
+            雲端 Jupyter Notebook，直接掛載個人 Google 雲端硬碟，免裝 Python 執行數據清洗與試算。
+          </p>
+          <a href="https://colab.research.google.com" target="_blank" class="btn-primary" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; padding:6px 14px; text-decoration:none; background:#10b981;">
+            <i class="fas fa-external-link-alt"></i> 開啟 Google Colab
+          </a>
+        </div>
+
+        <div class="card" style="border-left: 4px solid #8b5cf6;">
+          <div class="card-header">
+            <span class="card-title"><i class="fab fa-github" style="color:#8b5cf6; margin-right:8px;"></i>GitHub Pages</span>
+            <span class="card-badge" style="background:#ede9fe; color:#5b21b6;">免費作品集託管</span>
+          </div>
+          <p style="font-size:14px; color:#475569; line-height:1.6; margin-bottom:12px;">
+            將你的報告網頁上傳至 GitHub，30 秒自動生成全球公開網址，直接當作求職數位履歷！
+          </p>
+          <a href="https://github.com" target="_blank" class="btn-primary" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; padding:6px 14px; text-decoration:none; background:#8b5cf6;">
+            <i class="fas fa-external-link-alt"></i> 前往 GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- Online Live Files & Demo Resources Container -->
+      <div id="onlineDemoResourcesBox" style="margin-bottom: 28px;">
+        <!-- Rendered by app.js -->
+      </div>
+
+      <!-- Vibe Coding Guide Container -->
+      <div id="vibeGuideContentBox" style="margin-bottom: 28px;">
+        <!-- Rendered by app.js -->
       </div>
     </section>
 
@@ -558,6 +631,14 @@
       </div>
 
       <div style="display:flex; align-items:center; gap:8px;">
+        <!-- Font Size Adjuster for Classroom Projection -->
+        <div style="display:flex; align-items:center; background:#1e293b; border:1px solid #334155; border-radius:6px; padding:2px 8px; gap:6px;">
+          <span style="font-size:12px; color:#94a3b8; font-weight:700;">投影字級：</span>
+          <button type="button" class="btn-sm" onclick="changePresenterFontSize(-2)" style="padding:2px 8px; font-size:12px; font-weight:800; cursor:pointer;" title="字體縮小 (A-)">A-</button>
+          <span id="presenterFontSizeLabel" style="font-size:13px; font-weight:900; color:#38bdf8; min-width:44px; text-align:center;">28px</span>
+          <button type="button" class="btn-sm" onclick="changePresenterFontSize(2)" style="padding:2px 8px; font-size:12px; font-weight:800; cursor:pointer;" title="字體放大 (A+)">A+</button>
+          <button type="button" class="btn-sm" onclick="resetPresenterFontSize()" style="padding:2px 6px; font-size:11px; color:#cbd5e1; cursor:pointer;" title="重設為預設 28px">重設</button>
+        </div>
         <button class="btn-sm" onclick="prevPresenterSlide()" title="上一頁 (←)">◀ 上一頁</button>
         <button class="btn-sm btn-primary" onclick="nextPresenterSlide()" title="下一頁 (Space/→)">下一頁 ▶</button>
         <button class="btn-sm" onclick="togglePresenterSpeakerNotes()" title="演講者備忘稿 (N)">📝 講稿 (N)</button>

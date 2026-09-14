@@ -82,6 +82,16 @@ def get_sample_works():
     data = load_json_file('sample_works.json')
     return jsonify(data)
 
+@app.route('/api/vibe_guide')
+def get_vibe_guide():
+    data = load_json_file('vibe_coding_guide.json')
+    return jsonify(data)
+
+@app.route('/api/online_resources')
+def get_online_resources():
+    data = load_json_file('online_demo_resources.json')
+    return jsonify(data)
+
 @app.route('/api/questions')
 def get_questions():
     all_q = load_json_file('questions.json')

@@ -470,5 +470,104 @@
         "content": "【跨軟體自主協同圓滿完成】：三合一套件已自動歸檔至雲端專案目錄（ISO 8601 版控），並自動同步至高階晨會投影主機，全流程無人值守耗時僅 4 分 12 秒。"
       }
     ]
+  },
+  {
+    "id": "finance_to_ppt_pipeline",
+    "name": "公開財報與線上文書 ➔ 10 頁執行長彙報簡報 Agent (Financial to Executive PPT Agent)",
+    "category": "跨軟體全流程協同智能體",
+    "target_software": "Word + Excel + PowerPoint 跨軟體協同",
+    "icon": "bi-pie-chart-fill",
+    "badge_color": "#059669",
+    "description": "線上讀入公開資訊觀測站 (MOPS) 財報 CSV 與雜亂 Word 企劃草案，自主執行數據清洗、公式計算 (毛利率/EPS/YoY)、編排 Word 備忘錄，並自動產出 10 頁高階主管決策 PPT 大綱與講稿。",
+    "role_definition": "你是一位兼具麥肯錫管理顧問與上市公司財務分析師 (CFO) 雙重視角的 Agentic AI 商業策略專家，專長於將非結構化商業草案與原始財報數字，一條龍轉化為精準專業的高階決策簡報。",
+    "trigger": "董事長交付：「請抓取統一超這三年的損益數據，結合我們總部剛寫的智慧門市轉型草案，明天早上 9:00 前生出一份 10 頁的董事會決策 PPT，要有圖表依據跟演講備忘稿！」",
+    "tools_available": [
+      {
+        "name": "ingest_online_csv_and_text",
+        "desc": "讀取線上 MOPS 財報 CSV 與未排版 Word 商業草案文字"
+      },
+      {
+        "name": "excel_financial_metrics_engine",
+        "desc": "以公式計算毛利率、營業利益率、營收 YoY 年增率與 EPS 趨勢"
+      },
+      {
+        "name": "word_memo_synthesizer",
+        "desc": "將分析結果整合為具備三線表、摘要與策略建議之 Word 備忘錄"
+      },
+      {
+        "name": "ppt_executive_deck_generator",
+        "desc": "輸出符合 16:9、大字體、高對比的 10 頁董事會簡報架構與每頁口語講稿"
+      },
+      {
+        "name": "audit_sanity_check",
+        "desc": "核對 PPT 上所有百分比與成長率是否與 Excel 原始計算 100% 一致"
+      }
+    ],
+    "guardrails": [
+      "所有財報數據必須來自原始 CSV，嚴禁 AI 憑空捏造財務數字。",
+      "投影片嚴格遵守 10 頁規格，字級設定遵循標題至少 36pt、內文至少 24pt 之商務大字原則。",
+      "每張投影片必須提供 80~100 字演講者口語備忘錄 (Speaker Notes)。"
+    ],
+    "simulated_trace": [
+      {
+        "step": 1,
+        "type": "thought",
+        "content": "【目標意圖解析】：接收到跨軟體整合任務。輸入源為 2022-2024 MOPS 損益表 CSV 及智慧零售轉型草案。目標為產出 10 頁董事會簡報與 Word 備忘錄。"
+      },
+      {
+        "step": 2,
+        "type": "action",
+        "tool": "ingest_online_csv_and_text",
+        "input": {
+          "csv_file": "mops_retail_financial_2022_2024.csv",
+          "draft_text": "retail_transformation_proposal_draft.txt"
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "type": "observation",
+        "result": "數據載入成功：2024 年營收 3,451 億元、毛利 1,214 億元、營業利益 196 億元、EPS 11.85 元。"
+      },
+      {
+        "step": 4,
+        "type": "thought",
+        "content": "【Excel 數據精算】：調用財務計算工具，計算 2024 毛利率為 35.2%、營業利益率 5.69%、營收 YoY +8.86%、EPS YoY +16.06%。"
+      },
+      {
+        "step": 5,
+        "type": "action",
+        "tool": "excel_financial_metrics_engine",
+        "input": {
+          "formulas": [
+            "Gross_Margin = 毛利 / 營收",
+            "Operating_Margin = 營業利益 / 營收",
+            "YoY_Growth = (當期 - 前期) / 前期"
+          ]
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "type": "thought",
+        "content": "【10 頁 PPT 結構建置】：融合草案痛點（鮮食報廢每年 1.2 億）與財務成長動力，配置 Slide 1-10 結構與講稿。"
+      },
+      {
+        "step": 7,
+        "type": "action",
+        "tool": "ppt_executive_deck_generator",
+        "input": {
+          "total_slides": 10,
+          "theme": "Executive Navy Blue (#0F172A)",
+          "include_speaker_notes": true
+        },
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "type": "observation",
+        "result": "完成 10 頁投影片文字架構、圖表建議與完整演講講稿生成！防呆檢驗全部數值 100% 吻合。"
+      }
+    ]
   }
 ]
