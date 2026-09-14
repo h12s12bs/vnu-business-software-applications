@@ -20,7 +20,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 def load_json_file(filename):
     filepath = os.path.join(DATA_DIR, filename)
     if os.path.exists(filepath):
-        with open(filepath, 'r', encoding='utf-8') as f:
+        with open(filepath, 'r', encoding='utf-8-sig') as f:
             return json.load(f)
     return {}
 
@@ -75,6 +75,11 @@ def get_agent_templates():
 @app.route('/api/ipas_guide')
 def get_ipas_guide():
     data = load_json_file('ipas_guide.json')
+    return jsonify(data)
+
+@app.route('/api/sample_works')
+def get_sample_works():
+    data = load_json_file('sample_works.json')
     return jsonify(data)
 
 @app.route('/api/questions')

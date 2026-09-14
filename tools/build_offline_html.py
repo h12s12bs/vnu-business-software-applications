@@ -16,13 +16,14 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, "templates")
 
 # Read Data Files
 def read_json(fname):
-    with open(os.path.join(DATA_DIR, fname), 'r', encoding='utf-8') as f:
+    with open(os.path.join(DATA_DIR, fname), 'r', encoding='utf-8-sig') as f:
         return json.load(f)
 
 curriculum = read_json("curriculum.json")
 agent_templates = read_json("agent_templates.json")
 ipas_guide = read_json("ipas_guide.json")
 questions = read_json("questions.json")
+sample_works = read_json("sample_works.json")
 
 # Read CSS and JS
 with open(os.path.join(STATIC_DIR, "css", "style.css"), 'r', encoding='utf-8') as f:
@@ -48,7 +49,8 @@ window.OFFLINE_DATA = {{
   curriculum: {json.dumps(curriculum, ensure_ascii=False)},
   agentTemplates: {json.dumps(agent_templates, ensure_ascii=False)},
   ipasGuide: {json.dumps(ipas_guide, ensure_ascii=False)},
-  questions: {json.dumps(questions, ensure_ascii=False)}
+  questions: {json.dumps(questions, ensure_ascii=False)},
+  sampleWorks: {json.dumps(sample_works, ensure_ascii=False)}
 }};
 </script>
 """
