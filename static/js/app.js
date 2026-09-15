@@ -282,14 +282,24 @@ function renderOrientationSection() {
   const gradeContainer = document.getElementById('gradingPolicyBox');
   if (gradeContainer) {
     gradeContainer.innerHTML = `
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:14px; margin-bottom:16px;">
+      <div style="background:#f0fdf4; border:1.5px solid #86efac; border-left:6px solid #16a34a; border-radius:10px; padding:14px 18px; margin-bottom:16px;">
+        <div style="font-weight:800; color:#166534; font-size:15px; margin-bottom:6px; display:flex; align-items:center; gap:8px;">
+          <i class="fas fa-shield-alt"></i> 學習安心承諾：公平透明、注重實務累積
+        </div>
+        <div style="font-size:13.5px; color:#14532d; line-height:1.7;">
+          • <strong>無上機考試</strong>：免受限於電腦教室限時測驗壓力，期中與期末皆採「繳交個人專案報告」評核。<br>
+          • <strong>無每週隨堂作業負擔</strong>：課堂全心專注於實機演練與觀念吸收，不收每週隨堂作業。<br>
+          • <strong>個人獨立完成</strong>：不分組、不分工，同學各自依步調完成專屬作品。
+        </div>
+      </div>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-bottom:16px;">
         ${grading_policy.breakdown.map(b => `
-          <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:10px; padding:16px; border-left:5px solid var(--primary-blue);">
+          <div style="background:#ffffff; border:1px solid var(--border-color); border-radius:10px; padding:16px; border-left:5px solid var(--primary-blue); box-shadow:0 2px 6px rgba(0,0,0,0.02);">
             <div style="display:flex; justify-content:space-between; align-items:center;">
-              <span style="font-weight:700; color:var(--primary-navy); font-size:15px;">${b.item}</span>
-              <span style="font-size:20px; font-weight:900; color:var(--accent-amber);">${b.percentage}</span>
+              <span style="font-weight:800; color:var(--primary-navy); font-size:16px;">${b.item}</span>
+              <span style="font-size:22px; font-weight:900; color:var(--accent-amber);">${b.percentage}</span>
             </div>
-            <div style="font-size:12.5px; color:#64748b; margin-top:6px;">${b.description}</div>
+            <div style="font-size:13px; color:#64748b; margin-top:8px; line-height:1.5;">${b.description}</div>
           </div>
         `).join('')}
       </div>
@@ -2159,9 +2169,9 @@ async function handleProjectSubmit(e) {
 
   const weekSelect = document.getElementById('upload-week-select');
   const selectedOpt = weekSelect ? weekSelect.options[weekSelect.selectedIndex] : null;
-  const rawReportType = selectedOpt ? selectedOpt.getAttribute('data-type') || selectedOpt.value : '平時作業';
-  const reportType = rawReportType.includes('期末') ? '期末成果' : (rawReportType.includes('期中') ? '期中實作' : '平時作業');
-  const weekNum = parseInt(selectedOpt?.getAttribute('data-week') || (reportType === '期末成果' ? '18' : (reportType === '期中實作' ? '9' : '1')));
+  const rawReportType = selectedOpt ? selectedOpt.getAttribute('data-type') || selectedOpt.value : '期中報告';
+  const reportType = rawReportType.includes('期末') ? '期末成果' : (rawReportType.includes('期中') ? '期中報告' : '自主練習');
+  const weekNum = parseInt(selectedOpt?.getAttribute('data-week') || (reportType === '期末成果' ? '18' : (reportType === '期中報告' ? '9' : '1')));
   const weekTitle = selectedOpt ? selectedOpt.text : reportType;
 
   const titleInput = document.getElementById('upload-title');
@@ -2261,14 +2271,14 @@ function renderStudentWorks(filter = currentWorksFilter) {
 
   const filtered = totalWorks.filter(w => {
     if (filter === 'all') return true;
-    if (filter === '期中實作') {
-      return w.report_type === '期中實作' || (w.week_title && w.week_title.includes('期中')) || w.week === 9;
+    if (filter === '期中報告' || filter === '期中實作') {
+      return w.report_type === '期中報告' || w.report_type === '期中實作' || (w.week_title && w.week_title.includes('期中')) || w.week === 9;
     }
     if (filter === '期末成果') {
       return w.report_type === '期末成果' || (w.week_title && w.week_title.includes('期末')) || w.week === 18;
     }
-    if (filter === '平時作業') {
-      return w.report_type === '平時作業' || (w.week !== 9 && w.week !== 18);
+    if (filter === '自主練習' || filter === '平時作業') {
+      return w.report_type === '自主練習' || w.report_type === '平時作業' || (w.week !== 9 && w.week !== 18);
     }
     if (filter === 'mine') {
       if (currentFirebaseUser && w.uid && w.uid === currentFirebaseUser.uid) return true;
@@ -2291,10 +2301,10 @@ function renderStudentWorks(filter = currentWorksFilter) {
 
   grid.innerHTML = filtered.map(w => {
     const isFinal = (w.report_type === '期末成果' || (w.week_title && w.week_title.includes('期末')) || w.week === 18);
-    const isMidterm = (w.report_type === '期中實作' || (w.week_title && w.week_title.includes('期中')) || w.week === 9);
+    const isMidterm = (w.report_type === '期中報告' || w.report_type === '期中實作' || (w.week_title && w.week_title.includes('期中')) || w.week === 9);
 
     let headerBg = 'linear-gradient(135deg, #0f766e 0%, #0ea5e9 100%)';
-    let typeIcon = 'fas fa-bolt';
+    let typeIcon = 'fas fa-lightbulb';
 
     if (isFinal) {
       headerBg = 'linear-gradient(135deg, #4338ca 0%, #06b6d4 100%)';
@@ -2425,9 +2435,9 @@ function renderTeacherGradeDashboard() {
       if (!matchText.includes(searchQ)) return false;
     }
     if (filterCat !== 'all') {
-      if (filterCat === '期中實作' && w.report_type !== '期中實作' && w.week !== 9) return false;
+      if ((filterCat === '期中報告' || filterCat === '期中實作') && w.report_type !== '期中報告' && w.report_type !== '期中實作' && w.week !== 9) return false;
       if (filterCat === '期末成果' && w.report_type !== '期末成果' && w.week !== 18) return false;
-      if (filterCat === '平時作業' && (w.report_type === '期中實作' || w.report_type === '期末成果' || w.week === 9 || w.week === 18)) return false;
+      if ((filterCat === '自主練習' || filterCat === '平時作業') && (w.report_type === '期中報告' || w.report_type === '期中實作' || w.report_type === '期末成果' || w.week === 9 || w.week === 18)) return false;
     }
     const isGraded = (w.score !== null && w.score !== undefined && w.score !== '');
     if (filterStat === 'graded' && !isGraded) return false;
@@ -2443,7 +2453,7 @@ function renderTeacherGradeDashboard() {
       <tr>
         <td colspan="9" style="text-align:center; padding:40px; color:#94a3b8;">
           <i class="fas fa-inbox" style="font-size:32px; display:block; margin-bottom:8px; opacity:0.5;"></i>
-          尚無符合篩選條件的學生作業資料
+          尚無符合篩選條件的學生專案成果
         </td>
       </tr>
     `;
@@ -2452,12 +2462,12 @@ function renderTeacherGradeDashboard() {
 
   tbody.innerHTML = filtered.map(w => {
     const isFinal = (w.report_type === '期末成果' || w.week === 18);
-    const isMidterm = (w.report_type === '期中實作' || w.week === 9);
-    let catBadge = `<span style="background:#f1f5f9; color:#475569; font-weight:700; padding:2px 8px; border-radius:10px; font-size:11px;">⚡ 平時作業</span>`;
+    const isMidterm = (w.report_type === '期中報告' || w.report_type === '期中實作' || w.week === 9);
+    let catBadge = `<span style="background:#f1f5f9; color:#475569; font-weight:700; padding:2px 8px; border-radius:10px; font-size:11px;">💡 自主練習</span>`;
     if (isFinal) {
       catBadge = `<span style="background:#e0e7ff; color:#3730a3; font-weight:700; padding:2px 8px; border-radius:10px; font-size:11px;">🏆 期末成果</span>`;
     } else if (isMidterm) {
-      catBadge = `<span style="background:#dbeafe; color:#1e40af; font-weight:700; padding:2px 8px; border-radius:10px; font-size:11px;">📌 期中實作</span>`;
+      catBadge = `<span style="background:#dbeafe; color:#1e40af; font-weight:700; padding:2px 8px; border-radius:10px; font-size:11px;">📌 期中報告</span>`;
     }
 
     const currentScore = (w.score !== null && w.score !== undefined) ? w.score : '';

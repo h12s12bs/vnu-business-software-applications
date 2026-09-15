@@ -138,7 +138,7 @@
         </div>
         <div style="margin-top: 24px;">
           <h4 style="font-size:16px; font-weight:800; color:var(--primary-navy); margin-bottom:8px;">
-            📋 期末專案成果評量規準詳細矩陣 (Rubric Matrix, 佔總成績 35%)
+            📋 期中與期末專案報告評量規準詳細矩陣 (Rubric Matrix, 期中 30% ＋ 期末 40%)
           </h4>
           <div id="rubricsTableBox">
             <!-- Rendered by app.js -->
@@ -411,9 +411,9 @@
     <!-- ============================================================= -->
     <section id="sec-submissions" class="content-section">
       <div class="hero-banner">
-        <h1 class="hero-title">學生作業繳交與成果展示廊</h1>
+        <h1 class="hero-title">學生報告繳交與成果展示廊</h1>
         <p class="hero-subtitle">
-          支援 Google 帳號登入驗證、Firebase Firestore 即時雲端同步。同學可隨時提交隨堂實作、第 9 週期中實作 (Word+Excel) 與第 18 週期末成果 (Word+Excel+PPT)，全班即時互評觀摩！
+          支援 Google 帳號登入驗證、Firebase Firestore 即時雲端同步。同學可用於繳交第 9 週期中報告 (Word+Excel) 與第 18 週期末成果報告 (Word+Excel+PPT)，免隨堂作業負擔，全班即時觀摩交流！
         </p>
         <div class="hero-tags">
           <span class="hero-tag">🏫 班級：進企管四系 1 甲</span>
@@ -428,7 +428,7 @@
         <div class="upload-card-box">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; padding-bottom:12px; border-bottom:1px solid #e2e8f0;">
             <h3 style="font-size:17px; font-weight:800; color:var(--primary-navy); margin:0;">
-              📤 繳交作業 / 發布專案
+              📤 繳交報告 / 發布專案
             </h3>
             <button type="button" class="btn-sm" onclick="openModal('userProfileModal')" style="background:#f1f5f9; color:#475569; border:1px solid #cbd5e1; font-size:12px; cursor:pointer;" title="點擊修改學號與姓名">
               ✏️ 修改資料
@@ -449,11 +449,11 @@
 
           <form id="project-upload-form" onsubmit="handleProjectSubmit(event)">
             <div class="form-group">
-              <label for="upload-week-select">📌 作業 / 成果發表類別 <span style="color:#dc2626;">*</span></label>
+              <label for="upload-week-select">📌 報告 / 成果發表類別 <span style="color:#dc2626;">*</span></label>
               <select id="upload-week-select" class="form-control-custom" required>
-                <option value="⚡ 平時作業 (隨堂實作演練與 AI 提問)" data-type="平時作業" data-week="1">⚡ 平時作業 (隨堂實作演練與 AI 提問)</option>
-                <option value="📌 期中實作 (第9週 Word企劃排版 + Excel統計)" data-type="期中實作" data-week="9" selected>📌 期中實作 (第9週 Word企劃排版 + Excel統計)</option>
-                <option value="🏆 期末成果 (第18週 Word + Excel + PPT 三合一實戰)" data-type="期末成果" data-week="18">🏆 期末成果 (第18週 Word + Excel + PPT 三合一實戰)</option>
+                <option value="📌 期中報告 (第9週 Word企劃排版 + Excel統計分析)" data-type="期中報告" data-week="9" selected>📌 期中報告 (第9週 Word企劃排版 + Excel統計分析)</option>
+                <option value="🏆 期末成果報告 (第18週 Word + Excel + PPT 綜合報告)" data-type="期末成果" data-week="18">🏆 期末成果報告 (第18週 Word + Excel + PPT 綜合商務報告)</option>
+                <option value="💡 課堂自主練習 (自由分享觀摩，非必要作業)" data-type="自主練習" data-week="1">💡 課堂自主練習 (自由分享觀摩，非必要作業)</option>
               </select>
             </div>
 
@@ -509,9 +509,9 @@
             <!-- Category Filter Buttons -->
             <div class="gallery-filter-bar">
               <button type="button" class="gallery-filter-btn active" data-filter="all" onclick="filterWorks('all', this)">全部展示</button>
-              <button type="button" class="gallery-filter-btn" data-filter="期中實作" onclick="filterWorks('期中實作', this)">📌 期中實作</button>
+              <button type="button" class="gallery-filter-btn" data-filter="期中報告" onclick="filterWorks('期中報告', this)">📌 期中報告</button>
               <button type="button" class="gallery-filter-btn" data-filter="期末成果" onclick="filterWorks('期末成果', this)">🏆 期末成果</button>
-              <button type="button" class="gallery-filter-btn" data-filter="平時作業" onclick="filterWorks('平時作業', this)">⚡ 平時作業</button>
+              <button type="button" class="gallery-filter-btn" data-filter="自主練習" onclick="filterWorks('自主練習', this)">💡 自主練習</button>
               <button type="button" class="gallery-filter-btn" data-filter="mine" onclick="filterWorks('mine', this)">👤 我的作品</button>
             </div>
           </div>
@@ -525,13 +525,13 @@
     </section>
 
     <!-- ============================================================= -->
-    <!-- SECTION 7: 教師專屬作業成績管理後台 (Teacher Grade Dashboard) -->
+    <!-- SECTION 7: 教師專屬專案報告成績管理後台 (Teacher Grade Dashboard) -->
     <!-- ============================================================= -->
     <section id="sec-teacher" class="content-section">
       <div class="hero-banner">
-        <h1 class="hero-title">👨‍🏫 授課教師專屬：作業成績管理後台</h1>
+        <h1 class="hero-title">👨‍🏫 授課教師專屬：專案報告與成績管理後台</h1>
         <p class="hero-subtitle">
-          邱俊維 博士 專屬管理介面，即時彙整進企管四系 1 甲全班作業繳交進度，支援線上快速給分、回饋評語與 CSV / Excel 成績表一鍵匯出。
+          邱俊維 博士 專屬管理介面，即時彙整進企管四系 1 甲全班專案報告繳交進度，支援線上快速給分、回饋評語與 CSV / Excel 成績表一鍵匯出。
         </p>
         <div class="hero-tags">
           <span class="hero-tag">🏫 萬能科大 企管系</span>
@@ -547,7 +547,7 @@
           <div id="teacher-stat-total" style="font-size:28px; font-weight:900; color:var(--primary-navy); margin-top:4px;">0</div>
         </div>
         <div class="teacher-stat-card">
-          <div style="font-size:12px; color:#64748b; font-weight:700;">期中實作</div>
+          <div style="font-size:12px; color:#64748b; font-weight:700;">期中報告</div>
           <div id="teacher-stat-midterm" style="font-size:28px; font-weight:900; color:#2563eb; margin-top:4px;">0</div>
         </div>
         <div class="teacher-stat-card">
@@ -573,10 +573,10 @@
         <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
           <input type="text" id="teacher-search-input" class="form-control-custom" placeholder="🔍 搜尋學號、姓名或作品名稱..." style="width:240px; padding:8px 12px; font-size:13px;" oninput="renderTeacherGradeDashboard()">
           <select id="teacher-filter-category" class="form-control-custom" style="width:140px; padding:8px 12px; font-size:13px;" onchange="renderTeacherGradeDashboard()">
-            <option value="all">全部作業類別</option>
-            <option value="期中實作">📌 期中實作</option>
+            <option value="all">全部報告類別</option>
+            <option value="期中報告">📌 期中報告</option>
             <option value="期末成果">🏆 期末成果</option>
-            <option value="平時作業">⚡ 平時作業</option>
+            <option value="自主練習">💡 自主練習</option>
           </select>
           <select id="teacher-filter-status" class="form-control-custom" style="width:130px; padding:8px 12px; font-size:13px;" onchange="renderTeacherGradeDashboard()">
             <option value="all">全部評分狀態</option>

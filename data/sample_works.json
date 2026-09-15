@@ -1,4 +1,4 @@
-﻿[
+[
   {
     "id": "DEMO-BSA-01",
     "student_id": "TEACHER",
@@ -6,9 +6,9 @@
     "author": "授課教師 邱俊維 博士",
     "team_name": "授課教師示範",
     "student_group": "授課教師示範",
-    "report_type": "期中實作",
+    "report_type": "期中報告",
     "week": 9,
-    "week_title": "期中上機實作評量：商業企劃排版與營運數據整合 (Word + Excel)",
+    "week_title": "第 09 週 期中專案報告：商業企劃排版與營運數據整合 (Word + Excel)",
     "title": "《商業軟體應用 ✕ Agentic AI》雲端互動教學平台",
     "category": "線上部署網頁 (GitHub Pages / 雲端發布)",
     "type": "線上部署網頁 (GitHub Pages)",
@@ -40,7 +40,7 @@
     "student_group": "授課教師示範",
     "report_type": "期末成果",
     "week": 18,
-    "week_title": "期末專案成果發表會：全方位商業軟體應用驗收 (Word ＋ Excel ＋ PPT)",
+    "week_title": "第 18 週 期末專案成果報告：全方位商業軟體應用總結 (Word ＋ Excel ＋ PPT)",
     "title": "萬能科技大學 邱俊維 博士 教師學術研究與個人歷程網站",
     "category": "線上部署網頁 (GitHub Pages / 雲端發布)",
     "type": "線上部署網頁 (GitHub Pages)",
