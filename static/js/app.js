@@ -648,6 +648,11 @@ function renderCurriculumSection() {
           <div class="week-subtitle">${w.subtitle}</div>
         </div>
         <div class="week-actions">
+          ${w.download_file ? `
+            <a href="${w.download_file.url}" download="${w.download_file.filename}" class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
+              📥 下載本週練習檔 (${w.download_file.ext})
+            </a>
+          ` : ''}
           <button class="btn-sm btn-amber" onclick="openSlidePresenter(${w.week}, 0)">
             🖥️ 播放本週簡報 (61頁)
           </button>
@@ -674,6 +679,17 @@ function renderCurriculumSection() {
           <div>${w.wrapup}</div>
         </div>
       </div>
+      ${w.download_file ? `
+        <div style="margin-top:12px; padding:10px 14px; background:#ecfdf5; border-left:4px solid #10b981; border-radius:6px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
+          <div style="font-size:13px; color:#065f46;">
+            <strong>📄 本週練習素材：</strong>${w.download_file.filename}
+            <div style="font-size:12px; color:#047857; margin-top:2px;">${w.download_file.description}</div>
+          </div>
+          <a href="${w.download_file.url}" download="${w.download_file.filename}" class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-weight:600; padding:5px 12px; font-size:12px; border-radius:4px;">
+            📥 立即下載 (.docx)
+          </a>
+        </div>
+      ` : ''}
       <div style="margin-top:14px;">
         <div style="font-size:12px; font-weight:700; color:#0284c7; margin-bottom:4px;">
           🎯 iPAS 認證對標考點：${w.ipas_mapping}
