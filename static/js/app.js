@@ -370,77 +370,92 @@ function renderOnlineResourcesBox() {
   container.innerHTML = `
     <div class="card" style="border-top: 4px solid #0284c7; margin-bottom:24px;">
       <div class="card-header">
-        <span class="card-title">📂 課堂線上示範檔案與真實資料庫 (Live Business Datasets)</span>
-        <span class="card-badge" style="background:#e0f2fe; color:#0369a1;">三大實用範例</span>
+        <span class="card-title">📂 課堂線上示範檔案庫與 Agentic AI 實戰專區 (Live Business Datasets & AI Agents)</span>
+        <span class="card-badge" style="background:#e0f2fe; color:#0369a1;">5 大權威實務檔案</span>
       </div>
       <p style="font-size:14px; color:#475569; line-height:1.6; margin-bottom:20px;">
         ${data.description}
       </p>
 
-      <div style="display:flex; flex-direction:column; gap:20px;">
+      <div style="display:flex; flex-direction:column; gap:24px;">
         ${data.resources.map((res, idx) => `
-          <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:10px; padding:18px;">
-            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:10px; margin-bottom:12px;">
+          <div style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:12px; padding:20px; box-shadow:0 2px 4px rgba(0,0,0,0.03);">
+            <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:12px; margin-bottom:14px;">
               <div>
-                <span style="font-size:12px; font-weight:800; background:#0284c7; color:#fff; padding:3px 8px; border-radius:4px; margin-right:8px;">
-                  範例 ${idx + 1} ｜ ${res.category}
-                </span>
-                <strong style="font-size:16px; color:#0f172a;">${res.name}</strong>
-                <div style="font-size:12px; color:#64748b; margin-top:4px;">
-                  <i class="fas fa-database"></i> 來源：${res.source} ｜ 檔案：<code>${res.filename}</code>
+                <div style="display:flex; align-items:center; gap:8px; margin-bottom:6px;">
+                  <span style="font-size:12px; font-weight:800; background:#0284c7; color:#fff; padding:3px 10px; border-radius:6px;">
+                    範例 ${idx + 1} ｜ ${res.category}
+                  </span>
+                  <span style="font-size:11px; font-weight:700; background:#e2e8f0; color:#334155; padding:2px 8px; border-radius:4px;">
+                    ${res.type ? res.type.toUpperCase() : 'FILE'}
+                  </span>
+                </div>
+                <strong style="font-size:17px; color:#0f172a; display:block; margin-bottom:4px;">${res.name}</strong>
+                <div style="font-size:12px; color:#64748b;">
+                  <i class="fas fa-database"></i> 來源：${res.source} ｜ 實體檔名：<code>${res.filename}</code>
                 </div>
               </div>
-              <div style="display:flex; gap:8px;">
+              <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                ${res.download_url ? `
+                  <a href="${res.download_url}" download class="btn-sm" style="background:#059669; color:#fff; text-decoration:none; padding:7px 14px; border-radius:6px; font-weight:700; display:inline-flex; align-items:center; gap:6px; font-size:12px;">
+                    <i class="fas fa-download"></i> 下載檔案 (${res.file_size || '點擊下載'})
+                  </a>
+                ` : ''}
                 ${res.raw_preview ? `
-                  <button class="btn-sm btn-primary" onclick="copyOnlineResourceText('${res.id}')">
-                    <i class="fas fa-copy"></i> 複製原始內容
+                  <button class="btn-sm btn-primary" onclick="copyOnlineResourceText('${res.id}')" style="padding:7px 12px; font-size:12px;">
+                    <i class="fas fa-copy"></i> 複製原始預覽
                   </button>
                 ` : ''}
               </div>
             </div>
 
-            <p style="font-size:13px; color:#334155; line-height:1.6; margin-bottom:12px;">
+            <p style="font-size:13px; color:#334155; line-height:1.6; margin-bottom:14px;">
               ${res.description}
             </p>
 
+            ${res.traditional_bottleneck || res.agentic_ai_workflow ? `
+              <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:12px; margin-bottom:16px;">
+                <div style="background:#fff1f2; border:1px solid #fecdd3; border-radius:8px; padding:12px 14px;">
+                  <div style="font-size:12px; font-weight:800; color:#be123c; margin-bottom:4px;">
+                    <i class="fas fa-hand-paper"></i> 過去傳統純手動操作痛點
+                  </div>
+                  <div style="font-size:12px; color:#881337; line-height:1.5;">
+                    ${res.traditional_bottleneck}
+                  </div>
+                </div>
+                <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:8px; padding:12px 14px;">
+                  <div style="font-size:12px; font-weight:800; color:#15803d; margin-bottom:4px;">
+                    <i class="fas fa-robot"></i> 現代 Agentic AI 代理人工作流
+                  </div>
+                  <div style="font-size:12px; color:#14532d; line-height:1.5;">
+                    ${res.agentic_ai_workflow}
+                  </div>
+                </div>
+              </div>
+            ` : ''}
+
             ${res.raw_preview ? `
               <div style="position:relative; margin-bottom:14px;">
-                <div style="font-size:11px; font-weight:700; color:#475569; margin-bottom:4px; text-transform:uppercase;">
-                  資料預覽 (Preview)：
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
+                  <div style="font-size:11px; font-weight:700; color:#475569; text-transform:uppercase;">
+                    <i class="fas fa-table"></i> 真實數據結構預覽 (Data Preview)：
+                  </div>
+                  <span style="font-size:11px; color:#94a3b8;">可橫向滾動查看</span>
                 </div>
-                <textarea id="raw_${res.id}" readonly style="width:100%; height:110px; font-family:Consolas, Monaco, monospace; font-size:12px; line-height:1.5; background:#0f172a; color:#f8fafc; border-radius:6px; padding:10px; border:1px solid #334155; resize:vertical;">${res.raw_preview}</textarea>
+                <textarea id="raw_${res.id}" readonly style="width:100%; height:110px; font-family:Consolas, Monaco, monospace; font-size:12px; line-height:1.5; background:#0f172a; color:#f8fafc; border-radius:6px; padding:10px; border:1px solid #334155; resize:vertical; white-space:pre;">${res.raw_preview}</textarea>
               </div>
             ` : ''}
 
-            ${res.slides_outline ? `
-              <div style="margin-bottom:14px;">
-                <div style="font-size:12px; font-weight:700; color:#475569; margin-bottom:8px;">
-                  📋 10 頁投影片架構藍圖 (Slide Blueprint)：
-                </div>
-                <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:10px;">
-                  ${res.slides_outline.map(s => `
-                    <div style="background:#ffffff; border:1px solid #e2e8f0; border-left:3px solid #0284c7; border-radius:6px; padding:10px 12px;">
-                      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:4px;">
-                        <strong style="font-size:13px; color:#0f172a;">Slide ${s.slide}：${s.title}</strong>
-                        <span style="font-size:10px; background:#f1f5f9; color:#475569; padding:2px 6px; border-radius:4px;">頁面 ${s.slide}</span>
-                      </div>
-                      <div style="font-size:12px; color:#64748b;">${s.focus}</div>
-                    </div>
-                  `).join('')}
-                </div>
-              </div>
-            ` : ''}
-
-            <div style="background:#eff6ff; border:1px dashed #60a5fa; border-radius:8px; padding:12px 14px;">
-              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:6px;">
-                <span style="font-size:12px; font-weight:800; color:#1d4ed8;">
-                  💡 AI Agent 指揮提示詞建議 (Prompt Suggestion)
+            <div style="background:#eff6ff; border:1px dashed #60a5fa; border-radius:8px; padding:14px 16px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+                <span style="font-size:13px; font-weight:800; color:#1d4ed8;">
+                  <i class="fas fa-terminal"></i> 學生操作 Agentic AI 指令模板 (CLEAR Prompt Template)
                 </span>
-                <button class="btn-sm" onclick="copyOnlineResourcePrompt('${res.id}')" style="background:#2563eb; color:#fff; border:none; padding:3px 10px; font-size:11px; border-radius:4px; cursor:pointer;">
-                  <i class="fas fa-clone"></i> 複製提示詞
+                <button class="btn-sm" onclick="copyOnlineResourcePrompt('${res.id}')" style="background:#2563eb; color:#fff; border:none; padding:4px 12px; font-size:12px; border-radius:6px; cursor:pointer; font-weight:700;">
+                  <i class="fas fa-clone"></i> 一鍵複製 Prompt
                 </button>
               </div>
-              <div id="prompt_${res.id}" style="font-size:13px; color:#1e3a8a; line-height:1.5;">${res.ai_prompt_suggestion}</div>
+              <pre id="prompt_${res.id}" style="font-size:12px; color:#1e3a8a; line-height:1.6; white-space:pre-wrap; word-break:break-word; margin:0; font-family:Consolas, Monaco, monospace; background:#ffffff; padding:12px; border-radius:6px; border:1px solid #bfdbfe;">${res.ai_prompt_suggestion}</pre>
             </div>
           </div>
         `).join('')}

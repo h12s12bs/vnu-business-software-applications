@@ -306,31 +306,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -556,24 +556,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -687,53 +687,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -762,7 +768,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -785,7 +791,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -799,7 +805,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -808,8 +814,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -819,59 +825,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -900,7 +912,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -929,7 +941,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -958,7 +970,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -983,24 +995,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -1855,31 +1867,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -2105,24 +2117,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -2236,53 +2248,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -2311,7 +2329,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -2334,7 +2352,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -2348,7 +2366,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -2357,8 +2375,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -2368,59 +2386,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -2449,7 +2473,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -2478,7 +2502,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -2507,7 +2531,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -2532,24 +2556,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -3404,31 +3428,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -3654,24 +3678,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -3785,53 +3809,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -3860,7 +3890,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -3883,7 +3913,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -3897,7 +3927,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -3906,8 +3936,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -3917,59 +3947,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -3998,7 +4034,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -4027,7 +4063,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -4056,7 +4092,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -4081,24 +4117,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -4953,31 +4989,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -5203,24 +5239,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -5334,53 +5370,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -5409,7 +5451,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -5432,7 +5474,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -5446,7 +5488,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -5455,8 +5497,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -5466,59 +5508,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -5547,7 +5595,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -5576,7 +5624,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -5605,7 +5653,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -5630,24 +5678,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -6502,31 +6550,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -6752,24 +6800,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -6883,53 +6931,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -6958,7 +7012,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -6981,7 +7035,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -6995,7 +7049,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -7004,8 +7058,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -7015,59 +7069,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -7096,7 +7156,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -7125,7 +7185,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -7154,7 +7214,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -7179,24 +7239,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -8051,31 +8111,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -8301,24 +8361,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -8432,53 +8492,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -8507,7 +8573,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -8530,7 +8596,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -8544,7 +8610,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -8553,8 +8619,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -8564,59 +8630,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -8645,7 +8717,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -8674,7 +8746,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -8703,7 +8775,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -8728,24 +8800,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -9600,31 +9672,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -9850,24 +9922,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -9981,53 +10053,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -10056,7 +10134,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -10079,7 +10157,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -10093,7 +10171,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -10102,8 +10180,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -10113,59 +10191,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -10194,7 +10278,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -10223,7 +10307,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -10252,7 +10336,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -10277,24 +10361,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -11149,31 +11233,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -11399,24 +11483,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -11530,53 +11614,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -11605,7 +11695,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -11628,7 +11718,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -11642,7 +11732,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -11651,8 +11741,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -11662,59 +11752,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -11743,7 +11839,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -11772,7 +11868,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -11801,7 +11897,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -11826,24 +11922,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -12698,31 +12794,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -12948,24 +13044,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -13079,53 +13175,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -13154,7 +13256,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -13177,7 +13279,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -13191,7 +13293,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -13200,8 +13302,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -13211,59 +13313,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -13292,7 +13400,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -13321,7 +13429,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -13350,7 +13458,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -13375,24 +13483,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -14247,31 +14355,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -14497,24 +14605,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -14628,53 +14736,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -14703,7 +14817,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -14726,7 +14840,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -14740,7 +14854,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -14749,8 +14863,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -14760,59 +14874,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -14841,7 +14961,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -14870,7 +14990,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -14899,7 +15019,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -14924,24 +15044,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -15796,31 +15916,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -16046,24 +16166,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -16177,53 +16297,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -16252,7 +16378,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -16275,7 +16401,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -16289,7 +16415,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -16298,8 +16424,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -16309,59 +16435,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -16390,7 +16522,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -16419,7 +16551,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -16448,7 +16580,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -16473,24 +16605,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -17345,31 +17477,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -17595,24 +17727,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -17726,53 +17858,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -17801,7 +17939,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -17824,7 +17962,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -17838,7 +17976,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -17847,8 +17985,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -17858,59 +17996,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -17939,7 +18083,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -17968,7 +18112,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -17997,7 +18141,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -18022,24 +18166,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -18894,31 +19038,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -19144,24 +19288,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -19275,53 +19419,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -19350,7 +19500,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -19373,7 +19523,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -19387,7 +19537,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -19396,8 +19546,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -19407,59 +19557,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -19488,7 +19644,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -19517,7 +19673,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -19546,7 +19702,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -19571,24 +19727,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -20443,31 +20599,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -20693,24 +20849,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -20824,53 +20980,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -20899,7 +21061,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -20922,7 +21084,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -20936,7 +21098,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -20945,8 +21107,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -20956,59 +21118,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -21037,7 +21205,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -21066,7 +21234,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -21095,7 +21263,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -21120,24 +21288,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -21992,31 +22160,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -22242,24 +22410,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -22373,53 +22541,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -22448,7 +22622,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -22471,7 +22645,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -22485,7 +22659,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -22494,8 +22668,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -22505,59 +22679,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -22586,7 +22766,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -22615,7 +22795,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -22644,7 +22824,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -22669,24 +22849,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -23541,31 +23721,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -23791,24 +23971,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -23922,53 +24102,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -23997,7 +24183,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -24020,7 +24206,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -24034,7 +24220,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -24043,8 +24229,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -24054,59 +24240,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -24135,7 +24327,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -24164,7 +24356,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -24193,7 +24385,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -24218,24 +24410,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -25090,31 +25282,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -25340,24 +25532,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -25471,53 +25663,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -25546,7 +25744,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -25569,7 +25767,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -25583,7 +25781,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -25592,8 +25790,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -25603,59 +25801,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -25684,7 +25888,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -25713,7 +25917,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -25742,7 +25946,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -25767,24 +25971,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
@@ -26639,31 +26843,31 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 7,
         "sec": "單元破冰與商業情境",
-        "badge": "AI 人機協作",
-        "title": "免費版 Antigravity 如何成為職場破局關鍵？",
-        "subtitle": "不用付費購買高昂微軟 Copilot，商管學生如何零成本逆襲？",
+        "badge": "Agentic AI 典範轉移",
+        "title": "從傳統純手動操作到 Agentic AI：商管學生的現代工作流典範轉移",
+        "subtitle": "擺脫低階機械式按鈕點選，升級為調度 AI 代理人自主執行的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "💡 角色升級：從打字員到架構審查官",
-            "content": "將草擬初稿、尋找複雜公式、清洗格式等繁重機械勞動交由 AI，人類專注於商務邏輯拍板與策略決策。",
-            "tag": "思維躍升",
-            "theme": "navy"
+            "title": "Level 1：傳統純手動作業 (純人力耗損)",
+            "content": "滑鼠手動點選上百次、死背按鈕位置、手敲算公式。耗時數小時，人腦疲勞後失誤率直線飆升至 15% 以上。",
+            "tag": "低效耗時",
+            "theme": "rose"
           },
           {
-            "title": "⚡ 效率倍增：秒級轉化與結構提煉",
-            "content": "自然語言即時轉譯為正規函數（如 SUMIFS、XLOOKUP）、長篇公文一秒提煉為標題大綱與三線表格。",
-            "tag": "百倍產能",
+            "title": "Level 2：生成式 AI 對話 (被動單向聊天)",
+            "content": "傳統 Chatbot 僅能單向問答生成文字，仍需人工反覆手動複製貼上與二次排版，無法自動處理海量數據與長篇文檔。",
+            "tag": "半自動化",
             "theme": "amber"
           },
           {
-            "title": "🛡️ 嚴格防呆：人機互驗保障商業真確性",
-            "content": "建立『AI 生成 → 人類檢驗邊界值 → 實機公式運算』閉環，杜絕模型幻覺，確保報表零瑕疵。",
-            "tag": "品質把關",
+            "title": "Level 3：Agentic AI 代理人模式 (自主協同)",
+            "content": "學生扮演專案總監，AI 代理人自主進行『目標拆解 ➔ 工具調用 ➔ 代碼執行 ➔ 自我反思』，數秒內完成洗數據、排公文與產出簡報。",
+            "tag": "高階自主",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "我們這門課的核心目標，就是培養大家成為能夠熟練調度免費版 AI 的高階數位經理人。"
+        "speaker_note": "我們這門課的核心目標，就是帶領同學完成從『基層文書打字員』到『指揮 Agentic AI 的數位專案總監』的關鍵躍升。"
       },
       {
         "num": 8,
@@ -26889,24 +27093,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 16,
         "sec": "核心軟體觀念深度剖析",
         "badge": "深度對比矩陣",
-        "title": "傳統作業流程 vs. 免費版 Antigravity 人機協作全方位對照",
-        "subtitle": "全維度量化比較：耗時、正確率、靈活性與心智負擔",
+        "title": "傳統純手動作業 vs. Agentic AI 代理人模式全方位深度對照",
+        "subtitle": "全維度量化比較：耗時、正確率、靈活性、心智負擔與經理人角色定位",
         "type": "comparison",
         "cards": [
           {
-            "title": "傳統純手動方式",
-            "content": "傳統方式：手動繁瑣操作 ｜ 耗時耗力且極易出錯 ｜ 維護與變更成本高昂 ｜ 缺乏標準化",
+            "title": "過去傳統純手動方式",
+            "content": "耗時長達數小時 ｜ 高度重複性體力勞動 ｜ 極易人為公式錯位或格式跑版 ｜ 學生被困在基層打字員與按鈕操作",
             "tag": "傳統痛點",
             "theme": "rose"
           },
           {
-            "title": "AI 人機協作全新工作流",
-            "content": "AI 協作：秒級結構轉化 ｜ 語意精準且防呆健全 ｜ 一鍵同步全域連動 ｜ 符合國際商管標準",
+            "title": "現代 Agentic AI 代理人工作流",
+            "content": "秒級完成多步驟執行 ｜ 演算法精準計算無遺漏 ｜ 自動符合商管公文與 APA 規範 ｜ 學生擔任業務審查長與決策總監",
             "tag": "現代解法",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "從這張對比表可以清楚看見，引入 AI 協作後，我們不僅僅是省下時間，更重要的是將錯誤率降至趨近於零。"
+        "speaker_note": "從這張對比表可以清楚看見，引入 Agentic AI 後，同學不再是被動工具的奴隸，而是站在管理高層指揮代理人為你工作。"
       },
       {
         "num": 17,
@@ -27020,53 +27224,59 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 21,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "模組三導引",
-        "title": "提示詞工程：如何向免費版 Antigravity 精準下達商務指令？",
-        "subtitle": "擺脫平庸套話，讓 AI 成為你的 24 小時私人家教與資深幕僚",
+        "title": "Agentic AI 核心：從被動聊天問答進化為主動代理人 (AI Agents)",
+        "subtitle": "學生不再只是基層打字員，而是調度 AI Agents 完成商業任務的專案指揮官",
         "type": "cards",
         "cards": [
           {
-            "title": "為什麼免費版就很強？",
-            "content": "Google Antigravity / Gemini 免費模型具備百萬級上下文與極高代碼推理能力，商管文書與公式運算綽綽有餘，無需付費！",
-            "tag": "零成本優勢",
+            "title": "什麼是 Agentic AI？",
+            "content": "具備『自主目標拆解、環境感知、工具調用 (Tool Calling)、代碼執行與自我糾錯』能力的智慧代理人，非一般單純回話的聊天機器人！",
+            "tag": "自主代理",
             "theme": "navy"
           },
           {
-            "title": "提示詞是新時代的程式語言",
-            "content": "你輸入的文字質量，直接決定了 AI 產出的商務價值。掌握 CLEAR 框架，輸出質量提升 10 倍！",
+            "title": "商管學生的指揮價值",
+            "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
           }
         ],
-        "speaker_note": "很多學生說 AI 產出的東西很空洞，問題不是出在 AI，而是出在提問的方式太過隨便。今天我們教大家專業的下法。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
       },
       {
         "num": 22,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "零費用優勢",
-        "title": "商管學生的免費 AI 辦公護城河",
-        "subtitle": "不花任何一毛錢，如何達成企業級辦公自動化水準？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "ReAct 代理循環",
+        "title": "ReAct 代理架構：Reasoning (思考規劃) ➔ Acting (工具調用) ➔ Observation (反思驗證)",
+        "subtitle": "解析現代 AI 代理人自主解決複雜商管任務的底層執行思維",
         "type": "cards",
         "cards": [
           {
-            "title": "❌ 付費版工具的痛點",
-            "content": "Microsoft 365 Copilot 每月每人 30 美元（約台幣 980 元），學生根本負擔不起，畢業離開學校帳號隨即失效。",
-            "tag": "高門檻負擔",
-            "theme": "rose"
+            "title": "1. Thought (規劃思考)",
+            "content": "AI 代理人理解業務目標，主動將任務拆解為資料讀取、型別清洗、多維運算等邏輯子步驟。",
+            "tag": "目標拆解",
+            "theme": "navy"
           },
           {
-            "title": "✅ 免費版 Antigravity 的優勢",
-            "content": "終身免費、無硬體設備門檻、強大的多語言與邏輯推理能力，搭配本機 Office 即可發揮 100% 威力！",
-            "tag": "終身隨身資產",
+            "title": "2. Action (工具調用)",
+            "content": "AI 代理人自主編寫 Python 或呼叫 Office 工具，處理數萬筆真實數據或長篇文檔。",
+            "tag": "工具執行",
+            "theme": "amber"
+          },
+          {
+            "title": "3. Observation (反思檢核)",
+            "content": "檢核運算結果是否符合邊界條件，自我修復異常，最後向人類呈報決策報告。",
+            "tag": "自我糾錯",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "這就是為什麼我們堅持全程使用免費版工具，因為只有零門檻的技能，才是你畢業後帶得走、隨時能用的硬實力。"
+        "speaker_note": "ReAct 循環讓 AI 擁有像人類經理人一樣的解題能力：先思考、再行動、觀察結果、自我調整。"
       },
       {
         "num": 23,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "CLEAR 框架拆解",
         "title": "CLEAR 商務提問黃金法則在第 18 週各任務之具體套用",
         "subtitle": "Context 背景 ｜ Limits 限制 ｜ Expectation 期望 ｜ Action 行動 ｜ Role 角色",
@@ -27095,7 +27305,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 24,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第一步：精準定義 AI 角色 (Role) 與商業背景 (Context)",
         "subtitle": "讓 AI 的思維模式瞬間切換至頂級商務顧問頻率",
@@ -27118,7 +27328,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 25,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞細節剖析",
         "title": "第二步：鎖定具體動作 (Action) 與邊界限制 (Limits)",
         "subtitle": "用明確的格式限制與負面約束，杜絕 AI 廢話連篇",
@@ -27132,7 +27342,7 @@ window.COURSE_SLIDES_DATA = {
           },
           {
             "title": "🚫 嚴格限制邊界 (Limits)",
-            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用大陸用語』。",
+            "content": "限制：『繁體中文、字數不超過 300 字、嚴格使用 Markdown 表格輸出、嚴禁使用非正規用語』。",
             "tag": "格式封鎖",
             "theme": "rose"
           }
@@ -27141,8 +27351,8 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 26,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "實戰 Prompt 模板",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "實戰 Agentic Prompt",
         "title": "本週實戰完整提示詞模板 (可直接複製修改)",
         "subtitle": "請完整選取下方文字框，貼入免費版 Antigravity 對話視窗",
         "type": "prompt",
@@ -27152,59 +27362,65 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 27,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "AI 產出解讀",
-        "title": "深度解讀：AI 產出結果的優勢與潛在缺陷",
-        "subtitle": "學會用專業眼光審查 AI 回覆，找出 80% 的精華與 20% 的瑕疵",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "AI 代理運作環節",
+        "title": "AI 代理人自主執行的四大內部環節：讀取 ➔ 清理 ➔ 計算 ➔ 交付",
+        "subtitle": "學會透視 AI 代理人處理真實檔案時的中間過程與邏輯閉環",
         "type": "cards",
         "cards": [
           {
-            "title": "🌟 AI 表現亮眼之處",
-            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
-            "tag": "高效賦能",
-            "theme": "emerald"
+            "title": "環節 1：結構化資料讀取",
+            "content": "自動解析 CSV / Excel / Word 原始檔案，鎖定目標工作表與核心變數欄位。",
+            "tag": "資料採集",
+            "theme": "navy"
           },
           {
-            "title": "⚠️ 需要人工修正的盲點",
-            "content": "部分極端邊界數值需經人工覆核手算驗證，確認是否完全符合真實運營邊界。",
-            "tag": "待修盲點",
-            "theme": "rose"
+            "title": "環節 2：異常偵測與型別清洗",
+            "content": "自動過濾空白列、剔除異常字元、將文字型數字轉為浮點數，防範運算溢位。",
+            "tag": "自動清洗",
+            "theme": "amber"
+          },
+          {
+            "title": "環節 3：演算法計算與商務交付",
+            "content": "快速釐清複雜業務關係，產出結構完整、格式嚴謹的專業公文與清晰表格。",
+            "tag": "成果交付",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "AI 產出的東西不能 100% 照單全收，這就是為什麼我們需要專業經理人進行第二道把關。"
+        "speaker_note": "AI 代理人不是黑盒子。了解它這四個處理環節，同學就能精準掌握數據在背後是如何被清洗與計算的。"
       },
       {
         "num": 28,
-        "sec": "免費版 Antigravity 提示詞工程",
-        "badge": "人工查核標準",
-        "title": "人工防呆查核三步法 (Human Verification Protocol)",
-        "subtitle": "如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
+        "badge": "人機協同 (HITL)",
+        "title": "人機協同 (Human-in-the-Loop)：學生扮演專案總監的三大驗收法門",
+        "subtitle": "學生作為業務審查長，如何用 60 秒快速識破 AI 回覆中的邏輯盲區與計算錯誤？",
         "type": "cards",
         "cards": [
           {
-            "title": "步驟 1：抽樣手算邊界值",
-            "content": "公式拿到後，隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼、首尾帶空格），手算驗證結果是否相符。",
+            "title": "法門 1：抽樣手算邊界值 (數值真確性)",
+            "content": "隨機挑選 2-3 筆極端資料（如金額為 0、查無代碼），手算驗證勾稽關係（毛利=營收-成本）是否吻合。",
             "tag": "數值查驗",
             "theme": "navy"
           },
           {
-            "title": "步驟 2：比對商業常理",
+            "title": "法門 2：比對商業實務常理 (常識檢核)",
             "content": "企劃文案中的毛利率、客單價、成長幅度，是否符合實體商業運營常識？若寫出『單日營業額成長 500%』顯然偏離常理。",
             "tag": "常理查核",
             "theme": "amber"
           },
           {
-            "title": "步驟 3：跨表路徑檢查",
-            "content": "檢查公式中的工作表名稱（如 `產品主檔!`）是否與目前檔案完全一致，引號與逗號是否為半形。",
-            "tag": "語法相容",
-            "theme": "slate"
+            "title": "法門 3：法規合規與格式規範 (品質把關)",
+            "content": "檢查公文是否符合 2.54cm 邊界、APA 三線表有無垂直框線、投影片標題是否結論先行。",
+            "tag": "規格驗收",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "記住這三步法，只要同學養成這三步核對習慣，你的報告在主管眼中就會展現高度的嚴謹與專業度。"
+        "speaker_note": "記住這三大法門！同學身為經理人，最後簽名負責的是你。只要養成驗收習慣，你的成果就無懈可擊。"
       },
       {
         "num": 29,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "防範模型幻覺",
         "title": "識別大型語言模型『幻覺 (Hallucination)』的三大警訊",
         "subtitle": "當 AI 開始一本正經胡說八道時，你該如何第一時間警覺？",
@@ -27233,7 +27449,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 30,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "進階追問技巧",
         "title": "第二輪迭代優化 Prompt (Iterative Refinement)",
         "subtitle": "不要重新開對話！在原對話框中進行精準微調追問",
@@ -27262,7 +27478,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 31,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "場景靈活延伸",
         "title": "本週提示詞模版在多元商務場景中的延伸應用",
         "subtitle": "學會一套模板，舉一反三解決跨部門各類文書與數據任務",
@@ -27291,7 +27507,7 @@ window.COURSE_SLIDES_DATA = {
       },
       {
         "num": 32,
-        "sec": "免費版 Antigravity 提示詞工程",
+        "sec": "Agentic AI 代理人提示詞與工作流操作指南",
         "badge": "提示詞心法",
         "title": "提示詞模組核心心法收斂",
         "subtitle": "成為駕馭 AI 的優秀提問者，而非被 AI 牽著走的被動使用者",
@@ -27316,24 +27532,24 @@ window.COURSE_SLIDES_DATA = {
         "num": 33,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "模組四導引",
-        "title": "實機操作 SOP：依循標準作業程序，打造零瑕疵商務成果",
-        "subtitle": "四大步驟 ｜ 逐步拆解 ｜ 菜單精確路徑 ｜ 快捷鍵大字提示",
+        "title": "上機操作 SOP：學生指揮 Agentic AI 處理真實商業檔案",
+        "subtitle": "依循標準作業程序，打造零瑕疵商務成果 ｜ 快捷鍵大字提示",
         "type": "cards",
         "cards": [
           {
             "title": "SOP 的重要性",
-            "content": "大企業的跨部門協作完全依賴標準作業程序。跟著 SOP 做，保證第一次操作就完全正確！",
+            "content": "現代數位辦公依靠標準作業程序 (SOP)。跟著 SOP 指揮 AI 代理人，保證第一次操作就完全正確！",
             "tag": "標準化思維",
             "theme": "navy"
           },
           {
-            "title": "四步流程概覽",
-            "content": "【步驟一：前置定位】 → 【步驟二：參數配置】 → 【步驟三：樣式修飾】 → 【步驟四：驗證導出】",
+            "title": "四步操作流程",
+            "content": "【步驟一：真實檔案準備】 → 【步驟二：Agentic 指令下達】 → 【步驟三：人機互驗審核】 → 【步驟四：雲端存檔累積】",
             "tag": "四步循環",
             "theme": "amber"
           }
         ],
-        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個選單的精準路徑。"
+        "speaker_note": "請大家跟著我的節奏，一步一步來，不要跳步。大螢幕上標明了每一個操作細節。"
       },
       {
         "num": 34,
