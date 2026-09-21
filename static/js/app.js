@@ -368,6 +368,28 @@ function renderOnlineResourcesBox() {
   }
 
   container.innerHTML = `
+    <!-- 第 02 週 Vibe Coding 實作手冊專區 -->
+    <div class="card" style="border-left: 4px solid #10b981; background: #f0fdf4; margin-bottom: 24px; box-shadow:0 2px 8px rgba(16,185,129,0.12);">
+      <div class="card-header">
+        <span class="card-title" style="color: #065f46;"><i class="fas fa-book-open" style="color:#10b981; margin-right:8px;"></i>🔥 今晚第 02 週 Vibe Coding 實作操作手冊與實務教材</span>
+        <span class="card-badge" style="background:#d1fae5; color:#047857;">本週核心</span>
+      </div>
+      <p style="font-size:14px; color:#166534; line-height:1.6; margin-bottom:14px;">
+        對標萬能科大 0910 研習手冊風格！涵蓋 5 大實作關卡：企業專案四層樹與 README 首頁、四欄對齊決策表格、跨部門例會 AI 自主結構化、專案總監審核自動 Git Push，以及<strong>加碼彩蛋：Word 高階商務 ATS 履歷自傳生成與一鍵貼入 Word 體驗</strong>。
+      </p>
+      <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:700; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <i class="fas fa-file-word"></i> 下載 Word 完整實作手冊 (.docx)
+        </a>
+        <a href="downloads/Week02_Vibe_Coding_實作操作手冊.md" download class="btn-sm" style="background:#0284c7; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:700; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <i class="fas fa-file-code"></i> 下載 / 檢視 Markdown 手冊 (.md)
+        </a>
+        <button class="btn-sm" onclick="openSlidePresenter(2, 55)" style="background:#f59e0b; color:#ffffff; border:none; padding:8px 16px; border-radius:6px; font-weight:700; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
+          <i class="fas fa-play-circle"></i> 直通第 02 週實作投影片 (S56)
+        </button>
+      </div>
+    </div>
+
     <div class="card" style="border-top: 4px solid #0284c7; margin-bottom:24px;">
       <div class="card-header">
         <span class="card-title">📂 課堂線上示範檔案庫與 Agentic AI 實戰專區 (Live Business Datasets & AI Agents)</span>
@@ -664,13 +686,20 @@ function renderCurriculumSection() {
           <div class="week-subtitle">${w.subtitle}</div>
         </div>
         <div class="week-actions">
-          ${w.download_file ? `
+          ${w.week === 2 ? `
+            <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
+              📥 下載 Word 實作手冊 (.docx)
+            </a>
+            <a href="downloads/Week02_Vibe_Coding_實作操作手冊.md" download class="btn-sm" style="background:#0284c7; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
+              📄 下載 Markdown 手冊 (.md)
+            </a>
+          ` : (w.download_file ? `
             <a href="${w.download_file.url}" download="${w.download_file.filename}" class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
               📥 下載本週練習檔 (${w.download_file.ext})
             </a>
-          ` : ''}
+          ` : '')}
           <button class="btn-sm btn-amber" onclick="openSlidePresenter(${w.week}, 0)">
-            🖥️ 播放本週簡報 (61頁)
+            🖥️ 播放本週簡報 (${(window.slidesData && window.slidesData[w.week] ? window.slidesData[w.week].length : 61)}頁)
           </button>
           <button class="btn-sm btn-primary" onclick="startQuickQuiz(${w.week})">
             💡 課堂觀念導讀 (5則)
@@ -695,7 +724,25 @@ function renderCurriculumSection() {
           <div>${w.wrapup}</div>
         </div>
       </div>
-      ${w.download_file ? `
+      ${w.week === 2 ? `
+        <div style="margin-top:12px; padding:12px 16px; background:#f0fdf4; border-left:4px solid #10b981; border-radius:8px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+          <div style="font-size:13px; color:#065f46;">
+            <strong>📚 第 02 週全套實作手冊（含 5 大關卡、全套 Prompt、Word ATS 履歷與排版）：</strong>
+            <div style="font-size:12px; color:#047857; margin-top:3px;">
+              • <code>Week02_商業檔案結構化與Markdown練習.docx</code>（專業 Word 手冊，含呼應箱）<br>
+              • <code>Week02_Vibe_Coding_實作操作手冊.md</code>（Markdown 手冊，一步一步帶你做）
+            </div>
+          </div>
+          <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-weight:700; padding:6px 12px; font-size:12px; border-radius:6px;">
+              📥 下載 Word 版 (.docx)
+            </a>
+            <a href="downloads/Week02_Vibe_Coding_實作操作手冊.md" download class="btn-sm" style="background:#0284c7; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-weight:700; padding:6px 12px; font-size:12px; border-radius:6px;">
+              📄 下載 Markdown 版 (.md)
+            </a>
+          </div>
+        </div>
+      ` : (w.download_file ? `
         <div style="margin-top:12px; padding:10px 14px; background:#ecfdf5; border-left:4px solid #10b981; border-radius:6px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
           <div style="font-size:13px; color:#065f46;">
             <strong>📄 本週練習素材：</strong>${w.download_file.filename}
@@ -705,7 +752,7 @@ function renderCurriculumSection() {
             📥 立即下載 (.docx)
           </a>
         </div>
-      ` : ''}
+      ` : '')}
       <div style="margin-top:14px;">
         <div style="font-size:12px; font-weight:700; color:#0284c7; margin-bottom:4px;">
           🎯 iPAS 認證對標考點：${w.ipas_mapping}
