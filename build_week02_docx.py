@@ -148,30 +148,67 @@ def build_docx():
     doc.add_paragraph().paragraph_format.space_after = Pt(12)
 
     # Section 2: Mission 1
-    doc.add_heading("二、 實作關卡一：調度 AI 自動建立企業四層樹與 README 首頁 (15 分鐘)", level=1)
+    doc.add_heading("二、 實作關卡一：調度 AI 診斷「混亂命名災難」、自動重構為 ISO 8601 與四層樹 (15 分鐘)", level=1)
     p_m1 = doc.add_paragraph()
     p_m1.add_run("【任務目標】：").bold = True
-    p_m1.add_run("徹底告別手工建立資料夾！指揮 AI 規劃標準四層治理樹 (00_Admin ~ 03_Deliverables) 與 README.md 導覽手冊。\n")
+    p_m1.add_run("面對前任同仁留下的『最新版_真的最終版.docx』等失控命名，學生扮演企業數位資產審計長，指令 AI 自動產出前後對照審計表，並自動建立四層目錄樹 (00_Admin ~ 03_Deliverables) 與 README.md 首頁。\n")
     p_m1.add_run("【一步一步帶你做 SOP】：\n").bold = True
-    p_m1.add_run("• 步驟 1：開啟 Antigravity 桌面版（或 Google AI Studio 網頁版）。\n"
-                 "• 步驟 2：複製下方【任務一 Prompt】，貼入對話框按下 Enter 送出。\n"
-                 "• 步驟 3：觀測 AI 秒速產出包含專案簡介、四層資料夾與 ISO 8601 規範之 README.md 全文。\n"
-                 "• 步驟 4：若使用 Antigravity 桌面版，可直接加一句：『請將上述內容自動存為本專案的 README.md 檔案』，AI 自動在背景建好！")
+    p_m1.add_run("• 步驟 1：檢視下方【待治理的 8 個混亂檔案清單】（或於教學網站下載實例包解壓縮）。\n"
+                 "• 步驟 2：複製下方【任務一 Prompt】，貼入 Antigravity 桌面版（或 Google AI Studio 網頁版）。\n"
+                 "• 步驟 3：觀測 AI 3 秒內自主產出：\n"
+                 "   ① 命名風險診斷與【治理前後對照審計表 (Before vs. After)】\n"
+                 "   ② 四層目錄標準歸檔規劃\n"
+                 "   ③ 完整的專案首頁 README.md 原始內容！\n"
+                 "• 步驟 4：使用 Antigravity 桌面版同學，可直接加一句：『請在本地專案建立這四個資料夾並存檔 README.md』，AI 自動在背景建好！")
     
-    prompt_m1 = (
-        "【角色設定】：你是一位頂級企業數位資產架構師與知識管理總監。\n"
-        "【背景情境】：我們是萬能科大企業管理系「商業軟體應用」專案團隊，正在建立標準化企業數位倉儲（專案名稱：vnu-business-docs）。\n"
-        "【約束限制】：\n"
-        "1. 建立標準四層樹狀資料夾治理架構，目錄代碼為：\n"
-        "   - 00_Admin（專案章程、權限名冊、行政規章）\n"
-        "   - 01_Raw_Data（未經加工的外部原始資料、市場調研報表）\n"
-        "   - 02_Working_Drafts（進行中的企劃草案、Word 底稿、數據分析過程）\n"
-        "   - 03_Deliverables（經總監簽核的最終交付報告、發布檔）\n"
-        "2. 產出一份專業的 README.md 導航首頁，包含專案簡介、四層目錄結構說明、ISO 8601 命名規範與團隊維護清單。\n"
-        "3. 語法必須完全符合 GitHub Markdown 規範。\n"
-        "【核心任務】：請為我起草產出完整的 README.md 原始內容，供我直接作為專案首頁！"
+    # Messy files box
+    t_bad = doc.add_table(rows=1, cols=1)
+    c_bad = t_bad.cell(0, 0)
+    c_bad.width = Inches(6.5)
+    set_cell_background(c_bad, "FEE2E2")
+    set_cell_margins(c_bad, 140, 140, 180, 180)
+    p_bad = c_bad.paragraphs[0]
+    p_bad.paragraph_format.space_after = Pt(0)
+    p_bad.add_run("⚠️ 【前任同仁留下的 8 個混亂命名真實檔案（版本混亂現場）】：\n").bold = True
+    p_bad.runs[0].font.color.rgb = RGBColor(153, 27, 27)
+    bad_files_text = (
+        "1. 會議記錄_最新版_final.docx\n"
+        "2. 會議記錄_真的最終版_主任改過.docx\n"
+        "3. 2026年9月門市預算表_小美修改版_最終不改版.xlsx\n"
+        "4. 董事會報告_David總經理最終確定版(1).pptx\n"
+        "5. 智慧零售企劃草案_v2_new_final_FINAL.docx\n"
+        "6. 門市POS合約條款_Linda審核版_最新.docx\n"
+        "7. 北中南18家門市名冊_小林手打備份.xlsx\n"
+        "8. 重要通知_千萬不要刪除.txt\n"
+        "（痛點：無日期無法排序、主觀詞彙無法確認誰最新、版本覆蓋引發履約客訴風險！）"
     )
-    create_prompt_box(doc, "企業資深數位資產架構師", prompt_m1, "零手工敲指令！由 AI 代理人自動規劃企業級架構並建立首頁。")
+    r_bf = p_bad.add_run(bad_files_text)
+    r_bf.font.size = Pt(9.5)
+    doc.add_paragraph().paragraph_format.space_after = Pt(8)
+
+    prompt_m1 = (
+        "【角色設定】：你是一位頂級企業數位資產審計長與知識管理總監。\n"
+        "【背景情境】：我們是萬能科大企業管理系團隊，剛接手前任同仁留下的一批極度混亂的專案檔案（全部堆在同一層目錄，命名充滿「最新版_真的最終版」等版本失控問題）。\n"
+        "【待治理的 8 個混亂檔案清單】：\n"
+        "1. 會議記錄_最新版_final.docx\n"
+        "2. 會議記錄_真的最終版_主任改過.docx\n"
+        "3. 2026年9月門市預算表_小美修改版_最終不改版.xlsx\n"
+        "4. 董事會報告_David總經理最終確定版(1).pptx\n"
+        "5. 智慧零售企劃草案_v2_new_final_FINAL.docx\n"
+        "6. 門市POS合約條款_Linda審核版_最新.docx\n"
+        "7. 北中南18家門市名冊_小林手打備份.xlsx\n"
+        "8. 重要通知_千萬不要刪除.txt\n"
+        "【治理約束與任務】：\n"
+        "1. [診斷與重命名]：依據【ISO 8601 (2026-09-21) ＋ 語意主題 ＋ 語意化版本 (v1.0)】規範，繪製一張「檔案治理前後對照審計表 (Before vs. After)」，包含原檔名、潛在風險、修正後檔名。\n"
+        "2. [四層治理歸檔]：將修正後的檔案自動分派至標準四層架構樹：\n"
+        "   - 00_Admin（行政規章、通知備忘）\n"
+        "   - 01_Raw_Data（外部原始數據、門市原始名冊）\n"
+        "   - 02_Working_Drafts（進行中草案、歷次會議記錄）\n"
+        "   - 03_Deliverables（經總監簽核的最終董事會簡報、預算表與合約）\n"
+        "3. [自動產出首頁]：輸出完整的 GitHub 專案首頁 README.md，包含專案簡介、四層目錄結構與版本管理準則。\n"
+        "【交付指令】：請依上述分析產出完整 README.md 原始內容，供我直接建立專案首頁！"
+    )
+    create_prompt_box(doc, "企業數位資產審計長 兼 DevOps 架構師", prompt_m1, "AI 代理人自主診斷命名漏洞，秒級重構為 ISO 8601 國際企業規格並自動建立首頁！")
 
     # Section 3: Mission 2
     doc.add_heading("三、 實作關卡二：指令 AI 自動生成標準公文與四欄對齊決策表格 (15 分鐘)", level=1)

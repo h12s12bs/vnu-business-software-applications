@@ -378,6 +378,9 @@ function renderOnlineResourcesBox() {
         對標萬能科大 0910 研習手冊風格！涵蓋 5 大實作關卡：企業專案四層樹與 README 首頁、四欄對齊決策表格、跨部門例會 AI 自主結構化、專案總監審核自動 Git Push，以及<strong>加碼彩蛋：Word 高階商務 ATS 履歷自傳生成與一鍵貼入 Word 體驗</strong>。
       </p>
       <div style="display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="downloads/Week02_企業混亂命名與版本災難實例包.zip" download class="btn-sm" style="background:#dc2626; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:700; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.15);">
+          <i class="fas fa-file-archive"></i> 下載 8 個混亂命名實例包 (.zip)
+        </a>
         <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:700; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.1);">
           <i class="fas fa-file-word"></i> 下載 Word 完整實作手冊 (.docx)
         </a>
@@ -687,6 +690,9 @@ function renderCurriculumSection() {
         </div>
         <div class="week-actions">
           ${w.week === 2 ? `
+            <a href="downloads/Week02_企業混亂命名與版本災難實例包.zip" download class="btn-sm" style="background:#dc2626; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.15);">
+              📥 下載 8 個混亂命名實例包 (.zip)
+            </a>
             <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:6px; font-weight:700; border-radius:6px; padding:6px 12px; font-size:13px; box-shadow:0 1px 2px rgba(0,0,0,0.1);">
               📥 下載 Word 實作手冊 (.docx)
             </a>
@@ -727,13 +733,17 @@ function renderCurriculumSection() {
       ${w.week === 2 ? `
         <div style="margin-top:12px; padding:12px 16px; background:#f0fdf4; border-left:4px solid #10b981; border-radius:8px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
           <div style="font-size:13px; color:#065f46;">
-            <strong>📚 第 02 週全套實作手冊（含 5 大關卡、全套 Prompt、Word ATS 履歷與排版）：</strong>
+            <strong>📚 第 02 週實戰素材與全套手冊（含 8 個混亂檔名、5 大關卡、全套 Prompt、Word ATS 履歷）：</strong>
             <div style="font-size:12px; color:#047857; margin-top:3px;">
+              • <code>Week02_企業混亂命名與版本災難實例包.zip</code>（8 個真實混亂命名檔案，供學生操作 AI 治理）<br>
               • <code>Week02_商業檔案結構化與Markdown練習.docx</code>（專業 Word 手冊，含呼應箱）<br>
               • <code>Week02_Vibe_Coding_實作操作手冊.md</code>（Markdown 手冊，一步一步帶你做）
             </div>
           </div>
           <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <a href="downloads/Week02_企業混亂命名與版本災難實例包.zip" download class="btn-sm" style="background:#dc2626; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-weight:700; padding:6px 12px; font-size:12px; border-radius:6px;">
+              📥 混亂實例包 (.zip)
+            </a>
             <a href="downloads/Week02_商業檔案結構化與Markdown練習.docx" download class="btn-sm" style="background:#059669; color:#ffffff; text-decoration:none; display:inline-flex; align-items:center; gap:4px; font-weight:700; padding:6px 12px; font-size:12px; border-radius:6px;">
               📥 下載 Word 版 (.docx)
             </a>
