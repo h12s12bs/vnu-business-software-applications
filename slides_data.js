@@ -16,7 +16,7 @@ window.COURSE_SLIDES_DATA = {
       "title": "商業檔案結構化與 Markdown 跨格式協作思維",
       "subtitle": "專案資料夾架構樹 ｜ 語意與樣式分離原則 ｜ 純文字跨平台高速流轉",
       "software": "Markdown / 純文字編輯器 / 檔案總管",
-      "slideCount": 61
+      "slideCount": 66
     },
     {
       "week": 3,
@@ -1781,30 +1781,30 @@ window.COURSE_SLIDES_DATA = {
         "num": 4,
         "sec": "單元破冰與商業情境",
         "badge": "環境準備",
-        "title": "課堂實機操作前置準備與教材盤點",
-        "subtitle": "請於 3 分鐘內確認以下環境與示範檔案已就緒",
+        "title": "課堂實機操作前置準備：GitHub 雲端與抗崩潰雙軌環境",
+        "subtitle": "請於 3 分鐘內確認以下工具與帳號已就緒（上週已註冊 GitHub）",
         "type": "cards",
         "cards": [
           {
-            "title": "1. 雲端工作目錄 (Cloud Shell)",
-            "content": "開啟 Google Cloud Shell 網頁終端，確認連線至 5GB 永續儲存目錄。若使用本機電腦，請確認在 D 槽或個人隨身碟建立乾淨的課堂工作資料夾。",
-            "tag": "環境就緒",
+            "title": "1. GitHub 雲端專案庫 (最穩首選)",
+            "content": "登入上週註冊之 GitHub 帳號。今晚我們將建立個人商務知識庫，並使用鍵盤『.』鍵啟動免安裝的線上 VS Code (github.dev)，檔案永存雲端，無視教室電腦重開機還原！",
+            "tag": "雲端主力",
             "theme": "navy"
           },
           {
-            "title": "2. 實務練習檔案與文本",
-            "content": "確認已由平台下載《Week02_商業檔案結構化與Markdown練習.docx》，並於純文字編輯器或對話框開啟備用。",
-            "tag": "教材準備",
-            "theme": "amber"
+            "title": "2. AI 協作雙軌：Antigravity 桌面版 ＋ Gemini 網頁版",
+            "content": "上週全班同時連線索取 API Key 曾遭遇校園 IP 流量限制塞車。今晚採用【容錯雙軌策略】：本機 Antigravity 桌面版若正常直接使用；若遇卡頓，直接開啟免金鑰的 Google Gemini 網頁版，100% 零阻礙順暢協作！",
+            "tag": "抗崩潰備援",
+            "theme": "emerald"
           },
           {
-            "title": "3. 免費版 AI 代理人視窗",
-            "content": "確認登入 Google 帳號，開啟 Antigravity / Gemini 對話視窗，作為今晚文字結構化與跨格式轉換的協同助理。",
-            "tag": "AI 工具",
-            "theme": "emerald"
+            "title": "3. 課堂實戰素材：商業會議逐字稿",
+            "content": "本週實作將提供「智慧零售跨部門數位轉型例會雜亂逐字稿」，投影片與網頁平台均內建一鍵複製按鈕，免下載大檔案即可直接實作！",
+            "tag": "實戰素材",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "請大家打開 Cloud Shell 或你習慣的文字編輯器。記住，電腦教室有還原卡，所有檔案一定要儲存在雲端空間，避免重開機遺失。"
+        "speaker_note": "請大家登入 GitHub，並開啟 Antigravity 桌面版或 Google Gemini 網頁版。今天我們透過 GitHub 和 AI 雙軌協同，徹底解決電腦教室還原卡與網路卡頓的問題！"
       },
       {
         "num": 5,
@@ -2277,9 +2277,15 @@ window.COURSE_SLIDES_DATA = {
             "content": "你的核心價值不再是手動按鈕多快，而是商業目標定義、邊界限制設定、Prompt 邏輯架構與成果驗收審查。",
             "tag": "核心競爭力",
             "theme": "amber"
+          },
+          {
+            "title": "網路架構觀念：Rate Limit 與雙軌備援",
+            "content": "上週全班同時索取 API Key 塞車，本質是雲端防禦同一 IP 瞬間大量請求的頻率限制 (Rate Limit)。專業經理人永不把雞蛋放在同一個籃子，掌握 Antigravity 桌面版與 Gemini 網頁版雙軌備援，隨時保持 100% 營運連續性！",
+            "tag": "容錯架構",
+            "theme": "emerald"
           }
         ],
-        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個專業的 AI 代理人指揮官。"
+        "speaker_note": "請大家記住：我們學的不是機械死背，而是如何當一個具備系統容錯思維的專業 AI 代理人指揮官。"
       },
       {
         "num": 22,
@@ -2591,61 +2597,61 @@ window.COURSE_SLIDES_DATA = {
         "num": 34,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "步驟 01：檔案治理",
-        "title": "步驟 1：建立企業專案四層目錄樹與工作底稿",
-        "subtitle": "在 Google Cloud Shell 終端機或檔案總管建立標準化治理架構",
+        "title": "步驟 1：在 GitHub 建立個人商務倉儲與四層目錄樹",
+        "subtitle": "利用上週註冊之 GitHub 帳號，打造永不因電腦重開機還原而遺失的雲端資產庫",
         "type": "sop",
         "step_num": "01",
-        "step_title": "建立專案標準四層目錄",
-        "step_desc": "在工作區建立 `2026_Retail_Digital_Transformation/` 主資料夾，並於其下建立 `00_Admin`、`01_Raw_Data`、`02_WIP`、`03_Deliverables` 四大子目錄。",
-        "step_tip": "在 Cloud Shell 終端機中，只需輸入一行指令：`mkdir -p 2026_Project/{00_Admin,01_Raw_Data,02_WIP,03_Deliverables}` 即可瞬間建好！",
-        "speaker_note": "現在進行步驟 1。請大家在終端機或檔案總管建立這四個資料夾。建好之後，把下載的教材檔案放進 01_Raw_Data。"
+        "step_title": "建立 GitHub 商務專案倉儲",
+        "step_desc": "登入 GitHub ➔ 點擊右上角『New repository』➔ 專案命名為 `vnu-business-docs` ➔ 勾選『Add a README file』➔ 點擊綠色按鈕建立。",
+        "step_tip": "💡 神級密技：在你的 GitHub 倉儲頁面按一下鍵盤上的『.』（句點鍵），瀏覽器 1 秒自動啟動免安裝的線上 VS Code (github.dev)！可直接右鍵新增資料夾，全班 100% 順暢！",
+        "speaker_note": "現在進行步驟 1。請大家登入 GitHub，建立你的商務倉儲。記住那個句點鍵的密技，按下去全螢幕都是專業編輯器，而且完全不受教室還原卡限制！"
       },
       {
         "num": 35,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "步驟 01 精講",
-        "title": "步驟 1 技術細節剖析：ISO 8601 版控命名之首份底稿建立",
-        "subtitle": "在 02_WIP 目錄下建立標準命名的 Markdown 底稿檔案",
+        "title": "步驟 1 技術細節剖析：GitHub 雲端 vs. Antigravity 本機目錄對照",
+        "subtitle": "在 02_WIP 目錄下建立標準 ISO 8601 命名的 Markdown 底稿檔案",
         "type": "cards",
         "cards": [
           {
-            "title": "路徑與檔名建立",
-            "content": "在 `02_WIP/` 目錄中新增純文字檔，嚴格命名為：\n`20260921_Retail_Proposal_v1.0_Draft.md`",
-            "tag": "檔案路徑",
+            "title": "雲端目錄建立 (github.dev)",
+            "content": "在 github.dev 左側檔案總管按右鍵『New Folder』，依序建立 `00_Admin`、`01_Raw_Data`、`02_WIP`、`03_Deliverables`。",
+            "tag": "四層目錄",
             "theme": "navy"
           },
           {
-            "title": "編碼格式確認",
-            "content": "確認編輯器存檔編碼格式為 `UTF-8`（無 BOM），避免繁體中文字元在跨平台時出現亂碼。",
-            "tag": "編碼安全",
+            "title": "ISO 8601 版控命名",
+            "content": "在 `02_WIP/` 目錄中新增純文字檔，嚴格命名為：\n`2026-09-21_數位轉型企劃草案_v1.0.md`，確認採 UTF-8 編碼。",
+            "tag": "標準命名",
             "theme": "amber"
           },
           {
-            "title": "⌨️ 快捷鍵與指令",
-            "content": "Cloud Shell 指令：`touch 02_WIP/20260921_Retail_Proposal_v1.0_Draft.md`\nVS Code 快捷鍵：Ctrl + N (開新檔) ➔ Ctrl + S (存檔)",
-            "tag": "高效捷徑",
+            "title": "本機 Antigravity 桌面版對應",
+            "content": "若使用 Antigravity 桌面版，可直接『Open Folder』開啟本機目錄，透過本機 AI Agent 代理人即時檢視檔案變更。",
+            "tag": "本機協同",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "請確認檔名大小寫與底線。養成嚴格命名習慣，你的職場專業度立刻顯現。"
+        "speaker_note": "請確認資料夾編號 00 到 03 順序一致。透過雲端與本機雙重視角，建立企業級治理規格。"
       },
       {
         "num": 36,
         "sec": "實機操作 SOP 逐步詳解",
         "badge": "步驟 01 檢查點",
         "title": "里程碑驗證：步驟 1 專案目錄結構確認清單",
-        "subtitle": "完成步驟 1 後，請檢視你的工作目錄是否呈現以下標準狀態",
+        "subtitle": "完成步驟 1 後，請檢視你的 GitHub 或本機工作目錄是否呈現以下標準狀態",
         "type": "cards",
         "cards": [
           {
             "title": "✅ 正確狀態特徵 (Pass)",
-            "content": "目錄結構清晰，`00` 至 `03` 順序排列整齊，`02_WIP` 內包含剛建立的 `.md` 底稿，終端機下執行 `tree` 或 `ls` 均能正確顯示。",
+            "content": "GitHub 倉儲目錄清晰，`00` 至 `03` 順序排列整齊，`02_WIP` 內包含剛建立的 `.md` 底稿，點擊 Commit 即可永久同步存檔。",
             "tag": "驗收通過",
             "theme": "emerald"
           },
           {
             "title": "❌ 異常徵兆排查 (Fail)",
-            "content": "若發現資料夾名稱包含中文字元打錯、缺少編號前綴、或檔案直接散落在桌面，請立即按 F2 重命名並整理歸位。",
+            "content": "若發現資料夾名稱包含中文字元打錯、缺少編號前綴、或檔案直接散落在桌面，請在網頁端或 VS Code 立即按 F2 重命名並整理歸位。",
             "tag": "即時修正",
             "theme": "rose"
           }
@@ -2792,8 +2798,8 @@ window.COURSE_SLIDES_DATA = {
         "step_num": "04",
         "step_title": "Agentic 轉換與交付封裝",
         "step_desc": "將寫好的 Markdown 大綱貼給 AI 代理人，下達指令：『請將此 Markdown 大綱轉換為符合企業 2.54cm 邊界、微軟正黑體、APA 三線表之 Word 樣式文件』，完成轉出並存入 `03_Deliverables/`。",
-        "step_tip": "在 Cloud Shell 中，也可直接輸入 Pandoc 指令：`pandoc input.md -o output.docx`，直接產出正規 Word 檔！",
-        "speaker_note": "現在是見證奇蹟的時刻！請大家把剛剛寫的 Markdown 大綱丟給 AI 代理人，或者使用 Pandoc 指令，看看它是如何瞬間轉出成標準 Word 檔案的！"
+        "step_tip": "💡 現代雙視窗工作法：左半螢幕開啟 Antigravity 桌面版或 Gemini 網頁版，右半螢幕開啟 GitHub 倉儲（或 github.dev）。AI 負責高速結構化，GitHub 負責即時預覽與永久存檔！",
+        "speaker_note": "現在是見證奇蹟的時刻！請大家把剛剛寫的 Markdown 大綱丟給 AI 代理人，看看它是如何瞬間轉出成標準 Word 檔案或網頁排版的！"
       },
       {
         "num": 44,
@@ -3111,63 +3117,196 @@ window.COURSE_SLIDES_DATA = {
       {
         "num": 55,
         "sec": "課堂演練與成果累積",
-        "badge": "實務演練",
-        "title": "課堂隨堂實務演練 (Hands-on Guided Practice) ── 邱老師課堂帶領",
-        "subtitle": "跟隨授課教師現場示範，實機將散亂會議逐字稿重構為高階企劃大綱",
+        "badge": "實務演練總覽",
+        "title": "課堂實務演練總覽：商務數位轉型實戰四部曲 (60 分鐘上機節奏)",
+        "subtitle": "邱老師現場帶領：從 GitHub 建庫、Markdown 手打到調度 AI 代理人一鍵淬鍊",
         "type": "drill",
         "cards": [
           {
-            "title": "📝 實作情境引導",
-            "content": "某跨國智慧零售企業召開季度門市轉型例會，現場口語對話雜亂無章。總經理要求於下課前將其重構為一份符合 ISO 規範的「門市轉型決議與追蹤清單 Markdown 企劃底稿」。",
-            "tag": "情境任務",
+            "title": "關卡一：GitHub 雲端建庫 (15m)",
+            "content": "登入上週註冊之 GitHub 帳號，建立 `vnu-business-docs` 專案庫。按『.』鍵啟動免安裝線上 VS Code，建立四層目錄樹與 README.md，成果永存雲端！",
+            "tag": "雲端治理",
             "theme": "navy"
           },
           {
-            "title": "🎯 實務操作步驟 (三步達成)",
-            "content": "1. 下載《Week02_商業檔案結構化與Markdown練習.docx》提取原始文字。\n2. 使用本週學會之標題、清單、表格語法，於 `02_WIP` 目錄下編寫標準 `.md` 檔案。\n3. 調度 AI 代理人檢核格式並導出為標準 Word 檔，存入 `03_Deliverables`。",
-            "tag": "操作步驟",
+            "title": "關卡二：Markdown 手打實戰 (15m)",
+            "content": "親手編寫商業公文標題階層、四欄營運指標對齊表格（金額靠右）與核選方塊待辦事項。切換 Preview 頁籤即時驗收專業排版效果！",
+            "tag": "語意排版",
+            "theme": "amber"
+          },
+          {
+            "title": "關卡三：指揮 AI 一鍵淬鍊 (20m)",
+            "content": "複製真實混亂的跨部門例會逐字稿，調用 Antigravity 桌面版或 Gemini 網頁版，下達 CLEAR 提示詞，觀測 AI 自主提取重點並產出結構化報告！",
+            "tag": "AI 代理協同",
             "theme": "emerald"
           },
           {
-            "title": "💡 課堂無考試壓力聲明",
-            "content": "本演練純供課堂實務技能熟練，教師現場巡迴指導解惑，無隨堂小考，不計入平時測驗扣分，請同學放鬆心情大膽嘗試！",
-            "tag": "安心學習",
-            "theme": "amber"
+            "title": "關卡四：HITL 審核與雲端發布 (10m)",
+            "content": "學生扮演專案總監進行人機查核（驗算數值與時程），將合格成果 Commit 推播至 GitHub，下課前每位同學擁有公開展示之數位商業資產！",
+            "tag": "總監把關",
+            "theme": "rose"
           }
         ],
-        "speaker_note": "大家放輕鬆，跟著老師的步驟。遇到任何問題隨時舉手，老師會走到你的螢幕旁協助你。"
+        "speaker_note": "各位同學，接下來 60 分鐘是大家最期待的實作時間！我們把進度拆成四個連續關卡，老師會在教室巡迴指導，大家一步步跟上。"
       },
       {
         "num": 56,
         "sec": "課堂演練與成果累積",
+        "badge": "實作任務 01",
+        "title": "【實作關卡一】GitHub 雲端商務專案庫與企業四層樹建置 (15 分鐘)",
+        "subtitle": "活用上週註冊帳號，運用免安裝 github.dev 打造永久不遺失的商務知識庫",
+        "type": "drill",
+        "cards": [
+          {
+            "title": "步驟 A：GitHub 建立專案倉儲",
+            "content": "1. 登入 GitHub 官網 (github.com)。\n2. 點擊右上角『+』➔『New repository』。\n3. Repository name 填寫：`vnu-business-docs`。\n4. 勾選『Add a README file』，點擊『Create repository』。",
+            "tag": "倉儲建立",
+            "theme": "navy"
+          },
+          {
+            "title": "步驟 B：神級快捷鍵啟動線上 VS Code",
+            "content": "在建立好的倉儲頁面，直接按鍵盤上的『.』（句點鍵）！\n瀏覽器 1 秒內自動開啟免安裝的線上 VS Code (github.dev)，電腦教室無須安裝任何編輯器即可全功能操作！",
+            "tag": "神級密技",
+            "theme": "amber"
+          },
+          {
+            "title": "步驟 C：右鍵建立四層目錄樹",
+            "content": "在左側檔案清單按右鍵『New Folder』，依序建立：\n• `00_Admin`\n• `01_Raw_Data`\n• `02_WIP`\n• `03_Deliverables`\n並在 `02_WIP/` 建立 `2026-09-21_數位轉型會議記錄_v1.0.md`。",
+            "tag": "四層目錄",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "請大家按下那個神奇的句點鍵！看著線上 VS Code 跳出來，是不是非常神奇？現在建立四個標準資料夾。"
+      },
+      {
+        "num": 57,
+        "sec": "課堂演練與成果累積",
+        "badge": "實作任務 02",
+        "title": "【實作關卡二】Markdown 商業公文與決策表格手打實戰 (15 分鐘)",
+        "subtitle": "親手編寫標準公文標題階層、四欄對齊表格與任務待辦清單",
+        "type": "drill",
+        "cards": [
+          {
+            "title": "任務 A：撰寫公文標題與主管核示",
+            "content": "在剛剛建立的 `.md` 檔案中輸入：\n# 智慧零售門市數位轉型專案 季度會議記錄\n> 總經理核示：全台 18 家門市須於 11 月 1 日全面完成智慧 POS 系統上線，中南區落實電子標籤培訓。",
+            "tag": "標題與引用",
+            "theme": "navy"
+          },
+          {
+            "title": "任務 B：手打四欄財務與營運表格",
+            "content": "| 門市分區 | 門市家數 | 鮮食報廢率 | 採購預算/月效益 |\n|:---|:---:|:---:|---:|\n| 北區門市 | 6 家 | 5.1% (已改善) | 月省 42 萬元 |\n| 中區門市 | 6 家 | 7.9% (待改善) | 預算 51 萬元 |\n| 南區門市 | 6 家 | 7.9% (待改善) | 預算 51 萬元 |",
+            "tag": "對齊表格",
+            "theme": "amber"
+          },
+          {
+            "title": "任務 C：建立待辦清單與 Preview 驗收",
+            "content": "- [x] 北區 6 家門市完成電子標籤試辦\n- [ ] 中南區 12 家門市店長培訓 (Susan / 10月15日前)\n- [ ] 供應商合約增訂 SLA 99.9% 罰則 (Kevin / 9月25日前)\n完成後點擊編輯器上方『Preview』放大鏡圖示即時預覽！",
+            "tag": "清單驗收",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "大家注意表格第二行的冒號位置！冒號在左靠左，兩邊都放就置中，冒號在右金額就靠右對齊。點一下 Preview 驗收成果！"
+      },
+      {
+        "num": 58,
+        "sec": "課堂演練與成果累積",
+        "badge": "實戰素材庫",
+        "title": "【實作關卡三 A】跨部門數位轉型例會原始逐字稿 (點擊一鍵複製)",
+        "subtitle": "未經整理之混亂商業口語錄音稿，請點擊上方按鈕複製，準備交給 AI 代理人",
+        "type": "prompt",
+        "prompt_role": "真實企業會議錄音逐字記錄 (Raw Business Transcript)",
+        "prompt_text": "【會議時間】：2026年9月21日 晚間例會\n【出席人員】：總經理 David、營運部經理 Susan、資訊部經理 Kevin、財務部經理 Linda\n【會議原始錄音速記】：\nDavid（總經理）：「大家晚安。今天主要討論我們全台18家門市導入智慧零售POS系統的事情。Susan，你們營運部上個月鮮食報廢率到底降下來沒有？」\nSusan（營運部）：「報告總經理，目前我們北區6家門市試辦電子標籤和即期品動態折扣，報廢率從上季的 8.2% 降到了 5.1%，光是鮮食一個月就省下 42 萬台幣！但是中區和南區門市還在用手動貼貼紙，報廢率還是高達 7.9%。」\nDavid：「好，那這件事不能拖。Susan，妳在10月15號前，把中南區12家門市的電子標籤導入計畫和教育訓練時程排出來。Kevin，系統連線問題解決了嗎？」\nKevin（資訊部）：「資訊部這邊報告，新版雲端 POS 和庫存系統已經完成壓力測試。但是硬體採購需要追加預算，18家門市升級掃描槍和雙螢幕主機，每家門市報價是 85,000 元，總共需要 153 萬元。另外還有雲端伺服器每個月租金 35,000 元。」\nLinda（財務部）：「我打個岔，財務部已經審核過這筆預算。153萬硬體採購可以動用第三季資本支出，但伺服器月租必須控制在年度 IT 運營預算內。另外，供應商合約必須加入 SLA 99.9% 正常運作保證，否則延遲上線每天要罰款千分之二。」\nDavid：「很好，大家聽清楚。第一，資訊部 Kevin 在本週五（9/25）前把採購合約修改好送法務和 Linda 審核。第二，營運部 Susan 負責門市店長培訓。第三，全案目標在11月1日全台18家門市正式上線。請大家按照 ISO 規範，把這份會議記錄整理成正式 Markdown 專案企劃底稿，存入雲端儲存庫。」",
+        "speaker_note": "請大家點擊右上角的【一鍵複製提示詞】按鈕！這是一段真實的會議逐字稿，裡面有四個角色、各種數據和待辦事項，非常考驗結構化功力。"
+      },
+      {
+        "num": 59,
+        "sec": "課堂演練與成果累積",
+        "badge": "實作任務 03",
+        "title": "【實作關卡三 B】調度 AI 代理人 (Antigravity / Gemini) 執行自主結構化",
+        "subtitle": "貼入 CLEAR 提示詞與會議逐字稿，觀察 AI 代理人如何自主分析與格式重構",
+        "type": "cards",
+        "cards": [
+          {
+            "title": "步驟 1：開啟 AI 協作視窗",
+            "content": "使用【雙軌抗崩潰方案】：\n• 若本機 Antigravity 桌面版已開啟，直接在對話框操作。\n• 若遇到網路連線卡頓，直接在瀏覽器分頁開啟免金鑰的 Google Gemini 網頁版 (gemini.google.com)。",
+            "tag": "雙軌啟動",
+            "theme": "navy"
+          },
+          {
+            "title": "步驟 2：下達 CLEAR 結構化指令",
+            "content": "在 AI 對話框中貼入本週 S26 提示詞模板，緊接著貼上剛剛複製的 S58 會議逐字稿，按下 Enter 送出！",
+            "tag": "指令下達",
+            "theme": "amber"
+          },
+          {
+            "title": "步驟 3：觀察 AI 自主 ReAct 運算",
+            "content": "觀測 AI 代理人自主執行四部曲：\n① 提取專案背景與目標上線日（11月1日）\n② 自動計算門市硬體採購總預算 (85,000 × 18 = 153萬)\n③ 自動繪製 4 欄 Markdown 對齊營運表格\n④ 條列分工明確的待辦清單 (- [ ])！",
+            "tag": "自主運算",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "看著 AI 代理人自動幫你把口語廢話過濾掉，自動算好總金額，自動畫好 Markdown 表格。這就是現代經理人十倍生產力的秘密！"
+      },
+      {
+        "num": 60,
+        "sec": "課堂演練與成果累積",
+        "badge": "實作任務 04",
+        "title": "【實作關卡四】人機協同 (HITL) 審查與 GitHub 雲端正式發布 (10 分鐘)",
+        "subtitle": "扮演專案總監嚴格把關數值邏輯，並 Commit 推播至 GitHub 雲端永久保存",
+        "type": "drill",
+        "cards": [
+          {
+            "title": "總監審查 A：勾稽財務數據",
+            "content": "檢查 AI 生成之表格數據：18 家門市每家 85,000 元，總計是否準確等於 153 萬元？雲端租金 35,000 元是否正確列入運營費用？若有錯誤立即手動修正！",
+            "tag": "數據把關",
+            "theme": "navy"
+          },
+          {
+            "title": "總監審查 B：檢核合規與負責人",
+            "content": "檢查待辦事項是否完整包含：\n• Susan 負責 10/15 中南區培訓\n• Kevin 負責 9/25 供應商合約增訂 SLA 99.9% 罰則\n確認未遺漏任何法務風控要件。",
+            "tag": "合規檢核",
+            "theme": "amber"
+          },
+          {
+            "title": "成果交付：Commit 推播至 GitHub",
+            "content": "將審核確認的 Markdown 檔案，複製貼入 GitHub 的 `03_Deliverables/2026-09-21_門市數位轉型會議記錄_v1.0.md`。\n點擊右上角綠色『Commit changes』存檔！下課用手機打開 GitHub 即可展示這份作品！",
+            "tag": "雲端發布",
+            "theme": "emerald"
+          }
+        ],
+        "speaker_note": "這一步是今晚的精華！我們不是盲目相信 AI，而是作為專業經理人進行雙重審查。完成 Commit 的同學，這份作品就永遠保存在你的 GitHub 雲端了！"
+      },
+      {
+        "num": 61,
+        "sec": "課堂演練與成果累積",
         "badge": "自我檢核",
         "title": "實務操作重點自我檢核清單 (Self-Check Checklist)",
-        "subtitle": "自主對照檢核，確認本週實作成果符合一流商管專業標準",
+        "subtitle": "自主對照檢核，確認今晚四項實作成果符合一流商管專業標準",
         "type": "cards",
         "cards": [
           {
             "title": "架構與治理層面檢核 (3 項)",
-            "content": "□ 專案資料夾建立完整的 00 至 03 四層樹結構\n□ 檔案命名符合 ISO 8601 標準（如 20260921_專案_v1.0_Draft.md）\n□ 檔案編碼正確設定為 UTF-8，無亂碼現象",
+            "content": "□ GitHub 專案倉儲 `vnu-business-docs` 成功建立\n□ 四層目錄樹 (`00_Admin` ~ `03_Deliverables`) 結構完整\n□ 檔案命名符合 ISO 8601 標準（如 2026-09-21_專案_v1.0.md）",
             "tag": "治理檢核",
             "theme": "navy"
           },
           {
             "title": "語意與排版層面檢核 (4 項)",
-            "content": "□ 標題階層依序為 #、##、###，且 # 後方均有半形空格\n□ 段落與段落之間保持一行完整空行\n□ 含有至少一張三欄以上之 Markdown 表格，且數值欄位靠右對齊\n□ 待辦事項包含 `- [ ]` 核選方塊與明確負責人",
+            "content": "□ 標題階層依序為 #、##、###，且 # 後方均有半形空格\n□ 段落與段落之間保持一行完整空行\n□ 含有至少一張四欄以上之 Markdown 表格，且金額欄位靠右對齊\n□ 待辦事項包含 `- [ ]` 核選方塊、負責人與明確截止日",
             "tag": "語意檢核",
             "theme": "amber"
           },
           {
             "title": "協同與交付層面檢核 (3 項)",
-            "content": "□ 成功調用 AI 代理人進行文本結構化與格式微調\n□ 經由 Pandoc 或 AI 轉出一份排版整潔的 Word 交付檔\n□ 成果檔案妥善儲存於 Google 雲端硬碟，避免教室重開機還原",
+            "content": "□ 成功調用 Antigravity 桌面版或 Gemini 網頁版完成文字淬鍊\n□ 完成 Human-in-the-Loop 人機互驗（核對 153 萬數據與 SLA 條款）\n□ 成果成功 Commit 至 GitHub 雲端，無懼教室重開機還原卡",
             "tag": "交付檢核",
             "theme": "emerald"
           }
         ],
-        "speaker_note": "請大家拿出這張檢核清單，在心裡默默打勾。全部通過的同學，你今晚的學習成效就達到 100 分了！"
+        "speaker_note": "請大家拿出這張檢核清單，在心裡默默打勾。十項全部打勾的同學，你今晚的學習成效就達到 100 分了！"
       },
       {
-        "num": 57,
+        "num": 62,
         "sec": "課堂演練與成果累積",
         "badge": "即時回饋",
         "title": "課堂常見問題即時反饋與指導 (Common Pitfalls & Guidance)",
@@ -3175,28 +3314,28 @@ window.COURSE_SLIDES_DATA = {
         "type": "cards",
         "cards": [
           {
-            "title": "Q1：如果不小心在原始資料檔直接修改了怎麼辦？",
-            "content": "A：千萬不要存檔覆蓋！若已存檔，請立即從雲端平台重新下載一份乾淨的教材檔案放回 `01_Raw_Data`，並永遠記得在開始編輯前先另存新檔至 `02_WIP`。",
-            "tag": "底稿防禦",
-            "theme": "rose"
-          },
-          {
-            "title": "Q2：寫好的 Markdown 丟進 Word 發現沒有樣式怎麼辦？",
-            "content": "A：直接開啟 Word 的「樣式窗格」，你會發現所有的 # 號已經自動變成了「標題 1」樣式！只需在 Word 樣式庫一鍵套用公司範本，整份文件的字級與顏色立即就定位。",
-            "tag": "Word 串接",
+            "title": "Q1：在 GitHub 按『.』鍵沒有反應怎麼辦？",
+            "content": "A：請確認英數輸入法處於半形狀態，並點一下網頁空白處使其獲得焦點。或者直接將網址中的 `github.com` 改成 `github.dev`，即可強制載入線上 VS Code！",
+            "tag": "快捷排查",
             "theme": "navy"
           },
           {
-            "title": "Q3：手機上也能編輯或閱讀 Markdown 嗎？",
-            "content": "A：當然可以！Markdown 是純文字，手機上的 Notion、GitHub App、甚至任何記事本都能秒開秒改，這是二進位 Word 檔案永遠做不到的極致便攜性！",
-            "tag": "行動辦公",
+            "title": "Q2：如果電腦突然當機或被重開機了怎麼辦？",
+            "content": "A：完全不用慌張！只要你在 GitHub 上有點擊過 Commit，所有資料夾與檔案都已永久儲存在全球 GitHub 雲端伺服器上，重開機後重新登入網頁即可秒速復原！",
+            "tag": "雲端韌性",
             "theme": "emerald"
+          },
+          {
+            "title": "Q3：手機上也能查看我今晚寫好的 Markdown 嗎？",
+            "content": "A：當然可以！打開手機瀏覽器或 GitHub App，登入你的帳號，點進 `vnu-business-docs`，你會發現所有的表格、標題與核選清單都以最完美的行動排版呈現！",
+            "tag": "行動展示",
+            "theme": "amber"
           }
         ],
-        "speaker_note": "這三題是每年學長姐最常問的問題。了解這些解決方案，你的操作就會越來越熟練。"
+        "speaker_note": "這三題是現場最常見的提問。掌握這些小技巧，遇到任何突發狀況都能沉著應對。"
       },
       {
-        "num": 58,
+        "num": 63,
         "sec": "課堂演練與成果累積",
         "badge": "精華總結",
         "title": "本週核心觀念精華總結 (Executive Summary)",
@@ -3205,7 +3344,7 @@ window.COURSE_SLIDES_DATA = {
         "cards": [
           {
             "title": "心法 1：治理先於操作，命名決定命運",
-            "content": "混亂的資料夾與隨意的主觀命名，是引發商業災難的溫床。落實專案四層樹與 ISO 8601 版控，是頂級經理人最起碼的職業紀律。",
+            "content": "混亂的資料夾與隨意的主觀命名，是引發商業風險的溫床。落實專案四層樹與 ISO 8601 版控，是頂級經理人最起碼的職業紀律。",
             "tag": "職業紀律",
             "theme": "navy"
           },
@@ -3216,8 +3355,8 @@ window.COURSE_SLIDES_DATA = {
             "theme": "amber"
           },
           {
-            "title": "心法 3：純文字是與 AI 協同的最強通用語",
-            "content": "Markdown 具備 100% Token 利用率，無格式雜訊干擾，是引導 Agentic AI 精準思考、執行工具與生成商業交付物的最佳媒介。",
+            "title": "心法 3：雙軌容錯，掌握人機協同主導權",
+            "content": "網路限流不可怕，具備雙軌平替備援才能確保營運不中斷。AI 再快也只是工具，經理人的價值在於審核、決策與最終責任承擔！",
             "tag": "人機協同",
             "theme": "emerald"
           }
@@ -3225,7 +3364,7 @@ window.COURSE_SLIDES_DATA = {
         "speaker_note": "請大家把這三句話記在心裡。今晚學到的不是一個小工具，而是一整套現代數位辦公的底層哲學。"
       },
       {
-        "num": 59,
+        "num": 64,
         "sec": "課堂演練與成果累積",
         "badge": "報告指引",
         "title": "學習成果留存與期中/期末報告準備指引（免交隨堂作業）",
@@ -3234,13 +3373,13 @@ window.COURSE_SLIDES_DATA = {
         "cards": [
           {
             "title": "免交隨堂作業聲明 (No Weekly Homework)",
-            "content": "本課程嚴格遵循開學評量承諾：無每週課後作業截止壓力、無上機小考測驗。今晚完成的 Markdown 底稿與練習檔，**無需在課後繳交**，課堂跟著老師做完即達成學習要求！",
+            "content": "本課程嚴格遵循開學評量承諾：無每週課後作業截止壓力、無上機小考測驗。今晚完成的 GitHub 倉儲與 Markdown 底稿，**無需在課後繳交**，課堂跟著老師做完即達成學習要求！",
             "tag": "無作業負擔",
             "theme": "emerald"
           },
           {
-            "title": "雲端成果留存指引 (Cloud Asset Storage)",
-            "content": "請同學將今晚建立的專案資料夾（含 Markdown 企劃大綱與 Word 轉出檔）妥善備份至個人 Google 雲端硬碟。這些檔案將直接作為第 09 週期中專案書面報告的現成素材！",
+            "title": "GitHub 雲端資產累積 (Cloud Portfolio)",
+            "content": "今晚在 GitHub 建立的 `vnu-business-docs` 專案庫將成為你整學期的商務數位百寶箱！這些 Markdown 底稿與表格，將直接作為第 09 週期中專案書面報告的現成素材！",
             "tag": "素材累積",
             "theme": "navy"
           },
@@ -3251,10 +3390,10 @@ window.COURSE_SLIDES_DATA = {
             "theme": "amber"
           }
         ],
-        "speaker_note": "再次向大家重申：今晚不需要交作業！大家都是進修部的同學，白天上班很辛苦。只要上課跟著老師做完，把檔案存到雲端硬碟，期中報告就有著落了。"
+        "speaker_note": "再次向大家重申：今晚不需要交作業！大家都是進修部的同學，白天上班很辛苦。只要上課跟著老師做完，把檔案存到 GitHub 雲端，期中報告就有著落了。"
       },
       {
-        "num": 60,
+        "num": 65,
         "sec": "課堂演練與成果累積",
         "badge": "課程結語",
         "title": "課程結語與下週預告 (Conclusion & Next Week)",
@@ -3263,7 +3402,7 @@ window.COURSE_SLIDES_DATA = {
         "cards": [
           {
             "title": "本週學習任務圓滿達成",
-            "content": "恭喜各位同學完成第 02 週的學習！你已經掌握了頂級企業的檔案治理規範、Markdown 語意思維，並體驗了 Agentic AI 跨格式一鍵轉換的強大威力。",
+            "content": "恭喜各位同學完成第 02 週的學習！你已經掌握了頂級企業的檔案治理規範、GitHub 雲端倉儲運作，並體驗了 Agentic AI 跨格式一鍵轉換的強大威力。",
             "tag": "圓滿完成",
             "theme": "emerald"
           },
@@ -3277,7 +3416,7 @@ window.COURSE_SLIDES_DATA = {
         "speaker_note": "謝謝大家今晚的專注參與。下週一晚上 20:10，我們準時在企業經營模擬室見，進入 Word 商業企劃書的精彩實戰！"
       },
       {
-        "num": 61,
+        "num": 66,
         "sec": "課堂演練與成果累積",
         "badge": "課後諮詢",
         "title": "授課教師諮詢管道與 Office Hours 指引",
