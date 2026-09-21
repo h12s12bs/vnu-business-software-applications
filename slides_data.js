@@ -3154,26 +3154,26 @@ window.COURSE_SLIDES_DATA = {
         "sec": "課堂演練與成果累積",
         "badge": "實作任務 01",
         "title": "【實作關卡一】調度 AI 自動建立企業四層樹與 README 導覽手冊 (15 分鐘)",
-        "subtitle": "零手動建資料夾！左側提示詞一鍵複製，右側跟著步驟帶領，3 分鐘完成雲端資產治理",
+        "subtitle": "零手動建資料夾！左側提示詞一鍵複製，右側跟著步驟帶領，由 AI 自動規劃與存檔",
         "type": "prompt",
         "prompt_role": "企業資深數位資產架構師 (Enterprise Digital Asset Architect)",
-        "prompt_text": "【角色設定】：你是一位頂級企業數位資產架構師與知識管理總監。\n【背景情境】：我們是萬能科大企業管理系「商業軟體應用」專案團隊，正在 GitHub 建立標準化企業數位倉儲（Repository 名稱：vnu-business-docs）。\n【約束限制】：\n1. 建立標準四層樹狀資料夾治理架構，目錄代碼為：\n   - 00_Admin（專案章程、權限名冊、行政規章）\n   - 01_Raw_Data（未經加工的外部原始資料、市場調研報表）\n   - 02_Working_Drafts（進行中的企劃草案、Word 底稿、數據分析過程）\n   - 03_Deliverables（經總監簽核的最終交付報告、發布檔）\n2. 產出一份專業的 README.md 導航首頁，包含專案簡介、四層目錄結構說明、ISO 8601 命名規範與團隊維護清單。\n3. 語法必須完全符合 GitHub Markdown 規範。\n【核心任務】：請為我起草產出完整的 README.md 原始內容，供我直接貼入 GitHub 專案首頁！",
+        "prompt_text": "【角色設定】：你是一位頂級企業數位資產架構師與知識管理總監。\n【背景情境】：我們是萬能科大企業管理系「商業軟體應用」專案團隊，正在 GitHub 建立標準化企業數位倉儲（Repository 名稱：vnu-business-docs）。\n【約束限制】：\n1. 建立標準四層樹狀資料夾治理架構，目錄代碼為：\n   - 00_Admin（專案章程、權限名冊、行政規章）\n   - 01_Raw_Data（未經加工的外部原始資料、市場調研報表）\n   - 02_Working_Drafts（進行中的企劃草案、Word 底稿、數據分析過程）\n   - 03_Deliverables（經總監簽核的最終交付報告、發布檔）\n2. 產出一份專業的 README.md 導航首頁，包含專案簡介、四層目錄結構說明、ISO 8601 命名規範與團隊維護清單。\n3. 語法必須完全符合 GitHub Markdown 規範。\n【核心任務】：請為我起草產出完整的 README.md 原始內容，供我直接作為專案首頁！",
         "side_steps": [
           {
-            "title": "啟動免安裝線上 VS Code",
-            "desc": "登入 github.com 進入 `vnu-business-docs`，直接按鍵盤上的「.」（句點鍵），免安裝 1 秒進入網頁版 VS Code！"
+            "title": "開啟 Antigravity 桌面版",
+            "desc": "開啟桌面上的 Antigravity 軟體（或於瀏覽器進入 Google AI Studio 網頁版 aistudio.google.com）。"
           },
           {
-            "title": "複製 Prompt 貼給 AI 代理人",
-            "desc": "點擊左側【一鍵複製提示詞】，貼入本機 Antigravity 桌面版對話框或免金鑰 Google Gemini 網頁版 (gemini.google.com)。"
+            "title": "複製 Prompt 貼入送出",
+            "desc": "點擊左側【一鍵複製提示詞】，貼入對話框按下 Enter，觀測 AI 秒速產出 README 全文。"
           },
           {
-            "title": "貼入 README.md 並 Commit 存檔",
-            "desc": "將 AI 產出的 Markdown 內容複製，貼入 VS Code 中的 `README.md`，點擊綠色 Commit 永久留存！"
+            "title": "指令 AI 自動存檔",
+            "desc": "使用 Antigravity 桌面版同學，可直接對 AI 說：『請將上述內容自動存為本專案的 README.md 檔案』，AI 自動在背景建好！"
           }
         ],
         "side_tip": "完全零手打！不用手動敲 mkdir 或一個個建資料夾，由 AI 規劃完整企業級架構，永存全球雲端！",
-        "speaker_note": "請大家按下那個神奇的句點鍵！接著點擊左側一鍵複製提示詞，貼給 AI 代理人，看著它自動把企業級四層資料夾與 README 規劃得清清楚楚！"
+        "speaker_note": "請大家打開 Antigravity 桌面版！點擊左側一鍵複製提示詞貼給 AI，看著它自動把企業級四層資料夾與 README 規劃得清清楚楚！"
       },
       {
         "num": 57,
@@ -3257,27 +3257,27 @@ window.COURSE_SLIDES_DATA = {
         "num": 60,
         "sec": "課堂演練與成果累積",
         "badge": "實作任務 04",
-        "title": "【實作關卡四】專案總監 HITL 審核、指令 AI 自主修復與 GitHub 雲端交付 (10 分鐘)",
-        "subtitle": "發現瑕疵絕不用手改！複製左側修復指令叫 AI 自我修正，並 Commit 發布至 GitHub",
+        "title": "【實作關卡四】專案總監 HITL 審核、指令 AI 自主修復與自動 Git Push (10 分鐘)",
+        "subtitle": "發現瑕疵絕不用手改！複製左側指令，叫 Antigravity 自動修復、自動存檔並自動 Push 到 GitHub",
         "type": "prompt",
         "prompt_role": "智慧零售數位轉型專案總監 (Project Director)",
-        "prompt_text": "【角色設定】：你是一位資深專案總監與敏捷教練。\n【背景情境】：剛才由你協助起草的「門市數位轉型會議記錄」初稿已完成，現在進行專案總監複審 (Human-in-the-Loop)。\n【修復需求】：\n1. 營運表格中，請將第二欄「門市數」由原本靠左改為「置中對齊 (|:---:|)」。\n2. 在財務部 Linda 的決議後面，強調「供應商若延遲上線，每日處以合約總額千分之二罰款之 SLA 條款」。\n3. 在待辦清單中，將資訊部 Kevin 的合約修正任務標註【優先級：最高 (Urgent)】。\n4. 在文末追加一節「期末延伸效益」，說明本專案將於第 11-12 週導入 Excel 儀表板、第 15 週串聯 PPT 簡報。\n【核心任務】：請依據上述修改意見，輸出修正後的完整正式版 Markdown 文件！",
+        "prompt_text": "【角色設定】：你是一位資深專案總監與敏捷教練。\n【背景情境】：剛才由你協助起草的「門市數位轉型會議記錄」初稿已完成，現在進行專案總監複審 (Human-in-the-Loop)。\n【修復需求】：\n1. 營運表格中，請將第二欄「門市數」由原本靠左改為「置中對齊 (|:---:|)」。\n2. 在財務部 Linda 的決議後面，強調「供應商若延遲上線，每日處以合約總額千分之二罰款之 SLA 條款」。\n3. 在待辦清單中，將資訊部 Kevin 的合約修正任務標註【優先級：最高 (Urgent)】。\n4. 在文末追加一節「期末延伸效益」，說明本專案將於第 11-12 週導入 Excel 儀表板、第 15 週串聯 PPT 簡報。\n【交付指令】：\n請依上述修改輸出完整內容，直接幫我存入本專案的「03_Deliverables/2026-09-21_門市數位轉型會議記錄_v1.0.md」，並自動執行 git add, git commit 與 git push 推送到 GitHub 雲端！",
         "side_steps": [
           {
             "title": "總監數據把關 (HITL)",
             "desc": "學生扮演專案總監核對數據：18 家門市每家 85,000 元，總計是否準確等於 153 萬元？SLA 罰則是否遺漏？"
           },
           {
-            "title": "指令 AI 自主修復 (Self-Correction)",
-            "desc": "【絕不手動改】，複製左側修復指令貼給 AI，AI 瞬間自動調整表格置中、補上 SLA 與優先級標籤！"
+            "title": "指令 AI 自主修復 ＋ 自動 Push",
+            "desc": "【絕不手動改】，複製左側指令貼給 Antigravity 桌面版，觀測 AI 同時執行文本修復與 Git 雲端推送！"
           },
           {
-            "title": "Commit 推播交付雲端",
-            "desc": "在 GitHub 線上 VS Code 新建 `03_Deliverables/2026-09-21_門市數位轉型會議記錄_v1.0.md`，貼入成果並 Commit！"
+            "title": "親眼見證雲端交付",
+            "desc": "AI 自動建立資料夾、存入檔案、並執行 git push！學生手機打開 GitHub 刷新，成果已安穩躺在雲端！"
           }
         ],
-        "side_tip": "這一步是今晚的精華！我們不是盲目相信 AI，而是作為專業經理人進行雙重審查。動嘴下指令叫 AI 重排，這就是人機協同的核心！",
-        "speaker_note": "這一步是今晚的精華！我們不是盲目相信 AI，而是作為專業經理人進行雙重審查。發現小瑕疵，動嘴下指令叫 AI 重排，這就是人機協同的核心！"
+        "side_tip": "一句話叫 Antigravity 自動修復、自動存檔、自動 Git Push，學生完全不用自己打命令！這就是頂級人機協作！",
+        "speaker_note": "這一步是今晚的精華！我們不是盲目相信 AI，而是作為專業經理人進行雙重審查。動嘴下指令叫 AI 自動修復並推送到 GitHub！"
       },
       {
         "num": 61,
