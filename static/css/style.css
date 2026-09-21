@@ -1015,12 +1015,15 @@ main.main-content {
 .presenter-header {
   background: #0f172a;
   color: #ffffff;
-  height: 54px;
-  padding: 0 20px;
+  min-height: 54px;
+  padding: 8px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-bottom: 2px solid #1e293b;
+  flex-wrap: wrap;
+  gap: 8px;
+  z-index: 10;
 }
 
 .presenter-stage {
@@ -1028,14 +1031,15 @@ main.main-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 16px;
   overflow: hidden;
+  position: relative;
 }
 
 .slide-canvas {
   width: 100%;
   max-width: 1560px;
-  min-height: 680px;
+  height: 100%;
   max-height: 90vh;
   aspect-ratio: 16 / 9;
   background: #ffffff;
@@ -1044,6 +1048,51 @@ main.main-content {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+/* Slide Click Navigation Zones (Left & Right 15%) */
+.slide-nav-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 15%;
+  z-index: 5;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 32px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.slide-nav-zone:hover {
+  opacity: 1;
+}
+.slide-nav-zone.left {
+  left: 0;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+}
+.slide-nav-zone.right {
+  right: 0;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+/* Mobile Floating Presenter Bar */
+.presenter-mobile-bar {
+  display: none;
+  background: #0f172a;
+  border-top: 1px solid #1e293b;
+  padding: 8px 16px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  z-index: 20;
 }
 
 /* Footer */
@@ -1400,3 +1449,277 @@ footer.platform-footer a {
 .teacher-table tr:hover {
   background: #f8fafc;
 }
+
+/* ==========================================================================
+   COMPREHENSIVE RWD & MOBILE ADAPTIVE STYLING (手機與平板響應式最佳化)
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+  .slide-canvas {
+    max-width: 98vw;
+    height: auto;
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Navigation Bar */
+  .navbar {
+    padding: 10px 16px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  
+  .nav-brand {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .nav-menu {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 4px 0 8px;
+    -webkit-overflow-scrolling: touch;
+    gap: 6px;
+    scrollbar-width: thin;
+  }
+  .nav-menu::-webkit-scrollbar {
+    height: 4px;
+  }
+  .nav-menu::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+  }
+
+  .nav-item button {
+    padding: 7px 12px;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+
+  .nav-actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  /* Presenter Header on Tablet */
+  .presenter-header {
+    height: auto;
+    padding: 8px 14px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Main Content Layout */
+  .main-content {
+    padding: 14px 10px 50px;
+  }
+
+  /* Hero Banner */
+  .hero-banner {
+    padding: 20px 14px;
+    border-radius: 12px;
+  }
+  .hero-title {
+    font-size: 20px;
+    line-height: 1.35;
+  }
+  .hero-subtitle {
+    font-size: 13px;
+    line-height: 1.6;
+  }
+  .hero-tags {
+    gap: 6px;
+  }
+  .hero-tag {
+    font-size: 11px;
+    padding: 3px 8px;
+  }
+
+  /* Grid Containers */
+  .grid-2, .grid-3, .grid-4 {
+    grid-template-columns: 1fr !important;
+    gap: 14px;
+  }
+
+  /* Instructor Profile */
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-item {
+    justify-content: center;
+    font-size: 13px;
+  }
+
+  /* Curriculum Cards */
+  .week-header-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+  .week-title {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  .week-subtitle {
+    font-size: 13px;
+  }
+  .week-actions {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 6px;
+  }
+  .week-actions .btn-sm,
+  .week-actions a.btn-sm {
+    flex: 1 1 auto;
+    text-align: center;
+    justify-content: center;
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+  .week-body-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .prompt-box {
+    font-size: 12px;
+    padding: 12px;
+  }
+
+  /* Quiz & Exam Mode Cards */
+  .quiz-mode-selector {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+  }
+  .agent-selector-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* ==========================================
+     SLIDE PRESENTER OVERLAY (手機端簡報全螢幕自適應)
+     ========================================== */
+  .presenter-container {
+    padding: 0;
+  }
+
+  .presenter-header {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+  .presenter-header select#presenterWeekSelect {
+    max-width: 180px;
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+  /* Hide desktop-only controls on small phones */
+  .presenter-header .btn-sm[title*="全螢幕"],
+  .presenter-header .btn-sm[title*="講稿"] {
+    display: none;
+  }
+
+  .presenter-stage {
+    padding: 6px 4px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    align-items: flex-start;
+  }
+
+  .slide-canvas {
+    width: 100%;
+    height: 100%;
+    min-height: calc(100vh - 120px) !important;
+    max-height: none !important;
+    aspect-ratio: unset !important;
+    border-radius: 8px;
+    box-shadow: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Force all internal slide multi-column grids to collapse into single column */
+  .slide-canvas div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 14px !important;
+    padding: 14px !important;
+  }
+
+  .slide-canvas h1 {
+    font-size: 22px !important;
+    line-height: 1.3 !important;
+  }
+  .slide-canvas h2 {
+    font-size: 18px !important;
+    line-height: 1.3 !important;
+  }
+  .slide-canvas h3 {
+    font-size: 16px !important;
+  }
+  .slide-canvas div[style*="font-size"] {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+  .slide-canvas pre {
+    font-size: 12px !important;
+    max-height: 240px !important;
+  }
+
+  /* Slide Navigation Zones on Mobile */
+  .slide-nav-zone {
+    width: 20%;
+  }
+
+  /* Show Mobile Bottom Presenter Bar */
+  .presenter-mobile-bar {
+    display: flex !important;
+  }
+  .presenter-mobile-bar .btn-mobile-nav {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 800;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .btn-mobile-prev {
+    background: #334155;
+    color: #ffffff;
+  }
+  .btn-mobile-next {
+    background: var(--primary-blue);
+    color: #ffffff;
+  }
+  .btn-mobile-week {
+    background: var(--accent-amber);
+    color: #ffffff;
+    padding: 10px 10px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  /* Submissions Layout */
+  .submissions-layout {
+    grid-template-columns: 1fr;
+  }
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Modals */
+  .modal-card {
+    width: 94%;
+    margin: 10px auto;
+    max-height: 90vh;
+  }
+}
+

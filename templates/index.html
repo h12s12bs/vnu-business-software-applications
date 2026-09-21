@@ -622,15 +622,17 @@
   <!-- ============================================================= -->
   <div id="slidesPresenterOverlay" class="presenter-container">
     <div class="presenter-header">
-      <div style="display:flex; align-items:center; gap:12px;">
+      <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
         <span style="background:var(--accent-amber); font-weight:900; padding:4px 8px; border-radius:4px; font-size:13px;">萬能科大 11501</span>
-        <select id="presenterWeekSelect" onchange="onPresenterWeekChange()" style="background:#1e293b; color:#fff; border:1px solid #334155; padding:6px 12px; border-radius:6px; font-size:14px; font-weight:600; cursor:pointer;">
+        <button type="button" class="btn-sm" onclick="prevPresenterWeek()" title="切換至上一週" style="padding:4px 8px; font-size:12px; font-weight:700;">⏮ 上週</button>
+        <select id="presenterWeekSelect" onchange="onPresenterWeekChange()" style="background:#1e293b; color:#fff; border:1px solid #334155; padding:6px 10px; border-radius:6px; font-size:13px; font-weight:600; cursor:pointer; max-width:240px;">
           <!-- Options populated by app.js -->
         </select>
-        <span class="status-badge" id="presenterCounter">1 / 61</span>
+        <button type="button" class="btn-sm" onclick="nextPresenterWeek()" title="切換至下一週" style="padding:4px 8px; font-size:12px; font-weight:700;">下週 ⏭</button>
+        <span class="status-badge" id="presenterCounter" style="font-weight:700;">1 / 61</span>
       </div>
 
-      <div style="display:flex; align-items:center; gap:8px;">
+      <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
         <!-- Font Size Adjuster for Classroom Projection -->
         <div style="display:flex; align-items:center; background:#1e293b; border:1px solid #334155; border-radius:6px; padding:2px 8px; gap:6px;">
           <span style="font-size:12px; color:#94a3b8; font-weight:700;">投影字級：</span>
@@ -639,8 +641,8 @@
           <button type="button" class="btn-sm" onclick="changePresenterFontSize(2)" style="padding:2px 8px; font-size:12px; font-weight:800; cursor:pointer;" title="字體放大 (A+)">A+</button>
           <button type="button" class="btn-sm" onclick="resetPresenterFontSize()" style="padding:2px 6px; font-size:11px; color:#cbd5e1; cursor:pointer;" title="重設為預設 28px">重設</button>
         </div>
-        <button class="btn-sm" onclick="prevPresenterSlide()" title="上一頁 (←)">◀ 上一頁</button>
-        <button class="btn-sm btn-primary" onclick="nextPresenterSlide()" title="下一頁 (Space/→)">下一頁 ▶</button>
+        <button class="btn-sm" onclick="prevPresenterSlide()" title="上一頁 (← 或滑動)">◀ 上一頁</button>
+        <button class="btn-sm btn-primary" onclick="nextPresenterSlide()" title="下一頁 (Space/→ 或滑動)">下一頁 ▶</button>
         <button class="btn-sm" onclick="togglePresenterSpeakerNotes()" title="演講者備忘稿 (N)">📝 講稿 (N)</button>
         <button class="btn-sm" onclick="togglePresenterFullscreen()" title="全螢幕切換 (F)">⛶ 全螢幕 (F)</button>
         <button class="btn-sm btn-amber" onclick="closeSlidePresenter()" title="返回平台 (Esc)">✖ 結束放映</button>
@@ -648,15 +650,27 @@
     </div>
 
     <div class="presenter-stage">
+      <!-- Click navigation overlay zones for intuitive desktop/tablet page flipping -->
+      <div class="slide-nav-zone left" onclick="prevPresenterSlide()" title="點擊切換上一頁">‹</div>
       <div id="slideStageCanvas" class="slide-canvas">
         <!-- Active Slide Content dynamically rendered by app.js -->
       </div>
+      <div class="slide-nav-zone right" onclick="nextPresenterSlide()" title="點擊切換下一頁">›</div>
+    </div>
+
+    <!-- Mobile-Optimized Bottom Floating Toolbar -->
+    <div class="presenter-mobile-bar">
+      <button type="button" class="btn-mobile-nav btn-mobile-week" onclick="prevPresenterWeek()" title="上一週">⏮ 上週</button>
+      <button type="button" class="btn-mobile-nav btn-mobile-prev" onclick="prevPresenterSlide()" title="上一頁">◀ 上頁</button>
+      <button type="button" class="btn-mobile-nav btn-mobile-next" onclick="nextPresenterSlide()" title="下一頁">下頁 ▶</button>
+      <button type="button" class="btn-mobile-nav btn-mobile-week" onclick="nextPresenterWeek()" title="下一週">下週 ⏭</button>
+      <button type="button" class="btn-mobile-nav" onclick="closeSlidePresenter()" style="background:#dc2626; color:#fff; max-width:60px;" title="關閉">✖</button>
     </div>
 
     <!-- Bottom Speaker Notes Drawer -->
     <div id="presenterNotesDrawer" style="display:none; background:#0f172a; color:#cbd5e1; border-top:2px solid var(--accent-amber); padding:16px 28px; max-height:160px; overflow-y:auto; font-size:15px; line-height:1.6;">
-      <strong style="color:var(--accent-gold); display:block; margin-bottom:4px;">🎙️ 演講者授課備忘稿 (Speaker Note)：</strong>
-      <div id="speakerNotesText">本頁尚無演講者備忘稿。</div>
+      <strong style="color:var(--accent-gold); display:block; margin-bottom:4px;">🎙️ 授課教授口述備忘指引 (Speaker Note)：</strong>
+      <div id="speakerNotesText">本頁尚無授課備忘稿。</div>
     </div>
   </div>
 

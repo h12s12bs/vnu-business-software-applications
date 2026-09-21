@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadPlatformData();
   setupNavigation();
   setupKeyboardShortcuts();
+  setupTouchSwipeListeners();
   renderAllSections();
   checkSystemStatus();
 });
@@ -657,13 +658,13 @@ function renderCurriculumSection() {
             🖥️ 播放本週簡報 (61頁)
           </button>
           <button class="btn-sm btn-primary" onclick="startQuickQuiz(${w.week})">
-            📝 隨堂快測 (5題)
+            💡 課堂觀念導讀 (5則)
           </button>
         </div>
       </div>
       <div class="week-body-grid">
         <div class="week-info-block">
-          <strong>課堂痛點破冰 (Hook)</strong>
+          <strong>實務情境與瓶頸引導 (Hook)</strong>
           <div>${w.hook}</div>
         </div>
         <div class="week-info-block">
@@ -675,7 +676,7 @@ function renderCurriculumSection() {
           <div>${w.practice}</div>
         </div>
         <div class="week-info-block">
-          <strong>成果反思與指標 (Wrap-up)</strong>
+          <strong>實務應用與成果指標 (Wrap-up)</strong>
           <div>${w.wrapup}</div>
         </div>
       </div>
@@ -924,28 +925,28 @@ function renderIpasGuideSection() {
   `;
 }
 
-// Start Quizzes
+// Start Concept Reviews (課堂觀念導讀與自主學習)
 function startQuickQuiz(weekNum) {
   switchTab('ipas');
-  startExam('weekly_5', `第 ${weekNum} 週 隨堂 5 題快測`, weekNum);
+  startExam('weekly_5', `第 ${weekNum} 週 課堂重點觀念自我檢視 (5則)`, weekNum);
 }
 
 function startExamMode(mode) {
   if (mode === 'weekly_5') {
-    const week = prompt("請輸入欲進行快測的週次 (1 到 18)：", "1");
+    const week = prompt("請選擇欲進行觀念自我檢視的週次 (1 到 18)：", "1");
     if (week && parseInt(week) >= 1 && parseInt(week) <= 18) {
-      startExam('weekly_5', `第 ${week} 週 隨堂 5 題快測`, parseInt(week));
+      startExam('weekly_5', `第 ${week} 週 課堂重點觀念自我檢視 (5則)`, parseInt(week));
     }
   } else if (mode === 'chapter') {
-    const mod = prompt("請輸入測驗模組關鍵字 (如: Word, Excel, PPT, Agentic, 資安)：", "Excel");
-    if (mod) startExam('chapter', `【${mod}】單元自主精熟練習`, null, mod);
+    const mod = prompt("請選擇單元模組觀念主題 (如: Word, Excel, PPT, Agentic, 資安)：", "Excel");
+    if (mod) startExam('chapter', `【${mod}】單元核心觀念精熟複習`, null, mod);
   } else if (mode === 'midterm_50') {
-    if (confirm("即將開始【期中 50 題自我檢測】\n• 涵蓋第 1 至 9 週重點觀念\n• 限時 60 分鐘\n• 及格門檻 70 分\n準備好立即開始？")) {
-      startExam('midterm_50', "iPAS 期中 50 題自我檢測 (限時 60 分鐘)");
+    if (confirm("即將開啟【期中 50 題核心觀念自我檢核】\n• 涵蓋第 1 至 9 週重點觀念\n• 本練習純供自我檢核學習吸收度，無成績壓力\n準備好立即開始？")) {
+      startExam('midterm_50', "iPAS 期中 50 題核心觀念自我檢核 (無計分壓力)");
     }
   } else if (mode === 'final_100') {
-    if (confirm("即將開始【期末 100 題綜合自我評量】\n• 涵蓋全學期 18 週題庫\n• 限時 100 分鐘\n• 及格門檻 70 分\n準備好立即開始？")) {
-      startExam('final_100', "iPAS 期末 100 題綜合自我評量 (限時 100 分鐘)");
+    if (confirm("即將開啟【期末 100 題綜合觀念總回顧】\n• 涵蓋全學期 18 週題庫\n• 協助同學融會貫通並儲備考證實力\n準備好立即開始？")) {
+      startExam('final_100', "iPAS 期末 100 題綜合觀念總回顧 (無計分壓力)");
     }
   }
 }
@@ -1424,23 +1425,53 @@ function closeSlidePresenter() {
 
 function populatePresenterWeekSelector() {
   const sel = document.getElementById('presenterWeekSelect');
-  if (!sel || !window.COURSE_SLIDES_DATA) return;
+  if (!sel || !window.COURSE_SLIDES_DATA || !window.COURSE_SLIDES_DATA.weeks) return;
 
-  sel.innerHTML = window.COURSE_SLIDES_DATA.weeks.map(w => `
-    <option value="${w.week}" ${w.week === state.presenter.currentWeek ? 'selected' : ''}>
-      第 ${String(w.week).padStart(2, '0')} 週：${w.title}
-    </option>
-  `).join('');
+  sel.innerHTML = window.COURSE_SLIDES_DATA.weeks.map(w => {
+    let rawTitle = w.title || '';
+    // Strip duplicated "第 XX 週：" or "第 XX 週:" prefix if already present
+    rawTitle = rawTitle.replace(/^第\s*\d+\s*週[：:]\s*/, '');
+    const isSelected = parseInt(w.week) === parseInt(state.presenter.currentWeek);
+    return `<option value="${w.week}" ${isSelected ? 'selected' : ''}>第 ${String(w.week).padStart(2, '0')} 週：${rawTitle}</option>`;
+  }).join('');
+  sel.value = String(state.presenter.currentWeek);
 }
 
 function onPresenterWeekChange() {
   const sel = document.getElementById('presenterWeekSelect');
-  if (sel) {
+  if (sel && sel.value) {
     state.presenter.currentWeek = parseInt(sel.value);
     state.presenter.currentSlideIdx = 0;
     renderPresenterSlide();
   }
 }
+
+function nextPresenterWeek() {
+  if (state.presenter.currentWeek < 18) {
+    state.presenter.currentWeek++;
+    state.presenter.currentSlideIdx = 0;
+    populatePresenterWeekSelector();
+    renderPresenterSlide();
+  } else {
+    alert("已是第 18 週（全學期總結課程）。");
+  }
+}
+
+function prevPresenterWeek() {
+  if (state.presenter.currentWeek > 1) {
+    state.presenter.currentWeek--;
+    state.presenter.currentSlideIdx = 0;
+    populatePresenterWeekSelector();
+    renderPresenterSlide();
+  } else {
+    alert("已是第 01 週（課程導引與環境建置）。");
+  }
+}
+window.nextPresenterWeek = nextPresenterWeek;
+window.prevPresenterWeek = prevPresenterWeek;
+window.onPresenterWeekChange = onPresenterWeekChange;
+window.openSlidePresenter = openSlidePresenter;
+window.closeSlidePresenter = closeSlidePresenter;
 
 function renderPresenterSlide() {
   const slidesData = window.COURSE_SLIDES_DATA;
@@ -1764,45 +1795,98 @@ function updateFontSizeLabel() {
 }
 
 function nextPresenterSlide() {
-  const weekSlides = window.COURSE_SLIDES_DATA.slidesByWeek[String(state.presenter.currentWeek)] || [];
+  const slidesData = window.COURSE_SLIDES_DATA;
+  if (!slidesData || !slidesData.slidesByWeek) return;
+  const weekSlides = slidesData.slidesByWeek[String(state.presenter.currentWeek)] || [];
+  
   if (state.presenter.currentSlideIdx < weekSlides.length - 1) {
     state.presenter.currentSlideIdx++;
     renderPresenterSlide();
   } else if (state.presenter.currentWeek < 18) {
-    if (confirm("已到達本週最後一頁，是否切換至下一週？")) {
-      state.presenter.currentWeek++;
-      state.presenter.currentSlideIdx = 0;
-      populatePresenterWeekSelector();
-      renderPresenterSlide();
-    }
+    // Smoothly transition to the next week's first slide
+    state.presenter.currentWeek++;
+    state.presenter.currentSlideIdx = 0;
+    populatePresenterWeekSelector();
+    renderPresenterSlide();
+  } else {
+    // Reached the end of week 18
+    alert("已完成全學期 18 週全套簡報講義瀏覽！");
   }
 }
 
 function prevPresenterSlide() {
+  const slidesData = window.COURSE_SLIDES_DATA;
+  if (!slidesData || !slidesData.slidesByWeek) return;
+
   if (state.presenter.currentSlideIdx > 0) {
     state.presenter.currentSlideIdx--;
     renderPresenterSlide();
   } else if (state.presenter.currentWeek > 1) {
-    if (confirm("已在第一頁，是否切換回上一週？")) {
-      state.presenter.currentWeek--;
-      state.presenter.currentSlideIdx = 0;
-      populatePresenterWeekSelector();
-      renderPresenterSlide();
-    }
+    // Smoothly transition to previous week's last slide
+    state.presenter.currentWeek--;
+    const prevWeekSlides = slidesData.slidesByWeek[String(state.presenter.currentWeek)] || [];
+    state.presenter.currentSlideIdx = Math.max(0, prevWeekSlides.length - 1);
+    populatePresenterWeekSelector();
+    renderPresenterSlide();
   }
 }
+window.nextPresenterSlide = nextPresenterSlide;
+window.prevPresenterSlide = prevPresenterSlide;
 
 function togglePresenterSpeakerNotes() {
   state.presenter.isNotesOpen = !state.presenter.isNotesOpen;
   const drawer = document.getElementById('presenterNotesDrawer');
   if (drawer) drawer.style.display = state.presenter.isNotesOpen ? 'block' : 'none';
 }
+window.togglePresenterSpeakerNotes = togglePresenterSpeakerNotes;
 
 function togglePresenterFullscreen() {
   if (!document.fullscreenElement) {
-    document.documentElement.requestFullscreen().catch(e => alert("全螢幕切換受限：" + e.message));
+    document.documentElement.requestFullscreen().catch(e => console.log("全螢幕切換受限：" + e.message));
   } else {
     if (document.exitFullscreen) document.exitFullscreen();
+  }
+}
+window.togglePresenterFullscreen = togglePresenterFullscreen;
+
+// Touch Swipe Listener for Mobile and Tablet
+function setupTouchSwipeListeners() {
+  const overlay = document.getElementById('slidesPresenterOverlay');
+  if (!overlay) return;
+
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchEndX = 0;
+  let touchEndY = 0;
+
+  overlay.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].screenX;
+      touchStartY = e.touches[0].screenY;
+    }
+  }, { passive: true });
+
+  overlay.addEventListener('touchend', (e) => {
+    if (e.changedTouches && e.changedTouches.length === 1) {
+      touchEndX = e.changedTouches[0].screenX;
+      touchEndY = e.changedTouches[0].screenY;
+      handleSwipe();
+    }
+  }, { passive: true });
+
+  function handleSwipe() {
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
+    // Horizontal swipe threshold: 45px, horizontal distance must dominate vertical distance
+    if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY) * 1.2) {
+      if (deltaX < 0) {
+        // Swipe Left -> Next Slide
+        nextPresenterSlide();
+      } else {
+        // Swipe Right -> Prev Slide
+        prevPresenterSlide();
+      }
+    }
   }
 }
 
@@ -1812,7 +1896,13 @@ function setupKeyboardShortcuts() {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT') return;
 
     if (state.presenter.isOpen) {
-      if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
+      if (e.shiftKey && (e.key === 'ArrowRight' || e.key === 'PageDown')) {
+        e.preventDefault();
+        nextPresenterWeek();
+      } else if (e.shiftKey && (e.key === 'ArrowLeft' || e.key === 'PageUp')) {
+        e.preventDefault();
+        prevPresenterWeek();
+      } else if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') {
         e.preventDefault();
         nextPresenterSlide();
       } else if (e.key === 'ArrowLeft' || e.key === 'PageUp') {
