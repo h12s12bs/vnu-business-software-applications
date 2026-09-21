@@ -263,7 +263,7 @@ def build_docx():
         "【角色設定】：你是一位資深專案總監與敏捷教練。\n"
         "【背景情境】：剛才由你起草的「門市數位轉型會議記錄」初稿已完成，現在進行專案總監複審 (Human-in-the-Loop)。\n"
         "【修復需求】：\n"
-        "1. 表格第二欄「門市數」由原本靠左改為「置中對齊 (|:---:|)」。\n"
+        "1. 營運表格中，請將第二欄「門市數」由原本靠左改為「置中對齊 (|:---:|)」。\n"
         "2. 在財務部 Linda 的決議後面，強調「供應商若延遲上線，每日處以合約總額千分之二罰款之 SLA 條款」。\n"
         "3. 在待辦清單中，將資訊部 Kevin 的合約修正任務標註【優先級：最高 (Urgent)】。\n"
         "4. 在文末追加一節「期末延伸效益」，說明本專案將於第 11-12 週導入 Excel 儀表板、第 15 週串聯 PPT 簡報。\n"
@@ -272,8 +272,39 @@ def build_docx():
     )
     create_prompt_box(doc, "智慧零售數位轉型專案總監", prompt_m4, "一句話叫 Antigravity 自動修復、自動存檔、自動 Git Push，學生完全不用自己打命令！")
 
-    # Section 6: Semester Big Cases Preview (0910 connection)
-    doc.add_heading("六、 學期後續大案藍圖：今晚基礎如何直通高階商業應用？", level=1)
+    # Section 6: Mission 5 (Word ATS Resume Bonus)
+    doc.add_heading("六、 實作彩蛋關卡：調度 AI 起草個人專屬【高階商務 ATS 履歷】並一鍵貼入 Word (15 分鐘)", level=1)
+    p_m5 = doc.add_paragraph()
+    p_m5.add_run("【任務目標】：").bold = True
+    p_m5.add_run("這是進修部企管系同學最實戰的超值資產！調度 AI 扮演頂級外商獵頭顧問，根據個人背景起草一份具備國際競爭力的「ATS 最佳化高階商務履歷」，並體驗一鍵貼入 Word 自動轉換為專業版面！\n")
+    p_m5.add_run("【一步一步帶你做 SOP】：\n").bold = True
+    p_m5.add_run("• 步驟 1：複製下方【ATS 履歷起草 Prompt】，將括號中的 [姓名] 與現職經歷替換為個人背景（或直接使用預設模擬內容）。\n"
+                 "• 步驟 2：貼入 Antigravity 桌面版（或 Google AI Studio 網頁版）送出，5 秒鐘見證 AI 產出具備 STAR 原則與量化成果的高階履歷！\n"
+                 "• 步驟 3：全選複製 AI 產出的 Markdown 內容，打開電腦上的 Microsoft Word 貼上，親眼見證標題樣式、職能清單與專案成就瞬間排版完成！\n"
+                 "• 步驟 4：對 Antigravity 說：『請幫我存為 03_Deliverables/個人高階商務履歷_v1.0.md 並自動 push 到 GitHub！』下課手機打開隨時展示！")
+
+    prompt_m5 = (
+        "【角色設定】：你是一位擁有 15 年跨國高階獵頭經驗的資深顧問兼人資長。\n"
+        "【背景情境】：我是萬能科技大學企業管理系（進修部）的學生，白天在職場工作，希望運用 AI 起草一份具備國際競爭力的「高階商務 ATS 最佳化專業履歷」。\n"
+        "【個人背景資訊】：\n"
+        "- 姓名：[請填寫個人姓名，如：王小明]\n"
+        "- 學歷：萬能科技大學 企業管理系（進修學士班在學中，主修商業軟體應用、智慧決策、大數據分析）\n"
+        "- 現職/經歷：[請填寫現職，如：連鎖零售門市副店長 / 行政採購專員 / 倉儲物流專員]\n"
+        "- 核心職能：流程自動化、跨部門溝通、門市營運管理、成本控制、Office 辦公應用、AI 代理人協同\n"
+        "【約束限制】：\n"
+        "1. 嚴格使用 Markdown 語法排版，方便我一鍵複製貼入 Word 自動套用階層樣式。\n"
+        "2. 經歷描述嚴格遵循【STAR 原則】（情境、任務、行動、結果），行動動詞需強烈有力（如：主導、優化、提升、節省）。\n"
+        "3. 輸出包含：\n"
+        "   (a) 核心專業個人簡介 (Executive Summary，150 字)\n"
+        "   (b) 六大核心職能關鍵字標籤卡\n"
+        "   (c) 工作經歷與量化成就（包含具體百分比與營收數據）\n"
+        "   (d) 教育背景與專業證照（經濟部 iPAS「AI 應用規劃師」等）\n"
+        "【核心任務】：請為我起草產出這份專業、具備高說服力的高階商務履歷！"
+    )
+    create_prompt_box(doc, "全球頂級獵頭顧問 兼 外商人資長 (CHRO)", prompt_m5, "複製貼入 Word 即可一秒擁有排版工整的外商級履歷，還能存於 GitHub 作為個人數位資產！")
+
+    # Section 7: Semester Big Cases Preview (0910 connection)
+    doc.add_heading("七、 學期後續大案藍圖：今晚基礎如何直通高階商業應用？", level=1)
     p_map = doc.add_paragraph("今晚學會的 Markdown 結構化思維與 CLEAR 提示詞框架，是全學期三大商業實戰大案的核心發動機：")
 
     t_map = doc.add_table(rows=4, cols=4)
@@ -305,8 +336,8 @@ def build_docx():
 
     doc.add_paragraph().paragraph_format.space_after = Pt(12)
 
-    # Section 7: FAQ
-    doc.add_heading("七、 課堂常見突發狀況排解指南 (FAQ)", level=1)
+    # Section 8: FAQ
+    doc.add_heading("八、 課堂常見突發狀況排解指南 (FAQ)", level=1)
     faqs = [
         ("Q1：下課後電腦教室重開機，剛才做的檔案會不見嗎？",
          "A1：完全不會！因為剛才已經透過 Antigravity 自動 push 到全球 GitHub 雲端伺服器，檔案已永久安全留存。回家用手機或個人筆電登入 GitHub 即可隨時查看。"),
