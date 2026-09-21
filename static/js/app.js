@@ -1533,7 +1533,7 @@ function renderPresenterSlide() {
           </div>
           <div style="font-size:16px; font-weight:700; color:#64748b;">${slide.sec || ''} ｜ 頁碼 ${slide.num}</div>
         </div>
-        <div style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 2fr 1fr; gap:24px; align-items:stretch; overflow-y:auto;">
+        <div class="presenter-grid-prompt" style="flex:1; padding:24px 36px; display:grid; grid-template-columns: 2fr 1fr; gap:24px; align-items:stretch; overflow-y:auto;">
           <div style="background:#0f172a; border-radius:12px; padding:24px; display:flex; flex-direction:column; box-shadow:0 6px 20px rgba(0,0,0,0.15);">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid #334155; padding-bottom:10px;">
               <div style="display:flex; gap:6px; align-items:center;">
@@ -1555,7 +1555,28 @@ function renderPresenterSlide() {
             ` : ''}
             <pre id="activePresenterPrompt" style="flex:1; color:#f8fafc; font-family:Consolas, Monaco, 'Courier New', monospace; font-size:${baseSize - 4}px; line-height:1.7; white-space:pre-wrap; margin:0; overflow-y:auto;">${slide.prompt_text || slide.prompt || ''}</pre>
           </div>
-          <div style="display:flex; flex-direction:column; gap:16px;">
+          <div style="display:flex; flex-direction:column; gap:16px; overflow-y:auto;">
+            ${slide.side_html ? slide.side_html : (slide.side_steps ? `
+              <div style="background:#ffffff; border:2px solid #bfdbfe; border-top:6px solid #0284c7; border-radius:12px; padding:20px; box-shadow:0 4px 12px rgba(0,0,0,0.04); flex:1;">
+                <div style="font-size:${cardTitleSize}px; font-weight:900; color:#1e3a8a; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+                  <span>📋</span> 一步一步帶你做 (Step-by-Step)
+                </div>
+                ${slide.side_steps.map((st, idx) => `
+                  <div style="background:#f8fafc; border:1px solid #e2e8f0; border-left:4px solid #0284c7; border-radius:8px; padding:12px 14px; margin-bottom:12px;">
+                    <div style="font-size:15px; font-weight:800; color:#0f172a; margin-bottom:4px; display:flex; align-items:center; gap:8px;">
+                      <span style="background:#0284c7; color:#fff; border-radius:50%; width:22px; height:22px; display:inline-flex; align-items:center; justify-content:center; font-size:12px; font-weight:900;">${idx+1}</span>
+                      <span>${st.title}</span>
+                    </div>
+                    <div style="font-size:13px; color:#475569; line-height:1.6; white-space:pre-line;">${st.desc}</div>
+                  </div>
+                `).join('')}
+                ${slide.side_tip ? `
+                  <div style="margin-top:10px; background:#fffbeb; border:1px solid #fde68a; border-left:4px solid #d97706; padding:10px 14px; border-radius:6px; font-size:13px; color:#92400e; line-height:1.6;">
+                    <strong>💡 經理人操作要領：</strong>${slide.side_tip}
+                  </div>
+                ` : ''}
+              </div>
+            ` : `
             <div style="background:#f0fdf4; border:2px solid #86efac; border-top:6px solid #16a34a; border-radius:12px; padding:20px; flex:1;">
               <h3 style="color:#166534; font-size:${cardTitleSize}px; font-weight:800; margin-bottom:10px;">
                 💡 CLEAR 提問架構解析
@@ -1576,6 +1597,7 @@ function renderPresenterSlide() {
                 點擊上方【一鍵複製提示詞】後，切換至免費版 Antigravity 或 Google Gemini，直接按 Ctrl+V 貼上即可開始生成！
               </div>
             </div>
+            `)}
           </div>
         </div>
       </div>

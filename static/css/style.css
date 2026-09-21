@@ -1721,5 +1721,10 @@ footer.platform-footer a {
     margin: 10px auto;
     max-height: 90vh;
   }
+
+  /* Presenter Prompt Grid Mobile */
+  .presenter-grid-prompt {
+    grid-template-columns: 1fr !important;
+  }
 }
 
