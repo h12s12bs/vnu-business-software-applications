@@ -423,7 +423,6 @@ function renderOnlineResourcesBox() {
   }
 
   container.innerHTML = `
-  container.innerHTML = `
     <!-- 第 03 週 Vibe Coding ✕ Google Docs 實作手冊專區 -->
     <div class="card" style="border-left: 4px solid #0284c7; background: #f0f9ff; margin-bottom: 24px; box-shadow:0 2px 8px rgba(2,132,199,0.12);">
       <div class="card-header">
@@ -860,6 +859,7 @@ function renderCurriculumSection() {
           </div>
         </div>
       ` : ''}
+      ${w.download_file ? `
         <div style="margin-top:12px; padding:10px 14px; background:#ecfdf5; border-left:4px solid #10b981; border-radius:6px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:8px;">
           <div style="font-size:13px; color:#065f46;">
             <strong>📄 本週練習素材：</strong>${w.download_file.filename}
@@ -869,7 +869,7 @@ function renderCurriculumSection() {
             📥 立即下載 (.docx)
           </a>
         </div>
-      ` : '')}
+      ` : ''}
       <div style="margin-top:14px;">
         <div style="font-size:12px; font-weight:700; color:#0284c7; margin-bottom:4px;">
           🎯 iPAS 認證對標考點：${w.ipas_mapping}

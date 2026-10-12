@@ -1727,6 +1727,22 @@ html, body {
     gap: 14px;
   }
 
+  /* Flowchart OBE 4 Stages Mobile */
+  .obe-flow {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  /* Exam Area Mobile */
+  .exam-layout {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .q-nav-grid {
+    grid-template-columns: repeat(6, 1fr) !important;
+  }
+
   /* Instructor Profile */
   .profile-container {
     flex-direction: column;
