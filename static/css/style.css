@@ -129,6 +129,54 @@ header.navbar {
   gap: 12px;
 }
 
+/* Hamburger Toggle Button */
+.nav-hamburger-btn {
+  display: none;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.nav-hamburger-btn:hover,
+.nav-hamburger-btn:focus {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: var(--accent-amber);
+  color: var(--accent-amber);
+}
+
+.nav-hamburger-btn.active {
+  background: var(--accent-amber);
+  color: #ffffff;
+  border-color: var(--accent-gold);
+}
+
+/* Nav Backdrop Overlay */
+.nav-backdrop {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 998;
+}
+
+.nav-backdrop.open {
+  display: block;
+}
+
 .status-badge {
   display: flex;
   align-items: center;
@@ -1454,6 +1502,12 @@ footer.platform-footer a {
    COMPREHENSIVE RWD & MOBILE ADAPTIVE STYLING (手機與平板響應式最佳化)
    ========================================================================== */
 
+/* Universal mobile safeguard against horizontal scroll */
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 @media (max-width: 1024px) {
   .slide-canvas {
     max-width: 98vw;
@@ -1462,46 +1516,124 @@ footer.platform-footer a {
   }
 }
 
-@media (max-width: 900px) {
-  /* Navigation Bar */
-  .navbar {
-    padding: 10px 16px;
+@media (max-width: 1080px) {
+  /* Navigation Bar Compact Layout */
+  header.navbar {
+    padding: 0 16px;
+    height: 64px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+  }
+
+  .nav-brand {
+    gap: 8px;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+
+  .brand-badge {
+    font-size: 11px;
+    padding: 3px 8px;
+    flex-shrink: 0;
+  }
+
+  .brand-title {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .brand-subtitle {
+    display: none; /* Hide subtitle on medium/small screens to maintain space */
+  }
+
+  .nav-hamburger-btn {
+    display: inline-flex;
+  }
+
+  /* Collapse Navigation Menu into Vertical Mobile Drawer */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #0f172a;
+    border-bottom: 3px solid var(--accent-amber);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5);
+    padding: 14px 16px 20px;
     flex-direction: column;
     align-items: stretch;
-    gap: 10px;
+    gap: 8px;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 999;
   }
-  
-  .nav-brand {
-    justify-content: space-between;
+
+  .nav-menu.open {
+    display: flex !important;
+    animation: mobileNavFade 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  @keyframes mobileNavFade {
+    from {
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .nav-item {
     width: 100%;
   }
 
-  .nav-menu {
-    overflow-x: auto;
-    white-space: nowrap;
-    padding: 4px 0 8px;
-    -webkit-overflow-scrolling: touch;
-    gap: 6px;
-    scrollbar-width: thin;
-  }
-  .nav-menu::-webkit-scrollbar {
-    height: 4px;
-  }
-  .nav-menu::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
+  .nav-item button {
+    width: 100%;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.04);
   }
 
-  .nav-item button {
-    padding: 7px 12px;
-    font-size: 13px;
-    flex-shrink: 0;
+  .nav-item button:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-item button.active {
+    background: var(--primary-blue);
+    border-color: #3b82f6;
+    border-left: 5px solid var(--accent-gold);
+    color: #ffffff;
+  }
+
+  .nav-item button.btn-presenter {
+    background: linear-gradient(135deg, #d97706, #b45309);
+    border: none;
+    font-weight: 800;
+    margin-top: 4px;
   }
 
   .nav-actions {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+  }
+
+  .status-badge {
+    padding: 4px 8px;
+    font-size: 11px;
   }
 
   /* Presenter Header on Tablet */
@@ -1517,6 +1649,55 @@ footer.platform-footer a {
   /* Main Content Layout */
   .main-content {
     padding: 14px 10px 50px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .card {
+    padding: 16px 14px;
+    border-radius: 12px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  .card-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+
+  /* Week 3 Focus Banner Mobile */
+  .week-focus-banner {
+    padding: 16px 14px !important;
+    gap: 14px !important;
+  }
+  .week-focus-banner .focus-btn-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  .week-focus-banner .focus-btn-group a,
+  .week-focus-banner .focus-btn-group button {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  /* Table & Content Horizontal Overflow Protection */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  pre, code {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
   }
 
   /* Hero Banner */
@@ -1727,4 +1908,44 @@ footer.platform-footer a {
     grid-template-columns: 1fr !important;
   }
 }
+
+@media (max-width: 540px) {
+  header.navbar {
+    padding: 0 10px;
+  }
+
+  .brand-title {
+    font-size: 14px;
+  }
+
+  .brand-badge {
+    display: none; /* Hide badge on very small phones to prevent overflow */
+  }
+
+  .status-badge span#networkStatusText {
+    display: none; /* Only show status dot on small phones */
+  }
+
+  .status-badge {
+    padding: 6px;
+    border-radius: 50%;
+  }
+
+  #btn-google-login span {
+    display: none; /* Icon only on small phones */
+  }
+
+  #btn-google-login {
+    padding: 8px 10px;
+  }
+
+  #userDropdownBtn span#studentDisplay {
+    max-width: 75px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+  }
+}
+
 

@@ -161,11 +161,42 @@ async function checkSystemStatus() {
   }
 }
 
+// Mobile Hamburger Navigation
+function toggleMobileNav(e) {
+  if (e) {
+    e.stopPropagation();
+  }
+  const navMenu = document.querySelector('.nav-menu');
+  const toggleBtn = document.getElementById('navHamburgerBtn');
+  const toggleIcon = document.getElementById('hamburgerIcon');
+  const backdrop = document.getElementById('navBackdrop');
+  if (!navMenu) return;
+
+  const isOpen = navMenu.classList.toggle('open');
+  if (toggleBtn) toggleBtn.classList.toggle('active', isOpen);
+  if (backdrop) backdrop.classList.toggle('open', isOpen);
+  if (toggleIcon) {
+    toggleIcon.className = isOpen ? 'fas fa-times' : 'fas fa-bars';
+  }
+}
+
+function closeMobileNav() {
+  const navMenu = document.querySelector('.nav-menu');
+  const toggleBtn = document.getElementById('navHamburgerBtn');
+  const toggleIcon = document.getElementById('hamburgerIcon');
+  const backdrop = document.getElementById('navBackdrop');
+  if (navMenu) navMenu.classList.remove('open');
+  if (toggleBtn) toggleBtn.classList.remove('active');
+  if (backdrop) backdrop.classList.remove('open');
+  if (toggleIcon) toggleIcon.className = 'fas fa-bars';
+}
+
 // Navigation Tabs
 function setupNavigation() {
   const navButtons = document.querySelectorAll('.nav-tab-btn');
   navButtons.forEach(btn => {
     btn.addEventListener('click', () => {
+      closeMobileNav();
       const target = btn.dataset.tab;
       if (target === 'presenter') {
         openSlidePresenter(1, 0);
@@ -174,9 +205,33 @@ function setupNavigation() {
       switchTab(target);
     });
   });
+
+  // Close mobile nav when clicking outside
+  document.addEventListener('click', (e) => {
+    const navMenu = document.querySelector('.nav-menu');
+    const toggleBtn = document.getElementById('navHamburgerBtn');
+    if (navMenu && navMenu.classList.contains('open')) {
+      if (!navMenu.contains(e.target) && (!toggleBtn || !toggleBtn.contains(e.target))) {
+        closeMobileNav();
+      }
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      closeMobileNav();
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1080) {
+      closeMobileNav();
+    }
+  });
 }
 
 function switchTab(tabId) {
+  closeMobileNav();
   if (tabId === 'teacher' && !isTeacherUser) {
     alert("⚠️ 「教師成績管理」僅限授課教師（邱俊維 博士）使用！\n請先以授課教師 Google 帳號登入。");
     return;

@@ -81,8 +81,16 @@
           <a href="javascript:void(0)" onclick="logoutUser(); toggleUserMenu();" style="display:flex; align-items:center; gap:8px; padding:10px 16px; color:#dc2626; text-decoration:none; font-size:13px; font-weight:600;"><i class="fas fa-sign-out-alt" style="color:#dc2626;"></i>登出 Google 帳號</a>
         </div>
       </div>
+
+      <!-- 漢堡選單切換按鈕 (手機/平板寬度顯示) -->
+      <button type="button" class="nav-hamburger-btn" id="navHamburgerBtn" onclick="toggleMobileNav(event)" aria-label="切換導覽選單" title="點擊展開/收合選單">
+        <i class="fas fa-bars" id="hamburgerIcon"></i>
+      </button>
     </div>
   </header>
+
+  <!-- 手機版選單背景遮罩 (點擊任意處收合) -->
+  <div class="nav-backdrop" id="navBackdrop" onclick="closeMobileNav()"></div>
 
   <!-- Main Viewport Content -->
   <main class="main-content">
@@ -105,13 +113,13 @@
       </div>
 
       <!-- 今晚課堂核心實作教材快速下載區 (Week 03 Focus Banner) -->
-      <div style="background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color:#ffffff; border-radius:12px; padding:18px 22px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 4px 14px rgba(2,132,199,0.25);">
+      <div class="week-focus-banner" style="background: linear-gradient(135deg, #1e3a8a 0%, #0284c7 100%); color:#ffffff; border-radius:12px; padding:18px 22px; margin-bottom:24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; box-shadow:0 4px 14px rgba(2,132,199,0.25);">
         <div>
           <div style="font-size:12px; font-weight:800; background:rgba(255,255,255,0.2); display:inline-block; padding:2px 8px; border-radius:4px; margin-bottom:6px;">🔥 今日第 03 週實作教材專區 ｜ Google Docs 分頁手冊同步釋出</div>
           <div style="font-size:18px; font-weight:800;">第 03 週：Word 商業企劃書標準架構與 AI 輔助起草（含 5 大截圖操作畫面）</div>
           <div style="font-size:13px; opacity:0.95; margin-top:3px;">對標 0910 研習手冊！涵蓋 2.54cm 邊界、分節符號斷開連結、350 字執行摘要、三線財務表與全選 F9 自動目錄</div>
         </div>
-        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <div class="focus-btn-group" style="display:flex; gap:10px; flex-wrap:wrap;">
           <a href="downloads/Week03_商業企劃書實作素材包.zip" download class="btn-sm" style="background:#dc2626; color:#ffffff; text-decoration:none; font-weight:700; padding:8px 14px; border-radius:6px; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 4px rgba(0,0,0,0.15);">
             <i class="fas fa-file-archive"></i> 下載第 03 週素材包 (.zip)
           </a>
