@@ -423,6 +423,28 @@ function renderOnlineResourcesBox() {
   }
 
   container.innerHTML = `
+    <!-- 期中報告專案實戰操作手冊專區 (重大核心發布) -->
+    <div class="card" style="border-left: 5px solid #d97706; background: #fffbeb; margin-bottom: 24px; box-shadow:0 4px 14px rgba(217,119,6,0.18);">
+      <div class="card-header">
+        <span class="card-title" style="color: #92400e; font-weight:800;"><i class="fas fa-trophy" style="color:#d97706; margin-right:8px;"></i>🏆 11501《商業軟體應用》期中報告操作手冊【個人商務履歷網站 ✕ 產業數據分析加分】</span>
+        <span class="card-badge" style="background:#fde68a; color:#78350f; font-weight:800;">期中專案核心指引</span>
+      </div>
+      <p style="font-size:14px; color:#78350f; line-height:1.6; margin-bottom:12px;">
+        依照邱俊維博士設計之期中標準手冊！包含 <strong>Google Antigravity (v2.28.2) 安裝、GitHub 專案開 Repo、七大商務 Prompt、GitHub API Token 自動部署與 GitHub Pages 雲端發布</strong>，並附帶<strong>「有興趣的產業商業數據分析 (Chart.js) 專案加分」</strong>與 14 大真實操作畫面截圖！
+      </p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a href="downloads/商業軟體應用_期中報告操作手冊_個人履歷網站與產業數據分析.docx" download class="btn-sm" style="background:#d97706; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:800; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 6px rgba(217,119,6,0.25);">
+          <i class="fas fa-file-word"></i> 下載期中操作手冊 (.docx)
+        </a>
+        <a href="downloads/商業軟體應用_期中報告操作手冊.md" download class="btn-sm" style="background:#0284c7; color:#ffffff; text-decoration:none; padding:8px 16px; border-radius:6px; font-weight:800; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 6px rgba(2,132,199,0.2);">
+          <i class="fas fa-file-code"></i> 下載 Markdown 版 (.md)
+        </a>
+        <button class="btn-sm" onclick="switchTab('submissions')" style="background:#059669; color:#ffffff; border:none; padding:8px 16px; border-radius:6px; font-weight:800; cursor:pointer; display:inline-flex; align-items:center; gap:6px; font-size:13px; box-shadow:0 2px 6px rgba(5,150,105,0.2);">
+          <i class="fas fa-paper-plane"></i> 前往提交個人履歷網址
+        </button>
+      </div>
+    </div>
+
     <!-- 第 03 週 Vibe Coding ✕ Google Docs 實作手冊專區 -->
     <div class="card" style="border-left: 4px solid #0284c7; background: #f0f9ff; margin-bottom: 24px; box-shadow:0 2px 8px rgba(2,132,199,0.12);">
       <div class="card-header">
