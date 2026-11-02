@@ -2160,6 +2160,8 @@ function initFirebase() {
       firestoreDb = firebase.firestore();
       isFirebaseAvailable = true;
       console.log('✅ Firebase 初始化成功 (專案: vnu-business-software-11501)');
+      // 立即啟動 Firestore 全班作品即時監聽 (訪客/未登入亦可同步抓取學生作品)
+      listenToFirestoreWorks();
 
       firebaseAuth.onAuthStateChanged(async (user) => {
         currentFirebaseUser = user;
@@ -2668,12 +2670,19 @@ function renderStudentWorks(filter = currentWorksFilter) {
         </div>
         <div class="work-card-body">
           <h4 class="work-card-title">${escapeHtml(w.title || '無標題作品')}</h4>
+          <a href="${escapeHtml(w.live_url || '#')}" target="_blank" rel="noopener noreferrer" class="work-preview-container" title="點擊開啟學生作品成果網頁">
+            <img src="https://image.thum.io/get/width/600/crop/800/${encodeURI(w.live_url || '')}" 
+                 alt="網站即時預覽圖" 
+                 class="work-preview-img" 
+                 loading="lazy" 
+                 onerror="this.onerror=null; this.src='https://api.microlink.io/?url=' + encodeURIComponent('${encodeURI(w.live_url || '')}') + '&screenshot=true&meta=false';">
+            <div class="work-preview-overlay">
+              <i class="fas fa-external-link-alt"></i> 點擊造訪學生成果網站
+            </div>
+          </a>
           <div class="work-card-meta">
             👤 <strong>${escapeHtml(w.student_name || '同學')}</strong> ｜ 
             <span style="font-family:monospace; color:#475569;">${escapeHtml(w.student_id || '進企管四系1甲')}</span>
-          </div>
-          <div class="work-card-desc">
-            ${escapeHtml(w.concept || '無說明摘要')}
           </div>
           ${w.prompt_summary ? `
             <div style="font-size:12px; background:#f8fafc; border-left:3px solid #38bdf8; padding:6px 10px; margin-bottom:10px; border-radius:4px; color:#475569; line-height:1.4;">
