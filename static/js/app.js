@@ -2451,9 +2451,32 @@ function loadDefaultSampleWorks() {
 }
 
 let unsubscribeFirestoreWorks = null;
+
+function updateFirestoreSyncBadge(status, text) {
+  const badge = document.getElementById('firestore-sync-badge');
+  if (!badge) return;
+  if (status === 'synced') {
+    badge.style.background = '#dcfce7';
+    badge.style.color = '#15803d';
+    badge.innerHTML = `<i class="fas fa-check-circle"></i> 雲端已同步 (${text})`;
+  } else if (status === 'error') {
+    badge.style.background = '#fee2e2';
+    badge.style.color = '#b91c1c';
+    badge.innerHTML = `<i class="fas fa-exclamation-triangle"></i> 雲端讀取受限 (${text})`;
+  } else if (status === 'loading') {
+    badge.style.background = '#f1f5f9';
+    badge.style.color = '#64748b';
+    badge.innerHTML = `<i class="fas fa-circle-notch fa-spin"></i> 雲端同步中...`;
+  }
+}
+
 function listenToFirestoreWorks() {
-  if (!firestoreDb) return;
+  if (!firestoreDb) {
+    updateFirestoreSyncBadge('error', '未連線');
+    return;
+  }
   if (unsubscribeFirestoreWorks) unsubscribeFirestoreWorks();
+  updateFirestoreSyncBadge('loading', '');
 
   try {
     unsubscribeFirestoreWorks = firestoreDb.collection('works')
@@ -2468,18 +2491,69 @@ function listenToFirestoreWorks() {
           const sampleWorks = (window.OFFLINE_DATA && window.OFFLINE_DATA.sampleWorks) || [];
           const nonDuplicateSamples = sampleWorks.filter(w => !existingIds.has(w.id));
           studentWorksData = [...firestoreWorks, ...nonDuplicateSamples];
+          updateFirestoreSyncBadge('synced', `${firestoreWorks.length} 筆雲端`);
         } else {
           loadDefaultSampleWorks();
+          updateFirestoreSyncBadge('synced', '0 筆雲端');
         }
         renderStudentWorks(currentWorksFilter);
         if (isTeacherUser) {
           renderTeacherGradeDashboard();
         }
       }, (err) => {
-        console.warn('Firestore works 監聽提醒:', err);
+        console.warn('Firestore works 監聽提醒 (可能因安全性規則尚未開放讀取或未登入):', err);
+        const errTag = err.code === 'permission-denied' ? '403 需登入或開放Rules' : '無法讀取';
+        updateFirestoreSyncBadge('error', errTag);
+        loadDefaultSampleWorks();
+        renderStudentWorks(currentWorksFilter);
       });
   } catch (e) {
     console.warn('建立 Firestore works 監聽失敗:', e);
+    updateFirestoreSyncBadge('error', '監聽異常');
+    loadDefaultSampleWorks();
+    renderStudentWorks(currentWorksFilter);
+  }
+}
+
+async function syncFirestoreWorksNow(isManual = false) {
+  if (!firestoreDb) {
+    if (isManual) alert('⚠️ 雲端資料庫 (Firestore) 尚未初始化，請確認網路連線！');
+    return;
+  }
+  updateFirestoreSyncBadge('loading', '');
+  try {
+    const snapshot = await firestoreDb.collection('works').get();
+    const firestoreWorks = [];
+    snapshot.forEach(doc => {
+      firestoreWorks.push(doc.data());
+    });
+    if (firestoreWorks.length > 0) {
+      firestoreWorks.sort((a, b) => (b.submitted_at || '').localeCompare(a.submitted_at || ''));
+      const existingIds = new Set(firestoreWorks.map(w => w.id));
+      const sampleWorks = (window.OFFLINE_DATA && window.OFFLINE_DATA.sampleWorks) || [];
+      const nonDuplicateSamples = sampleWorks.filter(w => !existingIds.has(w.id));
+      studentWorksData = [...firestoreWorks, ...nonDuplicateSamples];
+      updateFirestoreSyncBadge('synced', `${firestoreWorks.length} 筆雲端`);
+    } else {
+      loadDefaultSampleWorks();
+      updateFirestoreSyncBadge('synced', '0 筆雲端');
+    }
+    renderStudentWorks(currentWorksFilter);
+    if (isTeacherUser) renderTeacherGradeDashboard();
+    if (isManual) {
+      alert(`✅ 雲端作品同步完成！\n目前展示廊共載入 ${studentWorksData.length} 件作品 (雲端最新收件：${firestoreWorks.length} 筆)。`);
+    }
+  } catch (err) {
+    console.warn('手動同步 Firestore 失敗:', err);
+    const errTag = err.code === 'permission-denied' ? '403 需登入或開放Rules' : '讀取失敗';
+    updateFirestoreSyncBadge('error', errTag);
+    if (isManual) {
+      let advice = '請確認網路連線是否正常。';
+      if (err.code === 'permission-denied') {
+        advice = '目前 Firebase Firestore 安全性規則尚未允許未驗證公開讀取 (403 Forbidden)。\n\n【建議解決步驟】\n1. 請授課教師先點擊右上角「登入 Google」後再行查看；\n2. 或由專案管理員前往 Firebase 控制台 (vnu-business-software-11501) -> Firestore Database -> Rules，將 match /works/{workId} 之 allow read 設定為 true。';
+      }
+      alert(`⚠️ 雲端作品同步提示：\n${err.message}\n\n${advice}`);
+    }
   }
 }
 
@@ -2487,9 +2561,11 @@ async function handleProjectSubmit(e) {
   e.preventDefault();
 
   if (!currentFirebaseUser) {
-    alert('⚠️ 依系統規範，請先使用 Google 帳號登入再行繳交作業！');
-    loginWithGoogle();
-    return;
+    const proceedGuest = confirm('💡 提示：您尚未登入 Google 帳號。\n\n建議先使用 Google 帳號登入，以享有雲端永久保存與身分驗證！\n\n若您在電腦教室或手機上暫時無法登入 Google，點擊【確定】可繼續以登記的學號姓名上傳：');
+    if (!proceedGuest) {
+      loginWithGoogle();
+      return;
+    }
   }
 
   if (!isTeacherUser && (!state.student.id || !state.student.name || state.student.id === '進企管四系1甲' || state.student.name === '同學')) {
@@ -2527,7 +2603,7 @@ async function handleProjectSubmit(e) {
 
   const newWork = {
     id: workId,
-    uid: currentFirebaseUser ? currentFirebaseUser.uid : '',
+    uid: currentFirebaseUser ? currentFirebaseUser.uid : 'GUEST-' + Date.now(),
     email: currentFirebaseUser ? currentFirebaseUser.email : '',
     student_id: state.student.id,
     student_name: state.student.name,
@@ -2552,15 +2628,20 @@ async function handleProjectSubmit(e) {
     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 同步儲存中...';
   }
 
+  let firestoreSuccess = false;
+  let firestoreErrMsg = '';
+
   if (firestoreDb) {
     try {
       await firestoreDb.collection('works').doc(workId).set({
         ...newWork,
         createdAt: firebase.firestore.FieldValue.serverTimestamp()
       });
+      firestoreSuccess = true;
       console.log('✅ 作業已同步至 Firestore works 集合');
     } catch (err) {
       console.warn('Firestore 寫入警告 (改用本機儲存):', err);
+      firestoreErrMsg = err.message || err.code || '雲端資料庫權限受限';
     }
   }
 
@@ -2582,7 +2663,76 @@ async function handleProjectSubmit(e) {
   unlockBadge('badge_work_submitted');
 
   document.getElementById('project-upload-form').reset();
-  alert(`🎉 恭喜【進企管四系1甲】${state.student.name} 同學！\n《${title}》(${reportType}) 已成功上傳並同步至展示廊！`);
+
+  if (firestoreSuccess) {
+    alert(`🎉 恭喜【進企管四系1甲】${state.student.name} 同學！\n《${title}》(${reportType}) 已成功上傳並同步至 Firebase 雲端資料庫！\n授課教師與全班同學重新整理展示廊即可即時檢視！`);
+  } else {
+    alert(`⚠️ 繳交提示：\n作品已儲存於您的「本機瀏覽器」，但【雲端同步未成功】！\n(原因：${firestoreErrMsg})\n\n💡 說明：因為雲端安全規則限制或未登入，其他裝置暫時無法讀取此筆作品。請將作品公開網址複製提供給邱老師（或由老師在 Firebase Console 調整 Rules 權限）。`);
+  }
+}
+
+async function teacherManualAddWork() {
+  if (!isTeacherUser) {
+    alert('僅限授課教師（邱俊維 博士）使用此補登功能！\n請先使用授課教師 Google 帳號登入。');
+    return;
+  }
+  const studentId = prompt('【補登作業】請輸入學生學號：', '11150001');
+  if (!studentId) return;
+  const studentName = prompt('【補登作業】請輸入學生真實姓名：', '測試同學');
+  if (!studentName) return;
+  const workTitle = prompt('【補登作業】請輸入作品名稱：', '個人履歷網站與產業數據分析');
+  if (!workTitle) return;
+  const liveUrl = prompt('【補登作業】請輸入成果網址 (GitHub Pages 或雲端連結)：', 'https://');
+  if (!liveUrl) return;
+  const isMidterm = confirm('點擊【確定】登記為「期中報告」；\n點擊【取消】登記為「期末成果」');
+  const reportType = isMidterm ? '期中報告' : '期末成果';
+  const weekNum = isMidterm ? 9 : 18;
+
+  const workId = 'WORK-' + Date.now();
+  const nowStr = new Date().toLocaleString('zh-TW', { hour12: false });
+  const newWork = {
+    id: workId,
+    uid: 'TEACHER_MANUAL',
+    email: currentFirebaseUser ? currentFirebaseUser.email : '',
+    student_id: studentId.trim(),
+    student_name: studentName.trim(),
+    class_name: '進企管四系1甲',
+    report_type: reportType,
+    week: weekNum,
+    week_title: isMidterm ? '第 09 週 期中專案報告：商業企劃排版與營運數據整合 (Word + Excel)' : '第 18 週 期末專案成果報告：全方位商業軟體應用總結',
+    title: workTitle.trim(),
+    category: '線上部署網頁 (GitHub Pages / 雲端發布)',
+    concept: '由授課教師邱俊維博士手動補登之學生實作成果。',
+    agent_used: 'Agentic AI 協同實作',
+    prompt_summary: '個人商務履歷網站與產業商業數據視覺化整合',
+    live_url: liveUrl.trim(),
+    submitted_at: nowStr,
+    score: null,
+    teacher_comment: ''
+  };
+
+  if (firestoreDb) {
+    try {
+      await firestoreDb.collection('works').doc(workId).set({
+        ...newWork,
+        createdAt: firebase.firestore.FieldValue.serverTimestamp()
+      });
+      console.log('✅ 教師手動補登已同步至 Firestore');
+    } catch (e) {
+      console.warn('Firestore 手動補登寫入警告:', e);
+    }
+  }
+
+  studentWorksData.unshift(newWork);
+  try {
+    const localWorks = JSON.parse(localStorage.getItem('vnu_bsa_submitted_works') || '[]');
+    localWorks.unshift(newWork);
+    localStorage.setItem('vnu_bsa_submitted_works', JSON.stringify(localWorks));
+  } catch (e) {}
+
+  renderStudentWorks(currentWorksFilter);
+  renderTeacherGradeDashboard();
+  alert(`✅ 已成功補登【${studentName} (${studentId})】同學之《${workTitle}》(${reportType})！`);
 }
 
 function filterWorks(category, btn) {
@@ -3029,6 +3179,8 @@ window.teacherSaveTableGrade = teacherSaveTableGrade;
 window.teacherDeleteWork = teacherDeleteWork;
 window.exportGradesToCSV = exportGradesToCSV;
 window.renderTeacherGradeDashboard = renderTeacherGradeDashboard;
+window.syncFirestoreWorksNow = syncFirestoreWorksNow;
+window.teacherManualAddWork = teacherManualAddWork;
 window.changePresenterFontSize = changePresenterFontSize;
 window.resetPresenterFontSize = resetPresenterFontSize;
 
