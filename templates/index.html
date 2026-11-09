@@ -479,10 +479,13 @@
             </div>
           </div>
 
+          <!-- Existing Submission Alert Notice (Auto-detects duplicates) -->
+          <div id="upload-existing-notice" style="display:none; background:#eff6ff; border:1px solid #bfdbfe; border-left:4px solid #2563eb; border-radius:8px; padding:10px 14px; margin-bottom:16px; font-size:12.5px; color:#1e40af;"></div>
+
           <form id="project-upload-form" onsubmit="handleProjectSubmit(event)">
             <div class="form-group">
               <label for="upload-week-select">📌 報告 / 成果發表類別 <span style="color:#dc2626;">*</span></label>
-              <select id="upload-week-select" class="form-control-custom" required>
+              <select id="upload-week-select" class="form-control-custom" onchange="checkAndPrefillExistingWork()" required>
                 <option value="📌 期中報告 (第9週 Word企劃排版 + Excel統計分析)" data-type="期中報告" data-week="9" selected>📌 期中報告 (第9週 Word企劃排版 + Excel統計分析)</option>
                 <option value="🏆 期末成果報告 (第18週 Word + Excel + PPT 綜合報告)" data-type="期末成果" data-week="18">🏆 期末成果報告 (第18週 Word + Excel + PPT 綜合商務報告)</option>
                 <option value="💡 課堂自主練習 (自由分享觀摩，非必要作業)" data-type="自主練習" data-week="1">💡 課堂自主練習 (自由分享觀摩，非必要作業)</option>
@@ -627,6 +630,9 @@
         </div>
         <div>
           <div style="display:flex; gap:8px; flex-wrap:wrap;">
+            <button type="button" class="btn btn-primary" onclick="teacherCleanupDuplicates()" style="background:#dc2626; border-color:#dc2626; font-size:13px; font-weight:700; display:inline-flex; align-items:center; gap:6px; cursor:pointer;" title="一鍵掃描並自動刪除全班重複上傳的舊作業（保留每位同學最新的一筆）">
+              <i class="fas fa-broom"></i> 清理重複舊作業
+            </button>
             <button type="button" class="btn btn-primary" onclick="teacherManualAddWork()" style="background:#2563eb; border-color:#2563eb; font-size:13px; font-weight:700; display:inline-flex; align-items:center; gap:6px; cursor:pointer;" title="由授課教師直接手動登記學生繳交之作品網址">
               <i class="fas fa-plus-circle"></i> 補登/新增學生作業
             </button>

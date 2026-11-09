@@ -244,7 +244,7 @@ function switchTab(tabId) {
     sec.classList.toggle('active', sec.id === `sec-${tabId}`);
   });
   if (tabId === 'submissions') {
-    updateUploadFormStudentInfo();
+    updateUploadFormStudentInfo(); checkAndPrefillExistingWork(true);
     renderStudentWorks(currentWorksFilter);
   } else if (tabId === 'teacher') {
     renderTeacherGradeDashboard();
@@ -2172,7 +2172,7 @@ function initFirebase() {
 
           await loadUserProfileFromFirestore(user);
           updateUserNavUI();
-          updateUploadFormStudentInfo();
+          updateUploadFormStudentInfo(); checkAndPrefillExistingWork(true);
           listenToFirestoreWorks();
 
           if (isTeacherUser) {
@@ -2185,7 +2185,7 @@ function initFirebase() {
           console.log('👤 使用者已登出 (訪客模式)');
           isTeacherUser = false;
           updateUserNavUI();
-          updateUploadFormStudentInfo();
+          updateUploadFormStudentInfo(); checkAndPrefillExistingWork(true);
           const navTeacher = document.getElementById('nav-teacher-tab-item');
           if (navTeacher) navTeacher.style.display = 'none';
           const teacherExport = document.getElementById('teacher-export-menu-item');
@@ -2337,7 +2337,7 @@ async function saveUserProfileModal() {
   }
 
   updateUserNavUI();
-  updateUploadFormStudentInfo();
+  updateUploadFormStudentInfo(); checkAndPrefillExistingWork(true);
   closeModal('userProfileModal');
   alert(`登記完成！歡迎【進企管四系1甲】${studentName} (${studentId}) 同學！`);
 }
@@ -2560,6 +2560,76 @@ async function syncFirestoreWorksNow(isManual = false) {
   }
 }
 
+function getExistingWorkForCurrentStudent(reportType) {
+  if (!studentWorksData || studentWorksData.length === 0) return null;
+  return studentWorksData.find(w => {
+    // Match report type
+    const isThisType = (w.report_type === reportType) ||
+      (reportType === '期中報告' && (w.report_type === '期中實作' || (w.week_title && w.week_title.includes('期中')) || w.week === 9)) ||
+      (reportType === '期末成果' && ((w.week_title && w.week_title.includes('期末')) || w.week === 18));
+    if (!isThisType) return false;
+
+    // Match by Firebase UID
+    if (currentFirebaseUser && w.uid && w.uid === currentFirebaseUser.uid) {
+      return true;
+    }
+    // Match by student_id
+    if (state.student && state.student.id && state.student.id !== '進企管四系1甲' && w.student_id && w.student_id.trim().toLowerCase() === state.student.id.trim().toLowerCase()) {
+      return true;
+    }
+    return false;
+  });
+}
+
+function checkAndPrefillExistingWork(autoFill = false) {
+  const weekSelect = document.getElementById('upload-week-select');
+  const selectedOpt = weekSelect ? weekSelect.options[weekSelect.selectedIndex] : null;
+  const rawReportType = selectedOpt ? selectedOpt.getAttribute('data-type') || selectedOpt.value : '期中報告';
+  const reportType = rawReportType.includes('期末') ? '期末成果' : (rawReportType.includes('期中') ? '期中報告' : '自主練習');
+
+  const existing = getExistingWorkForCurrentStudent(reportType);
+  const noticeBox = document.getElementById('upload-existing-notice');
+  const submitBtn = document.getElementById('btn-submit-work');
+
+  if (existing) {
+    if (noticeBox) {
+      noticeBox.style.display = 'block';
+      const scoreTag = (existing.score !== null && existing.score !== undefined) 
+        ? `<span style="background:#dcfce7; color:#15803d; font-weight:700; padding:2px 8px; border-radius:4px; font-size:11px;">🏆 已評分：${existing.score} 分</span>` 
+        : `<span style="background:#fef3c7; color:#b45309; font-weight:700; padding:2px 8px; border-radius:4px; font-size:11px;">⏳ 待評分</span>`;
+      noticeBox.innerHTML = `
+        <div style="font-weight:700; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:6px;">
+          <span><i class="fas fa-history" style="color:#2563eb;"></i> 偵測到您先前已繳交過【${escapeHtml(reportType)}】《${escapeHtml(existing.title || '個人專案')}》</span>
+          ${scoreTag}
+        </div>
+        <div style="margin-top:4px; color:#3b82f6; font-size:12px; line-height:1.5;">
+          💡 <strong>防重複防呆機制已啟動</strong>：再次送出將會<strong>自動更新覆寫</strong>舊的繳交紀錄（保留成績與評語），不會重複建立新卡片！
+        </div>
+      `;
+    }
+    if (submitBtn) {
+      submitBtn.style.background = '#2563eb';
+      submitBtn.innerHTML = `<i class="fas fa-sync-alt"></i> 確認更新覆寫【${reportType}】（不重複新增）`;
+    }
+    if (autoFill) {
+      const titleInput = document.getElementById('upload-title');
+      const liveUrlInput = document.getElementById('upload-live-url');
+      const conceptInput = document.getElementById('upload-concept');
+      const promptInput = document.getElementById('upload-prompt-summary');
+      if (titleInput && !titleInput.value) titleInput.value = existing.title || '';
+      if (liveUrlInput && !liveUrlInput.value) liveUrlInput.value = existing.live_url || '';
+      if (conceptInput && !conceptInput.value) conceptInput.value = existing.concept || '';
+      if (promptInput && !promptInput.value) promptInput.value = existing.prompt_summary || '';
+    }
+  } else {
+    if (noticeBox) noticeBox.style.display = 'none';
+    if (submitBtn) {
+      submitBtn.style.background = '#0284c7';
+      submitBtn.innerHTML = '<i class="fas fa-cloud-upload-alt"></i> 確認上傳並同步至展示廊';
+    }
+  }
+}
+
 async function handleProjectSubmit(e) {
   e.preventDefault();
 
@@ -2601,13 +2671,16 @@ async function handleProjectSubmit(e) {
     return;
   }
 
-  const workId = 'WORK-' + Date.now();
+  // 檢查是否已有相同學生、相同報告類別之舊作業（覆寫機制）
+  const existingWork = getExistingWorkForCurrentStudent(reportType);
+  const isUpdating = !!existingWork;
+  const workId = isUpdating ? existingWork.id : ('WORK-' + (state.student.id ? (state.student.id.replace(/[^a-zA-Z0-9]/g, '') + '-') : '') + Date.now());
   const nowStr = new Date().toLocaleString('zh-TW', { hour12: false });
 
   const newWork = {
     id: workId,
-    uid: currentFirebaseUser ? currentFirebaseUser.uid : 'GUEST-' + Date.now(),
-    email: currentFirebaseUser ? currentFirebaseUser.email : '',
+    uid: currentFirebaseUser ? currentFirebaseUser.uid : (existingWork?.uid || ('GUEST-' + Date.now())),
+    email: currentFirebaseUser ? currentFirebaseUser.email : (existingWork?.email || ''),
     student_id: state.student.id,
     student_name: state.student.name,
     class_name: '進企管四系1甲',
@@ -2620,15 +2693,17 @@ async function handleProjectSubmit(e) {
     agent_used: 'Agentic AI 協同實作',
     prompt_summary: promptSummary,
     live_url: liveUrl,
-    submitted_at: nowStr,
-    score: null,
-    teacher_comment: ''
+    submitted_at: isUpdating ? (existingWork.submitted_at || nowStr) : nowStr,
+    updated_at: nowStr,
+    // 嚴格保留原評分與評語以符合 Firestore rules: request.resource.data.score == resource.data.score
+    score: isUpdating ? (existingWork.score ?? null) : null,
+    teacher_comment: isUpdating ? (existingWork.teacher_comment ?? '') : ''
   };
 
   const submitBtn = document.getElementById('btn-submit-work');
   if (submitBtn) {
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> 同步儲存中...';
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> ' + (isUpdating ? '覆寫同步中...' : '同步儲存中...');
   }
 
   let firestoreSuccess = false;
@@ -2638,27 +2713,42 @@ async function handleProjectSubmit(e) {
     try {
       await firestoreDb.collection('works').doc(workId).set({
         ...newWork,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp()
-      });
+        updatedAt: firebase.firestore.FieldValue.serverTimestamp()
+      }, { merge: true });
       firestoreSuccess = true;
-      console.log('✅ 作業已同步至 Firestore works 集合');
+      console.log('✅ 作業已' + (isUpdating ? '覆寫更新' : '同步') + '至 Firestore works 集合:', workId);
     } catch (err) {
       console.warn('Firestore 寫入警告 (改用本機儲存):', err);
       firestoreErrMsg = err.message || err.code || '雲端資料庫權限受限';
     }
   }
 
-  // Local storage backup
-  studentWorksData.unshift(newWork);
+  // Local storage update or unshift
+  if (isUpdating) {
+    const idx = studentWorksData.findIndex(w => w.id === workId);
+    if (idx >= 0) {
+      studentWorksData[idx] = newWork;
+    } else {
+      studentWorksData.unshift(newWork);
+    }
+  } else {
+    studentWorksData.unshift(newWork);
+  }
+
   try {
-    const localWorks = JSON.parse(localStorage.getItem('vnu_bsa_submitted_works') || '[]');
-    localWorks.unshift(newWork);
+    let localWorks = JSON.parse(localStorage.getItem('vnu_bsa_submitted_works') || '[]');
+    const lIdx = localWorks.findIndex(w => w.id === workId);
+    if (lIdx >= 0) {
+      localWorks[lIdx] = newWork;
+    } else {
+      localWorks.unshift(newWork);
+    }
     localStorage.setItem('vnu_bsa_submitted_works', JSON.stringify(localWorks));
   } catch (e) {}
 
   if (submitBtn) {
     submitBtn.disabled = false;
-    submitBtn.innerHTML = '<i class="fas fa-cloud-upload-alt"></i> 確認上傳並同步至展示廊';
+    submitBtn.innerHTML = isUpdating ? `<i class="fas fa-sync-alt"></i> 確認更新覆寫【${reportType}】` : '<i class="fas fa-cloud-upload-alt"></i> 確認上傳並同步至展示廊';
   }
 
   renderStudentWorks(currentWorksFilter);
@@ -2666,76 +2756,17 @@ async function handleProjectSubmit(e) {
   unlockBadge('badge_work_submitted');
 
   document.getElementById('project-upload-form').reset();
+  checkAndPrefillExistingWork();
 
   if (firestoreSuccess) {
-    alert(`🎉 恭喜【進企管四系1甲】${state.student.name} 同學！\n《${title}》(${reportType}) 已成功上傳並同步至 Firebase 雲端資料庫！\n授課教師與全班同學重新整理展示廊即可即時檢視！`);
-  } else {
-    alert(`⚠️ 繳交提示：\n作品已儲存於您的「本機瀏覽器」，但【雲端同步未成功】！\n(原因：${firestoreErrMsg})\n\n💡 說明：因為雲端安全規則限制或未登入，其他裝置暫時無法讀取此筆作品。請將作品公開網址複製提供給邱老師（或由老師在 Firebase Console 調整 Rules 權限）。`);
-  }
-}
-
-async function teacherManualAddWork() {
-  if (!isTeacherUser) {
-    alert('僅限授課教師（邱俊維 博士）使用此補登功能！\n請先使用授課教師 Google 帳號登入。');
-    return;
-  }
-  const studentId = prompt('【補登作業】請輸入學生學號：', '11150001');
-  if (!studentId) return;
-  const studentName = prompt('【補登作業】請輸入學生真實姓名：', '測試同學');
-  if (!studentName) return;
-  const workTitle = prompt('【補登作業】請輸入作品名稱：', '個人履歷網站與產業數據分析');
-  if (!workTitle) return;
-  const liveUrl = prompt('【補登作業】請輸入成果網址 (GitHub Pages 或雲端連結)：', 'https://');
-  if (!liveUrl) return;
-  const isMidterm = confirm('點擊【確定】登記為「期中報告」；\n點擊【取消】登記為「期末成果」');
-  const reportType = isMidterm ? '期中報告' : '期末成果';
-  const weekNum = isMidterm ? 9 : 18;
-
-  const workId = 'WORK-' + Date.now();
-  const nowStr = new Date().toLocaleString('zh-TW', { hour12: false });
-  const newWork = {
-    id: workId,
-    uid: 'TEACHER_MANUAL',
-    email: currentFirebaseUser ? currentFirebaseUser.email : '',
-    student_id: studentId.trim(),
-    student_name: studentName.trim(),
-    class_name: '進企管四系1甲',
-    report_type: reportType,
-    week: weekNum,
-    week_title: isMidterm ? '第 09 週 期中專案報告：商業企劃排版與營運數據整合 (Word + Excel)' : '第 18 週 期末專案成果報告：全方位商業軟體應用總結',
-    title: workTitle.trim(),
-    category: '線上部署網頁 (GitHub Pages / 雲端發布)',
-    concept: '由授課教師邱俊維博士手動補登之學生實作成果。',
-    agent_used: 'Agentic AI 協同實作',
-    prompt_summary: '個人商務履歷網站與產業商業數據視覺化整合',
-    live_url: liveUrl.trim(),
-    submitted_at: nowStr,
-    score: null,
-    teacher_comment: ''
-  };
-
-  if (firestoreDb) {
-    try {
-      await firestoreDb.collection('works').doc(workId).set({
-        ...newWork,
-        createdAt: firebase.firestore.FieldValue.serverTimestamp()
-      });
-      console.log('✅ 教師手動補登已同步至 Firestore');
-    } catch (e) {
-      console.warn('Firestore 手動補登寫入警告:', e);
+    if (isUpdating) {
+      alert(`🎉 恭喜【進企管四系1甲】${state.student.name} 同學！\n您的《${reportType}》已成功【更新覆寫】原作品！\n展示廊已更新為最新的成果網址與內容，舊資料不會重複出現。`);
+    } else {
+      alert(`🎉 恭喜【進企管四系1甲】${state.student.name} 同學！\n《${title}》(${reportType}) 已成功上傳並同步至 Firebase 雲端資料庫！\n授課教師與全班同學重新整理展示廊即可即時檢視！`);
     }
+  } else {
+    alert(`⚠️ 繳交提示：\n作品已儲存於您的「本機瀏覽器」，但【雲端同步未成功】！\n(原因：${firestoreErrMsg})\n\n💡 說明：若您正在覆寫更新作業，請確認您已登入 Google 帳號，或請邱老師確認雲端資料庫規則。`);
   }
-
-  studentWorksData.unshift(newWork);
-  try {
-    const localWorks = JSON.parse(localStorage.getItem('vnu_bsa_submitted_works') || '[]');
-    localWorks.unshift(newWork);
-    localStorage.setItem('vnu_bsa_submitted_works', JSON.stringify(localWorks));
-  } catch (e) {}
-
-  renderStudentWorks(currentWorksFilter);
-  renderTeacherGradeDashboard();
-  alert(`✅ 已成功補登【${studentName} (${studentId})】同學之《${workTitle}》(${reportType})！`);
 }
 
 function filterWorks(category, btn) {
@@ -3097,14 +3128,25 @@ async function teacherSaveTableGrade(workId) {
 }
 
 async function teacherDeleteWork(workId) {
-  if (!confirm('⚠️ 確定要刪除此筆作業資料嗎？此操作無法復原。')) return;
+  if (!isTeacherUser) {
+    alert('⚠️ 刪除作業權限僅限授課教師（邱俊維 博士）使用！\n請先以授課教師 Google 帳號登入。');
+    loginWithGoogle();
+    return;
+  }
+
+  const work = studentWorksData.find(w => w.id === workId);
+  const workLabel = work ? `【${work.student_name || '同學'} (${work.student_id || ''})】之《${work.title || '無標題'}》` : workId;
+
+  if (!confirm(`⚠️ 授課教師確認：確定要徹底刪除 ${workLabel} 嗎？\n\n此操作將自 Firebase 雲端資料庫永久移除該筆紀錄，無法復原！`)) return;
 
   if (firestoreDb) {
     try {
       await firestoreDb.collection('works').doc(workId).delete();
-      console.log('作業已自 Firestore 刪除:', workId);
+      console.log('作業已自 Firestore 成功刪除:', workId);
     } catch (e) {
-      console.warn('Firestore 刪除失敗:', e);
+      console.error('Firestore 刪除失敗:', e);
+      alert('⚠️ 雲端刪除失敗（原因：' + (e.message || e.code || '權限不足') + '）\n請確認您登入的 Google 帳號是否包含於教師授權名單中！');
+      return;
     }
   }
 
@@ -3117,7 +3159,93 @@ async function teacherDeleteWork(workId) {
 
   renderTeacherGradeDashboard();
   renderStudentWorks(currentWorksFilter);
-  alert('已成功刪除該筆作業！');
+  alert(`✅ 已成功自雲端資料庫徹底刪除 ${workLabel}！`);
+}
+
+async function teacherCleanupDuplicates() {
+  if (!isTeacherUser) {
+    alert('⚠️ 此管理功能僅限授課教師（邱俊維 博士）使用！\n請先使用授課教師 Google 帳號登入。');
+    loginWithGoogle();
+    return;
+  }
+
+  // Group works by (student_id + report_type) or (uid + report_type)
+  const groups = {};
+  studentWorksData.forEach(w => {
+    // Skip teacher demo works
+    if (w.id && w.id.startsWith('DEMO-')) return;
+    const stdKey = (w.student_id && w.student_id !== '進企管四系1甲') ? w.student_id.trim().toLowerCase() : (w.uid || w.id);
+    const catKey = w.report_type || '期中報告';
+    const groupKey = `${stdKey}_${catKey}`;
+    if (!groups[groupKey]) groups[groupKey] = [];
+    groups[groupKey].push(w);
+  });
+
+  const duplicatesToDelete = [];
+  let affectedStudents = 0;
+
+  Object.keys(groups).forEach(gk => {
+    const list = groups[gk];
+    if (list.length > 1) {
+      affectedStudents++;
+      // Sort descending by submitted_at (or updated_at / id) so index 0 is newest
+      list.sort((a, b) => {
+        const timeA = a.updated_at || a.submitted_at || '';
+        const timeB = b.updated_at || b.submitted_at || '';
+        return timeB.localeCompare(timeA);
+      });
+      // Keep list[0], delete list[1:]
+      for (let i = 1; i < list.length; i++) {
+        duplicatesToDelete.push(list[i]);
+      }
+    }
+  });
+
+  if (duplicatesToDelete.length === 0) {
+    alert('👏 檢查完畢！目前全班展示廊完全沒有任何重複上傳的舊作業紀錄。');
+    return;
+  }
+
+  const dupSummary = duplicatesToDelete.map(d => `• 【${d.student_name} (${d.student_id})】《${d.title}》 (${d.submitted_at})`).slice(0, 5).join('\n');
+  const moreText = duplicatesToDelete.length > 5 ? `\n... 以及其他 ${duplicatesToDelete.length - 5} 筆` : '';
+
+  const confirmClean = confirm(
+    `🔍 系統共偵測到 ${affectedStudents} 位同學有重複繳交紀錄（共有 ${duplicatesToDelete.length} 筆較舊/傳錯的資料）：\n\n` +
+    dupSummary + moreText +
+    `\n\n是否由系統為您「保留每位同學最新的一筆」，並自動自雲端資料庫徹底刪除其餘 ${duplicatesToDelete.length} 筆舊資料？`
+  );
+
+  if (!confirmClean) return;
+
+  let successCount = 0;
+  let failCount = 0;
+
+  for (const d of duplicatesToDelete) {
+    if (firestoreDb) {
+      try {
+        await firestoreDb.collection('works').doc(d.id).delete();
+        successCount++;
+      } catch (err) {
+        console.warn('刪除重複作業失敗:', d.id, err);
+        failCount++;
+      }
+    } else {
+      successCount++;
+    }
+  }
+
+  const deleteIds = new Set(duplicatesToDelete.map(d => d.id));
+  studentWorksData = studentWorksData.filter(w => !deleteIds.has(w.id));
+  try {
+    const localWorks = JSON.parse(localStorage.getItem('vnu_bsa_submitted_works') || '[]');
+    const newLocal = localWorks.filter(w => !deleteIds.has(w.id));
+    localStorage.setItem('vnu_bsa_submitted_works', JSON.stringify(newLocal));
+  } catch (e) {}
+
+  renderTeacherGradeDashboard();
+  renderStudentWorks(currentWorksFilter);
+
+  alert(`✅ 重複作業清理完成！\n已成功自雲端刪除 ${successCount} 筆較舊作業，全班每位同學現在皆只保留最新正確版本。${failCount > 0 ? `\n(有 ${failCount} 筆刪除失敗，請確認網路或權限)` : ''}`);
 }
 
 function exportGradesToCSV() {
@@ -3184,6 +3312,9 @@ window.exportGradesToCSV = exportGradesToCSV;
 window.renderTeacherGradeDashboard = renderTeacherGradeDashboard;
 window.syncFirestoreWorksNow = syncFirestoreWorksNow;
 window.teacherManualAddWork = teacherManualAddWork;
+window.teacherCleanupDuplicates = teacherCleanupDuplicates;
+window.checkAndPrefillExistingWork = checkAndPrefillExistingWork;
+window.getExistingWorkForCurrentStudent = getExistingWorkForCurrentStudent;
 window.changePresenterFontSize = changePresenterFontSize;
 window.resetPresenterFontSize = resetPresenterFontSize;
 
