@@ -5284,6 +5284,9 @@ function listenToFirestoreWorks() {
         const firestoreWorks = [];
         snapshot.forEach(doc => {
           const d = doc.data();
+          if (d.course_id === 'creative_thinking' || d.class_name === '企管四系1甲' || (d.id && d.id.includes('CREATIVE'))) {
+            return;
+          }
           if (!d.course_id || d.course_id === 'business_software' || d.class_name === '進企管四系1甲') {
             firestoreWorks.push(d);
           }
@@ -5328,7 +5331,11 @@ async function syncFirestoreWorksNow(isManual = false) {
     const snapshot = await firestoreDb.collection('works').get();
     const firestoreWorks = [];
     snapshot.forEach(doc => {
-      firestoreWorks.push(doc.data());
+      const d = doc.data();
+      if (d.course_id === 'creative_thinking' || d.class_name === '企管四系1甲' || (d.id && d.id.includes('CREATIVE'))) {
+        return;
+      }
+      firestoreWorks.push(d);
     });
     if (firestoreWorks.length > 0) {
       firestoreWorks.sort((a, b) => (b.submitted_at || '').localeCompare(a.submitted_at || ''));
