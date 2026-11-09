@@ -407,7 +407,7 @@ def build_docx_manual():
     # Step 7
     doc.add_paragraph("步驟 7：【一鍵生成線上 MVP 網頁程式碼 Prompt】").bold = True
     p7_prompt = (
-        "請幫我閱讀 https://docs.google.com/document/d/1Z55W_Y8xOGER5BzoSfbBk9Mt7efRR_4P1R8MLjcO774/edit 此檔案，\n"
+        "請幫我閱讀 https://docs.google.com/document/d/1J2bpLVkO6gyPXMCzVMXWa2nA-Bx9kOVU9FHH9PadNc4/edit 此檔案，\n"
         "並根據此檔案，幫我生成《樂肉選品》XXX主題 (請各位同學自行更改主題，不能以寵物食品，這是範例，可以用賣衣服、代購精品包、賣二手車等等主題不限) 初步企劃草案，\n"
         "生成為一個單一檔案且可直接運行的現代日系極簡風格 (可更改風格) HTML/CSS 網頁（index.html），\n"
         "包含個人/品牌故事、學理分析摘要、三款商品卡片與線上預購意向登記按鈕。\n\n"
