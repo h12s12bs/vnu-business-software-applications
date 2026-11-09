@@ -2483,7 +2483,10 @@ function listenToFirestoreWorks() {
       .onSnapshot((snapshot) => {
         const firestoreWorks = [];
         snapshot.forEach(doc => {
-          firestoreWorks.push(doc.data());
+          const d = doc.data();
+          if (!d.course_id || d.course_id === 'business_software' || d.class_name === '進企管四系1甲') {
+            firestoreWorks.push(d);
+          }
         });
         if (firestoreWorks.length > 0) {
           firestoreWorks.sort((a, b) => (b.submitted_at || '').localeCompare(a.submitted_at || ''));
