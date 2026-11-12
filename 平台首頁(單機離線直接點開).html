@@ -5289,9 +5289,13 @@ function listenToFirestoreWorks() {
       .onSnapshot((snapshot) => {
         const firestoreWorks = [];
         snapshot.forEach(doc => {
-          const d = doc.data();
+          const d = doc.data() || {};
+          const workItem = {
+            ...d,
+            id: d.id || doc.id // 確保每筆作業必備有效 docId，防止 doc('') 刪除報錯
+          };
           if (!d.course_id || d.course_id === 'business_software' || d.class_name === '進企管四系1甲') {
-            firestoreWorks.push(d);
+            firestoreWorks.push(workItem);
           }
         });
         if (firestoreWorks.length > 0) {
@@ -5334,7 +5338,14 @@ async function syncFirestoreWorksNow(isManual = false) {
     const snapshot = await firestoreDb.collection('works').get();
     const firestoreWorks = [];
     snapshot.forEach(doc => {
-      firestoreWorks.push(doc.data());
+      const d = doc.data() || {};
+      const workItem = {
+        ...d,
+        id: d.id || doc.id
+      };
+      if (!d.course_id || d.course_id === 'business_software' || d.class_name === '進企管四系1甲') {
+        firestoreWorks.push(workItem);
+      }
     });
     if (firestoreWorks.length > 0) {
       firestoreWorks.sort((a, b) => (b.submitted_at || '').localeCompare(a.submitted_at || ''));
@@ -5940,8 +5951,14 @@ async function teacherDeleteWork(workId) {
     return;
   }
 
+  if (!workId || typeof workId !== 'string' || !workId.trim()) {
+    alert('⚠️ 刪除失敗：此筆資料缺少有效的編號 (ID)！請重新整理網頁後再試。');
+    return;
+  }
+  workId = workId.trim();
+
   const work = studentWorksData.find(w => w.id === workId);
-  const workLabel = work ? `【${work.student_name || '同學'} (${work.student_id || ''})】之《${work.title || '無標題'}》` : workId;
+  const workLabel = work ? `【${work.student_name || '同學'} (${work.student_id || ''})】之《${work.title || workId}》` : `【ID: ${workId}】`;
 
   if (!confirm(`⚠️ 授課教師確認：確定要徹底刪除 ${workLabel} 嗎？\n\n此操作將自 Firebase 雲端資料庫永久移除該筆紀錄，無法復原！`)) return;
 
@@ -5951,7 +5968,12 @@ async function teacherDeleteWork(workId) {
       console.log('作業已自 Firestore 成功刪除:', workId);
     } catch (e) {
       console.error('Firestore 刪除失敗:', e);
-      alert('⚠️ 雲端刪除失敗（原因：' + (e.message || e.code || '權限不足') + '）\n請確認您登入的 Google 帳號是否包含於教師授權名單中！');
+      const userEmail = currentFirebaseUser ? currentFirebaseUser.email : '未登入';
+      if (e.code === 'permission-denied') {
+        alert(`⚠️ 雲端刪除失敗（權限不足 403）：\n目前登入帳號【${userEmail}】未獲得刪除授權。\n請確認 Firebase 安全性規則中的 isTeacher() 名單是否包含您的信箱！`);
+      } else {
+        alert(`⚠️ 雲端刪除失敗（原因：${e.message || e.code}）`);
+      }
       return;
     }
   }
@@ -5989,6 +6011,15 @@ async function teacherCleanupDuplicates() {
 
   const duplicatesToDelete = [];
   let affectedStudents = 0;
+
+  // 另外掃描完全空白或測試的無效資料（例如 test_works）
+  studentWorksData.forEach(w => {
+    if (w.id && !w.id.startsWith('DEMO-') && !w.title && !w.live_url && !w.student_name && !w.student_id) {
+      if (!duplicatesToDelete.some(d => d.id === w.id)) {
+        duplicatesToDelete.push(w);
+      }
+    }
+  });
 
   Object.keys(groups).forEach(gk => {
     const list = groups[gk];
